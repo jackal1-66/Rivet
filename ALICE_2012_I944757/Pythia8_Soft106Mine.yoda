@@ -1,0 +1,122 @@
+BEGIN YODA_HISTO1D_V2 /ALICE_2012_I944757/d01-x01-y01
+ErrorBreakdown: {0: {stat: {dn: -30.0, up: 30.0}, sys: {dn: -98.0, up: 48.0}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -6.66, up: 6.66}}, 1: {stat: {dn: -11.0, up: 11.0}, sys: {dn: -33.0, up: 20.0}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -4.255, up: 4.255}}, 2: {stat: {dn: -4.3, up: 4.3}, sys: {dn: -12.6, up: 8.5}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -2.2089, up: 2.2089}}, 3: {stat: {dn: -2.1, up: 2.1}, sys: {dn: -5.8, up: 4.2}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -1.0767000000000002, up: 1.0767000000000002}}, 4: {stat: {dn: -1.1, up: 1.1}, sys: {dn: -2.3, up: 1.8}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.4625, up: 0.4625}}, 5: {stat: {dn: -0.7, up: 0.7}, sys: {dn: -1.08, up: 0.94}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.23569000000000004, up: 0.23569000000000004}}, 6: {stat: {dn: -0.47, up: 0.47}, sys: {dn: -0.53, up: 0.5}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.11359, up: 0.11359}}, 7: {stat: {dn: -0.13, up: 0.13}, sys: {dn: -0.21, up: 0.19}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.04551, up: 0.04551}}, 8: {stat: {dn: -0.05, up: 0.05}, sys: {dn: -0.038, up: 0.037}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.007955, up: 0.007955}}}
+Path: /ALICE_2012_I944757/d01-x01-y01
+ScaledBy: 4.53822979143514160e-02
+Title: 
+Type: Histo1D
+XLabel: 
+YLabel: 
+---
+# Mean: 2.382926e+00
+# Area: 4.906280e+02
+# ID	 ID	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
+Total   	Total   	4.906280e+02	2.226583e+01	1.169130e+03	4.725146e+03	1.081100e+04
+Underflow	Underflow	1.058769e+02	4.804937e+00	6.553742e+01	4.682819e+01	2.333000e+03
+Overflow	Overflow	7.714991e-01	3.501240e-02	1.700338e+01	3.907039e+02	1.700000e+01
+# xlow	 xhigh	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
+1.000000e+00	2.000000e+00	1.538914e+02	6.983944e+00	2.286636e+02	3.524668e+02	3.391000e+03
+2.000000e+00	3.000000e+00	1.000680e+02	4.541314e+00	2.447954e+02	6.067462e+02	2.205000e+03
+3.000000e+00	4.000000e+00	5.886084e+01	2.671240e+00	2.025665e+02	7.017701e+02	1.297000e+03
+4.000000e+00	5.000000e+00	3.258449e+01	1.478759e+00	1.449268e+02	6.472709e+02	7.180000e+02
+5.000000e+00	6.000000e+00	1.719989e+01	7.805706e-01	9.364828e+01	5.112905e+02	3.790000e+02
+6.000000e+00	7.000000e+00	8.758783e+00	3.974937e-01	5.630019e+01	3.626787e+02	1.930000e+02
+7.000000e+00	8.000000e+00	4.538230e+00	2.059553e-01	3.399360e+01	2.549575e+02	1.000000e+02
+8.000000e+00	1.200000e+01	6.898109e+00	3.130521e-01	6.589970e+01	6.375643e+02	1.520000e+02
+1.200000e+01	1.600000e+01	1.179940e+00	5.354838e-02	1.579552e+01	2.128688e+02	2.600000e+01
+END YODA_HISTO1D_V2
+
+BEGIN YODA_HISTO1D_V2 /ALICE_2012_I944757/d02-x01-y01
+ErrorBreakdown: {0: {stat: {dn: -23.0, up: 23.0}, sys: {dn: -61.0, up: 39.0}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -4.797, up: 4.797}}, 1: {stat: {dn: -6.1, up: 6.1}, sys: {dn: -14.5, up: 12.6}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -1.5456999999999999, up: 1.5456999999999999}}, 2: {stat: {dn: -2.2, up: 2.2}, sys: {dn: -6.5, up: 6.0}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.8240999999999999, up: 0.8240999999999999}}, 3: {stat: {dn: -0.96, up: 0.96}, sys: {dn: -2.64, up: 2.2}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.47190999999999994, up: 0.47190999999999994}}, 4: {stat: {dn: -0.47, up: 0.47}, sys: {dn: -1.0, up: 0.92}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.19351999999999997, up: 0.19351999999999997}}, 5: {stat: {dn: -0.32, up: 0.32}, sys: {dn: -0.55, up: 0.49}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.11315999999999998, up: 0.11315999999999998}}, 6: {stat: {dn: -0.22, up: 0.22}, sys: {dn: -0.29, up: 0.27}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.06149999999999999, up: 0.06149999999999999}}, 7: {stat: {dn: -0.056, up: 0.056}, sys: {dn: -0.115, up: 0.103}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.023575, up: 0.023575}}, 8: {stat: {dn: -0.026, up: 0.026}, sys: {dn: -0.02, up: 0.019}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.003485, up: 0.003485}}, 9: {stat: {dn: -0.007, up: 0.007}, sys: {dn: -0.004, up: 0.004}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.00082, up: 0.00082}}}
+Path: /ALICE_2012_I944757/d02-x01-y01
+ScaledBy: 4.53822979143514160e-02
+Title: 
+Type: Histo1D
+XLabel: 
+YLabel: 
+---
+# Mean: 2.365300e+00
+# Area: 2.574538e+02
+# ID	 ID	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
+Total   	Total   	2.574538e+02	1.168384e+01	6.089554e+02	2.392529e+03	5.673000e+03
+Underflow	Underflow	5.568408e+01	2.527071e+00	3.476285e+01	2.505321e+01	1.227000e+03
+Overflow	Overflow	4.538230e-02	2.059553e-03	1.334248e+00	3.922712e+01	1.000000e+00
+# xlow	 xhigh	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
+1.000000e+00	2.000000e+00	7.960055e+01	3.612456e+00	1.171532e+02	1.788933e+02	1.754000e+03
+2.000000e+00	3.000000e+00	5.427723e+01	2.463225e+00	1.333799e+02	3.319817e+02	1.196000e+03
+3.000000e+00	4.000000e+00	3.104149e+01	1.408734e+00	1.069347e+02	3.708958e+02	6.840000e+02
+4.000000e+00	5.000000e+00	1.747218e+01	7.929279e-01	7.777473e+01	3.475951e+02	3.850000e+02
+5.000000e+00	6.000000e+00	8.214196e+00	3.727791e-01	4.470825e+01	2.439849e+02	1.810000e+02
+6.000000e+00	7.000000e+00	4.538230e+00	2.059553e-01	2.913012e+01	1.873553e+02	1.000000e+02
+7.000000e+00	8.000000e+00	1.906057e+00	8.650122e-02	1.413583e+01	1.049769e+02	4.200000e+01
+8.000000e+00	1.200000e+01	3.812113e+00	1.730024e-01	3.659373e+01	3.560373e+02	8.400000e+01
+1.200000e+01	1.600000e+01	5.899699e-01	2.677419e-02	7.730710e+00	1.016343e+02	1.300000e+01
+1.600000e+01	2.400000e+01	2.722938e-01	1.235732e-02	5.317201e+00	1.048938e+02	6.000000e+00
+END YODA_HISTO1D_V2
+
+BEGIN YODA_HISTO1D_V2 /ALICE_2012_I944757/d03-x01-y01
+ErrorBreakdown: {0: {stat: {dn: -22.0, up: 22.0}, sys: {dn: -55.0, up: 28.0}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -3.8, up: 3.8}}, 1: {stat: {dn: -5.9, up: 5.9}, sys: {dn: -13.2, up: 8.7}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -1.9684, up: 1.9684}}, 2: {stat: {dn: -2.3, up: 2.3}, sys: {dn: -5.2, up: 4.6}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -1.064, up: 1.064}}, 3: {stat: {dn: -0.87, up: 0.87}, sys: {dn: -1.88, up: 1.82}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.41838, up: 0.41838}}, 4: {stat: {dn: -0.45, up: 0.45}, sys: {dn: -1.0, up: 0.97}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.2166, up: 0.2166}}, 5: {stat: {dn: -0.27, up: 0.27}, sys: {dn: -0.57, up: 0.55}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.12387999999999998, up: 0.12387999999999998}}, 6: {stat: {dn: -0.21, up: 0.21}, sys: {dn: -0.3, up: 0.3}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.06612, up: 0.06612}}, 7: {stat: {dn: -0.05, up: 0.05}, sys: {dn: -0.116, up: 0.113}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.025726000000000002, up: 0.025726000000000002}}, 8: {stat: {dn: -0.016, up: 0.016}, sys: {dn: -0.031, up: 0.03}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.00608, up: 0.00608}}, 9: {stat: {dn: -0.004, up: 0.004}, sys: {dn: -0.007, up: 0.007}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.001026, up: 0.001026}}}
+Path: /ALICE_2012_I944757/d03-x01-y01
+ScaledBy: 4.53822979143514160e-02
+Title: 
+Type: Histo1D
+XLabel: 
+YLabel: 
+---
+# Mean: 2.504370e+00
+# Area: 1.728158e+02
+# ID	 ID	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
+Total   	Total   	1.728158e+02	7.842778e+00	4.327947e+02	1.877539e+03	3.808000e+03
+Underflow	Underflow	3.317446e+01	1.505533e+00	2.062997e+01	1.480221e+01	7.310000e+02
+Overflow	Overflow	4.538230e-02	2.059553e-03	1.757420e+00	6.805569e+01	1.000000e+00
+# xlow	 xhigh	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
+1.000000e+00	2.000000e+00	5.382341e+01	2.442630e+00	7.990624e+01	1.230886e+02	1.186000e+03
+2.000000e+00	3.000000e+00	3.607893e+01	1.637345e+00	8.878884e+01	2.213802e+02	7.950000e+02
+3.000000e+00	4.000000e+00	2.296344e+01	1.042134e+00	7.947240e+01	2.770851e+02	5.060000e+02
+4.000000e+00	5.000000e+00	1.189016e+01	5.396029e-01	5.324729e+01	2.394787e+02	2.620000e+02
+5.000000e+00	6.000000e+00	6.035846e+00	2.739205e-01	3.290696e+01	1.798259e+02	1.330000e+02
+6.000000e+00	7.000000e+00	3.766731e+00	1.709429e-01	2.449904e+01	1.596483e+02	8.300000e+01
+7.000000e+00	8.000000e+00	1.588380e+00	7.208435e-02	1.183732e+01	8.833605e+01	3.500000e+01
+8.000000e+00	1.200000e+01	2.405262e+00	1.091563e-01	2.285749e+01	2.197462e+02	5.300000e+01
+1.200000e+01	1.600000e+01	6.807345e-01	3.089329e-02	9.445153e+00	1.319441e+02	1.500000e+01
+1.600000e+01	2.400000e+01	3.630584e-01	1.647642e-02	7.446617e+00	1.541478e+02	8.000000e+00
+END YODA_HISTO1D_V2
+
+BEGIN YODA_HISTO1D_V2 /ALICE_2012_I944757/d04-x01-y01
+ErrorBreakdown: {0: {stat: {dn: -41.0, up: 41.0}, "sys,luminosity uncertainty": {dn: -18.060000000000002, up: 18.060000000000002}, sys_1: {dn: -175.0, up: 69.0}, sys_2: {dn: -7.0, up: 7.0}, sys_3: {dn: -37.0, up: 120.0}}, 1: {stat: {dn: -30.0, up: 30.0}, "sys,luminosity uncertainty": {dn: -8.68, up: 8.68}, sys_1: {dn: -92.0, up: 52.0}, sys_2: {dn: -5.0, up: 5.0}, sys_3: {dn: -18.0, up: 57.0}}, 2: {stat: {dn: -27.0, up: 27.0}, "sys,luminosity uncertainty": {dn: -8.645000000000001, up: 8.645000000000001}, sys_1: {dn: -81.0, up: 36.0}, sys_2: {dn: -4.0, up: 4.0}, sys_3: {dn: -16.0, up: 57.0}}}
+Path: /ALICE_2012_I944757/d04-x01-y01
+ScaledBy: 4.53822979143514160e-02
+Title: 
+Type: Histo1D
+XLabel: 
+YLabel: 
+---
+# Mean: 1.654889e+00
+# Area: 9.208976e+02
+# ID	 ID	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
+Total   	Total   	9.208976e+02	4.179245e+01	1.523983e+03	3.075785e+03	2.029200e+04
+Underflow	Underflow	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+Overflow	Overflow	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+# xlow	 xhigh	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
+5.000000e-01	1.500000e+00	4.906280e+02	2.226583e+01	4.906280e+02	4.906280e+02	1.081100e+04
+1.500000e+00	2.500000e+00	2.574538e+02	1.168384e+01	5.149076e+02	1.029815e+03	5.673000e+03
+2.500000e+00	3.500000e+00	1.728158e+02	7.842778e+00	5.184474e+02	1.555342e+03	3.808000e+03
+END YODA_HISTO1D_V2
+
+BEGIN YODA_COUNTER_V2 /_EVTCOUNT
+Path: /_EVTCOUNT
+Title: 
+Type: Counter
+---
+# sumW	 sumW2	 numEntries
+1.000000e+06	1.000000e+06	1.000000e+06
+END YODA_COUNTER_V2
+
+BEGIN YODA_SCATTER1D_V2 /_XSEC
+Variations: [""]
+Path: /_XSEC
+Title: 
+Type: Scatter1D
+---
+# xval	  xerr-	 xerr+	
+9.076460e+10	1.628293e+02	1.628293e+02
+END YODA_SCATTER1D_V2
