@@ -25,10 +25,10 @@ make a new directory to keep pythia data
 $ mkdir TEST-pythia
 run with PbPb parameters (.params) file
 Get Pythia running options
-$ run-pythian —help
+$ run-pythia —help
 
 # run for 1000 events with a output file name (.hepmc)
-$time run-pythia -i pythia8.pbpb2760.params -o pythia8.pbpb2760.hepmc -n 1000
+$time run-pythia -e 7000 -o pythia8.pbpb2760.hepmc -c "SoftQCD:all on" -n 1000
 
 In troubles with running Pythia
 •	go to Sacrifice
