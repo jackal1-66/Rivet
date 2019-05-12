@@ -47,13 +47,16 @@ namespace Rivet {
                 {    
                 if(p.abspid() == 421){
                     _h_D0->fill(p.pT()/GeV, weight); 
-                    _h_integ->fill(1,weight);}
+                    }
                 else if(p.abspid() == 411){
                     _h_Dplus->fill(p.pT()/GeV, weight);
-                    _h_integ->fill(2,weight);}
-                else if(p.abspid()== 413){
+                    }
+                else if(p.abspid() == 413){
                     _h_Dstar->fill(p.pT()/GeV, weight);    
-                    _h_integ->fill(3,weight);}
+                    }
+                else if(p.abspid() == 431){
+                    _h_Ds->fill(p.pT()/GeV, weight)
+                }    
                 }
         }
         

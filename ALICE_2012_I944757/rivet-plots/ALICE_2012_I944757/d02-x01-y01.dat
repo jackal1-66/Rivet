@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=/ALICE_2012_I944757/d02-x01-y01 //home/physicom/rivet-ws/ALICE_2012_I944757/Pythia8_Soft.yoda/ALICE_2012_I944757/d02-x01-y01
-DrawOnly=/ALICE_2012_I944757/d02-x01-y01 //home/physicom/rivet-ws/ALICE_2012_I944757/Pythia8_Soft.yoda/ALICE_2012_I944757/d02-x01-y01
+LegendOnly=/ALICE_2012_I944757/d02-x01-y01 //home/physicom/rivet-ws/ALICE_2012_I944757/Pythia8_Soft.yoda/ALICE_2012_I944757/d02-x01-y01 //home/physicom/rivet-ws/ALICE_2012_I944757/HERWIG7.yoda/ALICE_2012_I944757/d02-x01-y01
+DrawOnly=/ALICE_2012_I944757/d02-x01-y01 //home/physicom/rivet-ws/ALICE_2012_I944757/Pythia8_Soft.yoda/ALICE_2012_I944757/d02-x01-y01 //home/physicom/rivet-ws/ALICE_2012_I944757/HERWIG7.yoda/ALICE_2012_I944757/d02-x01-y01
 Title=Differential cross section for prompt $D^+$ production.
 ConnectBins=0
 RatioPlot=1
@@ -55,5 +55,29 @@ YLabel=~
 8.000000e+00	1.200000e+01	9.530283e-01	1.039839e-01	1.039839e-01
 1.200000e+01	1.600000e+01	1.474925e-01	4.090705e-02	4.090705e-02
 1.600000e+01	2.400000e+01	3.403672e-02	1.389544e-02	1.389544e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //home/physicom/rivet-ws/ALICE_2012_I944757/HERWIG7.yoda/ALICE_2012_I944757/d02-x01-y01
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -23.0, up: 23.0}, sys: {dn: -61.0, up: 39.0}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -4.797, up: 4.797}}, 1: {stat: {dn: -6.1, up: 6.1}, sys: {dn: -14.5, up: 12.6}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -1.5456999999999999, up: 1.5456999999999999}}, 2: {stat: {dn: -2.2, up: 2.2}, sys: {dn: -6.5, up: 6.0}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.8240999999999999, up: 0.8240999999999999}}, 3: {stat: {dn: -0.96, up: 0.96}, sys: {dn: -2.64, up: 2.2}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.47190999999999994, up: 0.47190999999999994}}, 4: {stat: {dn: -0.47, up: 0.47}, sys: {dn: -1.0, up: 0.92}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.19351999999999997, up: 0.19351999999999997}}, 5: {stat: {dn: -0.32, up: 0.32}, sys: {dn: -0.55, up: 0.49}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.11315999999999998, up: 0.11315999999999998}}, 6: {stat: {dn: -0.22, up: 0.22}, sys: {dn: -0.29, up: 0.27}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.06149999999999999, up: 0.06149999999999999}}, 7: {stat: {dn: -0.056, up: 0.056}, sys: {dn: -0.115, up: 0.103}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.023575, up: 0.023575}}, 8: {stat: {dn: -0.026, up: 0.026}, sys: {dn: -0.02, up: 0.019}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.003485, up: 0.003485}}, 9: {stat: {dn: -0.007, up: 0.007}, sys: {dn: -0.004, up: 0.004}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.00082, up: 0.00082}}}
+LineColor=blue
+LineStyle=solid
+Path=//home/physicom/rivet-ws/ALICE_2012_I944757/HERWIG7.yoda/ALICE_2012_I944757/d02-x01-y01
+ScaledBy=3.29135907948360576e-02
+Title=HERWIG7
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	4.108514e+01	1.388908e+00	1.388908e+00
+2.000000e+00	3.000000e+00	4.079366e+01	1.408185e+00	1.408185e+00
+3.000000e+00	4.000000e+00	3.264175e+01	1.284549e+00	1.284549e+00
+4.000000e+00	5.000000e+00	1.936721e+01	9.435853e-01	9.435853e-01
+5.000000e+00	6.000000e+00	1.155662e+01	7.443947e-01	7.443947e-01
+6.000000e+00	7.000000e+00	5.508304e+00	5.547461e-01	5.547461e-01
+7.000000e+00	8.000000e+00	3.249088e+00	4.095512e-01	4.095512e-01
+8.000000e+00	1.200000e+01	1.050176e+00	1.148979e-01	1.148979e-01
+1.200000e+01	1.600000e+01	2.046305e-01	4.548655e-02	4.548655e-02
+1.600000e+01	2.400000e+01	9.244449e-03	7.284220e-03	7.284220e-03
 # END HISTO1D
 
