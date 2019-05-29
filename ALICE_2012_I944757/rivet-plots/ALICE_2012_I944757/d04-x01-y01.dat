@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=/ALICE_2012_I944757/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/SOFT107.yoda/ALICE_2012_I944757/d04-x01-y01
-DrawOnly=/ALICE_2012_I944757/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/SOFT107.yoda/ALICE_2012_I944757/d04-x01-y01
+LegendOnly=/ALICE_2012_I944757/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/SOFT107.0.yoda/ALICE_2012_I944757/d04-x01-y01
+DrawOnly=/ALICE_2012_I944757/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/SOFT107.0.yoda/ALICE_2012_I944757/d04-x01-y01
 Title=Integrated cross sections for prompt charm particle production. 
 RatioPlotReference=/ALICE_2012_I944757/d04-x01-y01
 ConnectBins=0
@@ -28,18 +28,18 @@ Title=Data
 # END HISTO1D
 
 
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/SOFT107.yoda/ALICE_2012_I944757/d04-x01-y01
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/SOFT107.0.yoda/ALICE_2012_I944757/d04-x01-y01
 ErrorBars=1
 LineColor=red
 LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/SOFT107.yoda/ALICE_2012_I944757/d04-x01-y01
-ScaledBy=2.26911500000000002e-02
-Title=SOFT107
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/SOFT107.0.yoda/ALICE_2012_I944757/d04-x01-y01
+ScaledBy=2.26911489570285653e-02
+Title=SOFT107.0
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
-5.000000e-01	1.500000e+00	2.452369e+03	7.459696e+00	7.459696e+00
-1.500000e+00	2.500000e+00	1.259767e+03	5.346547e+00	5.346547e+00
-2.500000e+00	3.500000e+00	8.649413e+02	4.430182e+00	4.430182e+00
+5.000000e-01	1.500000e+00	4.910365e+02	3.337990e+00	3.337990e+00
+1.500000e+00	2.500000e+00	2.520079e+02	2.391307e+00	2.391307e+00
+2.500000e+00	3.500000e+00	1.753118e+02	1.994499e+00	1.994499e+00
 # END HISTO1D
 
