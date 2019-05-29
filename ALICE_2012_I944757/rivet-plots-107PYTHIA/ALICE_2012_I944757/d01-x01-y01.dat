@@ -1,0 +1,56 @@
+# BEGIN PLOT
+LegendOnly=/ALICE_2012_I944757/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/SOFT107.yoda/ALICE_2012_I944757/d01-x01-y01
+DrawOnly=/ALICE_2012_I944757/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/SOFT107.yoda/ALICE_2012_I944757/d01-x01-y01
+Title=Differential cross section for prompt $D^0$ production.
+ConnectBins=0
+RatioPlot=1
+LogY=1
+RatioPlotYMax=1.8
+RatioPlotReference=/ALICE_2012_I944757/d01-x01-y01
+XLabel=$p_T$ [GeV/c]
+YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D /ALICE_2012_I944757/d01-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -30.0, up: 30.0}, sys: {dn: -98.0, up: 48.0}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -6.66, up: 6.66}}, 1: {stat: {dn: -11.0, up: 11.0}, sys: {dn: -33.0, up: 20.0}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -4.255, up: 4.255}}, 2: {stat: {dn: -4.3, up: 4.3}, sys: {dn: -12.6, up: 8.5}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -2.2089, up: 2.2089}}, 3: {stat: {dn: -2.1, up: 2.1}, sys: {dn: -5.8, up: 4.2}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -1.0767000000000002, up: 1.0767000000000002}}, 4: {stat: {dn: -1.1, up: 1.1}, sys: {dn: -2.3, up: 1.8}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.4625, up: 0.4625}}, 5: {stat: {dn: -0.7, up: 0.7}, sys: {dn: -1.08, up: 0.94}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.23569000000000004, up: 0.23569000000000004}}, 6: {stat: {dn: -0.47, up: 0.47}, sys: {dn: -0.53, up: 0.5}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.11359, up: 0.11359}}, 7: {stat: {dn: -0.13, up: 0.13}, sys: {dn: -0.21, up: 0.19}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.04551, up: 0.04551}}, 8: {stat: {dn: -0.05, up: 0.05}, sys: {dn: -0.038, up: 0.037}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.007955, up: 0.007955}}}
+IsRef=1
+Path=/ALICE_2012_I944757/d01-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	1.800000e+02	1.027052e+02	5.699435e+01
+2.000000e+00	3.000000e+00	1.150000e+02	3.504433e+01	2.321864e+01
+3.000000e+00	4.000000e+00	5.970000e+01	1.349553e+01	9.778509e+00
+4.000000e+00	5.000000e+00	2.910000e+01	6.261732e+00	4.817601e+00
+5.000000e+00	6.000000e+00	1.250000e+01	2.591121e+00	2.159608e+00
+6.000000e+00	7.000000e+00	6.370000e+00	1.308415e+00	1.195471e+00
+7.000000e+00	8.000000e+00	3.070000e+00	7.174278e-01	6.955593e-01
+8.000000e+00	1.200000e+01	1.230000e+00	2.511397e-01	2.346725e-01
+1.200000e+01	1.600000e+01	2.150000e-01	6.330310e-02	6.270791e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/SOFT107.yoda/ALICE_2012_I944757/d01-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/SOFT107.yoda/ALICE_2012_I944757/d01-x01-y01
+ScaledBy=4.53822999999999987e-03
+Title=SOFT107
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	1.504922e+02	8.264190e-01	8.264190e-01
+2.000000e+00	3.000000e+00	1.059087e+02	6.932805e-01	6.932805e-01
+3.000000e+00	4.000000e+00	5.977757e+01	5.208496e-01	5.208496e-01
+4.000000e+00	5.000000e+00	3.056044e+01	3.724115e-01	3.724115e-01
+5.000000e+00	6.000000e+00	1.640570e+01	2.728605e-01	2.728605e-01
+6.000000e+00	7.000000e+00	8.999310e+00	2.020914e-01	2.020914e-01
+7.000000e+00	8.000000e+00	5.132738e+00	1.526222e-01	1.526222e-01
+8.000000e+00	1.200000e+01	1.724527e+00	4.423320e-02	4.423320e-02
+1.200000e+01	1.600000e+01	3.108688e-01	1.878027e-02	1.878027e-02
+# END HISTO1D
+

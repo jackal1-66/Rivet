@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=/ALICE_2012_I944757/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/SOFT107.0.yoda/ALICE_2012_I944757/d04-x01-y01
-DrawOnly=/ALICE_2012_I944757/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/SOFT107.0.yoda/ALICE_2012_I944757/d04-x01-y01
+LegendOnly=/ALICE_2012_I944757/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Pythia8_Soft.yoda/ALICE_2012_I944757/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/HERWIG7.yoda/ALICE_2012_I944757/d04-x01-y01
+DrawOnly=/ALICE_2012_I944757/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Pythia8_Soft.yoda/ALICE_2012_I944757/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/HERWIG7.yoda/ALICE_2012_I944757/d04-x01-y01
 Title=Integrated cross sections for prompt charm particle production. 
 RatioPlotReference=/ALICE_2012_I944757/d04-x01-y01
 ConnectBins=0
@@ -28,18 +28,36 @@ Title=Data
 # END HISTO1D
 
 
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/SOFT107.0.yoda/ALICE_2012_I944757/d04-x01-y01
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Pythia8_Soft.yoda/ALICE_2012_I944757/d04-x01-y01
 ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -41.0, up: 41.0}, "sys,luminosity uncertainty": {dn: -18.060000000000002, up: 18.060000000000002}, sys_1: {dn: -175.0, up: 69.0}, sys_2: {dn: -7.0, up: 7.0}, sys_3: {dn: -37.0, up: 120.0}}, 1: {stat: {dn: -30.0, up: 30.0}, "sys,luminosity uncertainty": {dn: -8.68, up: 8.68}, sys_1: {dn: -92.0, up: 52.0}, sys_2: {dn: -5.0, up: 5.0}, sys_3: {dn: -18.0, up: 57.0}}, 2: {stat: {dn: -27.0, up: 27.0}, "sys,luminosity uncertainty": {dn: -8.645000000000001, up: 8.645000000000001}, sys_1: {dn: -81.0, up: 36.0}, sys_2: {dn: -4.0, up: 4.0}, sys_3: {dn: -16.0, up: 57.0}}}
 LineColor=red
 LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/SOFT107.0.yoda/ALICE_2012_I944757/d04-x01-y01
-ScaledBy=2.26911489570285653e-02
-Title=SOFT107.0
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Pythia8_Soft.yoda/ALICE_2012_I944757/d04-x01-y01
+ScaledBy=4.53822979143514160e-02
+Title=Pythia8_Soft
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
-5.000000e-01	1.500000e+00	4.910365e+02	3.337990e+00	3.337990e+00
-1.500000e+00	2.500000e+00	2.520079e+02	2.391307e+00	2.391307e+00
-2.500000e+00	3.500000e+00	1.753118e+02	1.994499e+00	1.994499e+00
+5.000000e-01	1.500000e+00	4.906280e+02	4.718668e+00	4.718668e+00
+1.500000e+00	2.500000e+00	2.574538e+02	3.418163e+00	3.418163e+00
+2.500000e+00	3.500000e+00	1.728158e+02	2.800496e+00	2.800496e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/HERWIG7.yoda/ALICE_2012_I944757/d04-x01-y01
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -41.0, up: 41.0}, "sys,luminosity uncertainty": {dn: -18.060000000000002, up: 18.060000000000002}, sys_1: {dn: -175.0, up: 69.0}, sys_2: {dn: -7.0, up: 7.0}, sys_3: {dn: -37.0, up: 120.0}}, 1: {stat: {dn: -30.0, up: 30.0}, "sys,luminosity uncertainty": {dn: -8.68, up: 8.68}, sys_1: {dn: -92.0, up: 52.0}, sys_2: {dn: -5.0, up: 5.0}, sys_3: {dn: -18.0, up: 57.0}}, 2: {stat: {dn: -27.0, up: 27.0}, "sys,luminosity uncertainty": {dn: -8.645000000000001, up: 8.645000000000001}, sys_1: {dn: -81.0, up: 36.0}, sys_2: {dn: -4.0, up: 4.0}, sys_3: {dn: -16.0, up: 57.0}}}
+LineColor=blue
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/HERWIG7.yoda/ALICE_2012_I944757/d04-x01-y01
+ScaledBy=3.29135907948360576e-02
+Title=HERWIG7
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+5.000000e-01	1.500000e+00	4.104964e+02	4.441845e+00	4.441845e+00
+1.500000e+00	2.500000e+00	1.879631e+02	3.028022e+00	3.028022e+00
+2.500000e+00	3.500000e+00	1.600924e+02	2.760211e+00	2.760211e+00
 # END HISTO1D
 
