@@ -16,6 +16,7 @@ NumEvents:  100000
 Beams: [p+, p+]
 Energies: [7000]
 Luminosity_nb: 5.0
+Reentrant: True
 Description:
   CERN-LHC. Measurement of the differential production cross sections of  prompt $p_T$ charmed mesons, D$^0$, D$^{+-}$ and D*$^{+-}$ as a function of $p_T$, produced in  proton-proton collisions at a centre-of-mass energy of 7 TeV. The data, collected during 2010 with a minimum-bias trigger, have a total integrated  luminosity of 5nb$^{-1}$ and cover the $p_T$ range 1-24 GeV with absolute rapidity < 0.5.
 Keywords: []
