@@ -1,0 +1,61 @@
+# BEGIN PLOT
+LegendOnly=/SOFT107.yoda/ALICE_2012_I944757/d03-x01-y01 /Pythia8_Soft.yoda/ALICE_2012_I944757/d03-x01-y01
+DrawOnly=/SOFT107.yoda/ALICE_2012_I944757/d03-x01-y01 /Pythia8_Soft.yoda/ALICE_2012_I944757/d03-x01-y01
+Title=Differential cross section for prompt $D^{*+}$ production.
+ConnectBins=0
+RatioPlot=1
+LogY=1
+RatioPlotYMax=1.8
+RatioPlotYLabel=Ratio
+RatioPlotReference=/SOFT107.yoda/ALICE_2012_I944757/d03-x01-y01
+XLabel=$p_T$ [GeV/c]
+YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D /SOFT107.yoda/ALICE_2012_I944757/d03-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=/SOFT107.yoda/ALICE_2012_I944757/d03-x01-y01
+ScaledBy=4.53822999999999987e-03
+Title=SOFT107
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	5.046966e+01	4.785843e-01	4.785843e-01
+2.000000e+00	3.000000e+00	3.746763e+01	4.123551e-01	4.123551e-01
+3.000000e+00	4.000000e+00	2.282730e+01	3.218625e-01	3.218625e-01
+4.000000e+00	5.000000e+00	1.256636e+01	2.388075e-01	2.388075e-01
+5.000000e+00	6.000000e+00	6.893571e+00	1.768746e-01	1.768746e-01
+6.000000e+00	7.000000e+00	3.884725e+00	1.327771e-01	1.327771e-01
+7.000000e+00	8.000000e+00	2.137506e+00	9.849109e-02	9.849109e-02
+8.000000e+00	1.200000e+01	7.011565e-01	2.820465e-02	2.820465e-02
+1.200000e+01	1.600000e+01	1.429543e-01	1.273538e-02	1.273538e-02
+1.600000e+01	2.400000e+01	2.722938e-02	3.930222e-03	3.930222e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D /Pythia8_Soft.yoda/ALICE_2012_I944757/d03-x01-y01
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -22.0, up: 22.0}, sys: {dn: -55.0, up: 28.0}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -3.8, up: 3.8}}, 1: {stat: {dn: -5.9, up: 5.9}, sys: {dn: -13.2, up: 8.7}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -1.9684, up: 1.9684}}, 2: {stat: {dn: -2.3, up: 2.3}, sys: {dn: -5.2, up: 4.6}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -1.064, up: 1.064}}, 3: {stat: {dn: -0.87, up: 0.87}, sys: {dn: -1.88, up: 1.82}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.41838, up: 0.41838}}, 4: {stat: {dn: -0.45, up: 0.45}, sys: {dn: -1.0, up: 0.97}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.2166, up: 0.2166}}, 5: {stat: {dn: -0.27, up: 0.27}, sys: {dn: -0.57, up: 0.55}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.12387999999999998, up: 0.12387999999999998}}, 6: {stat: {dn: -0.21, up: 0.21}, sys: {dn: -0.3, up: 0.3}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.06612, up: 0.06612}}, 7: {stat: {dn: -0.05, up: 0.05}, sys: {dn: -0.116, up: 0.113}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.025726000000000002, up: 0.025726000000000002}}, 8: {stat: {dn: -0.016, up: 0.016}, sys: {dn: -0.031, up: 0.03}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.00608, up: 0.00608}}, 9: {stat: {dn: -0.004, up: 0.004}, sys: {dn: -0.007, up: 0.007}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.001026, up: 0.001026}}}
+LineColor=blue
+LineStyle=solid
+Path=/Pythia8_Soft.yoda/ALICE_2012_I944757/d03-x01-y01
+ScaledBy=4.53822979143514160e-02
+Title=Pythia8_Soft
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	5.382341e+01	1.562892e+00	1.562892e+00
+2.000000e+00	3.000000e+00	3.607893e+01	1.279588e+00	1.279588e+00
+3.000000e+00	4.000000e+00	2.296344e+01	1.020850e+00	1.020850e+00
+4.000000e+00	5.000000e+00	1.189016e+01	7.345767e-01	7.345767e-01
+5.000000e+00	6.000000e+00	6.035846e+00	5.233741e-01	5.233741e-01
+6.000000e+00	7.000000e+00	3.766731e+00	4.134524e-01	4.134524e-01
+7.000000e+00	8.000000e+00	1.588380e+00	2.684853e-01	2.684853e-01
+8.000000e+00	1.200000e+01	6.013155e-01	8.259703e-02	8.259703e-02
+1.200000e+01	1.600000e+01	1.701836e-01	4.394122e-02	4.394122e-02
+1.600000e+01	2.400000e+01	4.538230e-02	1.604506e-02	1.604506e-02
+# END HISTO1D
+

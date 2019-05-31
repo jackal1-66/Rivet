@@ -1,0 +1,48 @@
+# BEGIN PLOT
+LegendOnly=/SOFT107.yoda/ALICE_2012_I944757/d04-x01-y01 /Pythia8_Soft.yoda/ALICE_2012_I944757/d04-x01-y01
+DrawOnly=/SOFT107.yoda/ALICE_2012_I944757/d04-x01-y01 /Pythia8_Soft.yoda/ALICE_2012_I944757/d04-x01-y01
+Title=Integrated cross sections for prompt charm particle production. 
+RatioPlotReference=/SOFT107.yoda/ALICE_2012_I944757/d04-x01-y01
+ConnectBins=0
+RatioPlot=1
+LogY=1
+RatioPlotYLabel=Ratio
+LegendXPos=0.55
+XLabel=pp\to D$^0$ X;\qquad \qquad \qquad pp\to D$^+$ X;\qquad \qquad \qquad pp\to D$^{*+}$ X. 
+YLabel=$\frac{\text{d}\sigma}{\text{d}y}$ [$\mu$b]
+LegendYPos=0.95
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D /SOFT107.yoda/ALICE_2012_I944757/d04-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=/SOFT107.yoda/ALICE_2012_I944757/d04-x01-y01
+ScaledBy=4.53822999999999987e-03
+Title=SOFT107
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+5.000000e-01	1.500000e+00	4.904737e+02	1.491939e+00	1.491939e+00
+1.500000e+00	2.500000e+00	2.519535e+02	1.069310e+00	1.069310e+00
+2.500000e+00	3.500000e+00	1.729883e+02	8.860364e-01	8.860364e-01
+# END HISTO1D
+
+
+# BEGIN HISTO1D /Pythia8_Soft.yoda/ALICE_2012_I944757/d04-x01-y01
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -41.0, up: 41.0}, "sys,luminosity uncertainty": {dn: -18.060000000000002, up: 18.060000000000002}, sys_1: {dn: -175.0, up: 69.0}, sys_2: {dn: -7.0, up: 7.0}, sys_3: {dn: -37.0, up: 120.0}}, 1: {stat: {dn: -30.0, up: 30.0}, "sys,luminosity uncertainty": {dn: -8.68, up: 8.68}, sys_1: {dn: -92.0, up: 52.0}, sys_2: {dn: -5.0, up: 5.0}, sys_3: {dn: -18.0, up: 57.0}}, 2: {stat: {dn: -27.0, up: 27.0}, "sys,luminosity uncertainty": {dn: -8.645000000000001, up: 8.645000000000001}, sys_1: {dn: -81.0, up: 36.0}, sys_2: {dn: -4.0, up: 4.0}, sys_3: {dn: -16.0, up: 57.0}}}
+LineColor=blue
+LineStyle=solid
+Path=/Pythia8_Soft.yoda/ALICE_2012_I944757/d04-x01-y01
+ScaledBy=4.53822979143514160e-02
+Title=Pythia8_Soft
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+5.000000e-01	1.500000e+00	4.906280e+02	4.718668e+00	4.718668e+00
+1.500000e+00	2.500000e+00	2.574538e+02	3.418163e+00	3.418163e+00
+2.500000e+00	3.500000e+00	1.728158e+02	2.800496e+00	2.800496e+00
+# END HISTO1D
+

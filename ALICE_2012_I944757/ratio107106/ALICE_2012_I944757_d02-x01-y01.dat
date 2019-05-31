@@ -1,0 +1,61 @@
+# BEGIN PLOT
+LegendOnly=/SOFT107.yoda/ALICE_2012_I944757/d02-x01-y01 /Pythia8_Soft.yoda/ALICE_2012_I944757/d02-x01-y01
+DrawOnly=/SOFT107.yoda/ALICE_2012_I944757/d02-x01-y01 /Pythia8_Soft.yoda/ALICE_2012_I944757/d02-x01-y01
+Title=Differential cross section for prompt $D^+$ production.
+ConnectBins=0
+RatioPlot=1
+LogY=1
+RatioPlotYMax=1.8
+RatioPlotYLabel=Ratio
+RatioPlotReference=/SOFT107.yoda/ALICE_2012_I944757/d02-x01-y01
+XLabel=$p_T$ [GeV/c]
+YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D /SOFT107.yoda/ALICE_2012_I944757/d02-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=/SOFT107.yoda/ALICE_2012_I944757/d02-x01-y01
+ScaledBy=4.53822999999999987e-03
+Title=SOFT107
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	7.625588e+01	5.882743e-01	5.882743e-01
+2.000000e+00	3.000000e+00	5.405032e+01	4.952704e-01	4.952704e-01
+3.000000e+00	4.000000e+00	3.133194e+01	3.770829e-01	3.770829e-01
+4.000000e+00	5.000000e+00	1.627863e+01	2.718017e-01	2.718017e-01
+5.000000e+00	6.000000e+00	9.117304e+00	2.034119e-01	2.034119e-01
+6.000000e+00	7.000000e+00	4.783294e+00	1.473353e-01	1.473353e-01
+7.000000e+00	8.000000e+00	2.514179e+00	1.068172e-01	1.068172e-01
+8.000000e+00	1.200000e+01	9.314718e-01	3.250859e-02	3.250859e-02
+1.200000e+01	1.600000e+01	1.713182e-01	1.394168e-02	1.394168e-02
+1.600000e+01	2.400000e+01	4.424774e-02	5.010070e-03	5.010070e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D /Pythia8_Soft.yoda/ALICE_2012_I944757/d02-x01-y01
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -23.0, up: 23.0}, sys: {dn: -61.0, up: 39.0}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -4.797, up: 4.797}}, 1: {stat: {dn: -6.1, up: 6.1}, sys: {dn: -14.5, up: 12.6}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -1.5456999999999999, up: 1.5456999999999999}}, 2: {stat: {dn: -2.2, up: 2.2}, sys: {dn: -6.5, up: 6.0}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.8240999999999999, up: 0.8240999999999999}}, 3: {stat: {dn: -0.96, up: 0.96}, sys: {dn: -2.64, up: 2.2}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.47190999999999994, up: 0.47190999999999994}}, 4: {stat: {dn: -0.47, up: 0.47}, sys: {dn: -1.0, up: 0.92}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.19351999999999997, up: 0.19351999999999997}}, 5: {stat: {dn: -0.32, up: 0.32}, sys: {dn: -0.55, up: 0.49}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.11315999999999998, up: 0.11315999999999998}}, 6: {stat: {dn: -0.22, up: 0.22}, sys: {dn: -0.29, up: 0.27}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.06149999999999999, up: 0.06149999999999999}}, 7: {stat: {dn: -0.056, up: 0.056}, sys: {dn: -0.115, up: 0.103}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.023575, up: 0.023575}}, 8: {stat: {dn: -0.026, up: 0.026}, sys: {dn: -0.02, up: 0.019}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.003485, up: 0.003485}}, 9: {stat: {dn: -0.007, up: 0.007}, sys: {dn: -0.004, up: 0.004}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.00082, up: 0.00082}}}
+LineColor=blue
+LineStyle=solid
+Path=/Pythia8_Soft.yoda/ALICE_2012_I944757/d02-x01-y01
+ScaledBy=4.53822979143514160e-02
+Title=Pythia8_Soft
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	7.960055e+01	1.900646e+00	1.900646e+00
+2.000000e+00	3.000000e+00	5.427723e+01	1.569466e+00	1.569466e+00
+3.000000e+00	4.000000e+00	3.104149e+01	1.186901e+00	1.186901e+00
+4.000000e+00	5.000000e+00	1.747218e+01	8.904650e-01	8.904650e-01
+5.000000e+00	6.000000e+00	8.214196e+00	6.105564e-01	6.105564e-01
+6.000000e+00	7.000000e+00	4.538230e+00	4.538230e-01	4.538230e-01
+7.000000e+00	8.000000e+00	1.906057e+00	2.941109e-01	2.941109e-01
+8.000000e+00	1.200000e+01	9.530283e-01	1.039839e-01	1.039839e-01
+1.200000e+01	1.600000e+01	1.474925e-01	4.090705e-02	4.090705e-02
+1.600000e+01	2.400000e+01	3.403672e-02	1.389544e-02	1.389544e-02
+# END HISTO1D
+
