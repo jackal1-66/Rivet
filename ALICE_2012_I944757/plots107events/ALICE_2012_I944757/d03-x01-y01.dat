@@ -1,0 +1,81 @@
+# BEGIN PLOT
+LegendOnly=/ALICE_2012_I944757/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Pythia107.yoda/ALICE_2012_I944757/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Herwig107.yoda/ALICE_2012_I944757/d03-x01-y01
+DrawOnly=/ALICE_2012_I944757/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Pythia107.yoda/ALICE_2012_I944757/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Herwig107.yoda/ALICE_2012_I944757/d03-x01-y01
+Title=Differential cross section for prompt $D^{*+}$ production.
+ConnectBins=0
+RatioPlot=1
+LogY=1
+RatioPlotYMax=1.8
+RatioPlotReference=/ALICE_2012_I944757/d03-x01-y01
+XLabel=$p_T$ [GeV/c]
+YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D /ALICE_2012_I944757/d03-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -22.0, up: 22.0}, sys: {dn: -55.0, up: 28.0}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -3.8, up: 3.8}}, 1: {stat: {dn: -5.9, up: 5.9}, sys: {dn: -13.2, up: 8.7}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -1.9684, up: 1.9684}}, 2: {stat: {dn: -2.3, up: 2.3}, sys: {dn: -5.2, up: 4.6}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -1.064, up: 1.064}}, 3: {stat: {dn: -0.87, up: 0.87}, sys: {dn: -1.88, up: 1.82}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.41838, up: 0.41838}}, 4: {stat: {dn: -0.45, up: 0.45}, sys: {dn: -1.0, up: 0.97}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.2166, up: 0.2166}}, 5: {stat: {dn: -0.27, up: 0.27}, sys: {dn: -0.57, up: 0.55}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.12387999999999998, up: 0.12387999999999998}}, 6: {stat: {dn: -0.21, up: 0.21}, sys: {dn: -0.3, up: 0.3}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.06612, up: 0.06612}}, 7: {stat: {dn: -0.05, up: 0.05}, sys: {dn: -0.116, up: 0.113}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.025726000000000002, up: 0.025726000000000002}}, 8: {stat: {dn: -0.016, up: 0.016}, sys: {dn: -0.031, up: 0.03}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.00608, up: 0.00608}}, 9: {stat: {dn: -0.004, up: 0.004}, sys: {dn: -0.007, up: 0.007}, "sys,uncertainty in min. bias cross section and branching ratios": {dn: -0.001026, up: 0.001026}}}
+IsRef=1
+Path=/ALICE_2012_I944757/d03-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	1.000000e+02	5.935857e+01	3.581117e+01
+2.000000e+00	3.000000e+00	5.180000e+01	1.459194e+01	1.069461e+01
+3.000000e+00	4.000000e+00	2.800000e+01	5.784643e+00	5.251866e+00
+4.000000e+00	5.000000e+00	1.101000e+01	2.113372e+00	2.060180e+00
+5.000000e+00	6.000000e+00	5.700000e+00	1.117773e+00	1.091016e+00
+6.000000e+00	7.000000e+00	3.260000e+00	6.427645e-01	6.250970e-01
+7.000000e+00	8.000000e+00	1.740000e+00	3.721181e-01	3.721181e-01
+8.000000e+00	1.200000e+01	6.770000e-01	1.289102e-01	1.262174e-01
+1.200000e+01	1.600000e+01	1.600000e-01	3.541139e-02	3.453935e-02
+1.600000e+01	2.400000e+01	2.700000e-02	8.127280e-03	8.127280e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Pythia107.yoda/ALICE_2012_I944757/d03-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Pythia107.yoda/ALICE_2012_I944757/d03-x01-y01
+ScaledBy=4.53822999999999987e-03
+Title=Pythia107
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	5.046966e+01	4.785843e-01	4.785843e-01
+2.000000e+00	3.000000e+00	3.746763e+01	4.123551e-01	4.123551e-01
+3.000000e+00	4.000000e+00	2.282730e+01	3.218625e-01	3.218625e-01
+4.000000e+00	5.000000e+00	1.256636e+01	2.388075e-01	2.388075e-01
+5.000000e+00	6.000000e+00	6.893571e+00	1.768746e-01	1.768746e-01
+6.000000e+00	7.000000e+00	3.884725e+00	1.327771e-01	1.327771e-01
+7.000000e+00	8.000000e+00	2.137506e+00	9.849109e-02	9.849109e-02
+8.000000e+00	1.200000e+01	7.011565e-01	2.820465e-02	2.820465e-02
+1.200000e+01	1.600000e+01	1.429543e-01	1.273538e-02	1.273538e-02
+1.600000e+01	2.400000e+01	2.722938e-02	3.930222e-03	3.930222e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Herwig107.yoda/ALICE_2012_I944757/d03-x01-y01
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Herwig107.yoda/ALICE_2012_I944757/d03-x01-y01
+ScaledBy=3.59188886529935485e-03
+Title=Herwig107
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	3.849713e+01	4.464357e-01	4.464357e-01
+2.000000e+00	3.000000e+00	3.819756e+01	4.449036e-01	4.449036e-01
+3.000000e+00	4.000000e+00	2.997216e+01	3.937023e-01	3.937023e-01
+4.000000e+00	5.000000e+00	1.962956e+01	3.191529e-01	3.191529e-01
+5.000000e+00	6.000000e+00	1.095224e+01	2.386442e-01	2.386442e-01
+6.000000e+00	7.000000e+00	6.187052e+00	1.765244e-01	1.765244e-01
+7.000000e+00	8.000000e+00	3.416370e+00	1.352386e-01	1.352386e-01
+8.000000e+00	1.200000e+01	1.149372e+00	3.910985e-02	3.910985e-02
+1.200000e+01	1.600000e+01	1.618672e-01	1.416484e-02	1.416484e-02
+1.600000e+01	2.400000e+01	4.173585e-02	5.479680e-03	5.479680e-03
+# END HISTO1D
+
