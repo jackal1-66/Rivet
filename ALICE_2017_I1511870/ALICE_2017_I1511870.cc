@@ -84,7 +84,7 @@ namespace Rivet {
         }
         ptm/=d0num;
         _h_ptd0->fill(1, weight);    
-            
+    }        
         
 
     }
@@ -134,4 +134,4 @@ namespace Rivet {
   DECLARE_RIVET_PLUGIN(ALICE_2017_I1511870);
 
 
-};
+}
