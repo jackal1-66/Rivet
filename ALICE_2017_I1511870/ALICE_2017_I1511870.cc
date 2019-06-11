@@ -62,7 +62,7 @@ namespace Rivet {
                 {    
                 if(p.abspid() == 421){
                     _h_D0->fill(p.pT()/GeV, weight); 
-                    _h_D0dummy->fill(p.pY()/GeV, weight);
+                    _h_D0dummy->fill(p.pT()/GeV, weight);
                     _h_D0int->fill(1, weight);
                     _h_cc->fill(1, weight);
                     ptm+=p.pT();
