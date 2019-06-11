@@ -51,10 +51,8 @@ namespace Rivet {
         foreach (const Particle& p, ufs.particles()) {
           if(p.abspid() == 421){
               if(not p.fromBottom())
-                  _h_D0full->fill(1,weigth);     
+                  _h_D0full->fill(1,weight);     
           if(p.absrap() < 0.5){
-            if(p.abspid() == 4)
-                _h_cc->fill(1, weight);
             if(p.fromBottom())
                 continue;
             else
@@ -62,11 +60,9 @@ namespace Rivet {
                 if(p.abspid() == 421){
                     _h_D0->fill(p.pT()/GeV, weight); 
                     _h_D0int->fill(1, weight);
+                    _h_cc->fill(1, weight);
                     ptm+=p.pT();
-                    d0num++;
-                    if(p.fromCharm())
-                        c0++; 
-                    }
+                    d0num++;}
                 else if(p.abspid() == 411){
                     _h_Dplus->fill(p.pT()/GeV, weight);
                     _h_Dplusint->fill(1, weight); 
@@ -122,7 +118,7 @@ namespace Rivet {
     //@{
     Histo1DPtr _h_D0, _h_Dplus, _h_Dstar, _h_Ds, _h_D0int, _h_Dplusint, _h_Dstarint, _h_Dsint, _h_cc, _h_D0full, _h_ptd0;
     Scatter2DPtr _h_DplusonD0, _h_DstaronD0, _h_DsonD0, _h_DsonDplus, _h_D0ext;
-    int cnum=0, cd=0, d0num=0;
+    int d0num=0;
     float cfrac=0, ptm=0;
     //@}
 
