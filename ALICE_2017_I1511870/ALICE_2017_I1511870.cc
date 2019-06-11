@@ -21,6 +21,8 @@ namespace Rivet {
 
       // Initialise and register projections
       declare(UnstableFinalState(), "UFS");
+      
+      std::vector<double> binEdges = {1., 2., 3., 4., 5., 6., 7., 8., 9., 10., 12., 16.};
 
       // Book histograms
       _h_D0 = bookHisto1D(1, 1, 1);
@@ -39,6 +41,7 @@ namespace Rivet {
       _h_ptd0 = bookHisto1D(14,1,1);
       _h_D0ext = bookScatter2D(15,1,1);
       _h_D0full = bookHisto1D(16,1,1);
+      _h_D0dummy = bookHisto1D("_h_D0dummy", binEdges, "D0 cross section without 0 bin");
 
     }
 
@@ -59,6 +62,7 @@ namespace Rivet {
                 {    
                 if(p.abspid() == 421){
                     _h_D0->fill(p.pT()/GeV, weight); 
+                    _h_D0dummy->fill(p.pY()/GeV, weight);
                     _h_D0int->fill(1, weight);
                     _h_cc->fill(1, weight);
                     ptm+=p.pT();
@@ -95,8 +99,8 @@ namespace Rivet {
       scale(_h_Dplus, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_Dstar, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_Ds, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
-      divide(_h_Dplus,_h_D0,_h_DplusonD0); //ratio plots
-      divide(_h_Dstar,_h_D0,_h_DstaronD0);
+      divide(_h_Dplus,_h_D0dummy,_h_DplusonD0); //ratio plots
+      divide(_h_Dstar,_h_D0dummy,_h_DstaronD0);
       divide(_h_Ds,_h_D0,_h_DsonD0);
       divide(_h_Ds,_h_Dplus,_h_DsonDplus);
       scale(_h_D0int, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
@@ -116,7 +120,7 @@ namespace Rivet {
 
     /// @name Histograms
     //@{
-    Histo1DPtr _h_D0, _h_Dplus, _h_Dstar, _h_Ds, _h_D0int, _h_Dplusint, _h_Dstarint, _h_Dsint, _h_cc, _h_D0full, _h_ptd0;
+    Histo1DPtr _h_D0, _h_Dplus, _h_Dstar, _h_Ds, _h_D0int, _h_Dplusint, _h_Dstarint, _h_Dsint, _h_cc, _h_D0full, _h_ptd0, _h_D0dummy;
     Scatter2DPtr _h_DplusonD0, _h_DstaronD0, _h_DsonD0, _h_DsonDplus, _h_D0ext;
     int d0num=0;
     float cfrac=0, ptm=0;
