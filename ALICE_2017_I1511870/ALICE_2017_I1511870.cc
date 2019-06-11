@@ -40,8 +40,8 @@ namespace Rivet {
       _h_Dsint = bookHisto1D(12,1,1);
       _h_cc = bookHisto1D(13,1,1);
       _h_ptd0 = bookHisto1D(14,1,1);
-      _h_D0ext = bookScatter2D(15,1,1);
-      _h_D0full = bookHisto1D(16,1,1);
+      _h_D0full = bookScatter2D(15,1,1);
+      _h_ccfull = bookHisto1D(16,1,1);
       _h_D0dummy = bookHisto1D("_h_D0dummy", binEdges, "D0 cross section for ratios");
       _h_D0dummy1 = bookHisto1D("_h_D0dummy1", binEdges1, "D0 cross section for Ds ratio");
       _h_Dplusdummy = bookHisto1D("_h_Dplusdummy", binEdges1, "Dplus cross section for Ds ratio");
@@ -57,7 +57,8 @@ namespace Rivet {
         foreach (const Particle& p, ufs.particles()) {
           if(p.abspid() == 421){
               if(not p.fromBottom())
-                  _h_D0full->fill(1,weight);     
+                  _h_D0full->fill(7000,weight);    
+                  _h_ccfull->fill(7000,weight); 
           if(p.absrap() < 0.5){
             if(p.fromBottom())
                 continue;
@@ -67,22 +68,22 @@ namespace Rivet {
                     _h_D0->fill(p.pT()/GeV, weight); 
                     _h_D0dummy->fill(p.pT()/GeV, weight);
                     _h_D0dummy1->fill(p.pT()/GeV, weight);
-                    _h_D0int->fill(1, weight);
-                    _h_cc->fill(1, weight);
-                    _h_ptd0->fill(1,weight*p.pT()/GeV);
+                    _h_D0int->fill(7000, weight);
+                    _h_cc->fill(7000, weight);
+                    _h_ptd0->fill(7000,weight*p.pT()/GeV);
                     }
                 else if(p.abspid() == 411){
                     _h_Dplus->fill(p.pT()/GeV, weight);
                     _h_Dplusdummy->fill(p.pT()/GeV, weight);
-                    _h_Dplusint->fill(1, weight); 
+                    _h_Dplusint->fill(7000, weight); 
                     }
                 else if(p.abspid() == 413){
                     _h_Dstar->fill(p.pT()/GeV, weight); 
-                    _h_Dstarint->fill(1, weight);    
+                    _h_Dstarint->fill(7000, weight);    
                     }
                 else if(p.abspid() == 431){
                     _h_Ds->fill(p.pT()/GeV, weight);
-                    _h_Dsint->fill(1, weight); 
+                    _h_Dsint->fill(7000, weight); 
                 }    
                 }
         }
@@ -116,8 +117,7 @@ namespace Rivet {
       scale(_h_cc, crossSection()/(microbarn*sumOfWeights()*0.542));
       scale(_h_ptd0, 1/sumOfWeights());
       scale(_h_D0full,crossSection()/(microbarn*2*sumOfWeights()));
-      divide(_h_D0full, _h_D0int, _h_D0ext);
-      scale(_h_D0full, 1/0.542);
+      scale(_h_ccfull, crossSection()/(microbarn*sumOfWeights()*0.542));
     }
 
     //@}
@@ -125,8 +125,8 @@ namespace Rivet {
 
     /// @name Histograms
     //@{
-    Histo1DPtr _h_D0, _h_Dplus, _h_Dstar, _h_Ds, _h_D0int, _h_Dplusint, _h_Dstarint, _h_Dsint, _h_cc, _h_D0full, _h_ptd0, _h_D0dummy, _h_D0dummy1, _h_Dplusdummy;
-    Scatter2DPtr _h_DplusonD0, _h_DstaronD0, _h_DsonD0, _h_DsonDplus, _h_D0ext;
+    Histo1DPtr _h_D0, _h_Dplus, _h_Dstar, _h_Ds, _h_D0int, _h_Dplusint, _h_Dstarint, _h_Dsint, _h_cc, _h_D0full, _h_ptd0, _h_D0dummy, _h_D0dummy1, _h_Dplusdummy , _h_ccfull;
+    Scatter2DPtr _h_DplusonD0, _h_DstaronD0, _h_DsonD0, _h_DsonDplus;
     int d0num=0;
     float cfrac=0, ptm=0;
     //@}
