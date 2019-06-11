@@ -69,8 +69,8 @@ namespace Rivet {
                     _h_D0dummy1->fill(p.pT()/GeV, weight);
                     _h_D0int->fill(1, weight);
                     _h_cc->fill(1, weight);
-                    ptm+=p.pT();
-                    d0num++;}
+                    _h_ptd0->fill(1,weight*p.pT()/GeV)
+                    }
                 else if(p.abspid() == 411){
                     _h_Dplus->fill(p.pT()/GeV, weight);
                     _h_Dplusdummy->fill(p.pT()/GeV, weight);
@@ -86,9 +86,7 @@ namespace Rivet {
                 }    
                 }
         }
-        }
-        ptm/=d0num;
-        _h_ptd0->fill(1, weight);    
+        }  
     }        
         
 
@@ -116,11 +114,10 @@ namespace Rivet {
       scale(_h_Dstarint, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_Dsint, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_cc, crossSection()/(microbarn*sumOfWeights()*0.542));
-      scale(_h_ptd0, ptm/sumOfWeights());
+      scale(_h_ptd0, 1/sumOfWeights());
       scale(_h_D0full,crossSection()/(microbarn*2*sumOfWeights()));
       divide(_h_D0full, _h_D0int, _h_D0ext);
       scale(_h_D0full, 1/0.542);
-
     }
 
     //@}
