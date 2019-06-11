@@ -27,10 +27,10 @@ namespace Rivet {
       _h_Dplus = bookHisto1D(2, 1, 1);
       _h_Dstar = bookHisto1D(3, 1, 1);
       _h_Ds = bookHisto1D(4, 1, 1);
-      _h_DplusonD0 = bookHisto1D(5, 1, 1);
-      _h_DstaronD0 = bookHisto1D(6, 1, 1);
-      _h_DsonD0 = bookHisto1D(7, 1, 1);
-      _h_DsonDplus = bookHisto1D(8, 1, 1);
+      _h_DplusonD0 = bookScatter2D(5, 1, 1);
+      _h_DstaronD0 = bookScatter2D(6, 1, 1);
+      _h_DsonD0 = bookScatter2D(7, 1, 1);
+      _h_DsonDplus = bookScatter2D(8, 1, 1);
 
     }
 
@@ -72,6 +72,10 @@ namespace Rivet {
       scale(_h_Dplus, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_Dstar, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_Ds, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
+      divide(_h_Dplus,_h_D0,_h_DplusonD0);
+      divide(_h_Dstar,_h_D0,_h_DstaronD0);
+      divide(_h_Ds,_h_D0,_h_DsonD0);
+      divide(_h_Ds,_h_Dplus,_h_DsonDplus);
 
     }
 
@@ -80,7 +84,8 @@ namespace Rivet {
 
     /// @name Histograms
     //@{
-    Histo1DPtr _h_D0, _h_Dplus, _h_Dstar, _h_Ds, _h_DplusonD0, _h_DstaronD0, _h_DsonD0, _h_DsonDplus;
+    Histo1DPtr _h_D0, _h_Dplus, _h_Dstar, _h_Ds;
+    Scatter2DPtr _h_DplusonD0, _h_DstaronD0, _h_DsonD0, _h_DsonDplus;
     //@}
 
 
