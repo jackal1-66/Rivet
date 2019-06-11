@@ -134,4 +134,4 @@ namespace Rivet {
   DECLARE_RIVET_PLUGIN(ALICE_2017_I1511870);
 
 
-}
+};
