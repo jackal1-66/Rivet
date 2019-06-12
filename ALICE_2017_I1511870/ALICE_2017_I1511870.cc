@@ -30,7 +30,7 @@ namespace Rivet {
       _h_Dplus = bookHisto1D(2, 1, 1);
       _h_Dstar = bookHisto1D(3, 1, 1);
       _h_Ds = bookHisto1D(4, 1, 1);
-      _h_DplusonD0 = bookScatter2D(5, 1, 1);
+      /*_h_DplusonD0 = bookScatter2D(5, 1, 1);
       _h_DstaronD0 = bookScatter2D(6, 1, 1);
       _h_DsonD0 = bookScatter2D(7, 1, 1);
       _h_DsonDplus = bookScatter2D(8, 1, 1);
@@ -44,7 +44,7 @@ namespace Rivet {
       _h_ccfull = bookHisto1D(16,1,1);
       _h_D0dummy = bookHisto1D("_h_D0dummy", binEdges, "D0 cross section for ratios");
       _h_D0dummy1 = bookHisto1D("_h_D0dummy1", binEdges1, "D0 cross section for Ds ratio");
-      _h_Dplusdummy = bookHisto1D("_h_Dplusdummy", binEdges1, "Dplus cross section for Ds ratio");
+      _h_Dplusdummy = bookHisto1D("_h_Dplusdummy", binEdges1, "Dplus cross section for Ds ratio");*/
       
     }
 
@@ -55,10 +55,10 @@ namespace Rivet {
         const UnstableFinalState& ufs = apply<UnstableFinalState>(event, "UFS");
         
         foreach (const Particle& p, ufs.particles()) {
-          if(p.abspid() == 421){
+          /*if(p.abspid() == 421){
               if(not p.fromBottom())
                   _h_D0full->fill(7000,weight);    
-                  _h_ccfull->fill(7000,weight); 
+                  _h_ccfull->fill(7000,weight); */
           if(p.absrap() < 0.5){
             if(p.fromBottom())
                 continue;
@@ -66,24 +66,24 @@ namespace Rivet {
                 {    
                 if(p.abspid() == 421){
                     _h_D0->fill(p.pT()/GeV, weight); 
-                    _h_D0dummy->fill(p.pT()/GeV, weight);
-                    _h_D0dummy1->fill(p.pT()/GeV, weight);
-                    _h_D0int->fill(7000, weight);
-                    _h_cc->fill(7000, weight);
-                    _h_ptd0->fill(7000,weight*p.pT()/GeV);
+                    //_h_D0dummy->fill(p.pT()/GeV, weight);
+                    //_h_D0dummy1->fill(p.pT()/GeV, weight);
+                    //_h_D0int->fill(7000, weight);
+                    //_h_cc->fill(7000, weight);
+                    //_h_ptd0->fill(7000,weight*p.pT()/GeV);
                     }
                 else if(p.abspid() == 411){
                     _h_Dplus->fill(p.pT()/GeV, weight);
-                    _h_Dplusdummy->fill(p.pT()/GeV, weight);
-                    _h_Dplusint->fill(7000, weight); 
+                    //_h_Dplusdummy->fill(p.pT()/GeV, weight);
+                    //_h_Dplusint->fill(7000, weight); 
                     }
                 else if(p.abspid() == 413){
                     _h_Dstar->fill(p.pT()/GeV, weight); 
-                    _h_Dstarint->fill(7000, weight);    
+                    //_h_Dstarint->fill(7000, weight);    
                     }
                 else if(p.abspid() == 431){
                     _h_Ds->fill(p.pT()/GeV, weight);
-                    _h_Dsint->fill(7000, weight); 
+                    //_h_Dsint->fill(7000, weight); 
                 }    
                 }
         }
@@ -103,7 +103,7 @@ namespace Rivet {
       scale(_h_Dplus, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_Dstar, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_Ds, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
-      scale(_h_D0dummy, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
+      /*scale(_h_D0dummy, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_D0dummy1, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_Dplusdummy, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       divide(_h_Dplus,_h_D0dummy,_h_DplusonD0); //ratio plots
@@ -117,7 +117,7 @@ namespace Rivet {
       scale(_h_cc, crossSection()/(microbarn*sumOfWeights()*0.542));
       scale(_h_ptd0, 1/sumOfWeights());
       scale(_h_D0full,crossSection()/(microbarn*2*sumOfWeights()));
-      scale(_h_ccfull, crossSection()/(microbarn*sumOfWeights()*0.542));
+      scale(_h_ccfull, crossSection()/(microbarn*sumOfWeights()*0.542));*/
     }
 
     //@}
