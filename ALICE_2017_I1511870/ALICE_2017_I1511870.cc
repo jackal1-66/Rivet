@@ -57,8 +57,8 @@ namespace Rivet {
         foreach (const Particle& p, ufs.particles()) {
           if(p.abspid() == 421){
               if(not p.fromBottom()){
-                  _h_D0full->fill(7000,weight);    
-                  _h_ccfull->fill(7000,weight);}}
+                  _h_D0full->fill(7000/GeV,weight);    
+                  _h_ccfull->fill(7000/GeV,weight);}}
           if(p.absrap() < 0.5){
             if(p.fromBottom())
                 continue;
@@ -68,22 +68,22 @@ namespace Rivet {
                     _h_D0->fill(p.pT()/GeV, weight); 
                     _h_D0dummy->fill(p.pT()/GeV, weight);
                     _h_D0dummy1->fill(p.pT()/GeV, weight);
-                    _h_D0int->fill(7000, weight);
-                    _h_cc->fill(7000, weight);
-                    _h_ptd0->fill(7000,weight*p.pT()/GeV);
+                    _h_D0int->fill(7000/GeV, weight);
+                    _h_cc->fill(7000/GeV, weight);
+                    _h_ptd0->fill(7000/GeV,p.pT()/GeV,weight);
                     }
                 else if(p.abspid() == 411){
                     _h_Dplus->fill(p.pT()/GeV, weight);
                     _h_Dplusdummy->fill(p.pT()/GeV, weight);
-                    _h_Dplusint->fill(7000, weight); 
+                    _h_Dplusint->fill(7000/GeV, weight); 
                     }
                 else if(p.abspid() == 413){
                     _h_Dstar->fill(p.pT()/GeV, weight); 
-                    _h_Dstarint->fill(7000, weight);    
+                    _h_Dstarint->fill(7000/GeV, weight);    
                     }
                 else if(p.abspid() == 431){
                     _h_Ds->fill(p.pT()/GeV, weight);
-                    _h_Dsint->fill(7000, weight); 
+                    _h_Dsint->fill(7000/GeV, weight); 
                 }    
                 }
         }
