@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=/ALICE_2017_I1511870/d08-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT104.yoda/ALICE_2017_I1511870/d08-x01-y01
-DrawOnly=/ALICE_2017_I1511870/d08-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT104.yoda/ALICE_2017_I1511870/d08-x01-y01
+LegendOnly=/ALICE_2017_I1511870/d08-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT106.yoda/ALICE_2017_I1511870/d08-x01-y01
+DrawOnly=/ALICE_2017_I1511870/d08-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT106.yoda/ALICE_2017_I1511870/d08-x01-y01
 RatioPlotReference=/ALICE_2017_I1511870/d08-x01-y01
 RatioPlot=1
 LogY=1
@@ -23,18 +23,14 @@ Title=Data
 # END HISTO1D
 
 
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT104.yoda/ALICE_2017_I1511870/d08-x01-y01
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT106.yoda/ALICE_2017_I1511870/d08-x01-y01
 ErrorBars=1
 LineColor=red
 LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT104.yoda/ALICE_2017_I1511870/d08-x01-y01
-Title=SOFT104
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT106.yoda/ALICE_2017_I1511870/d08-x01-y01
+Title=SOFT106
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
-2.000000e+00	4.000000e+00	3.500000e-01	1.537043e-01	1.537043e-01
-4.000000e+00	6.000000e+00	2.000000e-01	2.190890e-01	2.190890e-01
-6.000000e+00	8.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
-8.000000e+00	1.200000e+01	nan	nan	nan
 # END HISTO1D
 
