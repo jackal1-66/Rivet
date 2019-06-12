@@ -40,7 +40,7 @@ namespace Rivet {
       _h_Dsint = bookHisto1D(12,1,1);
       _h_cc = bookHisto1D(13,1,1);
       _h_ptd0 = bookHisto1D(14,1,1);
-      _h_D0full = bookScatter2D(15,1,1);
+      _h_D0full = bookHisto1D(15,1,1);
       _h_ccfull = bookHisto1D(16,1,1);
       _h_D0dummy = bookHisto1D("_h_D0dummy", binEdges, "D0 cross section for ratios");
       _h_D0dummy1 = bookHisto1D("_h_D0dummy1", binEdges1, "D0 cross section for Ds ratio");
