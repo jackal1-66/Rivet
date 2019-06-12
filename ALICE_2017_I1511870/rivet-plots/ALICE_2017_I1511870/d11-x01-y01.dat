@@ -29,6 +29,6 @@ Title=SOFT106
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
-6.980000e+03	7.020000e+03	5.085000e+01	1.127497e+00	1.127497e+00
+6.980000e+03	7.020000e+03	9.587500e+01	1.548184e+00	1.548184e+00
 # END HISTO1D
 
