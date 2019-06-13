@@ -59,9 +59,9 @@ LegendXPos=0.55
 END PLOT
 
 BEGIN PLOT /ALICE_2012_I944757/d06-x01-y01
-Title=Ratio of $D*^+$ to $D^0$ meson yield. 
+Title=Ratio of $D^{*+}$ to $D^0$ meson yield. 
 XLabel= $p_T$ [GeV/c]
-YLabel=$N(D*^+)/N(D^0)$
+YLabel=$N(D^{*+})/N(D^0)$
 ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8
@@ -119,7 +119,7 @@ LegendXPos=0.55
 END PLOT
 
 BEGIN PLOT /ALICE_2012_I944757/d11-x01-y01
-Title=Integrated cross sections for prompt $D*^{+}$ production. 
+Title=Integrated cross sections for prompt $D{*+}$ production. 
 XLabel= $E = 7 TeV$
 YLabel=$\frac{\text{d}\sigma}{\text{d}y}$ [$\mu$b]
 ConnectBins=0
