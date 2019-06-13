@@ -166,7 +166,7 @@ LegendXPos=0.55
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
-BEGIN PLOT /ALICE_2012_I944757/d13-x01-y01
+BEGIN PLOT /ALICE_2012_I944757/d15-x01-y01
 Title=Integrated cross sections for prompt D0 full y. 
 XLabel= $E = 7 TeV$
 YLabel=$\frac{\text{d}\sigma}{\text{d}y}$ [$\mu$b]
@@ -178,7 +178,7 @@ LegendXPos=0.55
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
-BEGIN PLOT /ALICE_2012_I944757/d13-x01-y01
+BEGIN PLOT /ALICE_2012_I944757/d16-x01-y01
 Title=Integrated cross sections for prompt cc full y. 
 XLabel= $E = 7 TeV$
 YLabel=$\frac{\text{d}\sigma}{\text{d}y}$ [$\mu$b]
