@@ -34,10 +34,10 @@ namespace Rivet {
       _h_DstaronD0 = bookScatter2D(6, 1, 1);
       _h_DsonD0 = bookScatter2D(7, 1, 1);
       _h_DsonDplus = bookScatter2D(8, 1, 1);
-      _h_D0int = bookScatter2D(9,1,1);
-      _h_Dplusint = bookScatter2D(10,1,1);
-      _h_Dstarint = bookScatter2D(11,1,1);
-      _h_Dsint = bookScatter2D(12,1,1);
+      _h_D0int = bookHisto1D(9,1,1);
+      _h_Dplusint = bookHisto1D(10,1,1);
+      _h_Dstarint = bookHisto1D(11,1,1);
+      _h_Dsint = bookHisto1D(12,1,1);
       _h_cc = bookHisto1D(13,1,1);
       _h_ptd0 = bookHisto1D(14,1,1);
       _h_D0full = bookHisto1D(15,1,1);
@@ -68,22 +68,22 @@ namespace Rivet {
                     _h_D0->fill(p.pT()/GeV, weight); 
                     _h_D0dummy->fill(p.pT()/GeV, weight);
                     _h_D0dummy1->fill(p.pT()/GeV, weight);
-                    //_h_D0int->fill(7.000000e+03/GeV, weight);
+                    _h_D0int->fill(7000, weight);
                     _h_cc->fill(7000, weight);
                     _h_ptd0->fill(7000,weight*p.pT()/GeV);
                     }
                 else if(p.abspid() == 411){
                     _h_Dplus->fill(p.pT()/GeV, weight);
                     _h_Dplusdummy->fill(p.pT()/GeV, weight);
-                    //_h_Dplusint->fill(7.000000e+03/GeV, weight); 
+                    _h_Dplusint->fill(7000, weight); 
                     }
                 else if(p.abspid() == 413){
                     _h_Dstar->fill(p.pT()/GeV, weight); 
-                    //_h_Dstarint->fill(7.000000e+03/GeV, weight);    
+                    _h_Dstarint->fill(7000, weight);    
                     }
                 else if(p.abspid() == 431){
                     _h_Ds->fill(p.pT()/GeV, weight);
-                    //_h_Dsint->fill(7.000000e+03/GeV, weight); 
+                    _h_Dsint->fill(7000, weight); 
                 }    
                 }
         }
@@ -106,10 +106,10 @@ namespace Rivet {
       divide(_h_Dstar,_h_D0dummy,_h_DstaronD0);
       divide(_h_Ds,_h_D0dummy1,_h_DsonD0);
       divide(_h_Ds,_h_Dplusdummy,_h_DsonDplus);
-      integrate(_h_D0, _h_D0int); // integration
-      integrate(_h_Dplus, _h_Dplusint); // integration
-      integrate(_h_Dstar, _h_Dstarint); // integration
-      integrate(_h_Ds, _h_Dsint); // integration
+      scale(_h_D0int, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
+      scale(_h_Dplusint, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
+      scale(_h_Dstarint, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
+      scale(_h_Dsint, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_cc, crossSection()/(microbarn*sumOfWeights()*0.542));
       scale(_h_ptd0, 1/sumOfWeights());
       scale(_h_D0full,crossSection()/(microbarn*2*sumOfWeights()));
@@ -121,8 +121,8 @@ namespace Rivet {
 
     /// @name Histograms
     //@{
-    Histo1DPtr _h_D0, _h_Dplus, _h_Dstar, _h_Ds, _h_cc, _h_D0full, _h_ptd0, _h_D0dummy, _h_D0dummy1, _h_Dplusdummy , _h_ccfull;
-    Scatter2DPtr _h_DplusonD0, _h_DstaronD0, _h_DsonD0, _h_DsonDplus, _h_D0int, _h_Dplusint, _h_Dstarint, _h_Dsint;
+    Histo1DPtr _h_D0, _h_Dplus, _h_Dstar, _h_Ds, _h_D0int, _h_Dplusint, _h_Dstarint, _h_Dsint, _h_cc, _h_D0full, _h_ptd0, _h_D0dummy, _h_D0dummy1, _h_Dplusdummy , _h_ccfull;
+    Scatter2DPtr _h_DplusonD0, _h_DstaronD0, _h_DsonD0, _h_DsonDplus;
     int d0num=0;
     float cfrac=0, ptm=0;
     //@}
