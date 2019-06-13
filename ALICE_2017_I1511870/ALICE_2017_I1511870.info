@@ -17,7 +17,7 @@ Energies: [7000]
 #Luminosity_fb: <Insert integrated luminosity, in inverse fb>
 Reentrant: True
 Description:
-  CERN-LHC. The production cross sections of the prompt charmed mesons D0, D+, D∗+ and Ds were measured at mid-rapidity in proton-proton collisions at a centre-of-mass energy  $\sqrt{s_{NN}}=7$ TeV  with the ALICE detector at the Large Hadron Collider (LHC). D mesons were reconstructed from their decays D0→Kπ, D+→Kππ, D∗+→D0π→Kππ, Ds→ϕπ→KKπ , and their charge conjugates. With respect to previous measurements in the same rapidity region, the coverage in transverse momentum pt is extended and the uncertainties are reduced by a factor of about two. The accuracy on the estimated total c-cbar production cross section is likewise improved. The measured pT-differential cross sections are compared with the results of three perturbative QCD calculations.
+  CERN-LHC. The production cross sections of the prompt charmed mesons $D^0$, $D^+$, $D^{∗+}$ and $D_s$ were measured at mid-rapidity in proton-proton collisions at a centre-of-mass energy  $\sqrt{s_{NN}}=7$ TeV  with the ALICE detector at the Large Hadron Collider (LHC). D mesons were reconstructed from their decays $D^0\to K\pi, D^+\to K\pi\pi$, $D^{∗+} \to D^0\pi \to K\pi\pi$, $D_s \to\phi \pi \to KK\pi $, and their charge conjugates. With respect to previous measurements in the same rapidity region, the coverage in transverse momentum pt is extended and the uncertainties are reduced by a factor of about two. The accuracy on the estimated total c-cbar production cross section is likewise improved. The measured pT-differential cross sections are compared with the results of three perturbative QCD calculations.
 Keywords: []
 BibKey: Acharya:2017jgo
 BibTeX: '@article{Acharya:2017jgo,
