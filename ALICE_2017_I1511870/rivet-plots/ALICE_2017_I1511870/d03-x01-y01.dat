@@ -1,9 +1,14 @@
 # BEGIN PLOT
 LegendOnly=/ALICE_2017_I1511870/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT106.yoda/ALICE_2017_I1511870/d03-x01-y01
 DrawOnly=/ALICE_2017_I1511870/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT106.yoda/ALICE_2017_I1511870/d03-x01-y01
-RatioPlotReference=/ALICE_2017_I1511870/d03-x01-y01
+Title=Differential cross section for prompt $D^{*+}$ production.
+ConnectBins=0
 RatioPlot=1
 LogY=1
+RatioPlotYMax=1.5
+RatioPlotReference=/ALICE_2017_I1511870/d03-x01-y01
+XLabel=$p_T$ [GeV/c]
+YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
 Legend=1
 # END PLOT
 
