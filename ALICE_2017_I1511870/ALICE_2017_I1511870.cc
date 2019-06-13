@@ -22,26 +22,28 @@ namespace Rivet {
       // Initialise and register projections
       declare(UnstableFinalState(), "UFS");
       
+      std::vector<double> binEdges0 = {0., 1., 2., 3., 4., 5., 6., 7., 8., 10., 12., 16., 24., 36.};
       std::vector<double> binEdges = {1., 2., 3., 4., 5., 6., 7., 8., 10., 12., 16., 24.};
       std::vector<double> binEdges1 = {2., 4., 6., 8., 12.};
+      double binEdge = 7.000000e+03/GeV;
 
       // Book histograms
-      _h_D0 = bookHisto1D(1, 1, 1);
-      _h_Dplus = bookHisto1D(2, 1, 1);
-      _h_Dstar = bookHisto1D(3, 1, 1);
-      _h_Ds = bookHisto1D(4, 1, 1);
-      _h_DplusonD0 = bookScatter2D(5, 1, 1);
-      _h_DstaronD0 = bookScatter2D(6, 1, 1);
-      _h_DsonD0 = bookScatter2D(7, 1, 1);
-      _h_DsonDplus = bookScatter2D(8, 1, 1);
-      _h_D0int = bookHisto1D(9,1,1);
-      _h_Dplusint = bookHisto1D(10,1,1);
-      _h_Dstarint = bookHisto1D(11,1,1);
-      _h_Dsint = bookHisto1D(12,1,1);
-      _h_cc = bookHisto1D(13,1,1);
-      _h_ptd0 = bookHisto1D(14,1,1);
-      _h_D0full = bookHisto1D(15,1,1);
-      _h_ccfull = bookHisto1D(16,1,1);
+      _h_D0 = bookHisto1D("d01-x01-y01", binEdges0, "D0");
+      _h_Dplus = bookHisto1D("d02-x01-y01", binEdges, "Dplus");
+      _h_Dstar = bookHisto1D("d03-x01-y01", binEdges, "Dstar");
+      _h_Ds = bookHisto1D("d04-x01-y01", binEdges1, "Ds");
+      _h_DplusonD0 = bookScatter2D("d05-x01-y01", binEdges, "DplusonD0");
+      _h_DstaronD0 = bookScatter2D("d06-x01-y01", binEdges, "DstaronD0");
+      _h_DsonD0 = bookScatter2D("d07-x01-y01", binEdges1, "DsonD0");
+      _h_DsonDplus = bookScatter2D("d08-x01-y01", binEdges1, "DsonDplus");
+      _h_D0int = bookHisto1D("d09-x01-y01", binEdge, "D0int");
+      _h_Dplusint = bookHisto1D("d10-x01-y01", binEdge, "Dplusint");
+      _h_Dstarint = bookHisto1D("d11-x01-y01", binEdge, "Dstarint");
+      _h_Dsint = bookHisto1D("d12-x01-y01", binEdge, "Dsint");
+      _h_cc = bookHisto1D("d13-x01-y01", binEdge, "cc");
+      _h_ptd0 = bookHisto1D("d14-x01-y01", binEdge, "ptd0");
+      _h_D0full = bookHisto1D("d15-x01-y01", binEdge, "D0full");
+      _h_ccfull = bookHisto1D("d16-x01-y01", binEdge, "ccfull");
       _h_D0dummy = bookHisto1D("_h_D0dummy", binEdges, "D0 cross section for ratios");
       _h_D0dummy1 = bookHisto1D("_h_D0dummy1", binEdges1, "D0 cross section for Ds ratio");
       _h_Dplusdummy = bookHisto1D("_h_Dplusdummy", binEdges1, "Dplus cross section for Ds ratio");
