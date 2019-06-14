@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=/ALICE_2017_I1511870/d05-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT106.yoda/ALICE_2017_I1511870/d05-x01-y01
-DrawOnly=/ALICE_2017_I1511870/d05-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT106.yoda/ALICE_2017_I1511870/d05-x01-y01
+LegendOnly=/ALICE_2017_I1511870/d05-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia106.yoda/ALICE_2017_I1511870/d05-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig106.yoda/ALICE_2017_I1511870/d05-x01-y01
+DrawOnly=/ALICE_2017_I1511870/d05-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia106.yoda/ALICE_2017_I1511870/d05-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig106.yoda/ALICE_2017_I1511870/d05-x01-y01
 Title=Ratio of $D^+$ to $D^0$ meson yield. 
 RatioPlotReference=/ALICE_2017_I1511870/d05-x01-y01
 ConnectBins=0
@@ -36,12 +36,35 @@ Title=Data
 # END HISTO1D
 
 
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT106.yoda/ALICE_2017_I1511870/d05-x01-y01
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia106.yoda/ALICE_2017_I1511870/d05-x01-y01
 ErrorBars=1
 LineColor=red
 LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT106.yoda/ALICE_2017_I1511870/d05-x01-y01
-Title=SOFT106
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia106.yoda/ALICE_2017_I1511870/d05-x01-y01
+Title=Pythia106
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	5.149276e-01	1.518511e-02	1.518511e-02
+2.000000e+00	3.000000e+00	5.330062e-01	1.909063e-02	1.909063e-02
+3.000000e+00	4.000000e+00	5.304549e-01	2.501869e-02	2.501869e-02
+4.000000e+00	5.000000e+00	5.033921e-01	3.204466e-02	3.204466e-02
+5.000000e+00	6.000000e+00	4.678663e-01	4.201742e-02	4.201742e-02
+6.000000e+00	7.000000e+00	5.589744e-01	6.684949e-02	6.684949e-02
+7.000000e+00	8.000000e+00	4.077670e-01	7.465395e-02	7.465395e-02
+8.000000e+00	1.000000e+01	5.384615e-01	8.924913e-02	8.924913e-02
+1.000000e+01	1.200000e+01	6.400000e-01	1.448862e-01	1.448862e-01
+1.200000e+01	1.600000e+01	5.454545e-01	1.957474e-01	1.957474e-01
+1.600000e+01	2.400000e+01	4.166667e-01	2.217878e-01	2.217878e-01
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig106.yoda/ALICE_2017_I1511870/d05-x01-y01
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig106.yoda/ALICE_2017_I1511870/d05-x01-y01
+Title=Herwig106
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus

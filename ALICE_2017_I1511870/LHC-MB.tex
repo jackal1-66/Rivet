@@ -10,12 +10,18 @@ This run was generated using Herwig~\cite{Bahr:2008pv} and the following models:
 \item The hadronization was performed using the cluster model of \cite{Webber:1983if}.
 \item Decays in Herwig include full spin correlations, based on \cite{Richardson:2001df}.
 \item Finite width effects for the scalar $f_0$ and $a_0$ mesons follow \cite{Flatte:1976xu}.
+\item Lambda_b to Lambda_c1(*) used the formfactors from \cite{Huang:2000xw}.
 \item Spin-1/2 baryons with one heavy quark were decayed using the form factors in \cite{Singleton:1990ye}.
+\item The K pi weak current has the form of \cite{Finkemeier:1996dh}.
+\item The KaonThreeMesonCurrent class implements the model of \cite{Finkemeier:1995sr} for the weak current with three mesons, at least one of which is a kaon.
+\item The decay of tau to three pions is modelled using the currents from \cite{Asner:1999kj}.
+\item The decay of the tau to four pions uses currents based on \cite{Bondar:2002mw}.
 \item The form factors from \cite{Ivanov:1996fj} were used.
 \item The form factors of \cite{Kiselev:2002vz} for the decay of the $B_c$ meson were used.
 \item The hadronization used the selection algorithm described in \cite{Kupco:1998fx}.
 \item The quark model calculation of \cite{Schlumpf:1994fb} was usedfor the weak decay of the light baryons
 \item The underlying event was simulated with an eikonal model for multiple partonic interactions.Details can be found in Ref.~\cite{Bahr:2008dy,Bahr:2009ek}.
+\item The weak decay current to two scalar mesons is implemented using the models of either Kuhn and Santamaria \cite{Kuhn:1990ad} or Gounaris and Sakurai \cite{Gounaris:1968mw}. The mixing parameters are taken from \cite{Asner:1999kj}, although the PDG values for the masses and widths are used, for the decay pi+/- pi0. The decay K pi is assumed to  be dominated by the lowest lying K* resonance.
 \item The weak decay of baryons containing a heavy quark used form factors from \cite{Cheng:1995fe,Cheng:1996cs}.
 \item Some decays used the Fortran HERWIG decay algorithm \cite{Corcella:2000bw}.
 \item The  non-leptonic decays of the Omega baryon were simulated using the NonLeptonicOmegaDecayer class based on the results of\cite{Borasoy:1999ip}.
@@ -24,6 +30,7 @@ This run was generated using Herwig~\cite{Bahr:2008pv} and the following models:
 \item The decay of eta to two pions follows \cite{Beisert:2003zs,Gormley:1970qz,Tippens:2001fm}.
 \item The decays of $\eta,\eta'\to\pi^+\pi^-\gamma$ were simulated using the matrix elements from \cite{Venugopal:1998fq,Holstein:2001bt}
 \item The decays of $\eta,\eta'\to\pi^0\gamma\gamma$ were simulated using the matrix elements of \cite{Holstein:2001bt}
+\item The decays of onium resonances to lighter states and pion pairs were modelled using the matrix element of \cite{Brown:1975dz}. The results of \cite{Bai:1999mj} are used for $\psi'\to\psi$ and \cite{Cronin-Hennessy:2007sj} for $\Upsilon(3S)$ and $\Upsilon(2S)$ decays. The remaining parameters are choosen to approximately reproduce the distributions from \cite{Aubert:2006bm} and \cite{Adam:2005mr}.
 \item The decays of the $a_1$ were modelled using the approach of \cite{Kuhn:1990ad}.
 
 \item The non-leptonic charm decays were simulated using the KornerKramerCharmDecayerclass which implements the model of \cite{Korner:1992wi}.
@@ -86,12 +93,52 @@ This run was generated using Herwig~\cite{Bahr:2008pv} and the following models:
   Phys.\ Lett.\  B {\bf 63}, 224 (1976).
   %%CITATION = PHLTA,B63,224;%%
 
+%\cite{Huang:2000xw}
+\bibitem{Huang:2000xw}
+  M.~Q.~Huang, J.~P.~Lee, C.~Liu and H.~S.~Song,
+  %``Leading Isgur-Wise form factor of Lambda/b to Lambda/c1 transition  using
+  %QCD sum rules,''
+  Phys.\ Lett.\  B {\bf 502}, 133 (2001)
+  [arXiv:hep-ph/0012114].
+  %%CITATION = PHLTA,B502,133;%%
+
 %\cite{Singleton:1990ye}
 \bibitem{Singleton:1990ye}
   R.~L.~Singleton,
   %``Semileptonic baryon decays with a heavy quark,''
   Phys.\ Rev.\  D {\bf 43} (1991) 2939.
   %%CITATION = PHRVA,D43,2939;%%
+
+%\cite{Finkemeier:1996dh}
+\bibitem{Finkemeier:1996dh}
+  M.~Finkemeier and E.~Mirkes,
+  %``The scalar contribution to tau --> K pi nu/tau,''
+  Z.\ Phys.\  C {\bf 72}, 619 (1996)
+  [arXiv:hep-ph/9601275].
+  %%CITATION = ZEPYA,C72,619;%%
+
+\bibitem{Finkemeier:1995sr}
+M.~Finkemeier and E.~Mirkes,
+Z.\ Phys.\  C {\bf 69} (1996) 243 [arXiv:hep-ph/9503474].
+ %%CITATION = ZEPYA,C69,243;%%
+
+  %\cite{Asner:1999kj}
+\bibitem{Asner:1999kj}
+  D.~M.~Asner {\it et al.}  [CLEO Collaboration],
+   ``Hadronic structure in the decay tau- --> nu/tau pi- pi0 pi0 and the  sign
+  %of the tau neutrino helicity,''
+  Phys.\ Rev.\  D {\bf 61}, 012002 (2000)
+  [arXiv:hep-ex/9902022].
+  %%CITATION = PHRVA,D61,012002;%%
+
+%\cite{Bondar:2002mw}
+\bibitem{Bondar:2002mw}
+  A.~E.~Bondar, S.~I.~Eidelman, A.~I.~Milstein, T.~Pierzchala, N.~I.~Root, Z.~Was and M.~Worek,
+   ``Novosibirsk hadronic currents for tau --> 4pi channels of tau decay
+  %library TAUOLA,''
+  Comput.\ Phys.\ Commun.\  {\bf 146}, 139 (2002)
+  [arXiv:hep-ph/0201149].
+  %%CITATION = CPHCB,146,139;%%
 
 %\cite{Ivanov:1996fj}
 \bibitem{Ivanov:1996fj}
@@ -127,6 +174,28 @@ Phys.\ Rev.\  D {\bf 51} (1995) 2262 [arXiv:hep-ph/9409272].
   ``Soft interactions in Herwig,''
   arXiv:0905.4671 [hep-ph].
   %%CITATION = ARXIV:0905.4671;%%
+
+%\cite{Kuhn:1990ad}
+\bibitem{Kuhn:1990ad}
+  J.~H.~Kuhn and A.~Santamaria,
+  %``Tau decays to pions,''
+  Z.\ Phys.\  C {\bf 48}, 445 (1990).
+  %%CITATION = ZEPYA,C48,445;%%
+%\cite{Gounaris:1968mw}
+\bibitem{Gounaris:1968mw}
+  G.~J.~Gounaris and J.~J.~Sakurai,
+   ``Finite width corrections to the vector meson dominance prediction for rho
+  %$\to$ e+ e-,''
+  Phys.\ Rev.\ Lett.\  {\bf 21}, 244 (1968).
+  %%CITATION = PRLTA,21,244;%%
+%\cite{Asner:1999kj}
+\bibitem{Asner:1999kj}
+  D.~M.~Asner {\it et al.}  [CLEO Collaboration],
+   ``Hadronic structure in the decay tau- --> nu/tau pi- pi0 pi0 and the  sign
+  %of the tau neutrino helicity,''
+  Phys.\ Rev.\  D {\bf 61}, 012002 (2000)
+  [arXiv:hep-ex/9902022].
+  %%CITATION = PHRVA,D61,012002;%%
 
 %\cite{Cheng:1995fe}
 \bibitem{Cheng:1995fe}
@@ -204,6 +273,11 @@ Phys.\ Rev.\  D {\bf 57} (1998) 4397 [arXiv:hep-ph/9710382].
  Phys.\ Scripta {\bf T99} (2002) 55 [arXiv:hep-ph/0112150].
 %%CITATION = PHSTB,T99,55;%%
 
+\bibitem{Brown:1975dz} L.~S.~Brown and R.~N.~Cahn,Phys.\ Rev.\ Lett.\  {\bf 35} (1975) 1.%%CITATION = PRLTA,35,1;%%
+\bibitem{Bai:1999mj} J.~Z.~Bai {\it et al.}  [BES Collaboration],Phys.\ Rev.\  D {\bf 62} (2000) 032002 [arXiv:hep-ex/9909038].%%CITATION = PHRVA,D62,032002;%%
+\bibitem{Cronin-Hennessy:2007sj} D.~Cronin-Hennessy{\it et al.} [CLEO Collaboration], arXiv:0706.2317 [hep-ex].%%CITATION = ARXIV:0706.2317;%%
+\bibitem{Aubert:2006bm} B.~Aubert {\it et al.}  [BABAR Collaboration],Phys.\ Rev.\ Lett.\  {\bf 96} (2006) 232001 [arXiv:hep-ex/0604031].%%CITATION = PRLTA,96,232001;%%
+\bibitem{Adam:2005mr} N.~E.~Adam {\it et al.}  [CLEO Collaboration],Phys.\ Rev.\ Lett.\  {\bf 96} (2006) 082004 [arXiv:hep-ex/0508023].%%CITATION = PRLTA,96,082004;%%
 \bibitem{Kuhn:1990ad} J.~H.~Kuhn and A.~Santamaria,
 Z.\ Phys.\  C {\bf 48} (1990) 445.
 %%CITATION = ZEPYA,C48,445;%%
