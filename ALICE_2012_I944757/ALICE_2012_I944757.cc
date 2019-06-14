@@ -38,7 +38,7 @@ namespace Rivet {
         const double weight = event.weight();
         const UnstableFinalState& ufs = apply<UnstableFinalState>(event, "UFS");
         
-        /*PDG code ID used inside the for each cycle: 421 = D0, 411 = D+, 413 = D*+ */
+        /*PDG code IDs used inside the foreach cycle: 421 = D0, 411 = D+, 413 = D*+ */
 
         foreach (const Particle& p, ufs.particles()) {
             if(p.fromBottom())
