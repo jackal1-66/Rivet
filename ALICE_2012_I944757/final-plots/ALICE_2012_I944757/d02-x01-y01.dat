@@ -1,13 +1,12 @@
 # BEGIN PLOT
 LegendOnly=/ALICE_2012_I944757/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Pythia107.yoda/ALICE_2012_I944757/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Herwig107.yoda/ALICE_2012_I944757/d02-x01-y01
 DrawOnly=/ALICE_2012_I944757/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Pythia107.yoda/ALICE_2012_I944757/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Herwig107.yoda/ALICE_2012_I944757/d02-x01-y01
-Title=Differential cross section for prompt $D^+$ production.
+Title=Differential cross section for prompt $D^+$ production at $|y| < 0.5$.
 RatioPlotReference=/ALICE_2012_I944757/d02-x01-y01
 ConnectBins=0
 RatioPlot=1
 LogY=1
 RatioPlotYMax=1.8
-CustomLegend=$|y| < 0.5$
 LegendXPos=0.45
 XLabel=$p_T$ [GeV/c]
 YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]

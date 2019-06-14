@@ -1,12 +1,11 @@
 # BEGIN PLOT
 LegendOnly=/ALICE_2012_I944757/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Pythia107.yoda/ALICE_2012_I944757/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Herwig107.yoda/ALICE_2012_I944757/d04-x01-y01
 DrawOnly=/ALICE_2012_I944757/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Pythia107.yoda/ALICE_2012_I944757/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Herwig107.yoda/ALICE_2012_I944757/d04-x01-y01
-Title=Integrated cross sections for prompt charm particle production. 
+Title=Integrated cross sections for D mesons at $|y| < 0.5$. 
 RatioPlotReference=/ALICE_2012_I944757/d04-x01-y01
 ConnectBins=0
 RatioPlot=1
 LogY=1
-CustomLegend=$|y| < 0.5$
 LegendXPos=0.45
 XLabel=pp\to D$^0$ X;\qquad \qquad \qquad pp\to D$^+$ X;\qquad \qquad \qquad pp\to D$^{*+}$ X. 
 YLabel=$\frac{\text{d}\sigma}{\text{d}y}$ [$\mu$b]
