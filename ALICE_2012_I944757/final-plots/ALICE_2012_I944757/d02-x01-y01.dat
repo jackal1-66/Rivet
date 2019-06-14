@@ -7,9 +7,11 @@ ConnectBins=0
 RatioPlot=1
 LogY=1
 RatioPlotYMax=1.8
+CustomLegend=|y| < 0.5
 LegendXPos=0.45
 XLabel=$p_T$ [GeV/c]
 YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
+XMin=0
 LegendYPos=0.93
 Legend=1
 # END PLOT
