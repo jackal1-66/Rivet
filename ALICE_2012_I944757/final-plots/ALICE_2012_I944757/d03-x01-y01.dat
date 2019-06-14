@@ -2,13 +2,15 @@
 LegendOnly=/ALICE_2012_I944757/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Pythia107.yoda/ALICE_2012_I944757/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Herwig107.yoda/ALICE_2012_I944757/d03-x01-y01
 DrawOnly=/ALICE_2012_I944757/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Pythia107.yoda/ALICE_2012_I944757/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2012_I944757/Herwig107.yoda/ALICE_2012_I944757/d03-x01-y01
 Title=Differential cross section for prompt $D^{*+}$ production.
+RatioPlotReference=/ALICE_2012_I944757/d03-x01-y01
 ConnectBins=0
 RatioPlot=1
 LogY=1
 RatioPlotYMax=1.8
-RatioPlotReference=/ALICE_2012_I944757/d03-x01-y01
+LegendXPos=0.45
 XLabel=$p_T$ [GeV/c]
 YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
+LegendYPos=0.93
 Legend=1
 # END PLOT
 
