@@ -38,6 +38,8 @@ namespace Rivet {
         const double weight = event.weight();
         const UnstableFinalState& ufs = apply<UnstableFinalState>(event, "UFS");
         
+        /*PDG code ID used inside the for each cycle: 421 = D0, 411 = D+, 413 = D*+ */
+
         foreach (const Particle& p, ufs.particles()) {
             if(p.fromBottom())
                 continue;
@@ -67,7 +69,8 @@ namespace Rivet {
       scale(_h_Dplus, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_Dstarp, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_integ, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
-      /* Obtained cross sections data at this point consider both particles and antiparticles hence the added factor 2 in the normalization solves the issue (as done in the paper) */
+      /* Obtained cross sections data at this point consider both particles and antiparticles 
+      hence the added factor 2 in the normalization solves the issue (as done in the paper) */
     }
 
     //@}
