@@ -67,7 +67,7 @@ namespace Rivet {
       scale(_h_Dplus, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_Dstarp, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_integ, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
-
+      /* Obtained cross sections data at this point consider both particles and antiparticles hence the added factor 2 in the normalization solves the issue (as done in the paper) */
     }
 
     //@}
