@@ -7,6 +7,8 @@ LegendXPos=0.45
 YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
 ConnectBins=0
 RatioPlotYMax=1.8
+XMin=0
+CustomLegend=|y| < 0.5
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -19,6 +21,8 @@ ConnectBins=0
 LegendYPos=0.93
 LegendXPos=0.45
 RatioPlotYMax=1.8
+XMin=0
+CustomLegend=|y| < 0.5
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -31,6 +35,8 @@ ConnectBins=0
 LegendYPos=0.93
 LegendXPos=0.45
 RatioPlotYMax=1.8
+XMin=0
+CustomLegend=|y| < 0.5
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -43,6 +49,8 @@ ConnectBins=0
 #PlotSize=10,8
 LegendYPos=0.93
 LegendXPos=0.45
+XMin=0
+CustomLegend=|y| < 0.5
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
