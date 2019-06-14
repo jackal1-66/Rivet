@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=/ALICE_2017_I1511870/d16-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia106.yoda/ALICE_2017_I1511870/d16-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig106.yoda/ALICE_2017_I1511870/d16-x01-y01
-DrawOnly=/ALICE_2017_I1511870/d16-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia106.yoda/ALICE_2017_I1511870/d16-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig106.yoda/ALICE_2017_I1511870/d16-x01-y01
+LegendOnly=/ALICE_2017_I1511870/d16-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia106.yoda/ALICE_2017_I1511870/d16-x01-y01
+DrawOnly=/ALICE_2017_I1511870/d16-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia106.yoda/ALICE_2017_I1511870/d16-x01-y01
 Title=Integrated cross sections for prompt cc full y. 
 RatioPlotReference=/ALICE_2017_I1511870/d16-x01-y01
 ConnectBins=0
@@ -33,20 +33,6 @@ LineStyle=solid
 Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia106.yoda/ALICE_2017_I1511870/d16-x01-y01
 ScaledBy=7.01090999576609897e-06
 Title=Pythia106
-XLabel=~
-YLabel=~
-# xlow	 xhigh	 val	 errminus	 errplus
-6.999500e+03	7.000500e+03	7.429132e+00	2.494093e-02	2.494093e-02
-# END HISTO1D
-
-
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig106.yoda/ALICE_2017_I1511870/d16-x01-y01
-ErrorBars=1
-LineColor=blue
-LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig106.yoda/ALICE_2017_I1511870/d16-x01-y01
-ScaledBy=7.01090999576609897e-06
-Title=Herwig106
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
