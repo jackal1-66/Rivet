@@ -21,20 +21,76 @@ namespace Rivet {
     void init() {
 
       // Initialise and register projections
-      declare(FinalState(Cuts::abseta < 5 && Cuts::pT > 100*MeV), "FS");
+      declare(UnstableFinalState(Cuts::absrap < 0.96), "UFS");
+      
+      std::vector<double> binEdges = {1., 2., 3., 4., 6., 8.};
+      std::vector<double> binEdges1 = {2., 4., 6., 8., 12.};
+      std::vector<double> binEdges2 = {2., 4., 6., 8.};
 
       // Book histograms
-      _h_XXXX = bookHisto1D(1, 1, 1);
-      _p_AAAA = bookProfile1D(2, 1, 1);
-      _c_BBBB = bookCounter(3, 1, 1);
+      _h_Lc = bookHisto1D(1, 1, 1);
+      _h_LcPb = bookHisto1D(2, 1, 1);
+      _h_LcD0= bookScatter2D(3, 1, 1);
+      _h_LcD0Pb = bookScatter2D(4, 1, 1);
+      _h_LcD0int = bookScatter2D(5, 1, 1);
+      _h_LcD0Pbint = bookScatter2D(6, 1, 1);
+      _h_RpPb = bookScatter2D(7,1,1);
+      _h_D0 = bookHisto1D("D0", binEdges, "D0");
+      _h_D0Pb = bookHisto1D("D0", binEdges1, "D0");
+      _h_Lcint = bookHisto1D("Lcint", 1, 0.0, 0.0 , "Lc int");
+      _h_D0int = bookHisto1D("D0int", 1, 0.0, 0.0 , "D0 int");
+      _h_LcintPb = bookHisto1D("LcintPb", 1, -0.5, -0.5 , "Lc int Pb");
+      _h_D0intPb = bookHisto1D("D0intPb", 1, -0.5, -0.5 , "D0 int Pb");
+      _h_LcR = bookHisto1D("LcR", binEdges2, "Lc R");
+      _h_LcRPb = bookHisto1D("LcRPb", binEdges2, "Lc RPb");
 
     }
 
 
     /// Perform the per-event analysis
     void analyze(const Event& event) {
-
-      /// @todo Do the event by event analysis here
+      PdgIdPair beamp; 
+      beamp.beamIds(event);
+      const double weight = event.weight();
+      const UnstableFinalState& ufs = apply<UnstableFinalState>(event, "UFS");
+        
+        /*PDG code IDs used inside the foreach cycle: 421 = D0, 411 = D+, 413 = D*+ */
+      if(beamp.first == 2212 && beamp.second ==2212){
+        foreach (const Particle& p, ufs.particles()) {
+            if(p.fromBottom())
+                continue;
+            else
+                {    
+                 if(p.absrap() < 0.5){
+                     if(p.abspid() == 421){
+                         _h_D0->fill(p.pT()/GeV, weight); 
+                         _h_D0int->fill(0,weight);}
+                     else if(p.abspid() == 4122){
+                         _h_Lc->fill(p.pT()/GeV, weight);
+                         _h_LcR->fill(p.pT()/GeV, weight);
+                         _h_Lcint->fill(0,weight);}
+                     }   
+                }    
+        }
+      }
+      else if((beamp.first == 2212 && beamp.second != 2212) || (beamp.second ==2212 && beamp.first != 2212)){
+        foreach (const Particle& p, ufs.particles()) {
+            if(p.fromBottom())
+                continue;
+            else
+                {    
+                 if(p.rap() < 0.04 && p.rap() > -0.96){
+                     if(p.abspid() == 421){
+                         _h_D0Pb->fill(p.pT()/GeV, weight); 
+                         _h_D0intPb->fill(-0.5,weight);}
+                     else if(p.abspid() == 4122){
+                         _h_LcPb->fill(p.pT()/GeV, weight);
+                         _h_LcRPb->fill(p.pT()/GeV, weight);
+                         _h_LcintPb->fill(-0.5,weight);}
+                     }    
+                }    
+        }
+      }  
 
     }
 
@@ -42,8 +98,20 @@ namespace Rivet {
     /// Normalise histograms etc., after the run
     void finalize() {
 
-      normalize(_h_YYYY); // normalize to unity
-      scale(_h_ZZZZ, crossSection()/picobarn/sumOfWeights()); // norm to cross section
+      scale(_h_D0, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
+      scale(_h_D0int, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
+      scale(_h_Lc, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
+      scale(_h_Lcint, crossSection()/(microbarn*2*sumOfWeights())); //norm to cross section
+      scale(_h_D0Pb, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
+      scale(_h_D0intPb, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
+      scale(_h_LcPb, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
+      scale(_h_LcintPb, crossSection()/(microbarn*2*sumOfWeights())); //norm to cross section
+      divide(_h_Lc, _h_D0, _h_LcD0);
+      divide(_h_LcPb, _h_D0Pb, _h_LcD0Pb);
+      divide(_h_Lcint, _h_D0int, _h_LcD0int);
+      divide(_h_LcintPb, _h_D0intPb, _h_LcD0intPb);
+      scale(_h_LcR, 208*crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
+      scale(_h_LcRPb, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
 
     }
 
@@ -52,9 +120,9 @@ namespace Rivet {
 
     /// @name Histograms
     //@{
-    Histo1DPtr _h_XXXX, _h_YYYY, _h_ZZZZ;
-    Profile1DPtr _p_AAAA;
-    CounterPtr _c_BBBB;
+    Histo1DPtr _h_Lc, _h_LcPb, _h_D0, _h_D0Pb, _h_Lcint, _h_LcPbint, _h_D0int, _h_D0Pbint, _h_LcR, _h_LcRPb ;
+    Scatter2DPtr _h_LcD0, _h_LcD0Pb, _h_LcD0int,  _h_LcD0Pbint, _h_RpPb;
+
     //@}
 
 
