@@ -2,6 +2,7 @@
 #include "Rivet/Analysis.hh"
 #include "Rivet/Projections/FinalState.hh"
 #include "Rivet/Projections/FastJets.hh"
+#include "Rivet/Projections/UnstableFinalState.hh"
 
 namespace Rivet {
 
@@ -50,7 +51,7 @@ namespace Rivet {
     /// Perform the per-event analysis
     void analyze(const Event& event) {
       PdgIdPair beamp; 
-      beamp.beamIds(event);
+      beamp = beamIds();
       const double weight = event.weight();
       const UnstableFinalState& ufs = apply<UnstableFinalState>(event, "UFS");
         
@@ -73,7 +74,7 @@ namespace Rivet {
                 }    
         }
       }
-      else if((beamp.first == 2212 && beamp.second != 2212) || (beamp.second ==2212 && beamp.first != 2212)){
+      else if((beamp.first == 2212 && beamp.second == 1000822080) || (beamp.second ==2212 && beamp.first == 1000822080)){
         foreach (const Particle& p, ufs.particles()) {
             if(p.fromBottom())
                 continue;
@@ -109,7 +110,7 @@ namespace Rivet {
       divide(_h_Lc, _h_D0, _h_LcD0);
       divide(_h_LcPb, _h_D0Pb, _h_LcD0Pb);
       divide(_h_Lcint, _h_D0int, _h_LcD0int);
-      divide(_h_LcintPb, _h_D0intPb, _h_LcD0intPb);
+      divide(_h_LcintPb, _h_D0intPb, _h_LcD0Pbint);
       scale(_h_LcR, 208*crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_LcRPb, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
 
@@ -120,7 +121,7 @@ namespace Rivet {
 
     /// @name Histograms
     //@{
-    Histo1DPtr _h_Lc, _h_LcPb, _h_D0, _h_D0Pb, _h_Lcint, _h_LcPbint, _h_D0int, _h_D0Pbint, _h_LcR, _h_LcRPb ;
+    Histo1DPtr _h_Lc, _h_LcPb, _h_D0, _h_D0Pb, _h_Lcint, _h_LcintPb, _h_D0int, _h_D0intPb, _h_LcR, _h_LcRPb ;
     Scatter2DPtr _h_LcD0, _h_LcD0Pb, _h_LcD0int,  _h_LcD0Pbint, _h_RpPb;
 
     //@}
