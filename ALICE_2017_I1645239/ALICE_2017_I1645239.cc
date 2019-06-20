@@ -37,11 +37,11 @@ namespace Rivet {
       _h_LcD0Pbint = bookScatter2D(6, 1, 1);
       _h_RpPb = bookScatter2D(7,1,1);
       _h_D0 = bookHisto1D("D0", binEdges, "D0");
-      _h_D0Pb = bookHisto1D("D0", binEdges1, "D0");
-      _h_Lcint = bookHisto1D("Lcint", 1, 0.0, 0.0 , "Lc int");
-      _h_D0int = bookHisto1D("D0int", 1, 0.0, 0.0 , "D0 int");
-      _h_LcintPb = bookHisto1D("LcintPb", 1, -0.5, -0.5 , "Lc int Pb");
-      _h_D0intPb = bookHisto1D("D0intPb", 1, -0.5, -0.5 , "D0 int Pb");
+      _h_D0Pb = bookHisto1D("D0Pb", binEdges1, "D0");
+      _h_Lcint = bookHisto1D("Lcint", 1, -0.1, 0.1 , "Lc int");
+      _h_D0int = bookHisto1D("D0int", 1, -0.1, 0.1 , "D0 int");
+      _h_LcintPb = bookHisto1D("LcintPb", 1, -0.6, -0.4 , "Lc int Pb");
+      _h_D0intPb = bookHisto1D("D0intPb", 1, -0.6, -0.4 , "D0 int Pb");
       _h_LcR = bookHisto1D("LcR", binEdges2, "Lc R");
       _h_LcRPb = bookHisto1D("LcRPb", binEdges2, "Lc RPb");
 
