@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=/ALICE_2017_I1645239/d06-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia104pPb.yoda/ALICE_2017_I1645239/d06-x01-y01
-DrawOnly=/ALICE_2017_I1645239/d06-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia104pPb.yoda/ALICE_2017_I1645239/d06-x01-y01
+LegendOnly=/ALICE_2017_I1645239/d06-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia104pPb.yoda/ALICE_2017_I1645239/d06-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/SOFT104pPb.yoda/ALICE_2017_I1645239/d06-x01-y01
+DrawOnly=/ALICE_2017_I1645239/d06-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia104pPb.yoda/ALICE_2017_I1645239/d06-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/SOFT104pPb.yoda/ALICE_2017_I1645239/d06-x01-y01
 RatioPlotReference=/ALICE_2017_I1645239/d06-x01-y01
 RatioPlot=1
 LogY=1
@@ -30,5 +30,18 @@ XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
 -6.000000e-01	-4.000000e-01	6.133048e-02	1.178703e-02	1.178703e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/SOFT104pPb.yoda/ALICE_2017_I1645239/d06-x01-y01
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/SOFT104pPb.yoda/ALICE_2017_I1645239/d06-x01-y01
+Title=SOFT104pPb
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+-6.000000e-01	-4.000000e-01	nan	nan	nan
 # END HISTO1D
 
