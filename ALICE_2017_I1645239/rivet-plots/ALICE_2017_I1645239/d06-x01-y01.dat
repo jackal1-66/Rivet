@@ -29,7 +29,6 @@ Title=SOFT104pp
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
--6.000000e-01	-4.000000e-01	nan	nan	nan
 # END HISTO1D
 
 
@@ -55,6 +54,5 @@ Title=Pythia104pp5TeV
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
--6.000000e-01	-4.000000e-01	nan	nan	nan
 # END HISTO1D
 

@@ -22,6 +22,7 @@ Description:
   and tuning. Use LaTeX for maths like $\pT > 50\;\GeV$.>'
 Keywords: []
 BibKey: Acharya:2017kfy
+Reentrant: True
 BibTeX: '@article{Acharya:2017kfy,
       author         = "Acharya, Shreyasi and others",
       title          = "{$\Lambda_{\rm c}^+$ production in pp collisions at

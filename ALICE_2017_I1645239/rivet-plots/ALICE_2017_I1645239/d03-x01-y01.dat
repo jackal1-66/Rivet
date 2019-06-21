@@ -50,11 +50,6 @@ Title=Pythia104pPb
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
-1.000000e+00	2.000000e+00	nan	nan	nan
-2.000000e+00	3.000000e+00	nan	nan	nan
-3.000000e+00	4.000000e+00	nan	nan	nan
-4.000000e+00	6.000000e+00	nan	nan	nan
-6.000000e+00	8.000000e+00	nan	nan	nan
 # END HISTO1D
 
 
@@ -67,10 +62,5 @@ Title=Pythia104pp5TeV
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
-1.000000e+00	2.000000e+00	nan	nan	nan
-2.000000e+00	3.000000e+00	nan	nan	nan
-3.000000e+00	4.000000e+00	nan	nan	nan
-4.000000e+00	6.000000e+00	nan	nan	nan
-6.000000e+00	8.000000e+00	nan	nan	nan
 # END HISTO1D
 
