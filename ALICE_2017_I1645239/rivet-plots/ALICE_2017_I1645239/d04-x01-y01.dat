@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia104pPb.yoda/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/SOFT104pPb.yoda/ALICE_2017_I1645239/d04-x01-y01
-DrawOnly=/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia104pPb.yoda/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/SOFT104pPb.yoda/ALICE_2017_I1645239/d04-x01-y01
+LegendOnly=/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/SOFT104pp.yoda/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia104pPb.yoda/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia104pp5TeV.yoda/ALICE_2017_I1645239/d04-x01-y01
+DrawOnly=/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/SOFT104pp.yoda/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia104pPb.yoda/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia104pp5TeV.yoda/ALICE_2017_I1645239/d04-x01-y01
 RatioPlotReference=/ALICE_2017_I1645239/d04-x01-y01
 RatioPlot=1
 LogY=1
@@ -23,9 +23,25 @@ Title=Data
 # END HISTO1D
 
 
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia104pPb.yoda/ALICE_2017_I1645239/d04-x01-y01
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/SOFT104pp.yoda/ALICE_2017_I1645239/d04-x01-y01
 ErrorBars=1
 LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/SOFT104pp.yoda/ALICE_2017_I1645239/d04-x01-y01
+Title=SOFT104pp
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	nan	nan	nan
+4.000000e+00	6.000000e+00	nan	nan	nan
+6.000000e+00	8.000000e+00	nan	nan	nan
+8.000000e+00	1.200000e+01	nan	nan	nan
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia104pPb.yoda/ALICE_2017_I1645239/d04-x01-y01
+ErrorBars=1
+LineColor=blue
 LineStyle=solid
 Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia104pPb.yoda/ALICE_2017_I1645239/d04-x01-y01
 Title=Pythia104pPb
@@ -39,12 +55,12 @@ YLabel=~
 # END HISTO1D
 
 
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/SOFT104pPb.yoda/ALICE_2017_I1645239/d04-x01-y01
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia104pp5TeV.yoda/ALICE_2017_I1645239/d04-x01-y01
 ErrorBars=1
-LineColor=blue
+LineColor=green
 LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/SOFT104pPb.yoda/ALICE_2017_I1645239/d04-x01-y01
-Title=SOFT104pPb
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia104pp5TeV.yoda/ALICE_2017_I1645239/d04-x01-y01
+Title=Pythia104pp5TeV
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus

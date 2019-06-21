@@ -44,7 +44,8 @@ namespace Rivet {
       _h_D0intPb = bookHisto1D("D0intPb", 1, -0.6, -0.4 , "D0 int Pb");
       _h_LcR = bookHisto1D("LcR", binEdges2, "Lc R");
       _h_LcRPb = bookHisto1D("LcRPb", binEdges2, "Lc RPb");
-
+      _h_Lc5TeV = bookHisto1D("Lc5TeV", binEdges2, "Lc 5 TeV");
+      _h_FONLL = bookScatter2D("FONLL");
     }
 
 
@@ -57,7 +58,21 @@ namespace Rivet {
         
         /*PDG code IDs used inside the foreach cycle: 421 = D0, 411 = D+, 413 = D*+ */
       if(beamp.first == 2212 && beamp.second ==2212){
-        foreach (const Particle& p, ufs.particles()) {
+        if(sqrtS()==5000){
+         foreach (const Particle& p, ufs.particles()) {
+            if(p.fromBottom())
+                continue;
+            else
+                {    
+                 if(p.absrap() < 0.5){
+                     if(p.abspid() == 4122){
+                         _h_Lc5TeV->fill(p.pT()/GeV, weight);
+                         }   
+                }    
+        } 
+        }}
+       else{
+         foreach (const Particle& p, ufs.particles()) {
             if(p.fromBottom())
                 continue;
             else
@@ -73,7 +88,7 @@ namespace Rivet {
                      }   
                 }    
         }
-      }
+      }}
       else if((beamp.first == 2212 && beamp.second == 1000822080) || (beamp.second ==2212 && beamp.first == 1000822080)){
         foreach (const Particle& p, ufs.particles()) {
             if(p.fromBottom())
@@ -113,7 +128,9 @@ namespace Rivet {
       divide(_h_LcintPb, _h_D0intPb, _h_LcD0Pbint);
       scale(_h_LcR, 208*crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_LcRPb, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
-
+      scale(_h_Lc5TeV, crossSection()/(microbarn*2*sumOfWeights()));
+      divide(_h_Lc5TeV, _h_LcR, _h_FONLL);
+      divide(_h_LcRPb, _h_LcR, _h_RpPb);
     }
 
     //@}
@@ -121,8 +138,8 @@ namespace Rivet {
 
     /// @name Histograms
     //@{
-    Histo1DPtr _h_Lc, _h_LcPb, _h_D0, _h_D0Pb, _h_Lcint, _h_LcintPb, _h_D0int, _h_D0intPb, _h_LcR, _h_LcRPb ;
-    Scatter2DPtr _h_LcD0, _h_LcD0Pb, _h_LcD0int,  _h_LcD0Pbint, _h_RpPb;
+    Histo1DPtr _h_Lc, _h_LcPb, _h_D0, _h_D0Pb, _h_Lcint, _h_LcintPb, _h_D0int, _h_D0intPb, _h_LcR, _h_LcRPb, _h_Lc5TeV ;
+    Scatter2DPtr _h_LcD0, _h_LcD0Pb, _h_LcD0int,  _h_LcD0Pbint, _h_RpPb, _h_FONLL;
 
     //@}
 
