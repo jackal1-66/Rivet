@@ -24,7 +24,6 @@ namespace Rivet {
       
       std::vector<double> binEdges = {1., 2., 3., 4., 5., 6., 7., 8., 10., 12., 16., 24.};
       std::vector<double> binEdges1 = {2., 4., 6., 8., 12.};
-      std::vector<double> binEdge = {7000.};
 
       // Book histograms
       _h_D0 = bookHisto1D(1, 1, 1);
@@ -43,8 +42,8 @@ namespace Rivet {
       _h_ptd0 = bookScatter2D(14,1,1);
       _h_D0full = bookHisto1D(15,1,1);
       _h_ccfull = bookHisto1D(16,1,1);
-      _h_ptdummy = bookHisto1D("_h_ptmeanD0", binEdge, "Pt dummy");
-      _h_wei = bookHisto1D("_h_wei", binEdge, "Weight dummy");
+      _h_ptdummy = bookHisto1D("_h_ptmeanD0",1,6999.5,7000.5, "Pt dummy");
+      _h_wei = bookHisto1D("_h_wei",1,6999.5,7000.5, "Weight dummy");
       _h_D0dummy = bookHisto1D("_h_D0dummy", binEdges, "D0 cross section for ratios");
       _h_D0dummy1 = bookHisto1D("_h_D0dummy1", binEdges1, "D0 cross section for Ds ratio");
       _h_Dplusdummy = bookHisto1D("_h_Dplusdummy", binEdges1, "Dplus cross section for Ds ratio");
@@ -125,7 +124,7 @@ namespace Rivet {
 
     /// @name Histograms
     //@{
-    Histo1DPtr _h_D0, _h_Dplus, _h_Dstar, _h_Ds, _h_D0int, _h_Dplusint, _h_wei _h_Dstarint, _h_Dsint, _h_cc, _h_D0full, _h_D0dummy, _h_D0dummy1, _h_Dplusdummy , _h_ccfull, _h_ptdummy;
+    Histo1DPtr _h_D0, _h_Dplus, _h_Dstar, _h_Ds, _h_D0int, _h_Dplusint, _h_wei, _h_Dstarint, _h_Dsint, _h_cc, _h_D0full, _h_D0dummy, _h_D0dummy1, _h_Dplusdummy , _h_ccfull, _h_ptdummy;
     Scatter2DPtr _h_DplusonD0, _h_DstaronD0, _h_DsonD0, _h_DsonDplus, _h_ptd0;
     //@}
 

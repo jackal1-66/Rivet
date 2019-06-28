@@ -31,11 +31,11 @@ ErrorBars=1
 LineColor=red
 LineStyle=solid
 Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT105test.yoda/ALICE_2017_I1511870/d15-x01-y01
-ScaledBy=2.05955296400630984e-05
+ScaledBy=4.53823000000000009e-04
 Title=SOFT105test
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
-6.999500e+03	7.000500e+03	4.064439e+00	4.294806e-02	4.294806e-02
+6.999500e+03	7.000500e+03	4.143404e+00	4.336326e-02	4.336326e-02
 # END HISTO1D
 
