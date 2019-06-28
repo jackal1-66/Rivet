@@ -39,10 +39,9 @@ namespace Rivet {
       _h_Dstarint = bookHisto1D(11,1,1);
       _h_Dsint = bookHisto1D(12,1,1);
       _h_cc = bookHisto1D(13,1,1);
-      _h_ptd0 = bookScatter2D(14,1,1);
+      _h_ptd0 = bookHisto1D(14,1,1);
       _h_D0full = bookHisto1D(15,1,1);
       _h_ccfull = bookHisto1D(16,1,1);
-      _h_ptdummy = bookHisto1D("_h_ptmeanD0",1,6999.5,7000.5, "Pt dummy");
       _h_wei = bookHisto1D("_h_wei",1,6999.5,7000.5, "Weight dummy");
       _h_D0dummy = bookHisto1D("_h_D0dummy", binEdges, "D0 cross section for ratios");
       _h_D0dummy1 = bookHisto1D("_h_D0dummy1", binEdges1, "D0 cross section for Ds ratio");
@@ -72,7 +71,7 @@ namespace Rivet {
                     _h_D0dummy1->fill(p.pT()/GeV, weight);
                     _h_D0int->fill(7.000000e+03/GeV, weight);
                     _h_cc->fill(7.000000e+03/GeV, weight);
-                    _h_ptdummy->fill(7.000000e+03/GeV,p.pT()/GeV,weight);
+                    _h_ptd0->fill(7.000000e+03/GeV,p.pT()/GeV,weight);
                     _h_wei->fill(7.000000e+03/GeV,weight,weight);
                     }
                 else if(p.abspid() == 411){
@@ -114,7 +113,7 @@ namespace Rivet {
       scale(_h_Dstarint, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_Dsint, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_cc, crossSection()/(microbarn*2*sumOfWeights()*0.542));
-      divide(_h_ptdummy, _h_wei, _h_ptd0);
+      scale(_h_ptd0, 1/_h_wei->bin(0).area());
       scale(_h_D0full,crossSection()/(millibarn*2*sumOfWeights()));
       scale(_h_ccfull, crossSection()/(millibarn*2*sumOfWeights()*0.542));
     }
@@ -124,8 +123,8 @@ namespace Rivet {
 
     /// @name Histograms
     //@{
-    Histo1DPtr _h_D0, _h_Dplus, _h_Dstar, _h_Ds, _h_D0int, _h_Dplusint, _h_wei, _h_Dstarint, _h_Dsint, _h_cc, _h_D0full, _h_D0dummy, _h_D0dummy1, _h_Dplusdummy , _h_ccfull, _h_ptdummy;
-    Scatter2DPtr _h_DplusonD0, _h_DstaronD0, _h_DsonD0, _h_DsonDplus, _h_ptd0;
+    Histo1DPtr _h_D0, _h_Dplus, _h_Dstar, _h_Ds, _h_D0int, _h_Dplusint, _h_wei, _h_Dstarint, _h_Dsint, _h_cc, _h_D0full, _h_D0dummy, _h_D0dummy1, _h_Dplusdummy , _h_ccfull, _h_ptd0;
+    Scatter2DPtr _h_DplusonD0, _h_DstaronD0, _h_DsonD0, _h_DsonDplus;
     //@}
 
 
