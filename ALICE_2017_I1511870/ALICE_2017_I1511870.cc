@@ -71,7 +71,6 @@ namespace Rivet {
                     _h_D0int->fill(7.000000e+03/GeV, weight);
                     _h_cc->fill(7.000000e+03/GeV, weight);
                     _h_ptd0->fill(7.000000e+03/GeV,p.pT()/GeV,weight);
-                    wd0 = wd0 + weight;
                     }
                 else if(p.abspid() == 411){
                     _h_Dplus->fill(p.pT()/GeV, weight);
@@ -112,7 +111,7 @@ namespace Rivet {
       scale(_h_Dstarint, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_Dsint, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       scale(_h_cc, crossSection()/(microbarn*2*sumOfWeights()*0.542));
-      scale(_h_ptd0, 1/wd0);
+      scale(_h_ptd0, 1/sumOfWeights());
       scale(_h_D0full,crossSection()/(millibarn*2*sumOfWeights()));
       scale(_h_ccfull, crossSection()/(millibarn*2*sumOfWeights()*0.542));
     }
@@ -124,8 +123,6 @@ namespace Rivet {
     //@{
     Histo1DPtr _h_D0, _h_Dplus, _h_Dstar, _h_Ds, _h_D0int, _h_Dplusint, _h_Dstarint, _h_Dsint, _h_cc, _h_D0full, _h_ptd0, _h_D0dummy, _h_D0dummy1, _h_Dplusdummy , _h_ccfull;
     Scatter2DPtr _h_DplusonD0, _h_DstaronD0, _h_DsonD0, _h_DsonDplus;
-    int d0num=0;
-    float cfrac=0, wd0=0;
     //@}
 
 
