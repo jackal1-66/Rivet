@@ -1,0 +1,60 @@
+# BEGIN PLOT
+LegendOnly=/ALICE_2017_I1511870/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT105test.yoda/ALICE_2017_I1511870/d03-x01-y01
+DrawOnly=/ALICE_2017_I1511870/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT105test.yoda/ALICE_2017_I1511870/d03-x01-y01
+Title=Differential cross section for prompt $D^{*+}$ production.
+ConnectBins=0
+RatioPlot=1
+LogY=1
+RatioPlotYMax=1.5
+RatioPlotReference=/ALICE_2017_I1511870/d03-x01-y01
+XLabel=$p_T$ [GeV/c]
+YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D /ALICE_2017_I1511870/d03-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -22.7, up: 22.7}, sys: {dn: -12.5, up: 12.5}, "sys,uncertainty on branching ratio": {dn: -1.3780000000000001, up: 1.3780000000000001}, "sys,uncertainty on integrated luminomisty": {dn: -3.71, up: 3.71}}, 1: {stat: {dn: -5.79, up: 5.79}, sys: {dn: -4.33, up: 4.3}, "sys,uncertainty on branching ratio": {dn: -0.6721, up: 0.6721}, "sys,uncertainty on integrated luminomisty": {dn: -1.8095, up: 1.8095}}, 2: {stat: {dn: -2.13, up: 2.13}, sys: {dn: -2.12, up: 2.1}, "sys,uncertainty on branching ratio": {dn: -0.3302, up: 0.3302}, "sys,uncertainty on integrated luminomisty": {dn: -0.889, up: 0.889}}, 3: {stat: {dn: -0.906, up: 0.906}, sys: {dn: -0.935, up: 0.92}, "sys,uncertainty on branching ratio": {dn: -0.1482, up: 0.1482}, "sys,uncertainty on integrated luminomisty": {dn: -0.399, up: 0.399}}, 4: {stat: {dn: -0.39, up: 0.39}, sys: {dn: -0.459, up: 0.449}, "sys,uncertainty on branching ratio": {dn: -0.07228, up: 0.07228}, "sys,uncertainty on integrated luminomisty": {dn: -0.1946, up: 0.1946}}, 5: {stat: {dn: -0.205, up: 0.205}, sys: {dn: -0.237, up: 0.23}, "sys,uncertainty on branching ratio": {dn: -0.03692, up: 0.03692}, "sys,uncertainty on integrated luminomisty": {dn: -0.09939999999999999, up: 0.09939999999999999}}, 6: {stat: {dn: -0.147, up: 0.147}, sys: {dn: -0.127, up: 0.124}, "sys,uncertainty on branching ratio": {dn: -0.01976, up: 0.01976}, "sys,uncertainty on integrated luminomisty": {dn: -0.0532, up: 0.0532}}, 7: {stat: {dn: -0.0656, up: 0.0656}, sys: {dn: -0.0621, up: 0.0599}, "sys,uncertainty on branching ratio": {dn: -0.009217, up: 0.009217}, "sys,uncertainty on integrated luminomisty": {dn: -0.024815, up: 0.024815}}, 8: {stat: {dn: -0.0455, up: 0.0455}, sys: {dn: -0.0314, up: 0.0306}, "sys,uncertainty on branching ratio": {dn: -0.004784, up: 0.004784}, "sys,uncertainty on integrated luminomisty": {dn: -0.01288, up: 0.01288}}, 9: {stat: {dn: -0.017, up: 0.017}, sys: {dn: -0.012, up: 0.0118}, "sys,uncertainty on branching ratio": {dn: -0.0019240000000000001, up: 0.0019240000000000001}, "sys,uncertainty on integrated luminomisty": {dn: -0.00518, up: 0.00518}}, 10: {stat: {dn: -0.0046, up: 0.0046}, sys: {dn: -0.00208, up: 0.00205}, "sys,uncertainty on branching ratio": {dn: -0.0003302, up: 0.0003302}, "sys,uncertainty on integrated luminomisty": {dn: -0.000889, up: 0.000889}}}
+IsRef=1
+Path=/ALICE_2017_I1511870/d03-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	1.060000e+02	2.621456e+01	2.621456e+01
+2.000000e+00	3.000000e+00	5.170000e+01	7.483249e+00	7.465930e+00
+3.000000e+00	4.000000e+00	2.540000e+01	3.151294e+00	3.137874e+00
+4.000000e+00	5.000000e+00	1.140000e+01	1.369754e+00	1.359559e+00
+5.000000e+00	6.000000e+00	5.560000e+00	6.370829e-01	6.299163e-01
+6.000000e+00	7.000000e+00	2.840000e+00	3.308133e-01	3.258350e-01
+7.000000e+00	8.000000e+00	1.520000e+00	2.023826e-01	2.005136e-01
+8.000000e+00	1.000000e+01	7.090000e-01	9.413027e-02	9.269362e-02
+1.000000e+01	1.200000e+01	3.680000e-01	5.696482e-02	5.652779e-02
+1.200000e+01	1.600000e+01	1.480000e-01	2.152984e-02	2.141901e-02
+1.600000e+01	2.400000e+01	2.540000e-02	5.136706e-03	5.124632e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT105test.yoda/ALICE_2017_I1511870/d03-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/SOFT105test.yoda/ALICE_2017_I1511870/d03-x01-y01
+ScaledBy=2.05955296400630985e+01
+Title=SOFT105test
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	4.901288e+01	4.716267e+00	4.716267e+00
+2.000000e+00	3.000000e+00	2.949849e+01	3.658837e+00	3.658837e+00
+3.000000e+00	4.000000e+00	2.405262e+01	3.303881e+00	3.303881e+00
+4.000000e+00	5.000000e+00	1.134557e+01	2.269115e+00	2.269115e+00
+5.000000e+00	6.000000e+00	6.807345e+00	1.757649e+00	1.757649e+00
+6.000000e+00	7.000000e+00	3.630584e+00	1.283605e+00	1.283605e+00
+7.000000e+00	8.000000e+00	2.269115e+00	1.014779e+00	1.014779e+00
+8.000000e+00	1.000000e+01	1.134558e+00	5.073894e-01	5.073894e-01
+1.000000e+01	1.200000e+01	6.807345e-01	3.930222e-01	3.930222e-01
+1.200000e+01	1.600000e+01	2.269115e-01	1.604507e-01	1.604507e-01
+1.600000e+01	2.400000e+01	0.000000e+00	0.000000e+00	0.000000e+00
+# END HISTO1D
+
