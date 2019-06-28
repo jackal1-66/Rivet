@@ -1,15 +1,15 @@
 # BEGIN PLOT
-LegendOnly=//home/physicom/rivet-ws/ALICE_2017_I1645239/Pythia105pp5TeV.yoda/ALICE_2017_I1645239/LcR
-DrawOnly=//home/physicom/rivet-ws/ALICE_2017_I1645239/Pythia105pp5TeV.yoda/ALICE_2017_I1645239/LcR
+LegendOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia105pp5TeV.yoda/ALICE_2017_I1645239/LcR
+DrawOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia105pp5TeV.yoda/ALICE_2017_I1645239/LcR
 Legend=1
 LogY=1
 # END PLOT
 
-# BEGIN HISTO1D //home/physicom/rivet-ws/ALICE_2017_I1645239/Pythia105pp5TeV.yoda/ALICE_2017_I1645239/LcR
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia105pp5TeV.yoda/ALICE_2017_I1645239/LcR
 ErrorBars=1
 LineColor=red
 LineStyle=solid
-Path=//home/physicom/rivet-ws/ALICE_2017_I1645239/Pythia105pp5TeV.yoda/ALICE_2017_I1645239/LcR
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia105pp5TeV.yoda/ALICE_2017_I1645239/LcR
 ScaledBy=7.99369924426491838e+05
 Title=Pythia105pp5TeV
 XLabel=~

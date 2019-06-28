@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=/ALICE_2017_I1645239/d01-x01-y01 //home/physicom/rivet-ws/ALICE_2017_I1645239/Pythia105pp5TeV.yoda/ALICE_2017_I1645239/d01-x01-y01
-DrawOnly=/ALICE_2017_I1645239/d01-x01-y01 //home/physicom/rivet-ws/ALICE_2017_I1645239/Pythia105pp5TeV.yoda/ALICE_2017_I1645239/d01-x01-y01
+LegendOnly=/ALICE_2017_I1645239/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia105pp5TeV.yoda/ALICE_2017_I1645239/d01-x01-y01
+DrawOnly=/ALICE_2017_I1645239/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia105pp5TeV.yoda/ALICE_2017_I1645239/d01-x01-y01
 Title=Prompt $\Lambda_c^+ p_T$ differential cross section in pp at $\sqrt{s}=7$ TeV and $|y|<0.5$. 
 ConnectBins=0
 RatioPlot=1
@@ -29,11 +29,11 @@ Title=Data
 # END HISTO1D
 
 
-# BEGIN HISTO1D //home/physicom/rivet-ws/ALICE_2017_I1645239/Pythia105pp5TeV.yoda/ALICE_2017_I1645239/d01-x01-y01
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia105pp5TeV.yoda/ALICE_2017_I1645239/d01-x01-y01
 ErrorBars=1
 LineColor=red
 LineStyle=solid
-Path=//home/physicom/rivet-ws/ALICE_2017_I1645239/Pythia105pp5TeV.yoda/ALICE_2017_I1645239/d01-x01-y01
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia105pp5TeV.yoda/ALICE_2017_I1645239/d01-x01-y01
 ScaledBy=4.53822979145558350e+01
 Title=Pythia105pp5TeV
 XLabel=~
