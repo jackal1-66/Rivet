@@ -1,0 +1,47 @@
+# BEGIN PLOT
+LegendOnly=/ALICE_2017_I1511870/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia8final1e7.yoda/ALICE_2017_I1511870/d04-x01-y01
+DrawOnly=/ALICE_2017_I1511870/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia8final1e7.yoda/ALICE_2017_I1511870/d04-x01-y01
+Title=Differential cross section for prompt $D_{s}$ production.
+RatioPlotReference=/ALICE_2017_I1511870/d04-x01-y01
+ConnectBins=0
+RatioPlot=1
+LogY=1
+LegendXPos=0.55
+XLabel=$p_T$ [GeV/c]
+YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
+LegendYPos=0.95
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D /ALICE_2017_I1511870/d04-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -3.98, up: 3.98}, sys: {dn: -1.9, up: 1.87}, "sys,uncertainty on branching ratio": {dn: -0.5005000000000001, up: 0.5005000000000001}, "sys,uncertainty on integrated luminomisty": {dn: -0.5005000000000001, up: 0.5005000000000001}}, 1: {stat: {dn: -0.659, up: 0.659}, sys: {dn: -0.547, up: 0.537}, "sys,uncertainty on branching ratio": {dn: -0.14105, up: 0.14105}, "sys,uncertainty on integrated luminomisty": {dn: -0.14105, up: 0.14105}}, 2: {stat: {dn: -0.19, up: 0.19}, sys: {dn: -0.152, up: 0.148}, "sys,uncertainty on branching ratio": {dn: -0.039200000000000006, up: 0.039200000000000006}, "sys,uncertainty on integrated luminomisty": {dn: -0.039200000000000006, up: 0.039200000000000006}}, 3: {stat: {dn: -0.0414, up: 0.0414}, sys: {dn: -0.037, up: 0.0361}, "sys,uncertainty on branching ratio": {dn: -0.009555000000000001, up: 0.009555000000000001}, "sys,uncertainty on integrated luminomisty": {dn: -0.009555000000000001, up: 0.009555000000000001}}}
+IsRef=1
+Path=/ALICE_2017_I1511870/d04-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	1.430000e+01	4.466699e+00	4.454021e+00
+4.000000e+00	6.000000e+00	4.030000e+00	8.793635e-01	8.731782e-01
+6.000000e+00	8.000000e+00	1.120000e+00	2.495542e-01	2.471382e-01
+8.000000e+00	1.200000e+01	2.730000e-01	5.714504e-02	5.656647e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia8final1e7.yoda/ALICE_2017_I1511870/d04-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia8final1e7.yoda/ALICE_2017_I1511870/d04-x01-y01
+ScaledBy=4.53822999999999987e-03
+Title=Pythia8final1e7
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	1.410709e+01	1.789151e-01	1.789151e-01
+4.000000e+00	6.000000e+00	4.542768e+00	1.015286e-01	1.015286e-01
+6.000000e+00	8.000000e+00	1.336509e+00	5.506989e-02	5.506989e-02
+8.000000e+00	1.200000e+01	3.415017e-01	1.968384e-02	1.968384e-02
+# END HISTO1D
+
