@@ -1,27 +1,28 @@
 Name: ALICE_2017_I1645239
 Year: 2017
-Summary: $\Lambda_c^+$ production in pp collisions at $\sqrt{s} = 7$ TeV and in p-Pb collisions at $\sqrt{s_{NN}} = 5.02$ TeV
+Summary: <Insert short ALICE_2017_I1645239 description>
 Experiment: ALICE
 Collider: LHC
 InspireID: 1645239
 Status: UNVALIDATED
 Authors:
- - Marco Giacalone <mgiacalo@bo.infn.it>
-References:
--   DOI: 10.1007/JHEP04(2018)108
--   arXiv:1712.09581 
+ - Your Name <your@email.address>
+#References:
+#- '<Example: Eur.Phys.J. C76 (2016) no.7, 392>'
+#- '<Example: DOI:10.1140/epjc/s10052-016-4184-8>'
+#- '<Example: arXiv:1605.03814>'
 RunInfo: <Describe event types, cuts, and other general generator config tips.>
 NeedCrossSection: no
 Reentrant: True
-Beams: [p+, p+]
-Energies: [7000, 5020]
+#Beams: <Insert beam pair(s), e.g. [p+, p+] or [[p-, e-], [p-, e+]]>
+#Energies: <Run energies or beam energy pairs in GeV, e.g. [13000] or [[8.0, 3.5]] or [630, 1800]. Order pairs to match "Beams">
 #Luminosity_fb: <Insert integrated luminosity, in inverse fb>
 Description:
-  'The pT-differential production cross section of prompt $\Lambda_c^+$ charmed baryons was measured with the ALICE detector at the Large Hadron Collider (LHC) in pp collisions at $\sqrt{s} = 7$ TeV and in p-Pb collisions at $\sqrt{s_{NN}} = 5.02$ TeV at midrapidity. The $\Lambda_c^+$ and $\Lambda_c^-$ were reconstructed in the hadronic decay modes $\Lambda_c^+\to$pK$^−\pi^+$, $\Lambda_c^+\to$pK$^0_S$ and in the semileptonic channel $\Lambda_c^+\to e^+\nu_e\Lambda$ (and charge conjugates). The measured values of the $\Lambda_c^+$/D$^0$ ratio, which is sensitive to the c-quark hadronisation mechanism, and in particular to the production of baryons,  are presented and are larger than those measured previously in different colliding systems, centre-of-mass energies, rapidity and $p_T$ intervals, where the $\Lambda_c^+$ production process may differ. The results are compared with the expectations obtained from perturbative Quantum Chromodynamics calculations and Monte Carlo event generators. Neither perturbative QCD calculations nor Monte Carlo models reproduce the data, indicating that the fragmentation of heavy-flavour baryons is not well understood. The first measurement at the LHC of the $\Lambda_c^+$ nuclear modification factor, $R_{pPb}$, is also presented. The $R_{pPb}$ is found to be consistent with unity and with that of D mesons within the uncertainties, and consistent with a theoretical calculation that includes cold nuclear matter effects and a calculation that includes charm quark interactions with a deconfined medium.'
-
+  '<A fairly long description, including what is measured
+  and if possible what it is useful for in terms of MC validation
+  and tuning. Use LaTeX for maths like $\pT > 50\;\GeV$.>'
 Keywords: []
 BibKey: Acharya:2017kfy
-Reentrant: True
 BibTeX: '@article{Acharya:2017kfy,
       author         = "Acharya, Shreyasi and others",
       title          = "{$\Lambda_{\rm c}^+$ production in pp collisions at
