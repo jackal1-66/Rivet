@@ -134,7 +134,7 @@ namespace Rivet {
       if (_h_LcPbdummy->numEntries()>0 && _h_D0Pb->numEntries()>0) divide(_h_LcPbdummy, _h_D0Pb, _h_LcD0Pb);
       if (_h_Lcint->numEntries()>0 && _h_D0int->numEntries()>0) divide(_h_Lcint, _h_D0int, _h_LcD0int);
       if (_h_LcintPb->numEntries()>0 && _h_D0intPb->numEntries()>0) divide(_h_LcintPb, _h_D0intPb, _h_LcD0Pbint);
-      if(bo2 == true) scale(_h_LcR, 208*crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
+      if(bo2 == true) scale(_h_LcR, crossSection()/(208*microbarn*2*sumOfWeights())); // norm to cross section
       if(bo3 == true) scale(_h_LcRPb, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       if (_h_LcRPb->numEntries()>0 && _h_LcR->numEntries()>0) divide(_h_LcRPb, _h_LcR, _h_RpPb);
     }
