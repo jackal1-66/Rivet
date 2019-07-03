@@ -60,14 +60,14 @@ namespace Rivet {
         
         /*PDG code IDs used inside the foreach cycle: 421 = D0, 411 = D+, 413 = D*+ */
       if(beamp.first == 2212 && beamp.second ==2212){
-        if(sqrtS()==5000){
+        if(fuzzyEquals(sqrtS()/GeV,5000)){
          bo2 = true;
          foreach (const Particle& p, ufs.particles()) {
             if(p.fromBottom())
                 continue;
             else
                 {    
-                 if(p.absrap() < 0.5){
+                 if(p.rap() < 0.04 && p.rap() > -0.96){
                      if(p.abspid() == 4122){
                          _h_LcR->fill(p.pT()/GeV, weight);
                          }   
