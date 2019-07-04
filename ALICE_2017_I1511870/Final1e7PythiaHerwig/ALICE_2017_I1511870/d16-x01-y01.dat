@@ -1,0 +1,55 @@
+# BEGIN PLOT
+LegendOnly=/ALICE_2017_I1511870/d16-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e7.yoda/ALICE_2017_I1511870/d16-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7.yoda/ALICE_2017_I1511870/d16-x01-y01
+DrawOnly=/ALICE_2017_I1511870/d16-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e7.yoda/ALICE_2017_I1511870/d16-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7.yoda/ALICE_2017_I1511870/d16-x01-y01
+Title=Integrated cross sections for prompt cc full y. 
+RatioPlotReference=/ALICE_2017_I1511870/d16-x01-y01
+ConnectBins=0
+RatioPlot=1
+LogY=1
+LegendXPos=0.55
+XLabel=$E = 7 TeV$
+YLabel=$\frac{\text{d}\sigma}{\text{d}y}$ [$\mu$b]
+LegendYPos=0.95
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D /ALICE_2017_I1511870/d16-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.57, up: 0.57}, sys_1: {dn: -0.61, up: 0.61}, sys_2: {dn: -0.45, up: 2.32}, sys_3: {dn: -0.28, up: 0.28}, sys_4: {dn: -0.35, up: 0.35}}}
+IsRef=1
+Path=/ALICE_2017_I1511870/d16-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+6.999500e+03	7.000500e+03	7.890000e+00	1.049000e+00	2.506053e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e7.yoda/ALICE_2017_I1511870/d16-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e7.yoda/ALICE_2017_I1511870/d16-x01-y01
+ScaledBy=8.37311808118081208e-06
+Title=Pythia1e7
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+6.999500e+03	7.000500e+03	7.425666e+00	7.885175e-03	7.885175e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7.yoda/ALICE_2017_I1511870/d16-x01-y01
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7.yoda/ALICE_2017_I1511870/d16-x01-y01
+ScaledBy=7.96465915973708122e-06
+Title=Herwig1e7
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+6.999500e+03	7.000500e+03	7.949742e+00	2.237911e-02	2.237911e-02
+# END HISTO1D
+

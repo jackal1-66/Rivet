@@ -1,0 +1,83 @@
+# BEGIN PLOT
+LegendOnly=/ALICE_2017_I1511870/d06-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e7.yoda/ALICE_2017_I1511870/d06-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7.yoda/ALICE_2017_I1511870/d06-x01-y01
+DrawOnly=/ALICE_2017_I1511870/d06-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e7.yoda/ALICE_2017_I1511870/d06-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7.yoda/ALICE_2017_I1511870/d06-x01-y01
+Title=Ratio of $D^{*+}$ to $D^0$ meson yield. 
+RatioPlotReference=/ALICE_2017_I1511870/d06-x01-y01
+ConnectBins=0
+RatioPlot=1
+LogY=1
+LegendXPos=0.55
+XLabel=$p_T$ [GeV/c]
+YLabel=$N(D^{*+})/N(D^0)$
+LegendYPos=0.95
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D /ALICE_2017_I1511870/d06-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.135, up: 0.135}, sys: {dn: -0.071, up: 0.072}, "sys,uncertainty on branching ratio": {dn: -0.0038780000000000004, up: 0.0038780000000000004}}, 1: {stat: {dn: -0.062, up: 0.062}, sys: {dn: -0.04, up: 0.04}, "sys,uncertainty on branching ratio": {dn: -0.0033739999999999994, up: 0.0033739999999999994}}, 2: {stat: {dn: -0.051, up: 0.051}, sys: {dn: -0.042, up: 0.043}, "sys,uncertainty on branching ratio": {dn: -0.0035349999999999995, up: 0.0035349999999999995}}, 3: {stat: {dn: -0.045, up: 0.045}, sys: {dn: -0.038, up: 0.038}, "sys,uncertainty on branching ratio": {dn: -0.003269, up: 0.003269}}, 4: {stat: {dn: -0.039, up: 0.039}, sys: {dn: -0.034, up: 0.035}, "sys,uncertainty on branching ratio": {dn: -0.002947, up: 0.002947}}, 5: {stat: {dn: -0.041, up: 0.041}, sys: {dn: -0.034, up: 0.035}, "sys,uncertainty on branching ratio": {dn: -0.0028979999999999995, up: 0.0028979999999999995}}, 6: {stat: {dn: -0.067, up: 0.067}, sys: {dn: -0.04, up: 0.042}, "sys,uncertainty on branching ratio": {dn: -0.003409, up: 0.003409}}, 7: {stat: {dn: -0.053, up: 0.053}, sys: {dn: -0.036, up: 0.036}, "sys,uncertainty on branching ratio": {dn: -0.0030449999999999995, up: 0.0030449999999999995}}, 8: {stat: {dn: -0.097, up: 0.097}, sys: {dn: -0.047, up: 0.048}, "sys,uncertainty on branching ratio": {dn: -0.003947999999999999, up: 0.003947999999999999}}, 9: {stat: {dn: -0.118, up: 0.118}, sys: {dn: -0.057, up: 0.058}, "sys,uncertainty on branching ratio": {dn: -0.004444999999999999, up: 0.004444999999999999}}, 10: {stat: {dn: -0.208, up: 0.208}, sys: {dn: -0.059, up: 0.059}, "sys,uncertainty on branching ratio": {dn: -0.004641, up: 0.004641}}}
+IsRef=1
+Path=/ALICE_2017_I1511870/d06-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	5.540000e-01	1.525813e-01	1.530491e-01
+2.000000e+00	3.000000e+00	4.820000e-01	7.386057e-02	7.386057e-02
+3.000000e+00	4.000000e+00	5.050000e-01	6.616265e-02	6.680192e-02
+4.000000e+00	5.000000e+00	4.670000e-01	5.898887e-02	5.898887e-02
+5.000000e+00	6.000000e+00	4.210000e-01	5.182359e-02	5.248509e-02
+6.000000e+00	7.000000e+00	4.140000e-01	5.334228e-02	5.398517e-02
+7.000000e+00	8.000000e+00	4.870000e-01	7.810647e-02	7.914936e-02
+8.000000e+00	1.000000e+01	4.350000e-01	6.414259e-02	6.414259e-02
+1.000000e+01	1.200000e+01	5.640000e-01	1.078591e-01	1.082986e-01
+1.200000e+01	1.600000e+01	6.350000e-01	1.311212e-01	1.315590e-01
+1.600000e+01	2.400000e+01	6.630000e-01	2.162557e-01	2.162557e-01
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e7.yoda/ALICE_2017_I1511870/d06-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e7.yoda/ALICE_2017_I1511870/d06-x01-y01
+Title=Pythia1e7
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	3.333333e-01	3.655617e-03	3.655617e-03
+2.000000e+00	3.000000e+00	3.597488e-01	4.651039e-03	4.651039e-03
+3.000000e+00	4.000000e+00	3.794943e-01	6.362283e-03	6.362283e-03
+4.000000e+00	5.000000e+00	3.975575e-01	8.934704e-03	8.934704e-03
+5.000000e+00	6.000000e+00	4.024523e-01	1.240133e-02	1.240133e-02
+6.000000e+00	7.000000e+00	4.326875e-01	1.754854e-02	1.754854e-02
+7.000000e+00	8.000000e+00	4.600180e-01	2.456512e-02	2.456512e-02
+8.000000e+00	1.000000e+01	4.544554e-01	2.558204e-02	2.558204e-02
+1.000000e+01	1.200000e+01	4.028436e-01	3.659457e-02	3.659457e-02
+1.200000e+01	1.600000e+01	4.301471e-01	4.755699e-02	4.755699e-02
+1.600000e+01	2.400000e+01	4.722222e-01	8.023207e-02	8.023207e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7.yoda/ALICE_2017_I1511870/d06-x01-y01
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7.yoda/ALICE_2017_I1511870/d06-x01-y01
+Title=Herwig1e7
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	3.656131e-01	4.916201e-03	4.916201e-03
+2.000000e+00	3.000000e+00	3.768759e-01	5.094597e-03	5.094597e-03
+3.000000e+00	4.000000e+00	4.051318e-01	6.508537e-03	6.508537e-03
+4.000000e+00	5.000000e+00	4.160665e-01	1.277883e-02	1.277883e-02
+5.000000e+00	6.000000e+00	4.313766e-01	1.132985e-02	1.132985e-02
+6.000000e+00	7.000000e+00	4.772056e-01	1.672312e-02	1.672312e-02
+7.000000e+00	8.000000e+00	4.930897e-01	2.350646e-02	2.350646e-02
+8.000000e+00	1.000000e+01	4.855014e-01	2.425745e-02	2.425745e-02
+1.000000e+01	1.200000e+01	4.412831e-01	3.554444e-02	3.554444e-02
+1.200000e+01	1.600000e+01	4.952169e-01	4.909545e-02	4.909545e-02
+1.600000e+01	2.400000e+01	5.524470e-01	8.380827e-02	8.380827e-02
+# END HISTO1D
+
