@@ -1,6 +1,7 @@
 # BEGIN PLOT
 LegendOnly=/ALICE_2017_I1511870/d11-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e7.yoda/ALICE_2017_I1511870/d11-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7.yoda/ALICE_2017_I1511870/d11-x01-y01
 DrawOnly=/ALICE_2017_I1511870/d11-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e7.yoda/ALICE_2017_I1511870/d11-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7.yoda/ALICE_2017_I1511870/d11-x01-y01
+YMax=2000
 Title=Integrated cross sections for prompt $D{*+}$ production. 
 RatioPlotReference=/ALICE_2017_I1511870/d11-x01-y01
 ConnectBins=0

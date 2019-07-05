@@ -1,6 +1,7 @@
 # BEGIN PLOT
 LegendOnly=/ALICE_2017_I1511870/d15-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e7.yoda/ALICE_2017_I1511870/d15-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7.yoda/ALICE_2017_I1511870/d15-x01-y01
 DrawOnly=/ALICE_2017_I1511870/d15-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e7.yoda/ALICE_2017_I1511870/d15-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7.yoda/ALICE_2017_I1511870/d15-x01-y01
+YMax=20
 Title=Integrated cross sections for prompt D0 full y. 
 RatioPlotReference=/ALICE_2017_I1511870/d15-x01-y01
 ConnectBins=0
@@ -8,7 +9,7 @@ RatioPlot=1
 LogY=1
 LegendXPos=0.55
 XLabel=$E = 7 TeV$
-YLabel=$\frac{\text{d}\sigma}{\text{d}y}$ [$\mu$b]
+YLabel=$\frac{\text{d}\sigma}{\text{d}y}$ [mb]
 LegendYPos=0.95
 Legend=1
 # END PLOT
