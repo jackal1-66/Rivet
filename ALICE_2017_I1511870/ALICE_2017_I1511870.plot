@@ -101,6 +101,7 @@ YLabel=$\frac{\text{d}\sigma}{\text{d}y}$ [$\mu$b]
 ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8
+YMax = 2000
 LegendYPos=0.95
 LegendXPos=0.55
 # + any additional plot settings you might like, see make-plots documentation
@@ -113,6 +114,7 @@ YLabel=$\frac{\text{d}\sigma}{\text{d}y}$ [$\mu$b]
 ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8
+YMax = 2000
 LegendYPos=0.95
 LegendXPos=0.55
 # + any additional plot settings you might like, see make-plots documentation
@@ -125,6 +127,7 @@ YLabel=$\frac{\text{d}\sigma}{\text{d}y}$ [$\mu$b]
 ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8
+YMax = 2000
 LegendYPos=0.95
 LegendXPos=0.55
 # + any additional plot settings you might like, see make-plots documentation
@@ -169,10 +172,11 @@ END PLOT
 BEGIN PLOT /ALICE_2017_I1511870/d15-x01-y01
 Title=Integrated cross sections for prompt D0 full y. 
 XLabel= $E = 7 TeV$
-YLabel=$\frac{\text{d}\sigma}{\text{d}y}$ [$\mu$b]
+YLabel=$\frac{\text{d}\sigma}{\text{d}y}$ [mb]
 ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8
+YMax = 20
 LegendYPos=0.95
 LegendXPos=0.55
 # + any additional plot settings you might like, see make-plots documentation
