@@ -72,7 +72,7 @@ namespace Rivet {
                     _h_D0int->fill(7.000000e+03/GeV, weight);
                     _h_cc->fill(7.000000e+03/GeV, weight);
                     _h_ptd0->fill(7.000000e+03/GeV,p.pT()/GeV,weight);
-                    _h_wei->fill(7.000000e+03/GeV,weight,weight);
+                    _h_wei->fill(7.000000e+03/GeV,weight);
                     }
                 else if(p.abspid() == 411){
                     _h_Dplus->fill(p.pT()/GeV, weight);

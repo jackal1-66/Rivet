@@ -45,11 +45,11 @@ ErrorBars=1
 LineColor=blue
 LineStyle=solid
 Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7.yoda/ALICE_2017_I1511870/d13-x01-y01
-ScaledBy=7.96465915973708187e-03
+ScaledBy=7.98399559429198956e-03
 Title=Herwig1e7
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
-6.999500e+03	7.000500e+03	9.749206e+02	2.040191e+01	2.040191e+01
+6.999500e+03	7.000500e+03	9.986397e+02	3.384555e+00	3.384555e+00
 # END HISTO1D
 
