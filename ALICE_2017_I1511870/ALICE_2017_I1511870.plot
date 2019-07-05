@@ -164,6 +164,7 @@ YLabel=$p_T$ [GeV/c]
 ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8
+YMax=10
 LegendYPos=0.95
 LegendXPos=0.55
 # + any additional plot settings you might like, see make-plots documentation
