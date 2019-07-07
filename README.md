@@ -38,7 +38,7 @@ In troubles with running Pythia
 •	$ make install
 •	then run pythia again to generate event data
 
-#Run HERWIG on the server
+# Run HERWIG on the server
 The installation on the server was not so easy and it is a little "crooked", so in order to run HERWIG using fifos and rivet there are precise steps to follow:
 
 1) Type "scldev" which will enable the correct versions of g++ compiler and python
