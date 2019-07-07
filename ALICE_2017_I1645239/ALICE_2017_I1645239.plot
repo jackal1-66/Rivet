@@ -73,7 +73,7 @@ END PLOT
 BEGIN PLOT /ALICE_2017_I1645239/d07-x01-y01
 Title=$R_{pPb}$ of prompt $\Lambda_c^+$ in p-Pb collisions at $\sqrt{s_{NN}}=5.02$ and $-0.96 < y < 0.04$. 
 XLabel= $p_T$ [GeV/c]
-YLabel=$N(D_s)/N(D^0)$
+YLabel= $\Lambda_c^+ R_{pPb}$
 ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8

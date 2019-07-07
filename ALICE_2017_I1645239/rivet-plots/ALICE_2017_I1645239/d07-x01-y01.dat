@@ -8,7 +8,7 @@ RatioPlot=1
 LogY=1
 LegendXPos=0.55
 XLabel=$p_T$ [GeV/c]
-YLabel=$N(D_s)/N(D^0)$
+YLabel=$\Lambda_c^+ R_{pPb}$
 LegendYPos=0.95
 Legend=1
 # END PLOT
