@@ -27,7 +27,7 @@ run with PbPb parameters (.params) file
 Get Pythia running options
 $ run-pythia —help
 
-# run for 1000 events with a output file name (.hepmc)
+# Run for 1000 events with a output file name (.hepmc)
 $time run-pythia -e 7000 -o pythia8.pbpb2760.hepmc -c "SoftQCD:all on" -n 1000
 
 In troubles with running Pythia
