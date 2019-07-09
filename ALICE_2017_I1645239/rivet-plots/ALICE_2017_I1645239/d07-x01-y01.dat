@@ -5,7 +5,7 @@ Title=$R_{pPb}$ of prompt $\Lambda_c^+$ in p-Pb collisions at $\sqrt{s_{NN}}=5.0
 RatioPlotReference=/ALICE_2017_I1645239/d07-x01-y01
 ConnectBins=0
 RatioPlot=1
-LogY=1
+LogY=0
 LegendXPos=0.55
 XLabel=$p_T$ [GeV/c]
 YLabel=$\Lambda_c^+ R_{pPb}$

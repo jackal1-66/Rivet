@@ -30,6 +30,7 @@ ConnectBins=0
 #PlotSize=10,8
 #LegendYPos=0.96
 #LegendXPos=0.55
+LogY=0
 RatioPlotYMax=1.5
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
@@ -41,6 +42,7 @@ XLabel=$p_T$ [GeV/c]
 ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8
+LogY=0
 LegendYPos=0.95
 LegendXPos=0.55
 # + any additional plot settings you might like, see make-plots documentation
@@ -77,6 +79,7 @@ YLabel= $\Lambda_c^+ R_{pPb}$
 ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8
+LogY=0
 LegendYPos=0.95
 LegendXPos=0.55
 # + any additional plot settings you might like, see make-plots documentation

@@ -8,7 +8,7 @@ DrawOnly=/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/R
 RatioPlot=1
 ConnectBins=0
 Legend=1
-LogY=1
+LogY=0
 # END PLOT
 
 # BEGIN HISTO1D /ALICE_2017_I1645239/d03-x01-y01
