@@ -1,0 +1,38 @@
+Name: ALICE_2013_I1190545
+Year: 2013
+Summary: Pseudorapidity density of charged particles in p + Pb collisions at 5.02 TeV
+Experiment: ALICE
+Collider: LHC
+InspireID: 1190545
+Status: UNVALIDATED
+Authors:
+ - 'Roberto Preghenella <preghenella@bo.infn.it>'
+References:
+ - 'https://doi.org/10.1103/PhysRevLett.110.032301'
+RunInfo: <Describe event types, cuts, and other general generator config tips.>
+NeedCrossSection: no
+Beams: [p+, Pb]
+Energies: [4000, 1577]
+Description:
+  'Measuremements of the charged-particle pseudorapidity density over 4 units of  pseusdorapidity in non-single diffractive (NSD) proton-Lead collisions at a centre-of-mass energy  per nucleon pair of 5.02 TeV.   The average value at midrapidity is measured to be 16.81 $\pm$ 0.71(sys)  which corresponds to 2.14 $\pm$ 0.17(sys) per participating nucleon.'
+BibKey: ALICE:2012xs
+BibTeX: '@article{ALICE:2012xs,
+      author         = "Abelev, Betty and others",
+      title          = "{Pseudorapidity density of charged particles in $p$ + Pb
+                        collisions at $\sqrt{s_{NN}}=5.02$ TeV}",
+      collaboration  = "ALICE",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "110",
+      year           = "2013",
+      number         = "3",
+      pages          = "032301",
+      doi            = "10.1103/PhysRevLett.110.032301",
+      eprint         = "1210.3615",
+      archivePrefix  = "arXiv",
+      primaryClass   = "nucl-ex",
+      reportNumber   = "CERN-PH-EP-2012-307",
+      SLACcitation   = "%%CITATION = ARXIV:1210.3615;%%"
+}'
+ToDo:
+ - Implement the analysis, test it, remove this ToDo, and mark as VALIDATED :-)
+
