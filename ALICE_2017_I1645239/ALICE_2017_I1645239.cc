@@ -48,6 +48,7 @@ namespace Rivet {
       _h_LcRPb = bookHisto1D("LcRPb", binEdges2, "Lc RPb");
 
       bo1 = bo2 = bo3 = false;
+      lctot = d0tot = 0;
     }
 
 
@@ -87,7 +88,7 @@ namespace Rivet {
                          _h_D0int->fill(0,weight);}
                      else if(p.abspid() == 4122){
                          _h_Lc->fill(p.pT()/GeV, weight);
-			 _h_Lcdummy->fill(p.pT()/GeV, weight);
+			                   _h_Lcdummy->fill(p.pT()/GeV, weight);
                          _h_Lcint->fill(0,weight);}
                      }   
                 }    
@@ -104,15 +105,15 @@ namespace Rivet {
                      if(p.abspid() == 421){
                          _h_D0Pb->fill(p.pT()/GeV, 1); 
                          _h_D0intPb->fill(-0.5,1);
-			 d0tot += 1;
-			}
+			                   d0tot++;
+			                   }
                      else if(p.abspid() == 4122){
                          _h_LcPb->fill(p.pT()/GeV, 1);
-			 _h_LcPbdummy->fill(p.pT()/GeV, 1);
+			                   _h_LcPbdummy->fill(p.pT()/GeV, 1);
                          _h_LcRPb->fill(p.pT()/GeV, 1);
                          _h_LcintPb->fill(-0.5,1);
-			 lctot += 1;
-			}
+			                   lctot++;
+			                   }
                      }    
                 }    
         }
@@ -151,7 +152,7 @@ namespace Rivet {
     Histo1DPtr _h_Lc, _h_LcPb, _h_D0, _h_D0Pb, _h_Lcint, _h_LcintPb, _h_D0int, _h_D0intPb, _h_LcR, _h_LcRPb, _h_Lcdummy, _h_LcPbdummy ;
     Scatter2DPtr _h_LcD0, _h_LcD0Pb, _h_LcD0int,  _h_LcD0Pbint, _h_RpPb;
     bool bo1, bo2, bo3;
-    int lctot = 0, d0tot = 0;
+    int lctot, d0tot;
     //@}
 
 
