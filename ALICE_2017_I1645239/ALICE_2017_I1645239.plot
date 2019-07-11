@@ -82,6 +82,6 @@ ConnectBins=0
 LogY=0
 LegendYPos=0.95
 LegendXPos=0.55
-YMin = -5
+YMin = -0.5
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT

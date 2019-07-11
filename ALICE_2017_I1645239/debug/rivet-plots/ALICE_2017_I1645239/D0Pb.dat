@@ -1,23 +1,23 @@
 # BEGIN PLOT
-LegendOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/debug/Pythia104pPb.yoda/ALICE_2017_I1645239/D0Pb
-DrawOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/debug/Pythia104pPb.yoda/ALICE_2017_I1645239/D0Pb
+LegendOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/debug/Pythia105pPb.yoda/ALICE_2017_I1645239/D0Pb
+DrawOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/debug/Pythia105pPb.yoda/ALICE_2017_I1645239/D0Pb
 Legend=1
 LogY=1
 # END PLOT
 
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/debug/Pythia104pPb.yoda/ALICE_2017_I1645239/D0Pb
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/debug/Pythia105pPb.yoda/ALICE_2017_I1645239/D0Pb
 ErrorBars=1
 LineColor=red
 LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/debug/Pythia104pPb.yoda/ALICE_2017_I1645239/D0Pb
-ScaledBy=2.89162932069566003e-01
-Title=Pythia104pPb
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/debug/Pythia105pPb.yoda/ALICE_2017_I1645239/D0Pb
+ScaledBy=2.84509707380172727e-01
+Title=Pythia105pPb
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
-2.000000e+00	4.000000e+00	6.599910e+03	5.646131e+02	5.646131e+02
-4.000000e+00	6.000000e+00	2.552330e+03	3.558570e+02	3.558570e+02
-6.000000e+00	8.000000e+00	9.496965e+02	2.127650e+02	2.127650e+02
-8.000000e+00	1.200000e+01	1.476613e+02	6.044628e+01	6.044628e+01
+2.000000e+00	4.000000e+00	8.221985e+03	6.343248e+02	6.343248e+02
+4.000000e+00	6.000000e+00	2.815416e+03	3.683298e+02	3.683298e+02
+6.000000e+00	8.000000e+00	2.717151e+02	1.110872e+02	1.110872e+02
+8.000000e+00	1.200000e+01	9.896032e+01	4.970902e+01	4.970902e+01
 # END HISTO1D
 

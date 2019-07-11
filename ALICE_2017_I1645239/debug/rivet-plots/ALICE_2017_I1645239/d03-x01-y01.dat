@@ -1,10 +1,10 @@
 # BEGIN PLOT
 RatioPlotYMax=1.5
-LegendOnly=/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/debug/Pythia104pPb.yoda/ALICE_2017_I1645239/d03-x01-y01
+LegendOnly=/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/debug/Pythia105pPb.yoda/ALICE_2017_I1645239/d03-x01-y01
 XLabel=$p_T$ [GeV/c]
 RatioPlotReference=/ALICE_2017_I1645239/d03-x01-y01
 Title=$\Lambda_c^+/D^0$ ratio in pp at $\sqrt{s}=7$ TeV and $|y|<0.5$.
-DrawOnly=/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/debug/Pythia104pPb.yoda/ALICE_2017_I1645239/d03-x01-y01
+DrawOnly=/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/debug/Pythia105pPb.yoda/ALICE_2017_I1645239/d03-x01-y01
 RatioPlot=1
 ConnectBins=0
 Legend=1
@@ -28,19 +28,14 @@ Title=Data
 # END HISTO1D
 
 
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/debug/Pythia104pPb.yoda/ALICE_2017_I1645239/d03-x01-y01
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/debug/Pythia105pPb.yoda/ALICE_2017_I1645239/d03-x01-y01
 ErrorBars=1
 LineColor=red
 LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/debug/Pythia104pPb.yoda/ALICE_2017_I1645239/d03-x01-y01
-Title=Pythia104pPb
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/debug/Pythia105pPb.yoda/ALICE_2017_I1645239/d03-x01-y01
+Title=Pythia105pPb
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
-1.000000e+00	2.000000e+00	5.714286e-02	4.154452e-02	4.154452e-02
-2.000000e+00	3.000000e+00	4.166667e-02	4.252586e-02	4.252586e-02
-3.000000e+00	4.000000e+00	5.555556e-02	5.707791e-02	5.707791e-02
-4.000000e+00	6.000000e+00	5.882353e-02	6.052891e-02	6.052891e-02
-6.000000e+00	8.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 

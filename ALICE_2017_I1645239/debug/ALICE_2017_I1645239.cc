@@ -44,6 +44,10 @@ namespace Rivet {
       _h_D0Pb0 = bookHisto1D("D0Pb0", binEdges, "D0Pb0");
       brutalD0 = bookScatter2D(8,1,1);
       brutalLc = bookScatter2D(9,1,1);
+      d0pbnum = bookHisto1D("d0pbnum", binEdges1, "d0pbnum");
+      lcpbnum = bookHisto1D("lcpbnum", binEdges1, "lcpbnum");
+      d0pbnumw = bookHisto1D("d0pbnumw", binEdges1, "d0pbnumw");
+      lcpbnumw = bookHisto1D("lcpbnumw", binEdges1, "lcpbnumw");
       _h_Lcint = bookHisto1D("Lcint", 1, -0.1, 0.1 , "Lc int");
       _h_D0int = bookHisto1D("D0int", 1, -0.1, 0.1 , "D0 int");
       _h_LcintPb = bookHisto1D("LcintPb", 1, -0.6, -0.4 , "Lc int Pb");
@@ -106,17 +110,24 @@ namespace Rivet {
                 {    
                  if(p.rap() < 0.04 && p.rap() > -0.96){
                      if(p.abspid() == 421){
-                         _h_D0Pb->fill(p.pT()/GeV, 1);
+                         _h_D0Pb->fill(p.pT()/GeV, weight);
 			 d0tot += 1; 
                          _h_D0Pb0->fill(p.pT()/GeV, weight);
-                         _h_D0intPb->fill(-0.5,weight);}
+                         _h_D0intPb->fill(-0.5,weight);
+                         d0pbnum->fill(p.pT()/GeV,1);
+                         d0pbnumw->fill(p.pT()/GeV,weight);
+                     }
                      else if(p.abspid() == 4122){
                          _h_LcPb->fill(p.pT()/GeV, 1);
 			 lctot += 1;
 			 _h_LcPbdummy0->fill(p.pT()/GeV, weight);
                          _h_LcPbdummy->fill(p.pT()/GeV, weight);
-                         _h_LcRPb->fill(p.pT()/GeV, 1);
-                         _h_LcintPb->fill(-0.5,weight);}
+                         _h_LcRPb->fill(p.pT()/GeV, weight);
+                         _h_LcintPb->fill(-0.5,weight);
+			 cout << "\nWeight is " << weight <<"\n";
+                         lcpbnum->fill(p.pT()/GeV,1);
+                         lcpbnumw->fill(p.pT()/GeV,weight);
+                     }
                      }    
                 }    
         }
@@ -135,10 +146,14 @@ namespace Rivet {
       if(bo3 == true) scale(_h_LcPbdummy, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       if(bo3 == true) scale(_h_LcPbdummy0, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       if(bo1 == true) scale(_h_Lcint, crossSection()/(microbarn*2*sumOfWeights())); //norm to cross section
-      if(bo3 == true) scale(_h_D0Pb, crossSection()/(microbarn*2*d0tot)); // norm to cross section
+      if(bo3 == true) scale(_h_D0Pb, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       if(bo3 == true) scale(_h_D0Pb0, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       if(bo3 == true) scale(_h_D0intPb, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
-      if(bo3 == true) scale(_h_LcPb, crossSection()/(microbarn*2*lctot)); // norm to cross section
+      if(bo3 == true) scale(_h_LcPb, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
+      cout <<"\n lctot is = " << lctot << '\n';
+      cout <<"\n d0tot is = " << d0tot << '\n';
+      cout <<"\n sumOfWeights is = " << sumOfWeights() << '\n';
+      cout <<"\n crossSection() is = " << crossSection() << '\n';
       if(bo3 == true) scale(_h_LcintPb, crossSection()/(microbarn*2*sumOfWeights())); //norm to cross section
       if (_h_Lcdummy->numEntries()>0 && _h_D0->numEntries()>0) divide(_h_Lcdummy, _h_D0, _h_LcD0);
       if (_h_LcPbdummy->numEntries()>0 && _h_D0Pb->numEntries()>0) divide(_h_LcPbdummy, _h_D0Pb, _h_LcD0Pb);
@@ -147,7 +162,7 @@ namespace Rivet {
       if (_h_Lcint->numEntries()>0 && _h_D0int->numEntries()>0) divide(_h_Lcint, _h_D0int, _h_LcD0int);
       if (_h_LcintPb->numEntries()>0 && _h_D0intPb->numEntries()>0) divide(_h_LcintPb, _h_D0intPb, _h_LcD0Pbint);
       if(bo2 == true) scale(_h_LcR, 208*crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
-      if(bo3 == true) scale(_h_LcRPb, crossSection()/(microbarn*2*lctot)); // norm to cross section
+      if(bo3 == true) scale(_h_LcRPb, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       if (_h_LcRPb->numEntries()>0 && _h_LcR->numEntries()>0) divide(_h_LcRPb, _h_LcR, _h_RpPb);
     }
 
@@ -156,7 +171,7 @@ namespace Rivet {
 
     /// @name Histograms
     //@{
-    Histo1DPtr _h_Lc, _h_LcPb, _h_D0, _h_D0Pb, _h_Lcint, _h_LcintPb, _h_D0int, _h_D0intPb, _h_LcR, _h_LcRPb, _h_Lcdummy, _h_LcPbdummy, _h_LcPbdummy0, _h_D0Pb0 ;
+    Histo1DPtr _h_Lc, _h_LcPb, _h_D0, _h_D0Pb, _h_Lcint, _h_LcintPb, _h_D0int, _h_D0intPb, _h_LcR, _h_LcRPb, _h_Lcdummy, _h_LcPbdummy, _h_LcPbdummy0, _h_D0Pb0, d0pbnum, lcpbnum, d0pbnumw, lcpbnumw ;
     Scatter2DPtr _h_LcD0, _h_LcD0Pb, _h_LcD0int,  _h_LcD0Pbint, _h_RpPb, brutalLc, brutalD0;
     bool bo1, bo2, bo3;
     int lctot = 0, d0tot = 0;    

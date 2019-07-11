@@ -48,8 +48,7 @@ namespace Rivet {
       _h_LcRPb = bookHisto1D("LcRPb", binEdges2, "Lc RPb");
 
       bo1 = bo2 = bo3 = false;
-      lctot = d0tot = 0;
-    }
+     }
 
 
     /// Perform the per-event analysis
@@ -58,7 +57,7 @@ namespace Rivet {
       beamp = beamIds();
       const double weight = event.weight();
       const UnstableFinalState& ufs = apply<UnstableFinalState>(event, "UFS");
-        
+      
         /*PDG code IDs used inside the foreach cycle: 421 = D0, 411 = D+, 413 = D*+ */
       if(beamp.first == 2212 && beamp.second ==2212){
         if(fuzzyEquals(sqrtS()/GeV,5000)){
@@ -88,7 +87,7 @@ namespace Rivet {
                          _h_D0int->fill(0,weight);}
                      else if(p.abspid() == 4122){
                          _h_Lc->fill(p.pT()/GeV, weight);
-			                   _h_Lcdummy->fill(p.pT()/GeV, weight);
+			 _h_Lcdummy->fill(p.pT()/GeV, weight);
                          _h_Lcint->fill(0,weight);}
                      }   
                 }    
@@ -105,15 +104,13 @@ namespace Rivet {
                      if(p.abspid() == 421){
                          _h_D0Pb->fill(p.pT()/GeV, 1); 
                          _h_D0intPb->fill(-0.5,1);
-			                   d0tot++;
-			                   }
+			 }
                      else if(p.abspid() == 4122){
                          _h_LcPb->fill(p.pT()/GeV, 1);
-			                   _h_LcPbdummy->fill(p.pT()/GeV, 1);
+			 _h_LcPbdummy->fill(p.pT()/GeV, 1);
                          _h_LcRPb->fill(p.pT()/GeV, 1);
                          _h_LcintPb->fill(-0.5,1);
-			                   lctot++;
-			                   }
+			 }
                      }    
                 }    
         }
@@ -129,18 +126,18 @@ namespace Rivet {
       if(bo1 == true) scale(_h_D0int, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       if(bo1 == true) scale(_h_Lc, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       if(bo1 == true) scale(_h_Lcdummy, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
-      if(bo3 == true) scale(_h_LcPbdummy, crossSection()/(microbarn*2*lctot)); // norm to cross section
+      if(bo3 == true) scale(_h_LcPbdummy, crossSection()/(microbarn*2*numEvents())); // norm to cross section
       if(bo1 == true) scale(_h_Lcint, crossSection()/(microbarn*2*sumOfWeights())); //norm to cross section
-      if(bo3 == true) scale(_h_D0Pb, crossSection()/(microbarn*2*d0tot)); // norm to cross section
-      if(bo3 == true) scale(_h_D0intPb, crossSection()/(microbarn*2*d0tot)); // norm to cross section
-      if(bo3 == true) scale(_h_LcPb, crossSection()/(microbarn*2*lctot)); // norm to cross section
-      if(bo3 == true) scale(_h_LcintPb, crossSection()/(microbarn*2*lctot)); //norm to cross section
+      if(bo3 == true) scale(_h_D0Pb, crossSection()/(microbarn*2*numEvents())); // norm to cross section
+      if(bo3 == true) scale(_h_D0intPb, crossSection()/(microbarn*2*numEvents())); // norm to cross section
+      if(bo3 == true) scale(_h_LcPb, crossSection()/(microbarn*2*numEvents())); // norm to cross section
+      if(bo3 == true) scale(_h_LcintPb, crossSection()/(microbarn*2*numEvents())); //norm to cross section
       if (_h_Lcdummy->numEntries()>0 && _h_D0->numEntries()>0) divide(_h_Lcdummy, _h_D0, _h_LcD0);
       if (_h_LcPbdummy->numEntries()>0 && _h_D0Pb->numEntries()>0) divide(_h_LcPbdummy, _h_D0Pb, _h_LcD0Pb);
       if (_h_Lcint->numEntries()>0 && _h_D0int->numEntries()>0) divide(_h_Lcint, _h_D0int, _h_LcD0int);
       if (_h_LcintPb->numEntries()>0 && _h_D0intPb->numEntries()>0) divide(_h_LcintPb, _h_D0intPb, _h_LcD0Pbint);
       if(bo2 == true) scale(_h_LcR, 208*crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
-      if(bo3 == true) scale(_h_LcRPb, crossSection()/(microbarn*2*lctot)); // norm to cross section
+      if(bo3 == true) scale(_h_LcRPb, crossSection()/(microbarn*2*numEvents())); // norm to cross section
       if (_h_LcRPb->numEntries()>0 && _h_LcR->numEntries()>0) divide(_h_LcRPb, _h_LcR, _h_RpPb);
     }
 
@@ -152,7 +149,6 @@ namespace Rivet {
     Histo1DPtr _h_Lc, _h_LcPb, _h_D0, _h_D0Pb, _h_Lcint, _h_LcintPb, _h_D0int, _h_D0intPb, _h_LcR, _h_LcRPb, _h_Lcdummy, _h_LcPbdummy ;
     Scatter2DPtr _h_LcD0, _h_LcD0Pb, _h_LcD0int,  _h_LcD0Pbint, _h_RpPb;
     bool bo1, bo2, bo3;
-    int lctot, d0tot;
     //@}
 
 
