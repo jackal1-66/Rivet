@@ -34,6 +34,6 @@ Title=Pythia105pPb
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
--6.000000e-01	-4.000000e-01	1.000000e+00	5.736932e-02	5.736932e-02
+-6.000000e-01	-4.000000e-01	6.965281e-02	3.995935e-03	3.995935e-03
 # END HISTO1D
 

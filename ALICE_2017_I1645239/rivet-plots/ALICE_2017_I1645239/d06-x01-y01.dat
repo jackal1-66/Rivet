@@ -34,6 +34,6 @@ Title=Pythia1e5
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
--6.000000e-01	-4.000000e-01	6.692742e-02	3.939093e-03	3.939093e-03
+-6.000000e-01	-4.000000e-01	6.965281e-02	3.995935e-03	3.995935e-03
 # END HISTO1D
 

@@ -10,11 +10,11 @@ ErrorBars=1
 LineColor=red
 LineStyle=solid
 Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia105pPb.yoda/ALICE_2017_I1645239/D0intPb
-ScaledBy=4.69671393797971401e+06
+ScaledBy=1.07382849449605383e+04
 Title=Pythia105pPb
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
--6.000000e-01	-4.000000e-01	5.134155e+06	7.516173e+04	7.516173e+04
+-6.000000e-01	-4.000000e-01	2.395598e+05	3.507046e+03	3.507046e+03
 # END HISTO1D
 

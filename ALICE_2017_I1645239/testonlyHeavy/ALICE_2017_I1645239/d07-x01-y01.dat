@@ -9,7 +9,7 @@ LogY=0
 LegendXPos=0.55
 XLabel=$p_T$ [GeV/c]
 YLabel=$\Lambda_c^+ R_{pPb}$
-YMin=-5
+YMin=-0.5
 LegendYPos=0.95
 Legend=1
 # END PLOT
