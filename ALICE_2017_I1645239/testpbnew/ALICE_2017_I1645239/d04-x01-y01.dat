@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia105pPb.yoda/ALICE_2017_I1645239/d04-x01-y01
-DrawOnly=/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia105pPb.yoda/ALICE_2017_I1645239/d04-x01-y01
+LegendOnly=/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/testtesttest5p.yoda/ALICE_2017_I1645239/d04-x01-y01
+DrawOnly=/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/testtesttest5p.yoda/ALICE_2017_I1645239/d04-x01-y01
 Title=$\Lambda_c^+/D^0$ ratio in p-Pb at $\sqrt{s_{NN}}=5.02$ TeV and $-0.96<y<0.04$.
 RatioPlotReference=/ALICE_2017_I1645239/d04-x01-y01
 ConnectBins=0
@@ -28,18 +28,18 @@ Title=Data
 # END HISTO1D
 
 
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia105pPb.yoda/ALICE_2017_I1645239/d04-x01-y01
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/testtesttest5p.yoda/ALICE_2017_I1645239/d04-x01-y01
 ErrorBars=1
 LineColor=red
 LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia105pPb.yoda/ALICE_2017_I1645239/d04-x01-y01
-Title=Pythia105pPb
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/testtesttest5p.yoda/ALICE_2017_I1645239/d04-x01-y01
+Title=testtesttest5p
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
-2.000000e+00	4.000000e+00	6.147809e-02	6.532989e-03	6.532989e-03
-4.000000e+00	6.000000e+00	9.471366e-02	1.511223e-02	1.511223e-02
-6.000000e+00	8.000000e+00	9.009009e-02	2.974461e-02	2.974461e-02
-8.000000e+00	1.200000e+01	9.677419e-02	4.137543e-02	4.137543e-02
+2.000000e+00	4.000000e+00	1.449275e-01	3.467567e-02	3.467567e-02
+4.000000e+00	6.000000e+00	7.692308e-02	3.991342e-02	3.991342e-02
+6.000000e+00	8.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+8.000000e+00	1.200000e+01	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 

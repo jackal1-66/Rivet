@@ -1,0 +1,24 @@
+# BEGIN PLOT
+LegendOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/test2merge7Tpp.yoda/ALICE_2017_I1645239/Lcdummy
+DrawOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/test2merge7Tpp.yoda/ALICE_2017_I1645239/Lcdummy
+Legend=1
+LogY=1
+# END PLOT
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/test2merge7Tpp.yoda/ALICE_2017_I1645239/Lcdummy
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/test2merge7Tpp.yoda/ALICE_2017_I1645239/Lcdummy
+ScaledBy=2.05955296400630985e+01
+Title=test2merge7Tpp
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	1.134557e+01	2.269115e+00	2.269115e+00
+2.000000e+00	3.000000e+00	4.538230e+00	1.435114e+00	1.435114e+00
+3.000000e+00	4.000000e+00	3.630584e+00	1.283605e+00	1.283605e+00
+4.000000e+00	6.000000e+00	2.269115e+00	7.175571e-01	7.175571e-01
+6.000000e+00	8.000000e+00	6.807345e-01	3.930222e-01	3.930222e-01
+# END HISTO1D
+

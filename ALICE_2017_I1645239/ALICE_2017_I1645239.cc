@@ -20,7 +20,6 @@ namespace Rivet {
 
     /// Book histograms and initialise projections before the run
     void init() {
-
       // Initialise and register projections
       declare(UnstableFinalState(Cuts::absrap < 0.96), "UFS");
       
@@ -46,7 +45,7 @@ namespace Rivet {
       _h_D0intPb = bookHisto1D("D0intPb", 1, -0.6, -0.4 , "D0 int Pb");
       _h_LcR = bookHisto1D("LcR", binEdges2, "Lc R");
       _h_LcRPb = bookHisto1D("LcRPb", binEdges2, "Lc RPb");
-
+      //_h_cross = bookHisto1D("_h_cross",1,0,2, "cross test");
       bo1 = bo2 = bo3 = false;
      }
 
@@ -94,6 +93,9 @@ namespace Rivet {
         }
       }}
       else if((beamp.first == 2212 && beamp.second == 1000822080) || (beamp.second ==2212 && beamp.first == 1000822080)){
+        //const GenEvent * evgen = event.genEvent();
+        //double crossx = evgen->cross_section()->cross_section();
+        //_h_cross->fill(1,crossx/microbarn);
         bo3 = true;
         foreach (const Particle& p, ufs.particles()) {
             if(p.fromBottom())
@@ -121,7 +123,6 @@ namespace Rivet {
 
     /// Normalise histograms etc., after the run
     void finalize() {
-
       if(bo1 == true) scale(_h_D0, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       if(bo1 == true) scale(_h_D0int, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
       if(bo1 == true) scale(_h_Lc, crossSection()/(microbarn*2*sumOfWeights())); // norm to cross section
@@ -146,7 +147,7 @@ namespace Rivet {
 
     /// @name Histograms
     //@{
-    Histo1DPtr _h_Lc, _h_LcPb, _h_D0, _h_D0Pb, _h_Lcint, _h_LcintPb, _h_D0int, _h_D0intPb, _h_LcR, _h_LcRPb, _h_Lcdummy, _h_LcPbdummy ;
+    Histo1DPtr _h_Lc, _h_LcPb, _h_D0, _h_D0Pb, _h_Lcint, _h_LcintPb, _h_D0int, _h_D0intPb, _h_LcR, _h_LcRPb, _h_Lcdummy, _h_LcPbdummy;
     Scatter2DPtr _h_LcD0, _h_LcD0Pb, _h_LcD0int,  _h_LcD0Pbint, _h_RpPb;
     bool bo1, bo2, bo3;
     //@}

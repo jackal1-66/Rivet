@@ -1,0 +1,19 @@
+# BEGIN PLOT
+LegendOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/merged.yoda/ALICE_2017_I1645239/LcintPb
+DrawOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/merged.yoda/ALICE_2017_I1645239/LcintPb
+Legend=1
+LogY=1
+# END PLOT
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/merged.yoda/ALICE_2017_I1645239/LcintPb
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/merged.yoda/ALICE_2017_I1645239/LcintPb
+Title=merged
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+-6.000000e-01	-4.000000e-01	1.700000e+02	2.915476e+01	2.915476e+01
+# END HISTO1D
+

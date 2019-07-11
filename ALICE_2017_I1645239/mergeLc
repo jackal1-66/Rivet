@@ -1,0 +1,63 @@
+#! /usr/bin/env python
+
+"""\
+Merge together yoda files produced by Rivet.
+
+Examples:
+
+  %(prog)s [options] <yodafile> [<yodafile2> ...]
+
+ENVIRONMENT:
+ * RIVET_ANALYSIS_PATH: list of paths to be searched for analysis plugin libraries
+ * RIVET_DATA_PATH: list of paths to be searched for data files
+"""
+
+import os, sys
+
+## Load the rivet module
+try:
+    import rivet
+except:
+    ## If rivet loading failed, try to bootstrap the Python path!
+    try:
+        # TODO: Is this a good idea? Maybe just notify the user that their PYTHONPATH is wrong?
+        import commands
+        modname = sys.modules[__name__].__file__
+        binpath = os.path.dirname(modname)
+        rivetconfigpath = os.path.join(binpath, "rivet-config")
+        rivetpypath = commands.getoutput(rivetconfigpath + " --pythonpath")
+        sys.path.append(rivetpypath)
+        import rivet
+    except:
+        sys.stderr.write("The rivet Python module could not be loaded: is your PYTHONPATH set correctly?\n")
+        sys.exit(5)
+
+rivet.util.check_python_version()
+rivet.util.set_process_name("rivet-merge")
+
+import time, datetime, logging, signal
+
+## Parse command line options
+import argparse
+parser = argparse.ArgumentParser(description=__doc__)
+
+extragroup = parser.add_argument_group("Run settings")
+extragroup.add_argument("YODAFILES", nargs="+", help="data files to merge")
+extragroup.add_argument("-o", "--output-file", dest="OUTPUTFILE",
+                        default="Rivet.yoda", help="specify the output histo file path (default = %(default)s)")
+extragroup.add_argument("-e", "--equiv", dest="EQUIV", action="store_true", default=False,
+                        help="assume that the yoda files are equivalent but statistically independent (default= assume that different files contains different processes)")
+extragroup.add_argument("-O", "--merge-option", dest="MERGEOPTIONS", action="append",
+                        default=[], help="specify an analysis option name where different options should be merged into the default analysis.")
+
+args = parser.parse_args()
+
+
+############################
+## Actual analysis runs
+
+
+## Set up analysis handler
+ah = rivet.AnalysisHandler("Merging")
+ah.mergeYodas(args.YODAFILES, args.MERGEOPTIONS, args.EQUIV)
+ah.writeData(args.OUTPUTFILE)
