@@ -1,0 +1,24 @@
+# BEGIN PLOT
+LegendOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia1e5.yoda/ALICE_2017_I1645239/Lcdummy
+DrawOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia1e5.yoda/ALICE_2017_I1645239/Lcdummy
+Legend=1
+LogY=1
+# END PLOT
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia1e5.yoda/ALICE_2017_I1645239/Lcdummy
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia1e5.yoda/ALICE_2017_I1645239/Lcdummy
+ScaledBy=4.53822979145558350e+01
+Title=Pythia1e5
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	2.500000e+01	5.000000e+00	5.000000e+00
+2.000000e+00	3.000000e+00	1.000000e+01	3.162278e+00	3.162278e+00
+3.000000e+00	4.000000e+00	8.000000e+00	2.828427e+00	2.828427e+00
+4.000000e+00	6.000000e+00	5.000000e+00	1.581139e+00	1.581139e+00
+6.000000e+00	8.000000e+00	1.500000e+00	8.660254e-01	8.660254e-01
+# END HISTO1D
+
