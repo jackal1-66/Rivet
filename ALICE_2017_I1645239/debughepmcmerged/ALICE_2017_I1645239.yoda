@@ -1,0 +1,100 @@
+BEGIN YODA_SCATTER2D_V2 /REF/ALICE_2017_I1645239/d01-x01-y01
+Variations: [""]
+ErrorBreakdown: {0: {stat: {dn: -19.348, up: 19.348}, sys: {dn: -39.24, up: 39.235}, 'sys,uncertainty on luminosity': {dn: -3.92504, up: 3.92504}}, 1: {stat: {dn: -7.409, up: 7.409}, sys: {dn: -7.891, up: 7.792}, 'sys,uncertainty on luminosity': {dn: -2.10483, up: 2.10483}}, 2: {stat: {dn: -3.051, up: 3.051}, sys: {dn: -3.485, up: 3.397}, 'sys,uncertainty on luminosity': {dn: -0.959735, up: 0.959735}}, 3: {stat: {dn: -0.845, up: 0.845}, sys: {dn: -1.143, up: 1.053}, 'sys,uncertainty on luminosity': {dn: -0.31478999999999996, up: 0.31478999999999996}}, 4: {stat: {dn: -0.378, up: 0.378}, sys: {dn: -0.332, up: 0.315}, 'sys,uncertainty on luminosity': {dn: -0.06954500000000001, up: 0.06954500000000001}}}
+
+IsRef: 1
+Path: /REF/ALICE_2017_I1645239/d01-x01-y01
+Title: doi:10.17182/hepdata.81727.v1/t1
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+1.500000e+00	5.000000e-01	5.000000e-01	1.121440e+02	4.392640e+01	4.392193e+01
+2.500000e+00	5.000000e-01	5.000000e-01	6.013800e+01	1.102685e+01	1.095622e+01
+3.500000e+00	5.000000e-01	5.000000e-01	2.742100e+01	4.730213e+00	4.665758e+00
+5.000000e+00	1.000000e+00	1.000000e+00	8.994000e+00	1.455873e+00	1.386336e+00
+7.000000e+00	1.000000e+00	1.000000e+00	1.987000e+00	5.078824e-01	4.969361e-01
+END YODA_SCATTER2D_V2
+BEGIN YODA_SCATTER2D_V2 /REF/ALICE_2017_I1645239/d02-x01-y01
+Variations: [""]
+ErrorBreakdown: {0: {stat: {dn: -1029.076, up: 1029.076}, sys: {dn: -1154.636, up: 1132.468}, 'sys,uncertainty on luminosity': {dn: -326.250127, up: 326.250127}}, 1: {stat: {dn: -189.132, up: 189.132}, sys: {dn: -186.779, up: 177.358}, 'sys,uncertainty on luminosity': {dn: -55.280627, up: 55.280627}}, 2: {stat: {dn: -54.721, up: 54.721}, sys: {dn: -48.442, up: 43.562}, 'sys,uncertainty on luminosity': {dn: -14.051712000000002, up: 14.051712000000002}}, 3: {stat: {dn: -10.547, up: 10.547}, sys: {dn: -8.745, up: 7.642}, 'sys,uncertainty on luminosity': {dn: -2.6812050000000003, up: 2.6812050000000003}}}
+
+IsRef: 1
+Path: /REF/ALICE_2017_I1645239/d02-x01-y01
+Title: doi:10.17182/hepdata.81727.v1/t2
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+3.000000e+00	1.000000e+00	1.000000e+00	8.817571e+03	1.580703e+03	1.564583e+03
+5.000000e+00	1.000000e+00	1.000000e+00	1.494071e+03	2.715019e+02	2.651089e+02
+7.000000e+00	1.000000e+00	1.000000e+00	3.797760e+02	7.442087e+01	7.134064e+01
+1.000000e+01	2.000000e+00	2.000000e+00	7.246500e+01	1.396077e+01	1.329768e+01
+END YODA_SCATTER2D_V2
+BEGIN YODA_SCATTER2D_V2 /REF/ALICE_2017_I1645239/d03-x01-y01
+Variations: [""]
+ErrorBreakdown: {0: {stat: {dn: -0.118, up: 0.118}, sys: {dn: -0.193, up: 0.193}}, 1: {stat: {dn: -0.075, up: 0.075}, sys: {dn: -0.066, up: 0.066}}, 2: {stat: {dn: -0.066, up: 0.066}, sys: {dn: -0.062, up: 0.062}}, 3: {stat: {dn: -0.048, up: 0.048}, sys: {dn: -0.053, up: 0.052}}, 4: {stat: {dn: -0.076, up: 0.076}, sys: {dn: -0.056, up: 0.056}}}
+
+IsRef: 1
+Path: /REF/ALICE_2017_I1645239/d03-x01-y01
+Title: doi:10.17182/hepdata.81727.v1/t3
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+1.500000e+00	5.000000e-01	5.000000e-01	5.680000e-01	2.262145e-01	2.262145e-01
+2.500000e+00	5.000000e-01	5.000000e-01	5.460000e-01	9.990495e-02	9.990495e-02
+3.500000e+00	5.000000e-01	5.000000e-01	5.320000e-01	9.055385e-02	9.055385e-02
+5.000000e+00	1.000000e+00	1.000000e+00	4.640000e-01	7.150524e-02	7.076722e-02
+7.000000e+00	1.000000e+00	1.000000e+00	3.860000e-01	9.440339e-02	9.440339e-02
+END YODA_SCATTER2D_V2
+BEGIN YODA_SCATTER2D_V2 /REF/ALICE_2017_I1645239/d04-x01-y01
+Variations: [""]
+ErrorBreakdown: {0: {stat: {dn: -0.077, up: 0.077}, sys: {dn: -0.127, up: 0.185}}, 1: {stat: {dn: -0.063, up: 0.063}, sys: {dn: -0.066, up: 0.076}}, 2: {stat: {dn: -0.081, up: 0.081}, sys: {dn: -0.059, up: 0.06}}, 3: {stat: {dn: -0.062, up: 0.062}, sys: {dn: -0.043, up: 0.043}}}
+
+IsRef: 1
+Path: /REF/ALICE_2017_I1645239/d04-x01-y01
+Title: doi:10.17182/hepdata.81727.v1/t4
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+3.000000e+00	1.000000e+00	1.000000e+00	6.380000e-01	1.485194e-01	2.003846e-01
+5.000000e+00	1.000000e+00	1.000000e+00	4.800000e-01	9.124144e-02	9.871677e-02
+7.000000e+00	1.000000e+00	1.000000e+00	5.290000e-01	1.002098e-01	1.008018e-01
+1.000000e+01	2.000000e+00	2.000000e+00	3.990000e-01	7.545197e-02	7.545197e-02
+END YODA_SCATTER2D_V2
+BEGIN YODA_SCATTER2D_V2 /REF/ALICE_2017_I1645239/d05-x01-y01
+Variations: [""]
+ErrorBreakdown: {0: {stat: {dn: -0.061, up: 0.061}, sys: {dn: -0.16, up: 0.16}}}
+
+IsRef: 1
+Path: /REF/ALICE_2017_I1645239/d05-x01-y01
+Title: doi:10.17182/hepdata.81727.v1/t5
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+0.000000e+00	1.000000e-01	1.000000e-01	5.430000e-01	1.712338e-01	1.712338e-01
+END YODA_SCATTER2D_V2
+BEGIN YODA_SCATTER2D_V2 /REF/ALICE_2017_I1645239/d06-x01-y01
+Variations: [""]
+ErrorBreakdown: {0: {stat: {dn: -0.06, up: 0.06}, sys: {dn: -0.087, up: 0.159}}}
+
+IsRef: 1
+Path: /REF/ALICE_2017_I1645239/d06-x01-y01
+Title: doi:10.17182/hepdata.81727.v1/t6
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+-5.000000e-01	1.000000e-01	1.000000e-01	6.020000e-01	1.056835e-01	1.699441e-01
+END YODA_SCATTER2D_V2
+BEGIN YODA_SCATTER2D_V2 /REF/ALICE_2017_I1645239/d07-x01-y01
+Variations: [""]
+ErrorBreakdown: {0: {stat: {dn: -0.18, up: 0.18}, sys: {dn: -0.26, up: 0.22}, 'sys,uncertainty on normalisation': {dn: -0.06221999999999999, up: 0.06221999999999999}}, 1: {stat: {dn: -0.17, up: 0.17}, sys: {dn: -0.19, up: 0.18}, 'sys,uncertainty on normalisation': {dn: -0.05457, up: 0.05457}}, 2: {stat: {dn: -0.31, up: 0.31}, sys: {dn: -0.26, up: 0.25}, 'sys,uncertainty on normalisation': {dn: -0.06477, up: 0.06477}}}
+
+IsRef: 1
+Path: /REF/ALICE_2017_I1645239/d07-x01-y01
+Title: doi:10.17182/hepdata.81727.v1/t7
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+3.000000e+00	1.000000e+00	1.000000e+00	1.220000e+00	3.222908e-01	2.909834e-01
+5.000000e+00	1.000000e+00	1.000000e+00	1.070000e+00	2.607257e-01	2.535308e-01
+7.000000e+00	1.000000e+00	1.000000e+00	1.270000e+00	4.097501e-01	4.034788e-01
+END YODA_SCATTER2D_V2

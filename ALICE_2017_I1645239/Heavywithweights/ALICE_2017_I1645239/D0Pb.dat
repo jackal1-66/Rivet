@@ -1,0 +1,23 @@
+# BEGIN PLOT
+LegendOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/HeavyOLDweights.yoda/ALICE_2017_I1645239/D0Pb
+DrawOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/HeavyOLDweights.yoda/ALICE_2017_I1645239/D0Pb
+Legend=1
+LogY=1
+# END PLOT
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/HeavyOLDweights.yoda/ALICE_2017_I1645239/D0Pb
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/HeavyOLDweights.yoda/ALICE_2017_I1645239/D0Pb
+ScaledBy=2.84451614425390124e-02
+Title=HeavyOLDweights
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	7.361315e+03	1.885204e+02	1.885204e+02
+4.000000e+00	6.000000e+00	2.014442e+03	9.893648e+01	9.893648e+01
+6.000000e+00	8.000000e+00	5.729275e+02	5.260611e+01	5.260611e+01
+8.000000e+00	1.200000e+01	1.308263e+02	1.757523e+01	1.757523e+01
+# END HISTO1D
+
