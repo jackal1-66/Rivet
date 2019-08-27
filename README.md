@@ -50,4 +50,6 @@ The installation on the server was not so easy and it is a little "crooked", so 
 7) Run again rivet
 8) Wait for the events to be generated
 
+#Merging more analysis
 
+In order to do that you should use the function rivet-merge (Rivet 2.7.2). This allowed me to merge multiple yoda files including weights just by doing "rivet-merge file1.yoda file2.yoda file3.yoda -o filemerged.yoda", withouth -e option which complicate things related to weights (this was instead used in order to merge multiple jobs of the same analysis).
