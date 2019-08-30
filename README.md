@@ -18,8 +18,7 @@ Open Rivet plots in the browser
 $ open rivet-plots/index.html
 
 
-
-Generate Pythia Events:
+# Generate Pythia Events:
 
 make a new directory to keep pythia data
 $ mkdir TEST-pythia
@@ -50,7 +49,10 @@ The installation on the server was not so easy and it is a little "crooked", so 
 7) Run again rivet
 8) Wait for the events to be generated
 
-<<<<<<< HEAD
+# Merging more analysis
+
+In order to do that you should use the function rivet-merge (Rivet 2.7.2). This allowed me to merge multiple yoda files including weights just by doing "rivet-merge file1.yoda file2.yoda file3.yoda -o filemerged.yoda", withouth -e option which complicate things related to weights (this was instead used in order to merge multiple jobs of the same analysis).
+
 # Use Dummy Histos on Rivet
 
 It is possible to create dummy histograms which are linked (referencing data) from experimental histograms. This is done using the command:
@@ -61,8 +63,3 @@ Histo1DPtr   \_h\_0000, \_h\_0001; // for a histogram
 
 This will lead to the histo _h_0001 being set (binning, etc) as the experimental histogram d01-x01-y01.
 
-=======
-#Merging more analysis
->>>>>>> cfb6d671d6b770d4f297be22c13807c1f1dabfb7
-
-In order to do that you should use the function rivet-merge (Rivet 2.7.2). This allowed me to merge multiple yoda files including weights just by doing "rivet-merge file1.yoda file2.yoda file3.yoda -o filemerged.yoda", withouth -e option which complicate things related to weights (this was instead used in order to merge multiple jobs of the same analysis).
