@@ -50,4 +50,14 @@ The installation on the server was not so easy and it is a little "crooked", so 
 7) Run again rivet
 8) Wait for the events to be generated
 
+# Use Dummy Histos on Rivet
+
+It is possible to create dummy histograms which are linked (referencing data) from experimental histograms. This is done using the command:
+
+Histo1DPtr   \_h\_0000, \_h\_0001; // for a histogram
+\_h\_0000 = BookHisto1D("d01-x01-y01");
+\_h\_0001 = BookHisto1D("TMP/test", refData(1,1,1));
+
+This will lead to the histo _h_0001 being set (binning, etc) as the experimental histogram d01-x01-y01.
+
 
