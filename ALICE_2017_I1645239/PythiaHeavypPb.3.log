@@ -1,0 +1,477 @@
+
+ *------------------------------------------------------------------------------------* 
+ |                                                                                    | 
+ |  *------------------------------------------------------------------------------*  | 
+ |  |                                                                              |  | 
+ |  |                                                                              |  | 
+ |  |   PPP   Y   Y  TTTTT  H   H  III    A      Welcome to the Lund Monte Carlo!  |  | 
+ |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.240      |  | 
+ |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 20 Dec 2018  |  | 
+ |  |   P       Y      T    H   H   I   A   A                                      |  | 
+ |  |   P       Y      T    H   H  III  A   A    Now is 04 Sep 2019 at 12:27:17    |  | 
+ |  |                                                                              |  | 
+ |  |   Christian Bierlich;  Department of Astronomy and Theoretical Physics,      |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: christian.bierlich@thep.lu.se                                   |  | 
+ |  |   Nishita Desai;  Department of Theoretical Physics, Tata Institute,         |  | 
+ |  |      Homi Bhabha Road, Mumbai 400005, India;                                 |  | 
+ |  |      e-mail: desai@theory.tifr.res.in                                        |  | 
+ |  |   Ilkka Helenius;  Department of Physics, University of Jyvaskyla,           |  | 
+ |  |      P.O. Box 35, FI-40014 University of Jyvaskyla, Finland;                 |  | 
+ |  |      e-mail: ilkka.m.helenius@jyu.fi                                         |  | 
+ |  |   Philip Ilten;  School of Physics and Astronomy,                            |  | 
+ |  |      University of Birmingham, Birmingham, B152 2TT, UK;                     |  | 
+ |  |      e-mail: philten@cern.ch                                                 |  | 
+ |  |   Leif Lonnblad;  Department of Astronomy and Theoretical Physics,           |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: leif.lonnblad@thep.lu.se                                        |  | 
+ |  |   Stephen Mrenna;  Computing Division, Simulations Group,                    |  | 
+ |  |      Fermi National Accelerator Laboratory, MS 234, Batavia, IL 60510, USA;  |  | 
+ |  |      e-mail: mrenna@fnal.gov                                                 |  | 
+ |  |   Stefan Prestel;  Department of Astronomy and Theoretical Physics,          |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: stefan.prestel@thep.lu.se                                       |  | 
+ |  |   Christine O. Rasmussen;  Department of Astronomy and Theoretical Physics,  |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: christine.rasmussen@thep.lu.se                                  |  | 
+ |  |   Torbjorn Sjostrand;  Department of Astronomy and Theoretical Physics,      |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: torbjorn@thep.lu.se                                             |  | 
+ |  |   Peter Skands;  School of Physics,                                          |  | 
+ |  |      Monash University, PO Box 27, 3800 Melbourne, Australia;                |  | 
+ |  |      e-mail: peter.skands@monash.edu                                         |  | 
+ |  |                                                                              |  | 
+ |  |   The main program reference is 'An Introduction to PYTHIA 8.2',             |  | 
+ |  |   T. Sjostrand et al, Comput. Phys. Commun. 191 (2015) 159                   |  | 
+ |  |   [arXiv:1410.3012 [hep-ph]]                                                 |  | 
+ |  |                                                                              |  | 
+ |  |   The main physics reference is the 'PYTHIA 6.4 Physics and Manual',         |  | 
+ |  |   T. Sjostrand, S. Mrenna and P. Skands, JHEP05 (2006) 026 [hep-ph/0603175]  |  | 
+ |  |                                                                              |  | 
+ |  |   An archive of program versions and documentation is found on the web:      |  | 
+ |  |   http://www.thep.lu.se/Pythia                                               |  | 
+ |  |                                                                              |  | 
+ |  |   This program is released under the GNU General Public Licence version 2.   |  | 
+ |  |   Please respect the MCnet Guidelines for Event Generator Authors and Users. |  | 
+ |  |                                                                              |  | 
+ |  |   Disclaimer: this program comes without any guarantees.                     |  | 
+ |  |   Beware of errors and use common sense when interpreting results.           |  | 
+ |  |                                                                              |  | 
+ |  |   Copyright (C) 2018 Torbjorn Sjostrand                                      |  | 
+ |  |                                                                              |  | 
+ |  |                                                                              |  | 
+ |  *------------------------------------------------------------------------------*  | 
+ |                                                                                    | 
+ *------------------------------------------------------------------------------------* 
+
+ *------ HeavyIon fitting of SubCollisionModel to cross sections ------* 
+ |                    Total:    86.00 mb      (+-  2%)                 | 
+ |          non-diffractive:    47.71 mb      (+-  2%)                 | 
+ |           XX diffractive:     7.73 mb      (+- 10%)                 | 
+ |       wounded target (B):    61.51 mb      (+-  5%)                 | 
+ |   wounded projectile (A):    61.51 mb      (+-  5%)                 | 
+ |          AXB diffractive:     0.00 mb      not used                 | 
+ |                  elastic:    18.43 mb      (+- 10%)                 | 
+ |          elastic b-slope:    20.85 GeV^-2  not used                 | 
+ |                                                                     | 
+ |   Using a genetic algorithm                                         | 
+ |               Generation    best Chi2/Ndf                           | 
+ |                        0:     0.44                                  | 
+ |                        1:     0.37                                  | 
+ |                        2:     0.09                                  | 
+ |                        3:     0.07                                  | 
+ |                        4:     0.07                                  | 
+ |                        5:     0.03                                  | 
+ |                        6:     0.03                                  | 
+ |                        7:     0.02                                  | 
+ |                        8:     0.03                                  | 
+ |                        9:     0.03                                  | 
+ |                       10:     0.02                                  | 
+ |                       11:     0.03                                  | 
+ |                       12:     0.03                                  | 
+ |                       13:     0.03                                  | 
+ |                       14:     0.03                                  | 
+ |                       15:     0.03                                  | 
+ |                       16:     0.02                                  | 
+ |                       17:     0.03                                  | 
+ |                       18:     0.02                                  | 
+ |                       19:     0.03                                  | 
+ |                                                                     | 
+ |     Resulting cross sections (target value)                         | 
+ |                    Total:    85.73 *( 86.00) mb                     | 
+ |          non-diffractive:    47.69 *( 47.71) mb                     | 
+ |           XX diffractive:     7.88 *(  7.73) mb                     | 
+ |       wounded target (B):    61.32 *( 61.51) mb                     | 
+ |   wounded projectile (A):    61.37 *( 61.51) mb                     | 
+ |          AXB diffractive:     0.00  (  0.00) mb                     | 
+ |                  elastic:    18.60 *( 18.43) mb                     | 
+ |          elastic b-slope:    24.81  ( 20.85) GeV^-2                 | 
+ |                 Chi2/Ndf:     0.03                                  | 
+ |                                                                     | 
+ |     Resulting parameters:                                           | 
+ |                        0:    13.88                                  | 
+ |                        1:     1.80                                  | 
+ |                        2:     0.22                                  | 
+ |                                                                     | 
+ |     Resulting non-diffractive average impact parameter:             | 
+ |                      <b>:     1.21 +- 0.01 fm                       | 
+ |                                                                     | 
+ *--- End HeavyIon fitting of parameters in nucleon collision model ---* 
+
+HeavyIon Info: To avoid refitting, use the following settings for next run:
+  HeavyIon:SigFitNGen = 0
+  HeavyIon:SigFitDefPar = 13.88,1.80,0.22,0.0,0.0,0.0,0.0,0.0
+ HeavyIon Info: Initializing impact parameter generator with width 8.89 fm.
+ Angantyr Info: No signal process specified. Assuming minimum bias.
+ Angantyr Info: Initializing minimum bias processes.
+
+ *-------  PYTHIA Process Initialization  --------------------------*
+ |                                                                  |
+ | We collide p+ with p+ at a CM energy of 5.012e+03 GeV            |
+ |                                                                  |
+ |------------------------------------------------------------------|
+ |                                                    |             |
+ | Subprocess                                    Code |   Estimated |
+ |                                                    |    max (mb) |
+ |                                                    |             |
+ |------------------------------------------------------------------|
+ |                                                    |             |
+ | non-diffractive                                101 |   4.771e+01 |
+ | A B -> A B elastic                             102 |   1.843e+01 |
+ | A B -> X B single diffractive                  103 |   6.064e+00 |
+ | A B -> A X single diffractive                  104 |   6.064e+00 |
+ | A B -> X X double diffractive                  105 |   7.731e+00 |
+ | A B -> A X B central diffractive               106 |   0.000e+00 |
+ |                                                                  |
+ *-------  End PYTHIA Process Initialization -----------------------*
+
+ *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+ |                                                                  | 
+ |                   sigmaNonDiffractive =    47.71 mb              | 
+ |                                                                  | 
+ |    pT0 =  2.12 gives sigmaInteraction =   208.36 mb: accepted    | 
+ |                                                                  | 
+ *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
+
+ *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+ |                                                                  | 
+ |                          diffraction XB                          | 
+ |                                                                  | 
+ |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  0.56 gives sigmaInteraction =    24.66 mb: accepted    | 
+ |   diffractive mass = 4.73e+01 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  0.78 gives sigmaInteraction =    19.42 mb: accepted    | 
+ |   diffractive mass = 2.24e+02 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  1.09 gives sigmaInteraction =    16.48 mb: accepted    | 
+ |   diffractive mass = 1.06e+03 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  1.52 gives sigmaInteraction =    23.62 mb: accepted    | 
+ |   diffractive mass = 5.01e+03 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  2.12 gives sigmaInteraction =    43.46 mb: accepted    | 
+ |                                                                  | 
+ *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
+ PYTHIA Warning in MultipartonInteractions::init: maximum increased by factor 3.999
+
+ *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+ |                                                                  | 
+ |                          diffraction AX                          | 
+ |                                                                  | 
+ |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  0.56 gives sigmaInteraction =    24.96 mb: accepted    | 
+ |   diffractive mass = 4.73e+01 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  0.78 gives sigmaInteraction =    19.42 mb: accepted    | 
+ |   diffractive mass = 2.24e+02 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  1.09 gives sigmaInteraction =    16.57 mb: accepted    | 
+ |   diffractive mass = 1.06e+03 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  1.52 gives sigmaInteraction =    24.07 mb: accepted    | 
+ |   diffractive mass = 5.01e+03 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  2.12 gives sigmaInteraction =    43.16 mb: accepted    | 
+ |                                                                  | 
+ *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
+
+ *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+ |                                                                  | 
+ |                          diffraction AXB                         | 
+ |                                                                  | 
+ |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  0.56 gives sigmaInteraction =     5.88 mb: rejected    | 
+ |    pT0 =  0.50 gives sigmaInteraction =     8.71 mb: rejected    | 
+ |    pT0 =  0.45 gives sigmaInteraction =    13.01 mb: accepted    | 
+ |   diffractive mass = 4.73e+01 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  0.78 gives sigmaInteraction =     3.00 mb: rejected    | 
+ |    pT0 =  0.70 gives sigmaInteraction =     4.14 mb: rejected    | 
+ |    pT0 =  0.63 gives sigmaInteraction =     5.70 mb: rejected    | 
+ |    pT0 =  0.57 gives sigmaInteraction =     8.12 mb: rejected    | 
+ |    pT0 =  0.51 gives sigmaInteraction =    11.52 mb: accepted    | 
+ |   diffractive mass = 2.24e+02 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  1.09 gives sigmaInteraction =     2.59 mb: rejected    | 
+ |    pT0 =  0.98 gives sigmaInteraction =     3.15 mb: rejected    | 
+ |    pT0 =  0.88 gives sigmaInteraction =     3.90 mb: rejected    | 
+ |    pT0 =  0.79 gives sigmaInteraction =     4.85 mb: rejected    | 
+ |    pT0 =  0.71 gives sigmaInteraction =     6.13 mb: rejected    | 
+ |    pT0 =  0.64 gives sigmaInteraction =     7.83 mb: rejected    | 
+ |    pT0 =  0.58 gives sigmaInteraction =    10.16 mb: rejected    | 
+ |    pT0 =  0.52 gives sigmaInteraction =    13.54 mb: accepted    | 
+ |   diffractive mass = 1.06e+03 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  1.52 gives sigmaInteraction =     3.92 mb: rejected    | 
+ |    pT0 =  1.37 gives sigmaInteraction =     4.54 mb: rejected    | 
+ |    pT0 =  1.23 gives sigmaInteraction =     5.27 mb: rejected    | 
+ |    pT0 =  1.11 gives sigmaInteraction =     6.09 mb: rejected    | 
+ |    pT0 =  1.00 gives sigmaInteraction =     6.97 mb: rejected    | 
+ |    pT0 =  0.90 gives sigmaInteraction =     8.04 mb: rejected    | 
+ |    pT0 =  0.81 gives sigmaInteraction =     9.26 mb: rejected    | 
+ |    pT0 =  0.73 gives sigmaInteraction =    10.76 mb: rejected    | 
+ |    pT0 =  0.65 gives sigmaInteraction =    12.66 mb: accepted    | 
+ |   diffractive mass = 5.01e+03 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  2.12 gives sigmaInteraction =     5.91 mb: rejected    | 
+ |    pT0 =  1.91 gives sigmaInteraction =     6.93 mb: rejected    | 
+ |    pT0 =  1.72 gives sigmaInteraction =     8.06 mb: rejected    | 
+ |    pT0 =  1.55 gives sigmaInteraction =     9.16 mb: rejected    | 
+ |    pT0 =  1.39 gives sigmaInteraction =    10.56 mb: rejected    | 
+ |    pT0 =  1.25 gives sigmaInteraction =    11.84 mb: accepted    | 
+ |                                                                  | 
+ *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
+
+ *-------  PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings (changes only)  ------------------* 
+ |                                                                                                                 | 
+ | Name                                          |                      Now |      Default         Min         Max | 
+ |                                               |                          |                                      | 
+ | Beams:eA                                      |                 4000.000 |     7000.000         0.0             | 
+ | Beams:eB                                      |                 1570.000 |     7000.000         0.0             | 
+ | Beams:frameType                               |                        2 |            1           1           5 | 
+ | HadronLevel:all                               |                      off |           on                         | 
+ | Next:numberCount                              |                        0 |         1000           0             | 
+ | Next:numberShowEvent                          |                        0 |            1           0             | 
+ | Next:numberShowInfo                           |                        0 |            1           0             | 
+ | Next:numberShowLHA                            |                        0 |            1           0             | 
+ | Next:numberShowProcess                        |                        0 |            1           0             | 
+ | Random:seed                                   |                      303 |           -1               900000000 | 
+ | Random:setSeed                                |                       on |          off                         | 
+ | SoftQCD:all                                   |                       on |          off                         | 
+ | Tune:ee                                       |                        0 |            7          -1           7 | 
+ | Tune:pp                                       |                        0 |           14          -1          34 | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings  -----------------------------* 
+
+ --------  PYTHIA Particle Data Table (changed only)  ------------------------------------------------------------------------------
+ 
+      id   name            antiName         spn chg col      m0        mWidth      mMin       mMax       tau0    res dec ext vis wid
+             no onMode   bRatio   meMode     products 
+
+ no particle data has been changed from its default value 
+
+ --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
+
+ Angantyr Info: Initializing secondary absorptive processes as single diffraction.
+
+ *-------  PYTHIA Process Initialization  --------------------------*
+ |                                                                  |
+ | We collide p+ with p+ at a CM energy of 5.012e+03 GeV            |
+ |                                                                  |
+ |------------------------------------------------------------------|
+ |                                                    |             |
+ | Subprocess                                    Code |   Estimated |
+ |                                                    |    max (mb) |
+ |                                                    |             |
+ |------------------------------------------------------------------|
+ |                                                    |             |
+ | A B -> X B single diffractive                  103 |   6.064e+00 |
+ | A B -> A X single diffractive                  104 |   6.064e+00 |
+ |                                                                  |
+ *-------  End PYTHIA Process Initialization -----------------------*
+
+ *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+ |                                                                  | 
+ |                   sigmaNonDiffractive =    47.71 mb              | 
+ |                                                                  | 
+ |    pT0 =  2.12 gives sigmaInteraction =   208.95 mb: accepted    | 
+ |                                                                  | 
+ *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
+
+ *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+ |                                                                  | 
+ |                          diffraction XB                          | 
+ |                                                                  | 
+ |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    47.71 mb    | 
+ |    pT0 =  2.12 gives sigmaInteraction =    15.94 mb: rejected    | 
+ |    pT0 =  1.91 gives sigmaInteraction =    25.21 mb: rejected    | 
+ |    pT0 =  1.72 gives sigmaInteraction =    39.37 mb: rejected    | 
+ |    pT0 =  1.55 gives sigmaInteraction =    61.48 mb: accepted    | 
+ |   diffractive mass = 4.73e+01 GeV and sigmaNorm =    47.71 mb    | 
+ |    pT0 =  2.12 gives sigmaInteraction =    39.35 mb: rejected    | 
+ |    pT0 =  1.91 gives sigmaInteraction =    55.90 mb: accepted    | 
+ |   diffractive mass = 2.24e+02 GeV and sigmaNorm =    47.71 mb    | 
+ |    pT0 =  2.12 gives sigmaInteraction =    92.77 mb: accepted    | 
+ |   diffractive mass = 1.06e+03 GeV and sigmaNorm =    47.71 mb    | 
+ |    pT0 =  2.12 gives sigmaInteraction =   160.96 mb: accepted    | 
+ |   diffractive mass = 5.01e+03 GeV and sigmaNorm =    47.71 mb    | 
+ |    pT0 =  2.12 gives sigmaInteraction =   190.92 mb: accepted    | 
+ |                                                                  | 
+ *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
+ PYTHIA Warning in MultipartonInteractions::init: maximum increased by factor 2.741
+
+ *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+ |                                                                  | 
+ |                          diffraction AX                          | 
+ |                                                                  | 
+ |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    47.71 mb    | 
+ |    pT0 =  2.12 gives sigmaInteraction =    15.88 mb: rejected    | 
+ |    pT0 =  1.91 gives sigmaInteraction =    25.10 mb: rejected    | 
+ |    pT0 =  1.72 gives sigmaInteraction =    39.31 mb: rejected    | 
+ |    pT0 =  1.55 gives sigmaInteraction =    61.29 mb: accepted    | 
+ |   diffractive mass = 4.73e+01 GeV and sigmaNorm =    47.71 mb    | 
+ |    pT0 =  2.12 gives sigmaInteraction =    39.65 mb: rejected    | 
+ |    pT0 =  1.91 gives sigmaInteraction =    56.32 mb: accepted    | 
+ |   diffractive mass = 2.24e+02 GeV and sigmaNorm =    47.71 mb    | 
+ |    pT0 =  2.12 gives sigmaInteraction =    91.99 mb: accepted    | 
+ |   diffractive mass = 1.06e+03 GeV and sigmaNorm =    47.71 mb    | 
+ |    pT0 =  2.12 gives sigmaInteraction =   160.38 mb: accepted    | 
+ |   diffractive mass = 5.01e+03 GeV and sigmaNorm =    47.71 mb    | 
+ |    pT0 =  2.12 gives sigmaInteraction =   192.21 mb: accepted    | 
+ |                                                                  | 
+ *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
+
+ *-------  PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings (changes only)  ------------------* 
+ |                                                                                                                 | 
+ | Name                                          |                      Now |      Default         Min         Max | 
+ |                                               |                          |                                      | 
+ | Beams:eA                                      |                 4000.000 |     7000.000         0.0             | 
+ | Beams:eB                                      |                 1570.000 |     7000.000         0.0             | 
+ | Beams:eCM                                     |                 5011.986 |    14000.000    10.00000             | 
+ | Beams:frameType                               |                        2 |            1           1           5 | 
+ | Diffraction:mRefPomP                          |                 5011.986 |    100.00000     1.00000             | 
+ | Diffraction:sigmaRefPomP                      |                 47.71012 |     10.00000     2.00000    40.00000 | 
+ | HadronLevel:all                               |                      off |           on                         | 
+ | MultipartonInteractions:ecmPow                |                      0.0 |      0.21500         0.0     0.50000 | 
+ | MultipartonInteractions:ecmRef                |                 5011.986 |     7000.000     1.00000             | 
+ | MultipartonInteractions:pT0Ref                |                  2.12198 |      2.28000     0.50000    10.00000 | 
+ | Next:numberCount                              |                        0 |         1000           0             | 
+ | Next:numberShowEvent                          |                        0 |            1           0             | 
+ | Next:numberShowInfo                           |                        0 |            1           0             | 
+ | Next:numberShowLHA                            |                        0 |            1           0             | 
+ | Next:numberShowProcess                        |                        0 |            1           0             | 
+ | PDF:PomSet                                    |                       11 |            6                         | 
+ | Random:seed                                   |                      303 |           -1               900000000 | 
+ | Random:setSeed                                |                       on |          off                         | 
+ | SoftQCD:singleDiffractive                     |                       on |          off                         | 
+ | Tune:ee                                       |                        0 |            7          -1           7 | 
+ | Tune:pp                                       |                        0 |           14          -1          34 | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings  -----------------------------* 
+
+ --------  PYTHIA Particle Data Table (changed only)  ------------------------------------------------------------------------------
+ 
+      id   name            antiName         spn chg col      m0        mWidth      mMin       mMax       tau0    res dec ext vis wid
+             no onMode   bRatio   meMode     products 
+
+ no particle data has been changed from its default value 
+
+ --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
+
+ Angantyr Info: Initializing hadronisation processes.
+
+ *-------  PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings (changes only)  ------------------* 
+ |                                                                                                                 | 
+ | Name                                          |                      Now |      Default         Min         Max | 
+ |                                               |                          |                                      | 
+ | Beams:eA                                      |                 4000.000 |     7000.000         0.0             | 
+ | Beams:eB                                      |                 1570.000 |     7000.000         0.0             | 
+ | Beams:frameType                               |                        2 |            1           1           5 | 
+ | Beams:idB                                     |               1000822080 |         2212                         | 
+ | Next:numberCount                              |                        0 |         1000           0             | 
+ | Next:numberShowEvent                          |                        0 |            1           0             | 
+ | Next:numberShowInfo                           |                        0 |            1           0             | 
+ | Next:numberShowLHA                            |                        0 |            1           0             | 
+ | Next:numberShowProcess                        |                        0 |            1           0             | 
+ | PartonLevel:all                               |                      off |           on                         | 
+ | ProcessLevel:all                              |                      off |           on                         | 
+ | Random:seed                                   |                      303 |           -1               900000000 | 
+ | Random:setSeed                                |                       on |          off                         | 
+ | Tune:ee                                       |                        0 |            7          -1           7 | 
+ | Tune:pp                                       |                        0 |           14          -1          34 | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings  -----------------------------* 
+
+ --------  PYTHIA Particle Data Table (changed only)  ------------------------------------------------------------------------------
+ 
+      id   name            antiName         spn chg col      m0        mWidth      mMin       mMax       tau0    res dec ext vis wid
+             no onMode   bRatio   meMode     products 
+
+ no particle data has been changed from its default value 
+
+ --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
+
+ PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: weight above unity  
+ PYTHIA Warning in StringFragmentation::fragmentToJunction: bad convergence junction rest frame  
+ PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: weight above unity  
+ PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF  
+ PYTHIA Error in BeamRemnants::setKinematics: kinematics construction failed  
+ PYTHIA Warning in Pythia::check: not quite matched particle energy/momentum/mass  
+ PYTHIA Warning in Pythia::check: not quite matched particle energy/momentum/mass  
+ PYTHIA Error in BeamRemnants::setKinematics: kinematics construction failed  
+ PYTHIA Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop  
+ PYTHIA Error in StringFragmentation::fragment: stuck in joining  
+ PYTHIA Error in Pythia::forceHadronLevel: hadronLevel failed; try again  
+ PYTHIA Abort from Pythia::forceHadronLevel: hadronLevel failed; giving up  
+ PYTHIA Warning in MultipartonInteractions::pTnext: weight above unity  
+ PYTHIA Warning in MultipartonInteractions::pTfirst: weight above unity  
+ PYTHIA Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop  
+ PYTHIA Error in StringFragmentation::fragmentToJunction: caught in junction flavour loop  
+ PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF  
+ PYTHIA Warning in Pythia::check: energy-momentum not quite conserved  
+ PYTHIA Error in Pythia::next: partonLevel failed; try again  
+ PYTHIA Error in MiniStringFragmentation::fragment: no 1- or 2-body state found above mass threshold  
+ PYTHIA Warning in StringFragmentation::finalRegion: random axis needed to break tie  
+ PYTHIA Error in Pythia::next: partonLevel failed; try again  
+
+ *-----  HeavyIon Event and Cross Section Statistics  -------------------------------------------------------------*
+ |                                                                                                                 |
+ | Subprocess                                    Code |            Number of events       |      sigma +- delta    |
+ |                                                    |       Tried   Selected   Accepted |     (estimated) (mb)   |
+ |                                                    |                                   |                        |
+ |-----------------------------------------------------------------------------------------------------------------|
+ |                                                    |                                   |                        |
+ | non-diffractive                                101 |      179683     179683     179683 |   1.809e+03  1.852e-02 |
+ | A B -> A B elastic                             102 |          69         69         69 |   8.795e-01  1.192e+00 |
+ | A B -> X B single diffractive                  103 |        8700       8700       8700 |   1.065e+02  1.020e-01 |
+ | A B -> A X single diffractive                  104 |        8819       8819       8819 |   1.077e+02  1.011e-01 |
+ | A B -> X X double diffractive                  105 |        2729       2729       2729 |   3.027e+01  1.650e-01 |
+ |                                                    |                                   |                        |
+ | sum                                                |      596806     200000     200000 |   2.055e+03  1.793e-02 |
+ | (Estimated total cross section)                    |      596806          0          0 |   3.541e+03  7.024e+00 |
+ | (Estimated non-diffractive cross section)          |      596806          0          0 |   1.810e+03  3.600e-01 |
+ |                                                                                                                 |
+ *-----  End HeavyIon Event and Cross Section Statistics ----------------------------------------------------------*
+
+ *-------  PYTHIA Error and Warning Messages Statistics  ----------------------------------------------------------* 
+ |                                                                                                                 | 
+ |  times   message                                                                                                | 
+ |                                                                                                                 | 
+ |   1503   (MBIAS)Error in BeamRemnants::setKinematics: kinematics construction failed                            | 
+ |      2   (MBIAS)Error in Pythia::next: partonLevel failed; try again                                            | 
+ |     81   (MBIAS)Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop                                     | 
+ |      3   (MBIAS)Warning in MultipartonInteractions::init: maximum increased                                     | 
+ |      3   (MBIAS)Warning in MultipartonInteractions::pTfirst: weight above unity                                 | 
+ |     14   (MBIAS)Warning in MultipartonInteractions::pTnext: weight above unity                                  | 
+ |      1   (MBIAS)Warning in Pythia::check: energy-momentum not quite conserved                                   | 
+ |     24   (MBIAS)Warning in Pythia::check: not quite matched particle energy/momentum/mass                       | 
+ |    163   (MBIAS)Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF                                    | 
+ |   8376   (MBIAS)Warning in SimpleSpaceShower::pT2nextQCD: weight above unity                                    | 
+ |    434   (SASD)Error in BeamRemnants::setKinematics: kinematics construction failed                             | 
+ |      2   (SASD)Error in Pythia::next: partonLevel failed; try again                                             | 
+ |     21   (SASD)Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop                                      | 
+ |      2   (SASD)Warning in MultipartonInteractions::init: maximum increased                                      | 
+ |    157   (SASD)Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF                                     | 
+ |    221   (SASD)Warning in SimpleSpaceShower::pT2nextQCD: weight above unity                                     | 
+ |      1   (SIGPP)Abort from Pythia::init: processLevel initialization failed                                     | 
+ |      1   (SIGPP)Error in ProcessLevel::init: no process switched on                                             | 
+ |     19   Abort from Pythia::forceHadronLevel: hadronLevel failed; giving up                                     | 
+ |      3   Error in MiniStringFragmentation::fragment: no 1- or 2-body state found above mass threshold           | 
+ |    465   Error in Pythia::forceHadronLevel: hadronLevel failed; try again                                       | 
+ |    422   Error in StringFragmentation::fragment: stuck in joining                                               | 
+ |     40   Error in StringFragmentation::fragmentToJunction: caught in junction flavour loop                      | 
+ |     35   Warning in Pythia::check: not quite matched particle energy/momentum/mass                              | 
+ |      1   Warning in StringFragmentation::finalRegion: random axis needed to break tie                           | 
+ |   1259   Warning in StringFragmentation::fragmentToJunction: bad convergence junction rest frame                | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Error and Warning Messages Statistics  ------------------------------------------------------* 
+Cross Section (nb) = 1.260e+09
