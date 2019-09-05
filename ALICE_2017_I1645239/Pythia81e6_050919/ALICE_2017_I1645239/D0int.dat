@@ -10,11 +10,11 @@ ErrorBars=1
 LineColor=red
 LineStyle=solid
 Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/D0int
-ScaledBy=1.81637219337253035e-03
+ScaledBy=1.81632719175435758e-03
 Title=Pythia8_merge_050919
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
--1.000000e-01	1.000000e-01	4.416230e+03	3.128787e+01	3.128787e+01
+-1.000000e-01	1.000000e-01	2.461763e+03	2.363477e+01	2.363477e+01
 # END HISTO1D
 

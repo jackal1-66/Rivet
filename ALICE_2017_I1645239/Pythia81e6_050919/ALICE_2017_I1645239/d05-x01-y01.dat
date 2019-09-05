@@ -34,6 +34,6 @@ Title=Pythia8_merge_050919
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
--1.000000e-01	1.000000e-01	6.239403e-02	1.824023e-03	1.824023e-03
+-1.000000e-01	1.000000e-01	6.230989e-02	2.470070e-03	2.470070e-03
 # END HISTO1D
 
