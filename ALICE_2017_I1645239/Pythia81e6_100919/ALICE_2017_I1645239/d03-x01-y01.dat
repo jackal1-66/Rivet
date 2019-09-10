@@ -1,14 +1,15 @@
 # BEGIN PLOT
 LegendOnly=/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d03-x01-y01
-XLabel=$p_T$ [GeV/c]
-RatioPlotReference=/ALICE_2017_I1645239/d03-x01-y01
-Title=$\Lambda_c^+/D^0$ ratio in pp at $\sqrt{s}=7$ TeV and $|y|<0.5$.
 DrawOnly=/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d03-x01-y01
-RatioPlot=1
+Title=$\Lambda_c^+/D^0$ ratio in pp at $\sqrt{s}=7$ TeV and $|y|<0.5$.
+RatioPlotReference=/ALICE_2017_I1645239/d03-x01-y01
 ConnectBins=0
+RatioPlot=1
+LogY=0
+RatioPlotYMax=1.2
+XLabel=$p_T$ [GeV/c]
 Legend=1
 RatioPlotYMin=0.1
-LogY=0
 # END PLOT
 
 # BEGIN HISTO1D /ALICE_2017_I1645239/d03-x01-y01
