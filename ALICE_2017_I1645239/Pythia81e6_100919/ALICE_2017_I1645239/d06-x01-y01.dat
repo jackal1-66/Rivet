@@ -2,14 +2,15 @@
 LegendOnly=/ALICE_2017_I1645239/d06-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d06-x01-y01
 DrawOnly=/ALICE_2017_I1645239/d06-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d06-x01-y01
 Title=$\Lambda_c^+/D^0$ ratio in pPb at $\sqrt{s_{NN}}=5.02$ TeV and $-0.96 < y < 0.04$ with $2 < p_T < 12$ GeV/c.
+RatioPlotReference=/ALICE_2017_I1645239/d06-x01-y01
 ConnectBins=0
 RatioPlot=1
 LogY=1
-RatioPlotReference=/ALICE_2017_I1645239/d06-x01-y01
 LegendXPos=0.55
 XLabel=$p_T$ [GeV/c]
 LegendYPos=0.95
 Legend=1
+RatioPlotYMin=0.1
 # END PLOT
 
 # BEGIN HISTO1D /ALICE_2017_I1645239/d06-x01-y01

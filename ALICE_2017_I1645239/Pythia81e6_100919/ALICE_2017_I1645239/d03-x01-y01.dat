@@ -1,5 +1,4 @@
 # BEGIN PLOT
-RatioPlotYMax=1.5
 LegendOnly=/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d03-x01-y01
 XLabel=$p_T$ [GeV/c]
 RatioPlotReference=/ALICE_2017_I1645239/d03-x01-y01
@@ -8,6 +7,7 @@ DrawOnly=/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/R
 RatioPlot=1
 ConnectBins=0
 Legend=1
+RatioPlotYMin=0.1
 LogY=0
 # END PLOT
 
