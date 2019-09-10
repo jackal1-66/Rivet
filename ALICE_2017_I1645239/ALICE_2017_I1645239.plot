@@ -34,7 +34,7 @@ ConnectBins=0
 #LegendXPos=0.55
 LogY=0
 RatioPlotYMin=0.01
-RatioPlotYMax=1.2
+RatioPlotYMax=1.15
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -44,7 +44,7 @@ XLabel=$p_T$ [GeV/c]
 #YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
 ConnectBins=0
 RatioPlotYMin=0.01
-RatioPlotYMax=1.2
+RatioPlotYMax=1.15
 #PlotSize=10,8
 LogY=0
 LegendYPos=0.95
@@ -84,7 +84,7 @@ XLabel= $p_T$ [GeV/c]
 YLabel= $\Lambda_c^+ R_{pPb}$
 ConnectBins=0
 RatioPlotYMin=0.01
-RatioPlotYMax=1.2
+RatioPlotYMax=1.15
 #PlotSize=10,8
 LogY=0
 LegendYPos=0.95
