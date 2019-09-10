@@ -54,7 +54,7 @@ END PLOT
 
 BEGIN PLOT /ALICE_2017_I1645239/d05-x01-y01
 Title=$\Lambda_c^+/D^0$ ratio in pp at $\sqrt{s}=7$ TeV and $|y|<0.5$ with $1 < p_T < 8$ GeV/c.  
-XLabel= y
+XLabel= $p_T$ [GeV/c]
 #YLabel=$N(D^+)/N(D^0)$
 ConnectBins=0
 RatioPlotYMin=0.1
@@ -67,7 +67,7 @@ END PLOT
 
 BEGIN PLOT /ALICE_2017_I1645239/d06-x01-y01
 Title=$\Lambda_c^+/D^0$ ratio in pPb at $\sqrt{s_{NN}}=5.02$ TeV and $-0.96 < y < 0.04$ with $2 < p_T < 12$ GeV/c.
-XLabel= y
+XLabel= $p_T$ [GeV/c]
 #YLabel=$N(D^{*+})/N(D^0)$
 ConnectBins=0
 RatioPlotYMin=0.1
