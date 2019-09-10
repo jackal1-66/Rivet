@@ -9,7 +9,7 @@ LogY=0
 RatioPlotYMax=1.2
 XLabel=$p_T$ [GeV/c]
 Legend=1
-RatioPlotYMin=0.1
+RatioPlotYMin=0.01
 # END PLOT
 
 # BEGIN HISTO1D /ALICE_2017_I1645239/d03-x01-y01
