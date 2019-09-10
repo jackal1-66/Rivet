@@ -10,7 +10,7 @@ RatioPlotYMax=1.2
 XLabel=$p_T$ [GeV/c]
 YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
 Legend=1
-RatioPlotYMin=0.01
+RatioPlotYMin=0.1
 # END PLOT
 
 # BEGIN HISTO1D /ALICE_2017_I1645239/d01-x01-y01

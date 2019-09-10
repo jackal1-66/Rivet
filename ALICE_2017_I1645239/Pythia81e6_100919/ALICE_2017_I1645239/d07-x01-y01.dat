@@ -13,7 +13,7 @@ YLabel=y
 YMin=0.
 LegendYPos=0.95
 Legend=1
-RatioPlotYMin=0.01
+RatioPlotYMin=0.1
 # END PLOT
 
 # BEGIN HISTO1D /ALICE_2017_I1645239/d07-x01-y01
