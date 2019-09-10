@@ -11,7 +11,7 @@ LegendXPos=0.55
 XLabel=$p_T$ [GeV/c]
 LegendYPos=0.95
 Legend=1
-RatioPlotYMin=0.1
+RatioPlotYMin=0.01
 # END PLOT
 
 # BEGIN HISTO1D /ALICE_2017_I1645239/d04-x01-y01
