@@ -18,7 +18,7 @@ YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
 ConnectBins=0
 #PlotSize=10,8
 #LegendYPos=0.96
-#LegendXPos=0.55
+#LegendXPos=0.55i
 RatioPlotYMin=0.01
 RatioPlotYMax=1.2
 # + any additional plot settings you might like, see make-plots documentation
