@@ -6,7 +6,7 @@ XLabel=$p_T$ [GeV/c]
 #LegendXPos=0.55
 YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
 ConnectBins=0
-RatioPlotYMax=1.5
+RatioPlotYMin=0.01
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -18,7 +18,7 @@ ConnectBins=0
 #PlotSize=10,8
 #LegendYPos=0.96
 #LegendXPos=0.55
-RatioPlotYMax=1.5
+RatioPlotYMin=0.01
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
