@@ -6,7 +6,7 @@ XLabel=$p_T$ [GeV/c]
 #LegendXPos=0.55
 YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
 ConnectBins=0
-RatioPlotYMin=0.1
+RatioPlotYMin=0.01
 RatioPlotYMax=1.2
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
@@ -19,7 +19,7 @@ ConnectBins=0
 #PlotSize=10,8
 #LegendYPos=0.96
 #LegendXPos=0.55
-RatioPlotYMin=0.1
+RatioPlotYMin=0.01
 RatioPlotYMax=1.2
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
@@ -33,7 +33,7 @@ ConnectBins=0
 #LegendYPos=0.96
 #LegendXPos=0.55
 LogY=0
-RatioPlotYMin=0.1
+RatioPlotYMin=0.01
 RatioPlotYMax=1.2
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
@@ -43,7 +43,7 @@ Title=$\Lambda_c^+/D^0$ ratio in p-Pb at $\sqrt{s_{NN}}=5.02$ TeV and $-0.96<y<0
 XLabel=$p_T$ [GeV/c]
 #YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
 ConnectBins=0
-RatioPlotYMin=0.1
+RatioPlotYMin=0.01
 RatioPlotYMax=1.2
 #PlotSize=10,8
 LogY=0
@@ -57,7 +57,7 @@ Title=$\Lambda_c^+/D^0$ ratio in pp at $\sqrt{s}=7$ TeV and $|y|<0.5$ with $1 < 
 XLabel= $p_T$ [GeV/c]
 #YLabel=$N(D^+)/N(D^0)$
 ConnectBins=0
-RatioPlotYMin=0.1
+RatioPlotYMin=0.01
 RatioPlotYMax=1.2
 #PlotSize=10,8
 LegendYPos=0.95
@@ -67,10 +67,10 @@ END PLOT
 
 BEGIN PLOT /ALICE_2017_I1645239/d06-x01-y01
 Title=$\Lambda_c^+/D^0$ ratio in pPb at $\sqrt{s_{NN}}=5.02$ TeV and $-0.96 < y < 0.04$ with $2 < p_T < 12$ GeV/c.
-XLabel= $p_T$ [GeV/c]
+XLabel= y
 #YLabel=$N(D^{*+})/N(D^0)$
 ConnectBins=0
-RatioPlotYMin=0.1
+RatioPlotYMin=0.01
 RatioPlotYMax=1.2
 #PlotSize=10,8
 LegendYPos=0.95
@@ -81,9 +81,9 @@ END PLOT
 BEGIN PLOT /ALICE_2017_I1645239/d07-x01-y01
 Title=$R_{pPb}$ of prompt $\Lambda_c^+$ in p-Pb collisions at $\sqrt{s_{NN}}=5.02$ and $-0.96 < y < 0.04$. 
 XLabel= $p_T$ [GeV/c]
-YLabel= $\Lambda_c^+ R_{pPb}$
+YLabel= y
 ConnectBins=0
-RatioPlotYMin=0.1
+RatioPlotYMin=0.01
 RatioPlotYMax=1.2
 #PlotSize=10,8
 LogY=0
