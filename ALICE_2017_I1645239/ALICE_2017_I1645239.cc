@@ -58,7 +58,7 @@ namespace Rivet {
       
         /*PDG code IDs used inside the foreach cycle: 421 = D0, 411 = D+, 413 = D*+ */
       if(beamp.first == 2212 && beamp.second ==2212){
-        if(fuzzyEquals(sqrtS()/GeV,5000)){
+        if(fuzzyEquals(sqrtS()/GeV,5020)){
          //bo2 = true;
          foreach (const Particle& p, ufs.particles()) {
             if(p.fromBottom())

@@ -1,0 +1,500 @@
+
+ *------------------------------------------------------------------------------------* 
+ |                                                                                    | 
+ |  *------------------------------------------------------------------------------*  | 
+ |  |                                                                              |  | 
+ |  |                                                                              |  | 
+ |  |   PPP   Y   Y  TTTTT  H   H  III    A      Welcome to the Lund Monte Carlo!  |  | 
+ |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.240      |  | 
+ |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 20 Dec 2018  |  | 
+ |  |   P       Y      T    H   H   I   A   A                                      |  | 
+ |  |   P       Y      T    H   H  III  A   A    Now is 11 Sep 2019 at 10:36:13    |  | 
+ |  |                                                                              |  | 
+ |  |   Christian Bierlich;  Department of Astronomy and Theoretical Physics,      |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: christian.bierlich@thep.lu.se                                   |  | 
+ |  |   Nishita Desai;  Department of Theoretical Physics, Tata Institute,         |  | 
+ |  |      Homi Bhabha Road, Mumbai 400005, India;                                 |  | 
+ |  |      e-mail: desai@theory.tifr.res.in                                        |  | 
+ |  |   Ilkka Helenius;  Department of Physics, University of Jyvaskyla,           |  | 
+ |  |      P.O. Box 35, FI-40014 University of Jyvaskyla, Finland;                 |  | 
+ |  |      e-mail: ilkka.m.helenius@jyu.fi                                         |  | 
+ |  |   Philip Ilten;  School of Physics and Astronomy,                            |  | 
+ |  |      University of Birmingham, Birmingham, B152 2TT, UK;                     |  | 
+ |  |      e-mail: philten@cern.ch                                                 |  | 
+ |  |   Leif Lonnblad;  Department of Astronomy and Theoretical Physics,           |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: leif.lonnblad@thep.lu.se                                        |  | 
+ |  |   Stephen Mrenna;  Computing Division, Simulations Group,                    |  | 
+ |  |      Fermi National Accelerator Laboratory, MS 234, Batavia, IL 60510, USA;  |  | 
+ |  |      e-mail: mrenna@fnal.gov                                                 |  | 
+ |  |   Stefan Prestel;  Department of Astronomy and Theoretical Physics,          |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: stefan.prestel@thep.lu.se                                       |  | 
+ |  |   Christine O. Rasmussen;  Department of Astronomy and Theoretical Physics,  |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: christine.rasmussen@thep.lu.se                                  |  | 
+ |  |   Torbjorn Sjostrand;  Department of Astronomy and Theoretical Physics,      |  | 
+ |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+ |  |      e-mail: torbjorn@thep.lu.se                                             |  | 
+ |  |   Peter Skands;  School of Physics,                                          |  | 
+ |  |      Monash University, PO Box 27, 3800 Melbourne, Australia;                |  | 
+ |  |      e-mail: peter.skands@monash.edu                                         |  | 
+ |  |                                                                              |  | 
+ |  |   The main program reference is 'An Introduction to PYTHIA 8.2',             |  | 
+ |  |   T. Sjostrand et al, Comput. Phys. Commun. 191 (2015) 159                   |  | 
+ |  |   [arXiv:1410.3012 [hep-ph]]                                                 |  | 
+ |  |                                                                              |  | 
+ |  |   The main physics reference is the 'PYTHIA 6.4 Physics and Manual',         |  | 
+ |  |   T. Sjostrand, S. Mrenna and P. Skands, JHEP05 (2006) 026 [hep-ph/0603175]  |  | 
+ |  |                                                                              |  | 
+ |  |   An archive of program versions and documentation is found on the web:      |  | 
+ |  |   http://www.thep.lu.se/Pythia                                               |  | 
+ |  |                                                                              |  | 
+ |  |   This program is released under the GNU General Public Licence version 2.   |  | 
+ |  |   Please respect the MCnet Guidelines for Event Generator Authors and Users. |  | 
+ |  |                                                                              |  | 
+ |  |   Disclaimer: this program comes without any guarantees.                     |  | 
+ |  |   Beware of errors and use common sense when interpreting results.           |  | 
+ |  |                                                                              |  | 
+ |  |   Copyright (C) 2018 Torbjorn Sjostrand                                      |  | 
+ |  |                                                                              |  | 
+ |  |                                                                              |  | 
+ |  *------------------------------------------------------------------------------*  | 
+ |                                                                                    | 
+ *------------------------------------------------------------------------------------* 
+
+ Read commands from mode0.par
+
+
+ *-------  PYTHIA Process Initialization  --------------------------*
+ |                                                                  |
+ | We collide p+ with p+ at a CM energy of 5.000e+03 GeV            |
+ |                                                                  |
+ |------------------------------------------------------------------|
+ |                                                    |             |
+ | Subprocess                                    Code |   Estimated |
+ |                                                    |    max (mb) |
+ |                                                    |             |
+ |------------------------------------------------------------------|
+ |                                                    |             |
+ | non-diffractive                                101 |   4.769e+01 |
+ | A B -> A B elastic                             102 |   1.842e+01 |
+ | A B -> X B single diffractive                  103 |   6.063e+00 |
+ | A B -> A X single diffractive                  104 |   6.063e+00 |
+ | A B -> X X double diffractive                  105 |   7.729e+00 |
+ | A B -> A X B central diffractive               106 |   0.000e+00 |
+ |                                                                  |
+ *-------  End PYTHIA Process Initialization -----------------------*
+
+ *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+ |                                                                  | 
+ |                   sigmaNonDiffractive =    47.69 mb              | 
+ |                                                                  | 
+ |    pT0 =  1.97 gives sigmaInteraction =   250.23 mb: accepted    | 
+ |                                                                  | 
+ *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
+
+ *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+ |                                                                  | 
+ |                          diffraction XB                          | 
+ |                                                                  | 
+ |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  0.52 gives sigmaInteraction =    33.23 mb: accepted    | 
+ |   diffractive mass = 4.73e+01 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  0.72 gives sigmaInteraction =    25.21 mb: accepted    | 
+ |   diffractive mass = 2.24e+02 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  1.01 gives sigmaInteraction =    20.13 mb: accepted    | 
+ |   diffractive mass = 1.06e+03 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  1.41 gives sigmaInteraction =    28.01 mb: accepted    | 
+ |   diffractive mass = 5.00e+03 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  1.97 gives sigmaInteraction =    51.19 mb: accepted    | 
+ |                                                                  | 
+ *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
+ PYTHIA Warning in MultipartonInteractions::init: maximum increased by factor 4.109
+
+ *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+ |                                                                  | 
+ |                          diffraction AX                          | 
+ |                                                                  | 
+ |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  0.52 gives sigmaInteraction =    33.53 mb: accepted    | 
+ |   diffractive mass = 4.73e+01 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  0.72 gives sigmaInteraction =    25.25 mb: accepted    | 
+ |   diffractive mass = 2.24e+02 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  1.01 gives sigmaInteraction =    20.15 mb: accepted    | 
+ |   diffractive mass = 1.06e+03 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  1.41 gives sigmaInteraction =    28.04 mb: accepted    | 
+ |   diffractive mass = 5.00e+03 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  1.97 gives sigmaInteraction =    50.73 mb: accepted    | 
+ |                                                                  | 
+ *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
+
+ *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+ |                                                                  | 
+ |                          diffraction AXB                         | 
+ |                                                                  | 
+ |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  0.52 gives sigmaInteraction =     7.73 mb: rejected    | 
+ |    pT0 =  0.47 gives sigmaInteraction =    11.56 mb: accepted    | 
+ |   diffractive mass = 4.73e+01 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  0.72 gives sigmaInteraction =     3.73 mb: rejected    | 
+ |    pT0 =  0.65 gives sigmaInteraction =     5.22 mb: rejected    | 
+ |    pT0 =  0.59 gives sigmaInteraction =     7.26 mb: rejected    | 
+ |    pT0 =  0.53 gives sigmaInteraction =    10.36 mb: rejected    | 
+ |    pT0 =  0.47 gives sigmaInteraction =    14.82 mb: accepted    | 
+ |   diffractive mass = 2.24e+02 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  1.01 gives sigmaInteraction =     2.96 mb: rejected    | 
+ |    pT0 =  0.91 gives sigmaInteraction =     3.64 mb: rejected    | 
+ |    pT0 =  0.82 gives sigmaInteraction =     4.52 mb: rejected    | 
+ |    pT0 =  0.74 gives sigmaInteraction =     5.67 mb: rejected    | 
+ |    pT0 =  0.66 gives sigmaInteraction =     7.19 mb: rejected    | 
+ |    pT0 =  0.60 gives sigmaInteraction =     9.39 mb: rejected    | 
+ |    pT0 =  0.54 gives sigmaInteraction =    12.41 mb: accepted    | 
+ |   diffractive mass = 1.06e+03 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  1.41 gives sigmaInteraction =     4.31 mb: rejected    | 
+ |    pT0 =  1.27 gives sigmaInteraction =     5.07 mb: rejected    | 
+ |    pT0 =  1.14 gives sigmaInteraction =     5.82 mb: rejected    | 
+ |    pT0 =  1.03 gives sigmaInteraction =     6.70 mb: rejected    | 
+ |    pT0 =  0.93 gives sigmaInteraction =     7.72 mb: rejected    | 
+ |    pT0 =  0.83 gives sigmaInteraction =     8.79 mb: rejected    | 
+ |    pT0 =  0.75 gives sigmaInteraction =    10.30 mb: rejected    | 
+ |    pT0 =  0.68 gives sigmaInteraction =    12.04 mb: accepted    | 
+ |   diffractive mass = 5.00e+03 GeV and sigmaNorm =    10.00 mb    | 
+ |    pT0 =  1.97 gives sigmaInteraction =     6.52 mb: rejected    | 
+ |    pT0 =  1.77 gives sigmaInteraction =     7.68 mb: rejected    | 
+ |    pT0 =  1.60 gives sigmaInteraction =     8.81 mb: rejected    | 
+ |    pT0 =  1.44 gives sigmaInteraction =    10.04 mb: rejected    | 
+ |    pT0 =  1.29 gives sigmaInteraction =    11.32 mb: accepted    | 
+ |                                                                  | 
+ *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
+
+ *-------  PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings (changes only)  ------------------* 
+ |                                                                                                                 | 
+ | Name                                          |                      Now |      Default         Min         Max | 
+ |                                               |                          |                                      | 
+ | BeamRemnants:remnantMode                      |                        1 |            0           0           1 | 
+ | Beams:eCM                                     |                 5000.000 |    14000.000    10.00000             | 
+ | ColourReconnection:allowDoubleJunRem          |                      off |           on                         | 
+ | ColourReconnection:junctionCorrection         |                  1.43000 |      1.20000   0.0100000    10.00000 | 
+ | ColourReconnection:m0                         |                  2.90000 |      0.30000     0.10000     5.00000 | 
+ | ColourReconnection:mode                       |                        1 |            0           0           4 | 
+ | ColourReconnection:timeDilationMode           |                        0 |            2           0           5 | 
+ | MultipartonInteractions:pT0Ref                |                  2.12000 |      2.28000     0.50000    10.00000 | 
+ | Next:numberShowEvent                          |                        0 |            1           0             | 
+ | SoftQCD:all                                   |                       on |          off                         | 
+ | StringFlav:probQQ1toQQ0join                   |                0.0275000 |      0.50000         0.0     1.00000 | 
+ |                                               |                0.0275000 |      0.70000         0.0     1.00000 | 
+ |                                               |                0.0275000 |      0.90000         0.0     1.00000 | 
+ |                                               |                0.0275000 |      1.00000         0.0     1.00000 | 
+ | StringFlav:probQQtoQ                          |                0.0780000 |    0.0810000         0.0     1.00000 | 
+ | StringFlav:probStoUD                          |                  0.20000 |      0.21700         0.0     1.00000 | 
+ | StringZ:aLund                                 |                  0.36000 |      0.68000         0.0     2.00000 | 
+ | StringZ:bLund                                 |                  0.56000 |      0.98000     0.20000     2.00000 | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings  -----------------------------* 
+
+ --------  PYTHIA Particle Data Table (changed only)  ------------------------------------------------------------------------------
+ 
+      id   name            antiName         spn chg col      m0        mWidth      mMin       mMax       tau0    res dec ext vis wid
+             no onMode   bRatio   meMode     products 
+
+ no particle data has been changed from its default value 
+
+ --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
+
+
+ --------  PYTHIA Info Listing  ---------------------------------------- 
+ 
+ Beam A: id =   2212, pz =  2.500e+03, e =  2.500e+03, m =  9.383e-01.
+ Beam B: id =   2212, pz = -2.500e+03, e =  2.500e+03, m =  9.383e-01.
+
+ In 1: id =   21, x =  6.865e-03, pdf =  1.477e+00 at Q2 =  5.857e-02.
+ In 2: id =   21, x =  3.467e-06, pdf =  1.718e+01 at same Q2.
+
+ Process non-diffractive with code 101 is 2 -> 2.
+ Subprocess g g -> g g with code 111 is 2 -> 2.
+ It has sHat =  5.949e-01,    tHat = -6.586e-02,    uHat = -5.291e-01,
+       pTHat =  2.420e-01,   m3Hat =  0.000e+00,   m4Hat =  0.000e+00,
+    thetaHat =  6.784e-01,  phiHat =  3.448e+00.
+     alphaEM =  7.497e-03,  alphaS =  3.413e-01    at Q2 =  3.948e+00.
+
+ Impact parameter b =  1.286e+00 gives enhancement factor =  2.065e-01.
+ Max pT scale for MPI =  2.420e-01, ISR =  2.420e-01, FSR =  2.420e-01.
+ Number of MPI =     1, ISR =     0, FSRproc =     0, FSRreson =     0.
+
+ --------  End PYTHIA Info Listing  ------------------------------------
+
+ --------  PYTHIA Event Listing  (hard process)  -----------------------------------------------------------------------------------
+ 
+    no         id  name            status     mothers   daughters     colours      p_x        p_y        p_z         e          m 
+     0         90  (system)           -11     0     0     0     0     0     0      0.000      0.000      0.000   5000.000   5000.000
+     1       2212  (p+)               -12     0     0     3     0     0     0      0.000      0.000   2500.000   2500.000      0.938
+     2       2212  (p+)               -12     0     0     4     0     0     0      0.000      0.000  -2500.000   2500.000      0.938
+     3         21  (g)                -21     1     0     5     6   101   102      0.000      0.000     17.161     17.161      0.000
+     4         21  (g)                -21     2     0     5     6   102   103      0.000      0.000     -0.009      0.009      0.000
+     5         21  g                   23     3     4     0     0   101   104     -0.073     -0.231     15.261     15.262      0.000
+     6         21  g                   23     3     4     0     0   104   103      0.073      0.231      1.892      1.908      0.000
+                                   Charge sum:  0.000           Momentum sum:      0.000      0.000     17.153     17.170      0.771
+
+ --------  End PYTHIA Event Listing  -----------------------------------------------------------------------------------------------
+ PYTHIA Warning in StringFragmentation::fragmentToJunction: bad convergence junction rest frame  
+ PYTHIA Warning in JunctionSplitting::CheckColours: Made a gluon colour singlet; redoing colours  
+ PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: weight above unity  
+ PYTHIA Warning in JunctionSplitting::SplitJunPairs: parallel junction state not allowed.  
+ PYTHIA Warning in JunctionSplitting::CheckColours: Not possible to split junctions; making new colours  
+ PYTHIA Error in StringFragmentation::fragment: stuck in joining  
+ PYTHIA Error in Pythia::next: hadronLevel failed; try again  
+ PYTHIA Error in BeamRemnants::setKinematics: kinematics construction failed  
+
+ Pythia::next(): 1000 events have been generated 
+ PYTHIA Error in MiniStringFragmentation::fragment: no 1- or 2-body state found above mass threshold  
+ PYTHIA Error in StringFragmentation::fragmentToJunction: caught in junction flavour loop  
+
+ Pythia::next(): 2000 events have been generated 
+
+ Pythia::next(): 3000 events have been generated 
+ PYTHIA Warning in StringFragmentation::finalRegion: random axis needed to break tie  
+
+ Pythia::next(): 4000 events have been generated 
+
+ Pythia::next(): 5000 events have been generated 
+
+ Pythia::next(): 6000 events have been generated 
+ PYTHIA Warning in Pythia::check: energy-momentum not quite conserved  
+
+ Pythia::next(): 7000 events have been generated 
+
+ Pythia::next(): 8000 events have been generated 
+ PYTHIA Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop  
+
+ Pythia::next(): 9000 events have been generated 
+
+ Pythia::next(): 10000 events have been generated 
+
+ Pythia::next(): 11000 events have been generated 
+ PYTHIA Warning in MultipartonInteractions::pTfirst: weight above unity  
+
+ Pythia::next(): 12000 events have been generated 
+
+ Pythia::next(): 13000 events have been generated 
+ PYTHIA Warning in MultipartonInteractions::pTnext: weight above unity  
+
+ Pythia::next(): 14000 events have been generated 
+
+ Pythia::next(): 15000 events have been generated 
+
+ Pythia::next(): 16000 events have been generated 
+
+ Pythia::next(): 17000 events have been generated 
+ PYTHIA Warning in Pythia::check: not quite matched particle energy/momentum/mass  
+
+ Pythia::next(): 18000 events have been generated 
+
+ Pythia::next(): 19000 events have been generated 
+
+ Pythia::next(): 20000 events have been generated 
+
+ Pythia::next(): 21000 events have been generated 
+
+ Pythia::next(): 22000 events have been generated 
+ PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF  
+
+ Pythia::next(): 23000 events have been generated 
+
+ Pythia::next(): 24000 events have been generated 
+
+ Pythia::next(): 25000 events have been generated 
+
+ Pythia::next(): 26000 events have been generated 
+
+ Pythia::next(): 27000 events have been generated 
+
+ Pythia::next(): 28000 events have been generated 
+
+ Pythia::next(): 29000 events have been generated 
+
+ Pythia::next(): 30000 events have been generated 
+
+ Pythia::next(): 31000 events have been generated 
+
+ Pythia::next(): 32000 events have been generated 
+
+ Pythia::next(): 33000 events have been generated 
+
+ Pythia::next(): 34000 events have been generated 
+
+ Pythia::next(): 35000 events have been generated 
+
+ Pythia::next(): 36000 events have been generated 
+
+ Pythia::next(): 37000 events have been generated 
+
+ Pythia::next(): 38000 events have been generated 
+
+ Pythia::next(): 39000 events have been generated 
+
+ Pythia::next(): 40000 events have been generated 
+
+ Pythia::next(): 41000 events have been generated 
+
+ Pythia::next(): 42000 events have been generated 
+
+ Pythia::next(): 43000 events have been generated 
+ PYTHIA Warning in MiniStringFragmentation::ministring2two: random axis needed to break tie  
+
+ Pythia::next(): 44000 events have been generated 
+
+ Pythia::next(): 45000 events have been generated 
+
+ Pythia::next(): 46000 events have been generated 
+
+ Pythia::next(): 47000 events have been generated 
+
+ Pythia::next(): 48000 events have been generated 
+
+ Pythia::next(): 49000 events have been generated 
+
+ Pythia::next(): 50000 events have been generated 
+
+ Pythia::next(): 51000 events have been generated 
+
+ Pythia::next(): 52000 events have been generated 
+
+ Pythia::next(): 53000 events have been generated 
+
+ Pythia::next(): 54000 events have been generated 
+
+ Pythia::next(): 55000 events have been generated 
+
+ Pythia::next(): 56000 events have been generated 
+
+ Pythia::next(): 57000 events have been generated 
+
+ Pythia::next(): 58000 events have been generated 
+
+ Pythia::next(): 59000 events have been generated 
+
+ Pythia::next(): 60000 events have been generated 
+
+ Pythia::next(): 61000 events have been generated 
+
+ Pythia::next(): 62000 events have been generated 
+
+ Pythia::next(): 63000 events have been generated 
+
+ Pythia::next(): 64000 events have been generated 
+
+ Pythia::next(): 65000 events have been generated 
+
+ Pythia::next(): 66000 events have been generated 
+
+ Pythia::next(): 67000 events have been generated 
+
+ Pythia::next(): 68000 events have been generated 
+
+ Pythia::next(): 69000 events have been generated 
+
+ Pythia::next(): 70000 events have been generated 
+
+ Pythia::next(): 71000 events have been generated 
+
+ Pythia::next(): 72000 events have been generated 
+
+ Pythia::next(): 73000 events have been generated 
+
+ Pythia::next(): 74000 events have been generated 
+
+ Pythia::next(): 75000 events have been generated 
+
+ Pythia::next(): 76000 events have been generated 
+
+ Pythia::next(): 77000 events have been generated 
+
+ Pythia::next(): 78000 events have been generated 
+
+ Pythia::next(): 79000 events have been generated 
+
+ Pythia::next(): 80000 events have been generated 
+
+ Pythia::next(): 81000 events have been generated 
+
+ Pythia::next(): 82000 events have been generated 
+
+ Pythia::next(): 83000 events have been generated 
+
+ Pythia::next(): 84000 events have been generated 
+
+ Pythia::next(): 85000 events have been generated 
+
+ Pythia::next(): 86000 events have been generated 
+
+ Pythia::next(): 87000 events have been generated 
+
+ Pythia::next(): 88000 events have been generated 
+
+ Pythia::next(): 89000 events have been generated 
+
+ Pythia::next(): 90000 events have been generated 
+
+ Pythia::next(): 91000 events have been generated 
+
+ Pythia::next(): 92000 events have been generated 
+
+ Pythia::next(): 93000 events have been generated 
+
+ Pythia::next(): 94000 events have been generated 
+
+ Pythia::next(): 95000 events have been generated 
+
+ Pythia::next(): 96000 events have been generated 
+
+ Pythia::next(): 97000 events have been generated 
+
+ Pythia::next(): 98000 events have been generated 
+
+ Pythia::next(): 99000 events have been generated 
+
+ *-------  PYTHIA Event and Cross Section Statistics  -------------------------------------------------------------*
+ |                                                                                                                 |
+ | Subprocess                                    Code |            Number of events       |      sigma +- delta    |
+ |                                                    |       Tried   Selected   Accepted |     (estimated) (mb)   |
+ |                                                    |                                   |                        |
+ |-----------------------------------------------------------------------------------------------------------------|
+ |                                                    |                                   |                        |
+ | non-diffractive                                101 |       55658      55658      55658 |   4.769e+01  2.765e-07 |
+ | A B -> A B elastic                             102 |       21451      21451      21451 |   1.842e+01  0.000e+00 |
+ | A B -> X B single diffractive                  103 |        6921       6921       6921 |   6.063e+00  0.000e+00 |
+ | A B -> A X single diffractive                  104 |        6935       6935       6935 |   6.063e+00  0.000e+00 |
+ | A B -> X X double diffractive                  105 |        9035       9035       9035 |   7.729e+00  1.581e-08 |
+ |                                                    |                                   |                        |
+ | sum                                                |      100000     100000     100000 |   8.597e+01  2.769e-07 |
+ |                                                                                                                 |
+ *-------  End PYTHIA Event and Cross Section Statistics ----------------------------------------------------------*
+
+ *-------  PYTHIA Error and Warning Messages Statistics  ----------------------------------------------------------* 
+ |                                                                                                                 | 
+ |  times   message                                                                                                | 
+ |                                                                                                                 | 
+ |   1135   Error in BeamRemnants::setKinematics: kinematics construction failed                                   | 
+ |     94   Error in MiniStringFragmentation::fragment: no 1- or 2-body state found above mass threshold           | 
+ |    667   Error in Pythia::next: hadronLevel failed; try again                                                   | 
+ |     16   Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop                                            | 
+ |    389   Error in StringFragmentation::fragment: stuck in joining                                               | 
+ |    184   Error in StringFragmentation::fragmentToJunction: caught in junction flavour loop                      | 
+ |    596   Warning in JunctionSplitting::CheckColours: Made a gluon colour singlet; redoing colours               | 
+ |   1550   Warning in JunctionSplitting::CheckColours: Not possible to split junctions; making new colours        | 
+ |   1550   Warning in JunctionSplitting::SplitJunPairs: parallel junction state not allowed.                      | 
+ |      2   Warning in MiniStringFragmentation::ministring2two: random axis needed to break tie                    | 
+ |      3   Warning in MultipartonInteractions::init: maximum increased                                            | 
+ |      2   Warning in MultipartonInteractions::pTfirst: weight above unity                                        | 
+ |      4   Warning in MultipartonInteractions::pTnext: weight above unity                                         | 
+ |      1   Warning in Pythia::check: energy-momentum not quite conserved                                          | 
+ |     10   Warning in Pythia::check: not quite matched particle energy/momentum/mass                              | 
+ |     20   Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF                                           | 
+ |    553   Warning in SimpleSpaceShower::pT2nextQCD: weight above unity                                           | 
+ |      4   Warning in StringFragmentation::finalRegion: random axis needed to break tie                           | 
+ |   7408   Warning in StringFragmentation::fragmentToJunction: bad convergence junction rest frame                | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Error and Warning Messages Statistics  ------------------------------------------------------* 
+Cross Section (nb) = 8.597e+04
