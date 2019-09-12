@@ -1,0 +1,43 @@
+# BEGIN PLOT
+LegendOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/LcPbdummy //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/LcPbdummy
+DrawOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/LcPbdummy //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/LcPbdummy
+RatioPlotReference=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/LcPbdummy
+RatioPlot=1
+LogY=1
+RatioPlotYLabel=Ratio
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/LcPbdummy
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/LcPbdummy
+ScaledBy=1.81632719175435758e-03
+Title=Pythia8 (Monash 2013)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	4.948389e+02	1.543933e+01	1.543933e+01
+4.000000e+00	6.000000e+00	1.632723e+02	8.885086e+00	8.885086e+00
+6.000000e+00	8.000000e+00	4.801279e+01	4.772669e+00	4.772669e+00
+8.000000e+00	1.200000e+01	1.041321e+01	1.581622e+00	1.581622e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/LcPbdummy
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/LcPbdummy
+ScaledBy=1.80886210752224225e-03
+Title=Pythia8 (mode0)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	2.273454e+03	3.305408e+01	3.305408e+01
+4.000000e+00	6.000000e+00	4.580252e+02	1.479711e+01	1.479711e+01
+6.000000e+00	8.000000e+00	1.057116e+02	7.095005e+00	7.095005e+00
+8.000000e+00	1.200000e+01	1.938615e+01	2.151791e+00	2.151791e+00
+# END HISTO1D
+

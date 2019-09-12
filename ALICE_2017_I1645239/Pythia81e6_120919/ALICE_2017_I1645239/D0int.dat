@@ -1,0 +1,37 @@
+# BEGIN PLOT
+LegendOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/D0int //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/D0int
+DrawOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/D0int //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/D0int
+RatioPlotReference=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/D0int
+RatioPlot=1
+LogY=1
+RatioPlotYLabel=Ratio
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/D0int
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/D0int
+ScaledBy=1.81632719175435758e-03
+Title=Pythia8 (Monash 2013)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+-1.000000e-01	1.000000e-01	2.461763e+03	2.363477e+01	2.363477e+01
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/D0int
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/D0int
+ScaledBy=1.80886210752224225e-03
+Title=Pythia8 (mode0)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+-1.000000e-01	1.000000e-01	2.079417e+03	2.172196e+01	2.172196e+01
+# END HISTO1D
+
