@@ -7,9 +7,9 @@ ConnectBins=0
 RatioPlot=1
 LogY=1
 RatioPlotYMax=1.2
-LegendXPos=0.55
+LegendXPos=0.53
 XLabel=y
-LegendYPos=0.95
+LegendYPos=0.68
 Legend=1
 RatioPlotYMin=0.01
 # END PLOT

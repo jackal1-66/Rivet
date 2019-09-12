@@ -1,16 +1,17 @@
 # BEGIN PLOT
 LegendOnly=/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/d07-x01-y01
 DrawOnly=/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/d07-x01-y01
+YMax=2
 Title=$R_{pPb}$ of prompt $\Lambda_c^+$ in p-Pb collisions at $\sqrt{s_{NN}}=5.02$ and $-0.96 < y < 0.04$. 
 RatioPlotReference=/ALICE_2017_I1645239/d07-x01-y01
 ConnectBins=0
 RatioPlot=1
 LogY=0
 RatioPlotYMax=1.15
-LegendXPos=0.55
+LegendXPos=0.30
 XLabel=$p_T$ [GeV/c]
 YLabel=$\Lambda_c^+ R_{pPb}$
-YMin=0.
+YMin=0.2
 LegendYPos=0.95
 Legend=1
 RatioPlotYMin=0.01
