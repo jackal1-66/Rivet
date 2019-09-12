@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/LcPbdummy //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/LcPbdummy
-DrawOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/LcPbdummy //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/LcPbdummy
+LegendOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/LcPbdummy //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/LcPbdummy //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/LcPbdummy
+DrawOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/LcPbdummy //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/LcPbdummy //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/LcPbdummy
 RatioPlotReference=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/LcPbdummy
 RatioPlot=1
 LogY=1
@@ -31,7 +31,7 @@ LineColor=blue
 LineStyle=solid
 Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/LcPbdummy
 ScaledBy=1.80886210752224225e-03
-Title=Pythia8 (mode0)
+Title=Pythia8 (mode$0$)
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
@@ -39,5 +39,22 @@ YLabel=~
 4.000000e+00	6.000000e+00	4.580252e+02	1.479711e+01	1.479711e+01
 6.000000e+00	8.000000e+00	1.057116e+02	7.095005e+00	7.095005e+00
 8.000000e+00	1.200000e+01	1.938615e+01	2.151791e+00	2.151791e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/LcPbdummy
+ErrorBars=1
+LineColor=green
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/LcPbdummy
+ScaledBy=1.78670811127963798e-03
+Title=Pythia8 (mode$2$)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	2.697613e+03	3.576050e+01	3.576050e+01
+4.000000e+00	6.000000e+00	5.641760e+02	1.633119e+01	1.633119e+01
+6.000000e+00	8.000000e+00	1.257445e+02	7.718834e+00	7.718834e+00
+8.000000e+00	1.200000e+01	1.825811e+01	2.076419e+00	2.076419e+00
 # END HISTO1D
 
