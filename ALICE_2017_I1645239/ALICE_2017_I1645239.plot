@@ -1,5 +1,5 @@
 BEGIN PLOT /ALICE_2017_I1645239/d01-x01-y01
-Title=Prompt $\Lambda_c^+ p_T$ differential cross section in pp at $\sqrt{s}=7$ TeV and $|y|<0.5$. 
+Title=Prompt $\Lambda_c^+$ cross section in pp at 7 TeV and $|y|<0.5$. 
 XLabel=$p_T$ [GeV/c]
 #PlotSize=10,8
 #LegendYPos=0.96
@@ -12,7 +12,7 @@ RatioPlotYMax=1.2
 END PLOT
 
 BEGIN PLOT /ALICE_2017_I1645239/d02-x01-y01
-Title=Prompt $\Lambda_c^+ p_T$ differential cross section in p-Pb at $\sqrt{s_{NN}} = $5.02 TeV and $-0.96<y<0.04$.
+Title=Prompt $\Lambda_c^+$ cross section in p-Pb at 5.02 TeV and $-0.96<y<0.04$.
 XLabel=$p_T$ [GeV/c]
 YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
 ConnectBins=0
@@ -53,7 +53,7 @@ LegendXPos=0.53
 END PLOT
 
 BEGIN PLOT /ALICE_2017_I1645239/d05-x01-y01
-Title=$\Lambda_c^+/D^0$ ratio in pp at $\sqrt{s}=7$ TeV and $|y|<0.5$ with $1 < p_T < 8$ GeV/c.  
+Title=Integrated $\Lambda_c^+/D^0$ in pp at 7 TeV and $|y|<0.5$  
 XLabel= y
 #YLabel=$N(D^+)/N(D^0)$
 ConnectBins=0
@@ -66,7 +66,7 @@ LegendXPos=0.53
 END PLOT
 
 BEGIN PLOT /ALICE_2017_I1645239/d06-x01-y01
-Title=$\Lambda_c^+/D^0$ ratio in pPb at $\sqrt{s_{NN}}=5.02$ TeV and $-0.96 < y < 0.04$ with $2 < p_T < 12$ GeV/c.
+Title=Integrated $\Lambda_c^+/D^0$ in pPb at 5.02 TeV and $-0.96 < y < 0.04$
 XLabel= y
 #YLabel=$N(D^{*+})/N(D^0)$
 ConnectBins=0
@@ -79,7 +79,7 @@ LegendXPos=0.53
 END PLOT
 
 BEGIN PLOT /ALICE_2017_I1645239/d07-x01-y01
-Title=$R_{pPb}$ of prompt $\Lambda_c^+$ in p-Pb collisions at $\sqrt{s_{NN}}=5.02$ and $-0.96 < y < 0.04$. 
+Title=$\Lambda_c^+$ $R_{pPb}$ p-Pb collisions at 5.02 TeV and $-0.96 < y < 0.04$. 
 XLabel= $p_T$ [GeV/c]
 YLabel= $\Lambda_c^+ R_{pPb}$
 ConnectBins=0

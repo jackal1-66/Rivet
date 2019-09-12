@@ -1,7 +1,7 @@
 # BEGIN PLOT
 LegendOnly=/ALICE_2017_I1645239/d05-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d05-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/d05-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/d05-x01-y01
 DrawOnly=/ALICE_2017_I1645239/d05-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d05-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/d05-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/d05-x01-y01
-Title=$\Lambda_c^+/D^0$ ratio in pp at $\sqrt{s}=7$ TeV and $|y|<0.5$ with $1 < p_T < 8$ GeV/c.  
+Title=Integrated $\Lambda_c^+/D^0$ in pp at 7 TeV and $|y|<0.5$  
 RatioPlotReference=/ALICE_2017_I1645239/d05-x01-y01
 ConnectBins=0
 RatioPlot=1
