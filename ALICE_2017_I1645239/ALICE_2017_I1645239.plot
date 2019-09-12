@@ -48,7 +48,7 @@ RatioPlotYMax=1.15
 #PlotSize=10,8
 LogY=0
 LegendYPos=0.95
-LegendXPos=0.55
+LegendXPos=0.53
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -60,8 +60,8 @@ ConnectBins=0
 RatioPlotYMin=0.01
 RatioPlotYMax=1.2
 #PlotSize=10,8
-LegendYPos=0.95
-LegendXPos=0.55
+LegendYPos=0.68
+LegendXPos=0.53
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -73,8 +73,8 @@ ConnectBins=0
 RatioPlotYMin=0.01
 RatioPlotYMax=1.2
 #PlotSize=10,8
-LegendYPos=0.95
-LegendXPos=0.55
+LegendYPos=0.68
+LegendXPos=0.53
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -88,7 +88,8 @@ RatioPlotYMax=1.15
 #PlotSize=10,8
 LogY=0
 LegendYPos=0.95
-LegendXPos=0.55
-YMin = 0.
+LegendXPos=0.30
+YMax = 2
+YMin = 0.2
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
