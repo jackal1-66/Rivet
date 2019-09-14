@@ -13,6 +13,7 @@ References:
 #RunInfo: <Describe event types, cuts, and other general generator config tips.>
 NeedCrossSection: no
 Reentrant: True
+NumEvents: 1e6
 Beams: [p+,p+]
 Energies: [7000]
 #Luminosity_fb: <Insert integrated luminosity, in inverse fb>
