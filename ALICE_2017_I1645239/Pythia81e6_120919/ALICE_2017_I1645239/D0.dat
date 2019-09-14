@@ -32,7 +32,7 @@ LineColor=blue
 LineStyle=solid
 Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/D0
 ScaledBy=1.80886210752224225e-03
-Title=Pythia8 (mode$0$)
+Title=Pythia8 (mode $0$)
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
@@ -50,7 +50,7 @@ LineColor=green
 LineStyle=solid
 Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/D0
 ScaledBy=1.78670811127963798e-03
-Title=Pythia8 (mode$2$)
+Title=Pythia8 (mode $2$)
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
