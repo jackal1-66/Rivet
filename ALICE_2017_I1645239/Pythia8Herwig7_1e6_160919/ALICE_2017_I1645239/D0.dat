@@ -1,0 +1,81 @@
+# BEGIN PLOT
+LegendOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/D0 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/D0 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/D0 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7pp1e67TeV.yoda/ALICE_2017_I1645239/D0
+DrawOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/D0 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/D0 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/D0 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7pp1e67TeV.yoda/ALICE_2017_I1645239/D0
+RatioPlotReference=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/D0
+RatioPlot=1
+LogY=1
+RatioPlotYLabel=Ratio
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/D0
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/D0
+ScaledBy=1.81632719175435758e-03
+Title=Pythia8 (Monash 2013)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	1.535283e+02	2.639596e+00	2.639596e+00
+2.000000e+00	3.000000e+00	1.017471e+02	2.148841e+00	2.148841e+00
+3.000000e+00	4.000000e+00	5.886084e+01	1.634393e+00	1.634393e+00
+4.000000e+00	6.000000e+00	2.555024e+01	7.614225e-01	7.614225e-01
+6.000000e+00	8.000000e+00	6.761965e+00	3.917100e-01	3.917100e-01
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/D0
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/D0
+ScaledBy=1.80886210752224225e-03
+Title=Pythia8 (CR mode $0$)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	1.307918e+02	2.436315e+00	2.436315e+00
+2.000000e+00	3.000000e+00	8.028129e+01	1.908756e+00	1.908756e+00
+3.000000e+00	4.000000e+00	4.465618e+01	1.423587e+00	1.423587e+00
+4.000000e+00	6.000000e+00	1.651916e+01	6.122408e-01	6.122408e-01
+6.000000e+00	8.000000e+00	5.400495e+00	3.500620e-01	3.500620e-01
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/D0
+ErrorBars=1
+LineColor=green
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/D0
+ScaledBy=1.78670811127963798e-03
+Title=Pythia8 (CR mode $2$)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	1.198547e+02	2.332226e+00	2.332226e+00
+2.000000e+00	3.000000e+00	7.860214e+01	1.888689e+00	1.888689e+00
+3.000000e+00	4.000000e+00	4.234169e+01	1.386205e+00	1.386205e+00
+4.000000e+00	6.000000e+00	1.785794e+01	6.365666e-01	6.365666e-01
+6.000000e+00	8.000000e+00	5.468565e+00	3.522614e-01	3.522614e-01
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7pp1e67TeV.yoda/ALICE_2017_I1645239/D0
+ErrorBars=1
+LineColor=orange
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7pp1e67TeV.yoda/ALICE_2017_I1645239/D0
+ScaledBy=1.04716839783389859e+00
+Title=Herwig7
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	9.699380e+01	2.201833e+00	2.201833e+00
+2.000000e+00	3.000000e+00	9.215839e+01	2.115744e+00	2.115744e+00
+3.000000e+00	4.000000e+00	6.726155e+01	1.811305e+00	1.811305e+00
+4.000000e+00	6.000000e+00	3.234739e+01	8.946864e-01	8.946864e-01
+6.000000e+00	8.000000e+00	9.661805e+00	4.898375e-01	4.898375e-01
+# END HISTO1D
+

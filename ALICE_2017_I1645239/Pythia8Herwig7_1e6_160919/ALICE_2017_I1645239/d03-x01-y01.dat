@@ -1,0 +1,98 @@
+# BEGIN PLOT
+LegendOnly=/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7pp1e67TeV.yoda/ALICE_2017_I1645239/d03-x01-y01
+DrawOnly=/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/d03-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7pp1e67TeV.yoda/ALICE_2017_I1645239/d03-x01-y01
+Title=$\Lambda_c^+/D^0$ ratio in pp at $\sqrt{s}=7$ TeV and $|y|<0.5$.
+RatioPlotReference=/ALICE_2017_I1645239/d03-x01-y01
+ConnectBins=0
+RatioPlot=1
+LogY=0
+RatioPlotYMax=1.15
+XLabel=$p_T$ [GeV/c]
+Legend=1
+RatioPlotYMin=0.01
+# END PLOT
+
+# BEGIN HISTO1D /ALICE_2017_I1645239/d03-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.118, up: 0.118}, sys: {dn: -0.193, up: 0.193}}, 1: {stat: {dn: -0.075, up: 0.075}, sys: {dn: -0.066, up: 0.066}}, 2: {stat: {dn: -0.066, up: 0.066}, sys: {dn: -0.062, up: 0.062}}, 3: {stat: {dn: -0.048, up: 0.048}, sys: {dn: -0.053, up: 0.052}}, 4: {stat: {dn: -0.076, up: 0.076}, sys: {dn: -0.056, up: 0.056}}}
+IsRef=1
+Path=/ALICE_2017_I1645239/d03-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	5.680000e-01	2.262145e-01	2.262145e-01
+2.000000e+00	3.000000e+00	5.460000e-01	9.990495e-02	9.990495e-02
+3.000000e+00	4.000000e+00	5.320000e-01	9.055385e-02	9.055385e-02
+4.000000e+00	6.000000e+00	4.640000e-01	7.150524e-02	7.076722e-02
+6.000000e+00	8.000000e+00	3.860000e-01	9.440339e-02	9.440339e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d03-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d03-x01-y01
+Title=Pythia8 (Monash 2013)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	5.438960e-02	4.117252e-03	4.117252e-03
+2.000000e+00	3.000000e+00	6.155219e-02	5.398519e-03	5.398519e-03
+3.000000e+00	4.000000e+00	7.324595e-02	7.785230e-03	7.785230e-03
+4.000000e+00	6.000000e+00	6.660746e-02	7.943183e-03	7.943183e-03
+6.000000e+00	8.000000e+00	9.395973e-02	1.857220e-02	1.857220e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/d03-x01-y01
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/d03-x01-y01
+Title=Pythia8 (CR mode $0$)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	4.954892e-01	1.603473e-02	1.603473e-02
+2.000000e+00	3.000000e+00	4.324477e-01	1.871295e-02	1.871295e-02
+3.000000e+00	4.000000e+00	3.648374e-01	2.249534e-02	2.249534e-02
+4.000000e+00	6.000000e+00	3.324176e-01	2.466587e-02	2.466587e-02
+6.000000e+00	8.000000e+00	2.983193e-01	4.034066e-02	4.034066e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/d03-x01-y01
+ErrorBars=1
+LineColor=green
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/d03-x01-y01
+Title=Pythia8 (CR mode $2$)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	5.827338e-01	1.868766e-02	1.868766e-02
+2.000000e+00	3.000000e+00	5.300231e-01	2.163827e-02	2.163827e-02
+3.000000e+00	4.000000e+00	4.222937e-01	2.537237e-02	2.537237e-02
+4.000000e+00	6.000000e+00	4.091487e-01	2.706647e-02	2.706647e-02
+6.000000e+00	8.000000e+00	3.153527e-01	4.148689e-02	4.148689e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7pp1e67TeV.yoda/ALICE_2017_I1645239/d03-x01-y01
+ErrorBars=1
+LineColor=orange
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7pp1e67TeV.yoda/ALICE_2017_I1645239/d03-x01-y01
+Title=Herwig7
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	1.182798e-01	8.263806e-03	8.263806e-03
+2.000000e+00	3.000000e+00	1.240431e-01	8.332233e-03	8.332233e-03
+3.000000e+00	4.000000e+00	1.305754e-01	9.963305e-03	9.963305e-03
+4.000000e+00	6.000000e+00	1.145193e-01	9.842319e-03	9.842319e-03
+6.000000e+00	8.000000e+00	1.084483e-01	1.744845e-02	1.744845e-02
+# END HISTO1D
+
