@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7pp1e67TeV.yoda/ALICE_2017_I1645239/d07-x01-y01
-DrawOnly=/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7pp1e67TeV.yoda/ALICE_2017_I1645239/d07-x01-y01
+LegendOnly=/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/d07-x01-y01
+DrawOnly=/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia8_merge_050919.yoda/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode0all.yoda/ALICE_2017_I1645239/d07-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/pythia8mode2all.yoda/ALICE_2017_I1645239/d07-x01-y01
 YMax=2
 Title=$\Lambda_c^+$ $R_{pPb}$ p-Pb collisions at 5.02 TeV and $-0.96 < y < 0.04$. 
 RatioPlotReference=/ALICE_2017_I1645239/d07-x01-y01
@@ -74,17 +74,5 @@ YLabel=~
 2.000000e+00	4.000000e+00	5.877719e-01	1.993569e-02	1.993569e-02
 4.000000e+00	6.000000e+00	6.744498e-01	5.304418e-02	5.304418e-02
 6.000000e+00	8.000000e+00	6.537277e-01	1.074660e-01	1.074660e-01
-# END HISTO1D
-
-
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7pp1e67TeV.yoda/ALICE_2017_I1645239/d07-x01-y01
-ErrorBars=1
-LineColor=orange
-LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7pp1e67TeV.yoda/ALICE_2017_I1645239/d07-x01-y01
-Title=Herwig7
-XLabel=~
-YLabel=~
-# xlow	 xhigh	 val	 errminus	 errplus
 # END HISTO1D
 
