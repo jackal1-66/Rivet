@@ -45,7 +45,6 @@ namespace Rivet {
       _h_D0intPb = bookHisto1D("D0intPb", 1, -0.6, -0.4 , "D0 int Pb");
       _h_LcR = bookHisto1D("LcR", binEdges2, "Lc R");
       _h_LcRPb = bookHisto1D("LcRPb", binEdges2, "Lc RPb");
-      // bo1 = bo2 = bo3 = false;
      }
 
 
@@ -59,7 +58,6 @@ namespace Rivet {
         /*PDG code IDs used inside the foreach cycle: 421 = D0, 411 = D+, 413 = D*+ */
       if(beamp.first == 2212 && beamp.second ==2212){
         if(fuzzyEquals(sqrtS()/GeV,5020)){
-         //bo2 = true;
          foreach (const Particle& p, ufs.particles()) {
             if(p.fromBottom())
                 continue;
@@ -73,7 +71,6 @@ namespace Rivet {
         } 
         }}
        else{
-         //bo1 = true;
          foreach (const Particle& p, ufs.particles()) {
             if(p.fromBottom())
                 continue;
@@ -92,10 +89,6 @@ namespace Rivet {
         }
       }}
       else if((beamp.first == 2212 && beamp.second == 1000822080) || (beamp.second ==2212 && beamp.first == 1000822080)){
-        //const GenEvent * evgen = event.genEvent();
-        //double crossx = evgen->cross_section()->cross_section();
-        //_h_cross->fill(1,crossx/microbarn);
-        //bo3 = true;
         foreach (const Particle& p, ufs.particles()) {
             if(p.fromBottom())
                 continue;
