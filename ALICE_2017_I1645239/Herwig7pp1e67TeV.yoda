@@ -234,17 +234,6 @@ YLabel:
 7.000000e+00	1.000000e+00	1.000000e+00	1.084483e-01	1.744845e-02	1.744845e-02
 END YODA_SCATTER2D_V2
 
-BEGIN YODA_SCATTER2D_V2 /ALICE_2017_I1645239/d04-x01-y01
-Variations: []
-Path: /ALICE_2017_I1645239/d04-x01-y01
-Title: 
-Type: Scatter2D
-XLabel: 
-YLabel: 
----
-# xval	 xerr-	 xerr+	 yval	
-END YODA_SCATTER2D_V2
-
 BEGIN YODA_SCATTER2D_V2 /ALICE_2017_I1645239/d05-x01-y01
 Variations: [""]
 Path: /ALICE_2017_I1645239/d05-x01-y01
@@ -255,28 +244,6 @@ YLabel:
 ---
 # xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
 0.000000e+00	1.000000e-01	1.000000e-01	1.207377e-01	3.965060e-03	3.965060e-03
-END YODA_SCATTER2D_V2
-
-BEGIN YODA_SCATTER2D_V2 /ALICE_2017_I1645239/d06-x01-y01
-Variations: []
-Path: /ALICE_2017_I1645239/d06-x01-y01
-Title: 
-Type: Scatter2D
-XLabel: 
-YLabel: 
----
-# xval	 xerr-	 xerr+	 yval	
-END YODA_SCATTER2D_V2
-
-BEGIN YODA_SCATTER2D_V2 /ALICE_2017_I1645239/d07-x01-y01
-Variations: []
-Path: /ALICE_2017_I1645239/d07-x01-y01
-Title: 
-Type: Scatter2D
-XLabel: 
-YLabel: 
----
-# xval	 xerr-	 xerr+	 yval	
 END YODA_SCATTER2D_V2
 
 BEGIN YODA_COUNTER_V2 /_EVTCOUNT
