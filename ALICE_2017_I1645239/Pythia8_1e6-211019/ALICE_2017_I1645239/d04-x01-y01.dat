@@ -1,0 +1,49 @@
+# BEGIN PLOT
+LegendOnly=/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia81e6_211019_new.yoda/ALICE_2017_I1645239/d04-x01-y01
+DrawOnly=/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia81e6_211019_new.yoda/ALICE_2017_I1645239/d04-x01-y01
+Title=$\Lambda_c^+/$D$^0$ ratio in p-Pb at $\sqrt{s_{\rm NN}}=5.02$ TeV ($-0.96<y<0.04$)
+RatioPlotReference=/ALICE_2017_I1645239/d04-x01-y01
+ConnectBins=0
+RatioPlot=1
+LogY=0
+RatioPlotYMax=1.3
+LegendXPos=0.53
+XLabel=$p_{\rm T}$ [GeV/$c$]
+YLabel=$\Lambda_c^$/D$^0$
+XMin=0
+LegendYPos=0.95
+Legend=1
+RatioPlotYMin=0.01
+# END PLOT
+
+# BEGIN HISTO1D /ALICE_2017_I1645239/d04-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.077, up: 0.077}, sys: {dn: -0.127, up: 0.185}}, 1: {stat: {dn: -0.063, up: 0.063}, sys: {dn: -0.066, up: 0.076}}, 2: {stat: {dn: -0.081, up: 0.081}, sys: {dn: -0.059, up: 0.06}}, 3: {stat: {dn: -0.062, up: 0.062}, sys: {dn: -0.043, up: 0.043}}}
+IsRef=1
+Path=/ALICE_2017_I1645239/d04-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	6.380000e-01	1.485194e-01	2.003846e-01
+4.000000e+00	6.000000e+00	4.800000e-01	9.124144e-02	9.871677e-02
+6.000000e+00	8.000000e+00	5.290000e-01	1.002098e-01	1.008018e-01
+8.000000e+00	1.200000e+01	3.990000e-01	7.545197e-02	7.545197e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia81e6_211019_new.yoda/ALICE_2017_I1645239/d04-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia81e6_211019_new.yoda/ALICE_2017_I1645239/d04-x01-y01
+Title=Pythia8 (Monash 2013)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	7.103653e-02	2.242494e-03	2.242494e-03
+4.000000e+00	6.000000e+00	7.373957e-02	4.271536e-03	4.271536e-03
+6.000000e+00	8.000000e+00	8.439412e-02	8.930679e-03	8.930679e-03
+8.000000e+00	1.200000e+01	9.879056e-02	1.456027e-02	1.456027e-02
+# END HISTO1D
+
