@@ -5,14 +5,12 @@ YLabel=$\frac{\text{d}\sigma}{\text{d}p_{\rm T}\text{d}y}$ [$\mu$b/GeV]
 ConnectBins=0
 RatioPlotYMin=0.01
 RatioPlotYMax=1.3
-XMin=0
 END PLOT
 
 BEGIN PLOT /ALICE_2017_I1645239/d02-x01-y01
 Title=Prompt $\Lambda_c^+$ cross section in p-Pb at 5.02 TeV ($-0.96<y<0.04$)
 XLabel=$p_{\rm T}$ [GeV/$c$]
 YLabel=$\frac{\text{d}\sigma}{\text{d}p_{\rm T}\text{d}y}$ [$\mu$b/GeV]
-XMin=0
 ConnectBins=0
 RatioPlotYMin=0.01
 RatioPlotYMax=1.3
@@ -22,7 +20,6 @@ BEGIN PLOT /ALICE_2017_I1645239/d03-x01-y01
 Title=$\Lambda_c^+/$D$^0$ ratio in pp at $\sqrt{s}=7$ TeV ($|y|<0.5$)
 XLabel=$p_{\rm T}$ [GeV/$c$]
 YLabel=$\Lambda_c^$/D$^0$
-XMin=0
 ConnectBins=0
 LogY=0
 RatioPlotYMin=0.01
@@ -33,7 +30,6 @@ BEGIN PLOT /ALICE_2017_I1645239/d04-x01-y01
 Title=$\Lambda_c^+/$D$^0$ ratio in p-Pb at $\sqrt{s_{\rm NN}}=5.02$ TeV ($-0.96<y<0.04$)
 XLabel=$p_{\rm T}$ [GeV/$c$]
 YLabel=$\Lambda_c^$/D$^0$
-XMin=0
 ConnectBins=0
 RatioPlotYMin=0.01
 RatioPlotYMax=1.3
@@ -68,7 +64,6 @@ BEGIN PLOT /ALICE_2017_I1645239/d07-x01-y01
 Title=$\Lambda_c^+$ $R_{\rm pPb}$ p-Pb collisions at $\sqrt{s_{\rm NN}}=5.02$ TeV ($-0.96 < y < 0.04$) 
 XLabel= $p_{\rm T}$ [GeV/$c$]
 YLabel= $\Lambda_c^+ R_{\rm pPb}$
-XMin=0
 ConnectBins=0
 RatioPlotYMin=0.01
 RatioPlotYMax=1.3
