@@ -8,7 +8,7 @@
  |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.240      |  | 
  |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 20 Dec 2018  |  | 
  |  |   P       Y      T    H   H   I   A   A                                      |  | 
- |  |   P       Y      T    H   H  III  A   A    Now is 21 Oct 2019 at 20:34:30    |  | 
+ |  |   P       Y      T    H   H  III  A   A    Now is 23 Oct 2019 at 08:14:19    |  | 
  |  |                                                                              |  | 
  |  |   Christian Bierlich;  Department of Astronomy and Theoretical Physics,      |  | 
  |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
@@ -64,7 +64,7 @@
  |                                                                                    | 
  *------------------------------------------------------------------------------------* 
 
- Read commands from mode2.par
+ Read commands from mode0.par
 
  *------ HeavyIon fitting of SubCollisionModel to cross sections ------* 
  |                    Total:    86.02 mb      (+-  2%)                 | 
@@ -151,42 +151,42 @@ HeavyIon Info: To avoid refitting, use the following settings for next run:
  |                                                                  | 
  |                   sigmaNonDiffractive =    47.72 mb              | 
  |                                                                  | 
- |    pT0 =  2.00 gives sigmaInteraction =   239.80 mb: accepted    | 
+ |    pT0 =  1.97 gives sigmaInteraction =   252.25 mb: accepted    | 
  |                                                                  | 
  *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
+ PYTHIA Warning in MultipartonInteractions::init: maximum increased by factor 1.082
 
  *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
  |                                                                  | 
  |                          diffraction XB                          | 
  |                                                                  | 
  |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    10.00 mb    | 
- |    pT0 =  0.53 gives sigmaInteraction =    31.58 mb: accepted    | 
+ |    pT0 =  0.52 gives sigmaInteraction =    33.58 mb: accepted    | 
  |   diffractive mass = 4.73e+01 GeV and sigmaNorm =    10.00 mb    | 
- |    pT0 =  0.73 gives sigmaInteraction =    23.91 mb: accepted    | 
+ |    pT0 =  0.72 gives sigmaInteraction =    25.29 mb: accepted    | 
  |   diffractive mass = 2.24e+02 GeV and sigmaNorm =    10.00 mb    | 
- |    pT0 =  1.03 gives sigmaInteraction =    19.60 mb: accepted    | 
+ |    pT0 =  1.01 gives sigmaInteraction =    20.24 mb: accepted    | 
  |   diffractive mass = 1.06e+03 GeV and sigmaNorm =    10.00 mb    | 
- |    pT0 =  1.43 gives sigmaInteraction =    27.35 mb: accepted    | 
+ |    pT0 =  1.41 gives sigmaInteraction =    28.13 mb: accepted    | 
  |   diffractive mass = 5.02e+03 GeV and sigmaNorm =    10.00 mb    | 
- |    pT0 =  2.00 gives sigmaInteraction =    49.82 mb: accepted    | 
+ |    pT0 =  1.97 gives sigmaInteraction =    51.49 mb: accepted    | 
  |                                                                  | 
  *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
- PYTHIA Warning in MultipartonInteractions::init: maximum increased by factor 4.055
 
  *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
  |                                                                  | 
  |                          diffraction AX                          | 
  |                                                                  | 
  |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    10.00 mb    | 
- |    pT0 =  0.53 gives sigmaInteraction =    31.71 mb: accepted    | 
+ |    pT0 =  0.52 gives sigmaInteraction =    33.39 mb: accepted    | 
  |   diffractive mass = 4.73e+01 GeV and sigmaNorm =    10.00 mb    | 
- |    pT0 =  0.73 gives sigmaInteraction =    24.02 mb: accepted    | 
+ |    pT0 =  0.72 gives sigmaInteraction =    25.36 mb: accepted    | 
  |   diffractive mass = 2.24e+02 GeV and sigmaNorm =    10.00 mb    | 
- |    pT0 =  1.03 gives sigmaInteraction =    19.35 mb: accepted    | 
+ |    pT0 =  1.01 gives sigmaInteraction =    20.28 mb: accepted    | 
  |   diffractive mass = 1.06e+03 GeV and sigmaNorm =    10.00 mb    | 
- |    pT0 =  1.43 gives sigmaInteraction =    27.32 mb: accepted    | 
+ |    pT0 =  1.41 gives sigmaInteraction =    28.27 mb: accepted    | 
  |   diffractive mass = 5.02e+03 GeV and sigmaNorm =    10.00 mb    | 
- |    pT0 =  2.00 gives sigmaInteraction =    49.81 mb: accepted    | 
+ |    pT0 =  1.97 gives sigmaInteraction =    51.09 mb: accepted    | 
  |                                                                  | 
  *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
 
@@ -195,38 +195,37 @@ HeavyIon Info: To avoid refitting, use the following settings for next run:
  |                          diffraction AXB                         | 
  |                                                                  | 
  |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    10.00 mb    | 
- |    pT0 =  0.53 gives sigmaInteraction =     7.37 mb: rejected    | 
- |    pT0 =  0.47 gives sigmaInteraction =    11.00 mb: rejected    | 
- |    pT0 =  0.43 gives sigmaInteraction =    16.33 mb: accepted    | 
+ |    pT0 =  0.52 gives sigmaInteraction =     7.71 mb: rejected    | 
+ |    pT0 =  0.47 gives sigmaInteraction =    11.55 mb: accepted    | 
  |   diffractive mass = 4.73e+01 GeV and sigmaNorm =    10.00 mb    | 
- |    pT0 =  0.73 gives sigmaInteraction =     3.61 mb: rejected    | 
- |    pT0 =  0.66 gives sigmaInteraction =     4.93 mb: rejected    | 
- |    pT0 =  0.59 gives sigmaInteraction =     6.93 mb: rejected    | 
- |    pT0 =  0.54 gives sigmaInteraction =     9.87 mb: rejected    | 
- |    pT0 =  0.48 gives sigmaInteraction =    14.07 mb: accepted    | 
+ |    pT0 =  0.72 gives sigmaInteraction =     3.73 mb: rejected    | 
+ |    pT0 =  0.65 gives sigmaInteraction =     5.14 mb: rejected    | 
+ |    pT0 =  0.59 gives sigmaInteraction =     7.30 mb: rejected    | 
+ |    pT0 =  0.53 gives sigmaInteraction =    10.30 mb: rejected    | 
+ |    pT0 =  0.48 gives sigmaInteraction =    14.82 mb: accepted    | 
  |   diffractive mass = 2.24e+02 GeV and sigmaNorm =    10.00 mb    | 
- |    pT0 =  1.03 gives sigmaInteraction =     2.91 mb: rejected    | 
- |    pT0 =  0.92 gives sigmaInteraction =     3.56 mb: rejected    | 
- |    pT0 =  0.83 gives sigmaInteraction =     4.42 mb: rejected    | 
- |    pT0 =  0.75 gives sigmaInteraction =     5.51 mb: rejected    | 
- |    pT0 =  0.67 gives sigmaInteraction =     6.99 mb: rejected    | 
- |    pT0 =  0.61 gives sigmaInteraction =     9.08 mb: rejected    | 
- |    pT0 =  0.55 gives sigmaInteraction =    11.86 mb: accepted    | 
+ |    pT0 =  1.01 gives sigmaInteraction =     2.97 mb: rejected    | 
+ |    pT0 =  0.91 gives sigmaInteraction =     3.64 mb: rejected    | 
+ |    pT0 =  0.82 gives sigmaInteraction =     4.56 mb: rejected    | 
+ |    pT0 =  0.74 gives sigmaInteraction =     5.69 mb: rejected    | 
+ |    pT0 =  0.66 gives sigmaInteraction =     7.20 mb: rejected    | 
+ |    pT0 =  0.60 gives sigmaInteraction =     9.37 mb: rejected    | 
+ |    pT0 =  0.54 gives sigmaInteraction =    12.32 mb: accepted    | 
  |   diffractive mass = 1.06e+03 GeV and sigmaNorm =    10.00 mb    | 
- |    pT0 =  1.43 gives sigmaInteraction =     4.27 mb: rejected    | 
- |    pT0 =  1.29 gives sigmaInteraction =     4.94 mb: rejected    | 
- |    pT0 =  1.16 gives sigmaInteraction =     5.70 mb: rejected    | 
- |    pT0 =  1.04 gives sigmaInteraction =     6.59 mb: rejected    | 
- |    pT0 =  0.94 gives sigmaInteraction =     7.56 mb: rejected    | 
- |    pT0 =  0.85 gives sigmaInteraction =     8.71 mb: rejected    | 
- |    pT0 =  0.76 gives sigmaInteraction =    10.17 mb: rejected    | 
- |    pT0 =  0.69 gives sigmaInteraction =    11.78 mb: accepted    | 
+ |    pT0 =  1.41 gives sigmaInteraction =     4.32 mb: rejected    | 
+ |    pT0 =  1.27 gives sigmaInteraction =     5.09 mb: rejected    | 
+ |    pT0 =  1.14 gives sigmaInteraction =     5.78 mb: rejected    | 
+ |    pT0 =  1.03 gives sigmaInteraction =     6.67 mb: rejected    | 
+ |    pT0 =  0.93 gives sigmaInteraction =     7.76 mb: rejected    | 
+ |    pT0 =  0.83 gives sigmaInteraction =     8.87 mb: rejected    | 
+ |    pT0 =  0.75 gives sigmaInteraction =    10.29 mb: rejected    | 
+ |    pT0 =  0.68 gives sigmaInteraction =    11.96 mb: accepted    | 
  |   diffractive mass = 5.02e+03 GeV and sigmaNorm =    10.00 mb    | 
- |    pT0 =  2.00 gives sigmaInteraction =     6.43 mb: rejected    | 
- |    pT0 =  1.80 gives sigmaInteraction =     7.48 mb: rejected    | 
- |    pT0 =  1.62 gives sigmaInteraction =     8.66 mb: rejected    | 
- |    pT0 =  1.46 gives sigmaInteraction =     9.93 mb: rejected    | 
- |    pT0 =  1.31 gives sigmaInteraction =    11.17 mb: accepted    | 
+ |    pT0 =  1.97 gives sigmaInteraction =     6.60 mb: rejected    | 
+ |    pT0 =  1.78 gives sigmaInteraction =     7.73 mb: rejected    | 
+ |    pT0 =  1.60 gives sigmaInteraction =     8.77 mb: rejected    | 
+ |    pT0 =  1.44 gives sigmaInteraction =     9.99 mb: rejected    | 
+ |    pT0 =  1.29 gives sigmaInteraction =    11.49 mb: accepted    | 
  |                                                                  | 
  *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
 
@@ -239,15 +238,18 @@ HeavyIon Info: To avoid refitting, use the following settings for next run:
  | Beams:eB                                      |                 1575.000 |     7000.000         0.0             | 
  | Beams:frameType                               |                        2 |            1           1           5 | 
  | ColourReconnection:allowDoubleJunRem          |                      off |           on                         | 
+ | ColourReconnection:junctionCorrection         |                  1.43000 |      1.20000   0.0100000    10.00000 | 
+ | ColourReconnection:m0                         |                  2.90000 |      0.30000     0.10000     5.00000 | 
  | ColourReconnection:mode                       |                        1 |            0           0           4 | 
+ | ColourReconnection:timeDilationMode           |                        0 |            2           0           5 | 
  | HadronLevel:all                               |                      off |           on                         | 
- | MultipartonInteractions:pT0Ref                |                  2.15000 |      2.28000     0.50000    10.00000 | 
+ | MultipartonInteractions:pT0Ref                |                  2.12000 |      2.28000     0.50000    10.00000 | 
  | Next:numberCount                              |                        0 |         1000           0             | 
  | Next:numberShowEvent                          |                        0 |            1           0             | 
  | Next:numberShowInfo                           |                        0 |            1           0             | 
  | Next:numberShowLHA                            |                        0 |            1           0             | 
  | Next:numberShowProcess                        |                        0 |            1           0             | 
- | Random:seed                                   |                      101 |           -1               900000000 | 
+ | Random:seed                                   |                      505 |           -1               900000000 | 
  | Random:setSeed                                |                       on |          off                         | 
  | SoftQCD:all                                   |                       on |          off                         | 
  | StringFlav:probQQ1toQQ0join                   |                0.0275000 |      0.50000         0.0     1.00000 | 
@@ -294,7 +296,7 @@ HeavyIon Info: To avoid refitting, use the following settings for next run:
  |                                                                  | 
  |                   sigmaNonDiffractive =    47.72 mb              | 
  |                                                                  | 
- |    pT0 =  2.12 gives sigmaInteraction =   209.28 mb: accepted    | 
+ |    pT0 =  2.12 gives sigmaInteraction =   209.85 mb: accepted    | 
  |                                                                  | 
  *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
 
@@ -303,41 +305,41 @@ HeavyIon Info: To avoid refitting, use the following settings for next run:
  |                          diffraction XB                          | 
  |                                                                  | 
  |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    47.72 mb    | 
- |    pT0 =  2.12 gives sigmaInteraction =    15.95 mb: rejected    | 
- |    pT0 =  1.91 gives sigmaInteraction =    25.10 mb: rejected    | 
- |    pT0 =  1.72 gives sigmaInteraction =    39.43 mb: rejected    | 
- |    pT0 =  1.55 gives sigmaInteraction =    62.31 mb: accepted    | 
+ |    pT0 =  2.12 gives sigmaInteraction =    15.86 mb: rejected    | 
+ |    pT0 =  1.91 gives sigmaInteraction =    25.22 mb: rejected    | 
+ |    pT0 =  1.72 gives sigmaInteraction =    39.42 mb: rejected    | 
+ |    pT0 =  1.55 gives sigmaInteraction =    61.80 mb: accepted    | 
  |   diffractive mass = 4.73e+01 GeV and sigmaNorm =    47.72 mb    | 
- |    pT0 =  2.12 gives sigmaInteraction =    39.54 mb: rejected    | 
- |    pT0 =  1.91 gives sigmaInteraction =    55.92 mb: accepted    | 
+ |    pT0 =  2.12 gives sigmaInteraction =    39.64 mb: rejected    | 
+ |    pT0 =  1.91 gives sigmaInteraction =    55.94 mb: accepted    | 
  |   diffractive mass = 2.24e+02 GeV and sigmaNorm =    47.72 mb    | 
- |    pT0 =  2.12 gives sigmaInteraction =    92.72 mb: accepted    | 
+ |    pT0 =  2.12 gives sigmaInteraction =    91.98 mb: accepted    | 
  |   diffractive mass = 1.06e+03 GeV and sigmaNorm =    47.72 mb    | 
- |    pT0 =  2.12 gives sigmaInteraction =   159.17 mb: accepted    | 
+ |    pT0 =  2.12 gives sigmaInteraction =   160.45 mb: accepted    | 
  |   diffractive mass = 5.02e+03 GeV and sigmaNorm =    47.72 mb    | 
- |    pT0 =  2.12 gives sigmaInteraction =   193.69 mb: accepted    | 
+ |    pT0 =  2.12 gives sigmaInteraction =   191.52 mb: accepted    | 
  |                                                                  | 
  *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
- PYTHIA Warning in MultipartonInteractions::init: maximum increased by factor 2.705
+ PYTHIA Warning in MultipartonInteractions::init: maximum increased by factor 2.646
 
  *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
  |                                                                  | 
  |                          diffraction AX                          | 
  |                                                                  | 
  |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    47.72 mb    | 
- |    pT0 =  2.12 gives sigmaInteraction =    15.94 mb: rejected    | 
- |    pT0 =  1.91 gives sigmaInteraction =    25.02 mb: rejected    | 
- |    pT0 =  1.72 gives sigmaInteraction =    39.46 mb: rejected    | 
- |    pT0 =  1.55 gives sigmaInteraction =    61.78 mb: accepted    | 
+ |    pT0 =  2.12 gives sigmaInteraction =    15.92 mb: rejected    | 
+ |    pT0 =  1.91 gives sigmaInteraction =    25.03 mb: rejected    | 
+ |    pT0 =  1.72 gives sigmaInteraction =    39.36 mb: rejected    | 
+ |    pT0 =  1.55 gives sigmaInteraction =    61.86 mb: accepted    | 
  |   diffractive mass = 4.73e+01 GeV and sigmaNorm =    47.72 mb    | 
- |    pT0 =  2.12 gives sigmaInteraction =    39.46 mb: rejected    | 
- |    pT0 =  1.91 gives sigmaInteraction =    55.95 mb: accepted    | 
+ |    pT0 =  2.12 gives sigmaInteraction =    39.73 mb: rejected    | 
+ |    pT0 =  1.91 gives sigmaInteraction =    56.55 mb: accepted    | 
  |   diffractive mass = 2.24e+02 GeV and sigmaNorm =    47.72 mb    | 
- |    pT0 =  2.12 gives sigmaInteraction =    92.16 mb: accepted    | 
+ |    pT0 =  2.12 gives sigmaInteraction =    92.05 mb: accepted    | 
  |   diffractive mass = 1.06e+03 GeV and sigmaNorm =    47.72 mb    | 
- |    pT0 =  2.12 gives sigmaInteraction =   159.72 mb: accepted    | 
+ |    pT0 =  2.12 gives sigmaInteraction =   159.86 mb: accepted    | 
  |   diffractive mass = 5.02e+03 GeV and sigmaNorm =    47.72 mb    | 
- |    pT0 =  2.12 gives sigmaInteraction =   193.68 mb: accepted    | 
+ |    pT0 =  2.12 gives sigmaInteraction =   192.34 mb: accepted    | 
  |                                                                  | 
  *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
 
@@ -350,7 +352,10 @@ HeavyIon Info: To avoid refitting, use the following settings for next run:
  | Beams:eCM                                     |                 5019.960 |    14000.000    10.00000             | 
  | Beams:frameType                               |                        2 |            1           1           5 | 
  | ColourReconnection:allowDoubleJunRem          |                      off |           on                         | 
+ | ColourReconnection:junctionCorrection         |                  1.43000 |      1.20000   0.0100000    10.00000 | 
+ | ColourReconnection:m0                         |                  2.90000 |      0.30000     0.10000     5.00000 | 
  | ColourReconnection:mode                       |                        1 |            0           0           4 | 
+ | ColourReconnection:timeDilationMode           |                        0 |            2           0           5 | 
  | Diffraction:mRefPomP                          |                 5019.960 |    100.00000     1.00000             | 
  | Diffraction:sigmaRefPomP                      |                 47.72333 |     10.00000     2.00000    40.00000 | 
  | HadronLevel:all                               |                      off |           on                         | 
@@ -363,7 +368,7 @@ HeavyIon Info: To avoid refitting, use the following settings for next run:
  | Next:numberShowLHA                            |                        0 |            1           0             | 
  | Next:numberShowProcess                        |                        0 |            1           0             | 
  | PDF:PomSet                                    |                       11 |            6                         | 
- | Random:seed                                   |                      101 |           -1               900000000 | 
+ | Random:seed                                   |                      505 |           -1               900000000 | 
  | Random:setSeed                                |                       on |          off                         | 
  | SoftQCD:singleDiffractive                     |                       on |          off                         | 
  | StringFlav:probQQ1toQQ0join                   |                0.0275000 |      0.50000         0.0     1.00000 | 
@@ -400,8 +405,11 @@ HeavyIon Info: To avoid refitting, use the following settings for next run:
  | Beams:frameType                               |                        2 |            1           1           5 | 
  | Beams:idB                                     |               1000822080 |         2212                         | 
  | ColourReconnection:allowDoubleJunRem          |                      off |           on                         | 
+ | ColourReconnection:junctionCorrection         |                  1.43000 |      1.20000   0.0100000    10.00000 | 
+ | ColourReconnection:m0                         |                  2.90000 |      0.30000     0.10000     5.00000 | 
  | ColourReconnection:mode                       |                        1 |            0           0           4 | 
- | MultipartonInteractions:pT0Ref                |                  2.15000 |      2.28000     0.50000    10.00000 | 
+ | ColourReconnection:timeDilationMode           |                        0 |            2           0           5 | 
+ | MultipartonInteractions:pT0Ref                |                  2.12000 |      2.28000     0.50000    10.00000 | 
  | Next:numberCount                              |                        0 |         1000           0             | 
  | Next:numberShowEvent                          |                        0 |            1           0             | 
  | Next:numberShowInfo                           |                        0 |            1           0             | 
@@ -409,7 +417,7 @@ HeavyIon Info: To avoid refitting, use the following settings for next run:
  | Next:numberShowProcess                        |                        0 |            1           0             | 
  | PartonLevel:all                               |                      off |           on                         | 
  | ProcessLevel:all                              |                      off |           on                         | 
- | Random:seed                                   |                      101 |           -1               900000000 | 
+ | Random:seed                                   |                      505 |           -1               900000000 | 
  | Random:setSeed                                |                       on |          off                         | 
  | StringFlav:probQQ1toQQ0join                   |                0.0275000 |      0.50000         0.0     1.00000 | 
  |                                               |                0.0275000 |      0.70000         0.0     1.00000 | 
@@ -433,40 +441,38 @@ HeavyIon Info: To avoid refitting, use the following settings for next run:
 
  --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
 
- PYTHIA Error in StringFragmentation::fragmentToJunction: caught in junction flavour loop  
- PYTHIA Error in Pythia::forceHadronLevel: hadronLevel failed; try again  
- PYTHIA Abort from Pythia::forceHadronLevel: hadronLevel failed; giving up  
- PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: weight above unity  
- PYTHIA Warning in StringFragmentation::fragmentToJunction: bad convergence junction rest frame  
- PYTHIA Warning in JunctionSplitting::CheckColours: Made a gluon colour singlet; redoing colours  
  PYTHIA Warning in JunctionSplitting::SplitJunPairs: parallel junction state not allowed.  
  PYTHIA Warning in JunctionSplitting::CheckColours: Not possible to split junctions; making new colours  
+ PYTHIA Error in StringFragmentation::fragment: stuck in joining  
+ PYTHIA Error in Pythia::forceHadronLevel: hadronLevel failed; try again  
+ PYTHIA Warning in StringFragmentation::fragmentToJunction: bad convergence junction rest frame  
+ PYTHIA Error in StringFragmentation::fragmentToJunction: caught in junction flavour loop  
+ PYTHIA Warning in JunctionSplitting::CheckColours: Made a gluon colour singlet; redoing colours  
+ PYTHIA Abort from Pythia::forceHadronLevel: hadronLevel failed; giving up  
+ PYTHIA Error in BeamRemnants::setKinematics: kinematics construction failed  
+ PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF  
+ PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: weight above unity  
  PYTHIA Error in BeamRemnants::setKinematics: kinematics construction failed  
  PYTHIA Error in MiniStringFragmentation::fragment: no 1- or 2-body state found above mass threshold  
- PYTHIA Error in BeamRemnants::setKinematics: kinematics construction failed  
- PYTHIA Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop  
- PYTHIA Error in StringFragmentation::fragment: stuck in joining  
- PYTHIA Error in Pythia::next: partonLevel failed; try again  
  PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: weight above unity  
- PYTHIA Warning in JunctionSplitting::SplitJunPairs: parallel junction state not allowed.  
- PYTHIA Warning in JunctionSplitting::CheckColours: Not possible to split junctions; making new colours  
+ PYTHIA Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop  
+ PYTHIA Warning from PyHIia::next: Could not setup signal or ND collisions.  
  PYTHIA Warning in MultipartonInteractions::pTnext: weight above unity  
+ PYTHIA Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop  
+ PYTHIA Warning in StringFragmentation::finalRegion: random axis needed to break tie  
  PYTHIA Warning in MiniStringFragmentation::ministring2two: random axis needed to break tie  
  PYTHIA Warning in Pythia::check: not quite matched particle energy/momentum/mass  
  PYTHIA Warning in Pythia::check: not quite matched particle energy/momentum/mass  
- PYTHIA Warning in StringFragmentation::finalRegion: random axis needed to break tie  
- PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF  
- PYTHIA Warning from PyHIia::next: Could not setup signal or ND collisions.  
+ PYTHIA Error in Pythia::next: partonLevel failed; try again  
  PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF  
  PYTHIA Warning in Pythia::check: not quite matched particle energy/momentum/mass  
- PYTHIA Warning in MultipartonInteractions::pTfirst: weight above unity  
- PYTHIA Error in Pythia::next: partonLevel failed; try again  
- PYTHIA Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop  
- PYTHIA Warning in StringFragmentation::fragmentToJunction: Negative invariant masses in junction rest frame  
- PYTHIA Warning in MultipartonInteractions::pTnext: weight above unity  
- PYTHIA Warning from PyHIia::next: Could not setup DD sub collision.  
- PYTHIA Warning in MultipartonInteractions::pTfirst: weight above unity  
  PYTHIA Warning in Pythia::check: energy-momentum not quite conserved  
+ PYTHIA Warning in StringFragmentation::fragmentToJunction: Negative invariant masses in junction rest frame  
+ PYTHIA Warning from PyHIia::next: Could not setup SD sub collision.  
+ PYTHIA Warning in TauDecays::decay: maximum decay weight exceeded in tau decay  
+ PYTHIA Warning in MultipartonInteractions::pTfirst: weight above unity  
+ PYTHIA Warning in TauDecays::decay: unknown correlated tau production, assuming from unpolarized photon  
+ PYTHIA Warning in MultipartonInteractions::pTfirst: weight above unity  
 
  *-----  HeavyIon Event and Cross Section Statistics  -------------------------------------------------------------*
  |                                                                                                                 |
@@ -475,15 +481,15 @@ HeavyIon Info: To avoid refitting, use the following settings for next run:
  |                                                    |                                   |                        |
  |-----------------------------------------------------------------------------------------------------------------|
  |                                                    |                                   |                        |
- | non-diffractive                                101 |      179329     179329     179329 |   1.779e+03  1.842e-02 |
- | A B -> A B elastic                             102 |          71         71         71 |   8.858e-01  1.159e+00 |
- | A B -> X B single diffractive                  103 |        9067       9067       9067 |   1.089e+02  9.888e-02 |
- | A B -> A X single diffractive                  104 |        8845       8845       8845 |   1.058e+02  9.978e-02 |
- | A B -> X X double diffractive                  105 |        2688       2688       2688 |   2.926e+01  1.645e-01 |
+ | non-diffractive                                101 |      179808     179808     179808 |   1.806e+03  1.849e-02 |
+ | A B -> A B elastic                             102 |          64         64         64 |   8.249e-01  1.254e+00 |
+ | A B -> X B single diffractive                  103 |        8859       8859       8859 |   1.078e+02  1.007e-01 |
+ | A B -> A X single diffractive                  104 |        8571       8571       8571 |   1.038e+02  1.020e-01 |
+ | A B -> X X double diffractive                  105 |        2698       2698       2698 |   2.984e+01  1.657e-01 |
  |                                                    |                                   |                        |
- | sum                                                |      606777     200000     200000 |   2.024e+03  1.781e-02 |
- | (Estimated total cross section)                    |      606777          0          0 |   3.555e+03  6.977e+00 |
- | (Estimated non-diffractive cross section)          |      606777          0          0 |   1.817e+03  3.576e-01 |
+ | sum                                                |      598889     200000     200000 |   2.048e+03  1.790e-02 |
+ | (Estimated total cross section)                    |      598889          0          0 |   3.563e+03  7.026e+00 |
+ | (Estimated non-diffractive cross section)          |      598889          0          0 |   1.821e+03  3.602e-01 |
  |                                                                                                                 |
  *-----  End HeavyIon Event and Cross Section Statistics ----------------------------------------------------------*
 
@@ -491,44 +497,42 @@ HeavyIon Info: To avoid refitting, use the following settings for next run:
  |                                                                                                                 | 
  |  times   message                                                                                                | 
  |                                                                                                                 | 
- |  10062   (MBIAS)Error in BeamRemnants::setKinematics: kinematics construction failed                            | 
- |     17   (MBIAS)Error in Pythia::next: partonLevel failed; try again                                            | 
- |    119   (MBIAS)Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop                                     | 
- |   4277   (MBIAS)Warning in JunctionSplitting::CheckColours: Made a gluon colour singlet; redoing colours        | 
- |   8261   (MBIAS)Warning in JunctionSplitting::CheckColours: Not possible to split junctions; making new colours | 
- |   8261   (MBIAS)Warning in JunctionSplitting::SplitJunPairs: parallel junction state not allowed.               | 
- |      3   (MBIAS)Warning in MultipartonInteractions::init: maximum increased                                     | 
- |      9   (MBIAS)Warning in MultipartonInteractions::pTfirst: weight above unity                                 | 
- |     33   (MBIAS)Warning in MultipartonInteractions::pTnext: weight above unity                                  | 
- |     85   (MBIAS)Warning in Pythia::check: not quite matched particle energy/momentum/mass                       | 
- |    149   (MBIAS)Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF                                    | 
- |   9039   (MBIAS)Warning in SimpleSpaceShower::pT2nextQCD: weight above unity                                    | 
- |    450   (SASD)Error in BeamRemnants::setKinematics: kinematics construction failed                             | 
- |      2   (SASD)Error in Pythia::next: partonLevel failed; try again                                             | 
- |      9   (SASD)Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop                                      | 
- |     26   (SASD)Warning in JunctionSplitting::CheckColours: Not possible to split junctions; making new colours  | 
- |     26   (SASD)Warning in JunctionSplitting::SplitJunPairs: parallel junction state not allowed.                | 
+ |  11368   (MBIAS)Error in BeamRemnants::setKinematics: kinematics construction failed                            | 
+ |     21   (MBIAS)Error in Pythia::next: partonLevel failed; try again                                            | 
+ |    167   (MBIAS)Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop                                     | 
+ |   4393   (MBIAS)Warning in JunctionSplitting::CheckColours: Made a gluon colour singlet; redoing colours        | 
+ |  10939   (MBIAS)Warning in JunctionSplitting::CheckColours: Not possible to split junctions; making new colours | 
+ |  10939   (MBIAS)Warning in JunctionSplitting::SplitJunPairs: parallel junction state not allowed.               | 
+ |      4   (MBIAS)Warning in MultipartonInteractions::init: maximum increased                                     | 
+ |      2   (MBIAS)Warning in MultipartonInteractions::pTfirst: weight above unity                                 | 
+ |     27   (MBIAS)Warning in MultipartonInteractions::pTnext: weight above unity                                  | 
+ |      1   (MBIAS)Warning in Pythia::check: energy-momentum not quite conserved                                   | 
+ |     99   (MBIAS)Warning in Pythia::check: not quite matched particle energy/momentum/mass                       | 
+ |    175   (MBIAS)Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF                                    | 
+ |   9076   (MBIAS)Warning in SimpleSpaceShower::pT2nextQCD: weight above unity                                    | 
+ |    414   (SASD)Error in BeamRemnants::setKinematics: kinematics construction failed                             | 
+ |      6   (SASD)Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop                                      | 
  |      2   (SASD)Warning in MultipartonInteractions::init: maximum increased                                      | 
- |      6   (SASD)Warning in MultipartonInteractions::pTfirst: weight above unity                                  | 
- |      1   (SASD)Warning in MultipartonInteractions::pTnext: weight above unity                                   | 
- |      3   (SASD)Warning in Pythia::check: not quite matched particle energy/momentum/mass                        | 
- |      3   (SASD)Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF                                     | 
- |    230   (SASD)Warning in SimpleSpaceShower::pT2nextQCD: weight above unity                                     | 
+ |      5   (SASD)Warning in MultipartonInteractions::pTfirst: weight above unity                                  | 
+ |      9   (SASD)Warning in Pythia::check: not quite matched particle energy/momentum/mass                        | 
+ |     58   (SASD)Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF                                     | 
+ |    228   (SASD)Warning in SimpleSpaceShower::pT2nextQCD: weight above unity                                     | 
  |      1   (SIGPP)Abort from Pythia::init: processLevel initialization failed                                     | 
  |      1   (SIGPP)Error in ProcessLevel::init: no process switched on                                             | 
- |   4077   Abort from Pythia::forceHadronLevel: hadronLevel failed; giving up                                     | 
- |  23031   Error in MiniStringFragmentation::fragment: no 1- or 2-body state found above mass threshold           | 
- |  49710   Error in Pythia::forceHadronLevel: hadronLevel failed; try again                                       | 
- |   5900   Error in StringFragmentation::fragment: stuck in joining                                               | 
- |  20779   Error in StringFragmentation::fragmentToJunction: caught in junction flavour loop                      | 
- |      1   Warning from PyHIia::next: Could not setup DD sub collision.                                           | 
+ |   1559   Abort from Pythia::forceHadronLevel: hadronLevel failed; giving up                                     | 
+ |   6392   Error in MiniStringFragmentation::fragment: no 1- or 2-body state found above mass threshold           | 
+ |  22709   Error in Pythia::forceHadronLevel: hadronLevel failed; try again                                       | 
+ |   5462   Error in StringFragmentation::fragment: stuck in joining                                               | 
+ |  10855   Error in StringFragmentation::fragmentToJunction: caught in junction flavour loop                      | 
+ |      2   Warning from PyHIia::next: Could not setup SD sub collision.                                           | 
  |     34   Warning from PyHIia::next: Could not setup signal or ND collisions.                                    | 
- |    157   Warning in MiniStringFragmentation::ministring2two: random axis needed to break tie                    | 
- |      1   Warning in Pythia::check: energy-momentum not quite conserved                                          | 
- |    182   Warning in Pythia::check: not quite matched particle energy/momentum/mass                              | 
- |    123   Warning in StringFragmentation::finalRegion: random axis needed to break tie                           | 
- |      2   Warning in StringFragmentation::fragmentToJunction: Negative invariant masses in junction rest frame   | 
- |  42107   Warning in StringFragmentation::fragmentToJunction: bad convergence junction rest frame                | 
+ |     39   Warning in MiniStringFragmentation::ministring2two: random axis needed to break tie                    | 
+ |    171   Warning in Pythia::check: not quite matched particle energy/momentum/mass                              | 
+ |     42   Warning in StringFragmentation::finalRegion: random axis needed to break tie                           | 
+ |      4   Warning in StringFragmentation::fragmentToJunction: Negative invariant masses in junction rest frame   | 
+ |  63307   Warning in StringFragmentation::fragmentToJunction: bad convergence junction rest frame                | 
+ |      1   Warning in TauDecays::decay: maximum decay weight exceeded in tau decay                                | 
+ |      1   Warning in TauDecays::decay: unknown correlated tau production, assuming from unpolarized photon       | 
  |                                                                                                                 | 
  *-------  End PYTHIA Error and Warning Messages Statistics  ------------------------------------------------------* 
-Cross Section (nb) = 1.243e+09
+Cross Section (nb) = 1.256e+09
