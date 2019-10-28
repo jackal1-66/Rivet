@@ -1,0 +1,81 @@
+# BEGIN PLOT
+LegendOnly=/ALICE_2017_I1645239/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia81e6_211019_new.yoda/ALICE_2017_I1645239/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia81e6_231119_newmode2.yoda/ALICE_2017_I1645239/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia81e6_231119_newmode0.yoda/ALICE_2017_I1645239/d02-x01-y01
+DrawOnly=/ALICE_2017_I1645239/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia81e6_211019_new.yoda/ALICE_2017_I1645239/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia81e6_231119_newmode2.yoda/ALICE_2017_I1645239/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia81e6_231119_newmode0.yoda/ALICE_2017_I1645239/d02-x01-y01
+Title=Prompt $\Lambda_c^+$ cross section in p-Pb at 5.02 TeV ($-0.96<y<0.04$)
+RatioPlotReference=/ALICE_2017_I1645239/d02-x01-y01
+ConnectBins=0
+RatioPlot=1
+LogY=1
+RatioPlotYMax=1.3
+XLabel=$p_{\rm T}$ [GeV/$c$]
+YLabel=$\frac{\text{d}\sigma}{\text{d}p_{\rm T}\text{d}y}$ [$\mu$b/(GeV/$c$)]
+Legend=1
+RatioPlotYMin=0.01
+# END PLOT
+
+# BEGIN HISTO1D /ALICE_2017_I1645239/d02-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -1029.076, up: 1029.076}, sys: {dn: -1154.636, up: 1132.468}, "sys,uncertainty on luminosity": {dn: -326.250127, up: 326.250127}}, 1: {stat: {dn: -189.132, up: 189.132}, sys: {dn: -186.779, up: 177.358}, "sys,uncertainty on luminosity": {dn: -55.280627, up: 55.280627}}, 2: {stat: {dn: -54.721, up: 54.721}, sys: {dn: -48.442, up: 43.562}, "sys,uncertainty on luminosity": {dn: -14.051712000000002, up: 14.051712000000002}}, 3: {stat: {dn: -10.547, up: 10.547}, sys: {dn: -8.745, up: 7.642}, "sys,uncertainty on luminosity": {dn: -2.6812050000000003, up: 2.6812050000000003}}}
+IsRef=1
+Path=/ALICE_2017_I1645239/d02-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	8.817571e+03	1.580703e+03	1.564583e+03
+4.000000e+00	6.000000e+00	1.494071e+03	2.715019e+02	2.651089e+02
+6.000000e+00	8.000000e+00	3.797760e+02	7.442087e+01	7.134064e+01
+8.000000e+00	1.200000e+01	7.246500e+01	1.396077e+01	1.329768e+01
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia81e6_211019_new.yoda/ALICE_2017_I1645239/d02-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia81e6_211019_new.yoda/ALICE_2017_I1645239/d02-x01-y01
+ScaledBy=1.81762924648687092e-03
+Title=Pythia8 (Monash 2013)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	5.217090e+02	1.591602e+01	1.591602e+01
+4.000000e+00	6.000000e+00	1.544334e+02	8.633025e+00	8.633025e+00
+6.000000e+00	8.000000e+00	4.743906e+01	4.824048e+00	4.824048e+00
+8.000000e+00	1.200000e+01	1.220189e+01	1.715929e+00	1.715929e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia81e6_231119_newmode2.yoda/ALICE_2017_I1645239/d02-x01-y01
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia81e6_231119_newmode2.yoda/ALICE_2017_I1645239/d02-x01-y01
+ScaledBy=1.78670811127963798e-03
+Title=Pythia8 (CR mode $2$)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	2.697613e+03	3.576050e+01	3.576050e+01
+4.000000e+00	6.000000e+00	5.641760e+02	1.633119e+01	1.633119e+01
+6.000000e+00	8.000000e+00	1.257445e+02	7.718834e+00	7.718834e+00
+8.000000e+00	1.200000e+01	1.825811e+01	2.076419e+00	2.076419e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia81e6_231119_newmode0.yoda/ALICE_2017_I1645239/d02-x01-y01
+ErrorBars=1
+LineColor=green
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Pythia81e6_231119_newmode0.yoda/ALICE_2017_I1645239/d02-x01-y01
+ScaledBy=1.80886210752224225e-03
+Title=Pythia8 (CR mode $0$)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	2.273454e+03	3.305408e+01	3.305408e+01
+4.000000e+00	6.000000e+00	4.580252e+02	1.479711e+01	1.479711e+01
+6.000000e+00	8.000000e+00	1.057116e+02	7.095005e+00	7.095005e+00
+8.000000e+00	1.200000e+01	1.938615e+01	2.151791e+00	2.151791e+00
+# END HISTO1D
+

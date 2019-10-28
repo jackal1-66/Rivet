@@ -1,0 +1,49 @@
+# BEGIN PLOT
+LegendOnly=/ALICE_2017_I1645239/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7testtest1e4.yoda/ALICE_2017_I1645239/d01-x01-y01
+DrawOnly=/ALICE_2017_I1645239/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7testtest1e4.yoda/ALICE_2017_I1645239/d01-x01-y01
+Title=Prompt $\Lambda_c^+$ cross section in pp at 7 TeV ($|y|<0.5$) 
+RatioPlotReference=/ALICE_2017_I1645239/d01-x01-y01
+ConnectBins=0
+RatioPlot=1
+LogY=1
+RatioPlotYMax=1.3
+XLabel=$p_{\rm T}$ [GeV/$c$]
+YLabel=$\frac{\text{d}\sigma}{\text{d}p_{\rm T}\text{d}y}$ [$\mu$b/(GeV/$c$)]
+Legend=1
+RatioPlotYMin=0.01
+# END PLOT
+
+# BEGIN HISTO1D /ALICE_2017_I1645239/d01-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -19.348, up: 19.348}, sys: {dn: -39.24, up: 39.235}, "sys,uncertainty on luminosity": {dn: -3.92504, up: 3.92504}}, 1: {stat: {dn: -7.409, up: 7.409}, sys: {dn: -7.891, up: 7.792}, "sys,uncertainty on luminosity": {dn: -2.10483, up: 2.10483}}, 2: {stat: {dn: -3.051, up: 3.051}, sys: {dn: -3.485, up: 3.397}, "sys,uncertainty on luminosity": {dn: -0.959735, up: 0.959735}}, 3: {stat: {dn: -0.845, up: 0.845}, sys: {dn: -1.143, up: 1.053}, "sys,uncertainty on luminosity": {dn: -0.31478999999999996, up: 0.31478999999999996}}, 4: {stat: {dn: -0.378, up: 0.378}, sys: {dn: -0.332, up: 0.315}, "sys,uncertainty on luminosity": {dn: -0.06954500000000001, up: 0.06954500000000001}}}
+IsRef=1
+Path=/ALICE_2017_I1645239/d01-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	1.121440e+02	4.392640e+01	4.392193e+01
+2.000000e+00	3.000000e+00	6.013800e+01	1.102685e+01	1.095622e+01
+3.000000e+00	4.000000e+00	2.742100e+01	4.730213e+00	4.665758e+00
+4.000000e+00	6.000000e+00	8.994000e+00	1.455873e+00	1.386336e+00
+6.000000e+00	8.000000e+00	1.987000e+00	5.078824e-01	4.969361e-01
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7testtest1e4.yoda/ALICE_2017_I1645239/d01-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7testtest1e4.yoda/ALICE_2017_I1645239/d01-x01-y01
+ScaledBy=5.36095678083745639e+01
+Title=Herwig7testtest1e4
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	4.169117e+00	4.169117e+00	4.169117e+00
+2.000000e+00	3.000000e+00	8.639840e+00	5.025427e+00	5.025427e+00
+3.000000e+00	4.000000e+00	4.955416e+00	4.955416e+00	4.955416e+00
+4.000000e+00	6.000000e+00	2.798068e+00	1.979317e+00	1.979317e+00
+6.000000e+00	8.000000e+00	2.326918e+00	2.326918e+00	2.326918e+00
+# END HISTO1D
+
