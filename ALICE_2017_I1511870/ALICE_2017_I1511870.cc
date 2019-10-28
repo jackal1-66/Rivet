@@ -1,6 +1,6 @@
 // -*- C++ -*-
 #include "Rivet/Analysis.hh"
-#include "Rivet/Projections/UnstableFinalState.hh"
+#include "Rivet/Projections/UnstableParticles.hh"
 
 namespace Rivet {
 
@@ -20,7 +20,7 @@ namespace Rivet {
     void init() {
 
       // Initialise and register projections
-      declare(UnstableFinalState(), "UFS");
+      declare(UnstableParticles(), "UFS");
       
       std::vector<double> binEdges = {1., 2., 3., 4., 5., 6., 7., 8., 10., 12., 16., 24.};
       std::vector<double> binEdges1 = {2., 4., 6., 8., 12.};
@@ -53,7 +53,7 @@ namespace Rivet {
     /// Perform the per-event analysis
     void analyze(const Event& event) {
         const double weight = event.weight();
-        const UnstableFinalState& ufs = apply<UnstableFinalState>(event, "UFS");
+        const UnstableParticles& ufs = apply<UnstableParticles>(event, "UFS");
         
         foreach (const Particle& p, ufs.particles()) {
           if(p.abspid() == 421){
