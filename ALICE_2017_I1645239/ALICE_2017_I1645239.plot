@@ -19,7 +19,7 @@ END PLOT
 BEGIN PLOT /ALICE_2017_I1645239/d03-x01-y01
 Title=$\Lambda_c^+/$D$^0$ ratio in pp at $\sqrt{s}=7$ TeV ($|y|<0.5$)
 XLabel=$p_{\rm T}$ [GeV/$c$]
-YLabel=$\Lambda_c^$/D$^0$
+YLabel=$\Lambda_c^+$/D$^0$
 ConnectBins=0
 LogY=0
 RatioPlotYMin=0.01
@@ -29,7 +29,7 @@ END PLOT
 BEGIN PLOT /ALICE_2017_I1645239/d04-x01-y01
 Title=$\Lambda_c^+/$D$^0$ ratio in p-Pb at $\sqrt{s_{\rm NN}}=5.02$ TeV ($-0.96<y<0.04$)
 XLabel=$p_{\rm T}$ [GeV/$c$]
-YLabel=$\Lambda_c^$/D$^0$
+YLabel=$\Lambda_c^+$/D$^0$
 ConnectBins=0
 RatioPlotYMin=0.01
 RatioPlotYMax=1.3
@@ -41,8 +41,10 @@ END PLOT
 BEGIN PLOT /ALICE_2017_I1645239/d05-x01-y01
 Title=Integrated $\Lambda_c^+/$D$^0$ in pp at $\sqrt{s}=7$ TeV ($|y|<0.5$)  
 XLabel= y
-YLabel=$\Lambda_c^$/D$^0$
+YLabel=$\Lambda_c^+$/D$^0$
 ConnectBins=0
+XMin=-0.5
+XMax=0.5
 RatioPlotYMin=0.01
 RatioPlotYMax=1.3
 LegendYPos=0.68
@@ -52,8 +54,10 @@ END PLOT
 BEGIN PLOT /ALICE_2017_I1645239/d06-x01-y01
 Title=Integrated $\Lambda_c^+/$D$^0$ in p-Pb at $\sqrt{s_{\rm NN}}=5.02$ TeV ($-0.96 < y < 0.04$)
 XLabel= y
-YLabel=$\Lambda_c^$/D$^0$
+YLabel=$\Lambda_c^+$/D$^0$
 ConnectBins=0
+XMin=-0.96
+XMax=0.04
 RatioPlotYMin=0.01
 RatioPlotYMax=1.3
 LegendYPos=0.68
