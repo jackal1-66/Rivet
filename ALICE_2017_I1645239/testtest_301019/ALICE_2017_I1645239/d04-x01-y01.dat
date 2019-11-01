@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7testtest1e4.yoda/ALICE_2017_I1645239/d04-x01-y01
-DrawOnly=/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7testtest1e4.yoda/ALICE_2017_I1645239/d04-x01-y01
+LegendOnly=/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7testtest1e5.yoda/ALICE_2017_I1645239/d04-x01-y01
+DrawOnly=/ALICE_2017_I1645239/d04-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7testtest1e5.yoda/ALICE_2017_I1645239/d04-x01-y01
 Title=$\Lambda_c^+/$D$^0$ ratio in p-Pb at $\sqrt{s_{\rm NN}}=5.02$ TeV ($-0.96<y<0.04$)
 RatioPlotReference=/ALICE_2017_I1645239/d04-x01-y01
 ConnectBins=0
@@ -31,12 +31,12 @@ Title=Data
 # END HISTO1D
 
 
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7testtest1e4.yoda/ALICE_2017_I1645239/d04-x01-y01
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7testtest1e5.yoda/ALICE_2017_I1645239/d04-x01-y01
 ErrorBars=1
 LineColor=red
 LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7testtest1e4.yoda/ALICE_2017_I1645239/d04-x01-y01
-Title=Herwig7testtest1e4
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1645239/Herwig7testtest1e5.yoda/ALICE_2017_I1645239/d04-x01-y01
+Title=Herwig7testtest1e5
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus

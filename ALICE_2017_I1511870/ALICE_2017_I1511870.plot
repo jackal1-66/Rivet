@@ -35,7 +35,7 @@ RatioPlotYMax=1.5
 END PLOT
 
 BEGIN PLOT /ALICE_2017_I1511870/d04-x01-y01
-Title=Differential cross section for prompt $D_{s}$ production.
+Title=Differential cross section for prompt $D_{s}^+$ production.
 XLabel=$p_T$ [GeV/c]
 YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
 ConnectBins=0
@@ -134,7 +134,7 @@ LegendXPos=0.55
 END PLOT
 
 BEGIN PLOT /ALICE_2017_I1511870/d12-x01-y01
-Title=Integrated cross sections for prompt $D_{s}$ production. 
+Title=Integrated cross sections for prompt $D_{s}^+$ production. 
 XLabel= $E = 7 TeV$
 YLabel=$\frac{\text{d}\sigma}{\text{d}y}$ [$\mu$b]
 ConnectBins=0

@@ -43,8 +43,6 @@ Title=Integrated $\Lambda_c^+/$D$^0$ in pp at $\sqrt{s}=7$ TeV ($|y|<0.5$)
 XLabel= y
 YLabel=$\Lambda_c^+$/D$^0$
 ConnectBins=0
-XMin=-0.5
-XMax=0.5
 RatioPlotYMin=0.01
 RatioPlotYMax=1.3
 LegendYPos=0.68
@@ -56,8 +54,6 @@ Title=Integrated $\Lambda_c^+/$D$^0$ in p-Pb at $\sqrt{s_{\rm NN}}=5.02$ TeV ($-
 XLabel= y
 YLabel=$\Lambda_c^+$/D$^0$
 ConnectBins=0
-XMin=-0.96
-XMax=0.04
 RatioPlotYMin=0.01
 RatioPlotYMax=1.3
 LegendYPos=0.68
