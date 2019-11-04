@@ -414,3 +414,58 @@ HeavyIon Info: To avoid refitting, use the following settings for next run:
  PYTHIA Error in StringFragmentation::fragmentToJunction: caught in junction flavour loop  
  PYTHIA Warning in Pythia::check: not quite matched particle energy/momentum/mass  
  PYTHIA Warning in Pythia::check: not quite matched particle energy/momentum/mass  
+ PYTHIA Error in MiniStringFragmentation::fragment: no 1- or 2-body state found above mass threshold  
+ PYTHIA Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop  
+ PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF  
+ PYTHIA Error in Pythia::next: partonLevel failed; try again  
+ PYTHIA Warning in Pythia::check: not quite matched particle energy/momentum/mass  
+
+ *-----  HeavyIon Event and Cross Section Statistics  -------------------------------------------------------------*
+ |                                                                                                                 |
+ | Subprocess                                    Code |            Number of events       |      sigma +- delta    |
+ |                                                    |       Tried   Selected   Accepted |     (estimated) (mb)   |
+ |                                                    |                                   |                        |
+ |-----------------------------------------------------------------------------------------------------------------|
+ |                                                    |                                   |                        |
+ | non-diffractive                                101 |      179748     179748     179748 |   1.809e+03  1.852e-02 |
+ | A B -> A B elastic                             102 |          57         57         57 |   7.324e-01  1.323e+00 |
+ | A B -> X B single diffractive                  103 |        8801       8801       8801 |   1.075e+02  1.014e-01 |
+ | A B -> A X single diffractive                  104 |        8650       8650       8650 |   1.052e+02  1.018e-01 |
+ | A B -> X X double diffractive                  105 |        2744       2744       2744 |   3.043e+01  1.646e-01 |
+ |                                                    |                                   |                        |
+ | sum                                                |      597765     200000     200000 |   2.052e+03  1.793e-02 |
+ | (Estimated total cross section)                    |      597765          0          0 |   3.539e+03  7.020e+00 |
+ | (Estimated non-diffractive cross section)          |      597765          0          0 |   1.809e+03  3.599e-01 |
+ |                                                                                                                 |
+ *-----  End HeavyIon Event and Cross Section Statistics ----------------------------------------------------------*
+
+ *-------  PYTHIA Error and Warning Messages Statistics  ----------------------------------------------------------* 
+ |                                                                                                                 | 
+ |  times   message                                                                                                | 
+ |                                                                                                                 | 
+ |   1502   (MBIAS)Error in BeamRemnants::setKinematics: kinematics construction failed                            | 
+ |      1   (MBIAS)Error in Pythia::next: partonLevel failed; try again                                            | 
+ |    117   (MBIAS)Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop                                     | 
+ |      3   (MBIAS)Warning in MultipartonInteractions::init: maximum increased                                     | 
+ |     20   (MBIAS)Warning in MultipartonInteractions::pTnext: weight above unity                                  | 
+ |     44   (MBIAS)Warning in Pythia::check: not quite matched particle energy/momentum/mass                       | 
+ |     66   (MBIAS)Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF                                    | 
+ |   8231   (MBIAS)Warning in SimpleSpaceShower::pT2nextQCD: weight above unity                                    | 
+ |    417   (SASD)Error in BeamRemnants::setKinematics: kinematics construction failed                             | 
+ |      8   (SASD)Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop                                      | 
+ |      2   (SASD)Warning in MultipartonInteractions::init: maximum increased                                      | 
+ |      3   (SASD)Warning in Pythia::check: not quite matched particle energy/momentum/mass                        | 
+ |      8   (SASD)Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF                                     | 
+ |    234   (SASD)Warning in SimpleSpaceShower::pT2nextQCD: weight above unity                                     | 
+ |      1   (SIGPP)Abort from Pythia::init: processLevel initialization failed                                     | 
+ |      1   (SIGPP)Error in ProcessLevel::init: no process switched on                                             | 
+ |     29   Abort from Pythia::forceHadronLevel: hadronLevel failed; giving up                                     | 
+ |      2   Error in MiniStringFragmentation::fragment: no 1- or 2-body state found above mass threshold           | 
+ |    587   Error in Pythia::forceHadronLevel: hadronLevel failed; try again                                       | 
+ |    528   Error in StringFragmentation::fragment: stuck in joining                                               | 
+ |     57   Error in StringFragmentation::fragmentToJunction: caught in junction flavour loop                      | 
+ |     60   Warning in Pythia::check: not quite matched particle energy/momentum/mass                              | 
+ |   1205   Warning in StringFragmentation::fragmentToJunction: bad convergence junction rest frame                | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Error and Warning Messages Statistics  ------------------------------------------------------* 
+Cross Section (nb) = 1.259e+09

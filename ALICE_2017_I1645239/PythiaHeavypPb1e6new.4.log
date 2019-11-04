@@ -418,3 +418,62 @@ HeavyIon Info: To avoid refitting, use the following settings for next run:
  PYTHIA Warning in Pythia::check: not quite matched particle energy/momentum/mass  
  PYTHIA Error in Pythia::next: partonLevel failed; try again  
  PYTHIA Warning in MultipartonInteractions::pTnext: weight above unity  
+ PYTHIA Warning in TauDecays::decay: unknown correlated tau production, assuming from unpolarized photon  
+ PYTHIA Error in MiniStringFragmentation::fragment: no 1- or 2-body state found above mass threshold  
+ PYTHIA Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop  
+ PYTHIA Warning in MultipartonInteractions::pTnext: weight above unity  
+ PYTHIA Warning in MultipartonInteractions::pTfirst: weight above unity  
+
+ *-----  HeavyIon Event and Cross Section Statistics  -------------------------------------------------------------*
+ |                                                                                                                 |
+ | Subprocess                                    Code |            Number of events       |      sigma +- delta    |
+ |                                                    |       Tried   Selected   Accepted |     (estimated) (mb)   |
+ |                                                    |                                   |                        |
+ |-----------------------------------------------------------------------------------------------------------------|
+ |                                                    |                                   |                        |
+ | non-diffractive                                101 |      179888     179888     179888 |   1.814e+03  1.853e-02 |
+ | A B -> A B elastic                             102 |          74         74         74 |   9.129e-01  1.113e+00 |
+ | A B -> X B single diffractive                  103 |        8696       8696       8696 |   1.067e+02  1.023e-01 |
+ | A B -> A X single diffractive                  104 |        8660       8660       8660 |   1.056e+02  1.019e-01 |
+ | A B -> X X double diffractive                  105 |        2682       2682       2682 |   2.979e+01  1.666e-01 |
+ |                                                    |                                   |                        |
+ | sum                                                |      596380     200000     200000 |   2.057e+03  1.795e-02 |
+ | (Estimated total cross section)                    |      596380          0          0 |   3.549e+03  7.036e+00 |
+ | (Estimated non-diffractive cross section)          |      596380          0          0 |   1.814e+03  3.606e-01 |
+ |                                                                                                                 |
+ *-----  End HeavyIon Event and Cross Section Statistics ----------------------------------------------------------*
+
+ *-------  PYTHIA Error and Warning Messages Statistics  ----------------------------------------------------------* 
+ |                                                                                                                 | 
+ |  times   message                                                                                                | 
+ |                                                                                                                 | 
+ |   1571   (MBIAS)Error in BeamRemnants::setKinematics: kinematics construction failed                            | 
+ |     76   (MBIAS)Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop                                     | 
+ |      3   (MBIAS)Warning in MultipartonInteractions::init: maximum increased                                     | 
+ |      2   (MBIAS)Warning in MultipartonInteractions::pTfirst: weight above unity                                 | 
+ |     16   (MBIAS)Warning in MultipartonInteractions::pTnext: weight above unity                                  | 
+ |      1   (MBIAS)Warning in Pythia::check: energy-momentum not quite conserved                                   | 
+ |     50   (MBIAS)Warning in Pythia::check: not quite matched particle energy/momentum/mass                       | 
+ |     92   (MBIAS)Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF                                    | 
+ |   8142   (MBIAS)Warning in SimpleSpaceShower::pT2nextQCD: weight above unity                                    | 
+ |    432   (SASD)Error in BeamRemnants::setKinematics: kinematics construction failed                             | 
+ |      3   (SASD)Error in Pythia::next: partonLevel failed; try again                                             | 
+ |      8   (SASD)Error in SimpleSpaceShower::pT2nearThreshold: stuck in loop                                      | 
+ |      2   (SASD)Warning in MultipartonInteractions::init: maximum increased                                      | 
+ |      6   (SASD)Warning in MultipartonInteractions::pTfirst: weight above unity                                  | 
+ |      2   (SASD)Warning in MultipartonInteractions::pTnext: weight above unity                                   | 
+ |      1   (SASD)Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF                                     | 
+ |    203   (SASD)Warning in SimpleSpaceShower::pT2nextQCD: weight above unity                                     | 
+ |      1   (SIGPP)Abort from Pythia::init: processLevel initialization failed                                     | 
+ |      1   (SIGPP)Error in ProcessLevel::init: no process switched on                                             | 
+ |     17   Abort from Pythia::forceHadronLevel: hadronLevel failed; giving up                                     | 
+ |      6   Error in MiniStringFragmentation::fragment: no 1- or 2-body state found above mass threshold           | 
+ |    516   Error in Pythia::forceHadronLevel: hadronLevel failed; try again                                       | 
+ |    450   Error in StringFragmentation::fragment: stuck in joining                                               | 
+ |     60   Error in StringFragmentation::fragmentToJunction: caught in junction flavour loop                      | 
+ |     69   Warning in Pythia::check: not quite matched particle energy/momentum/mass                              | 
+ |   1227   Warning in StringFragmentation::fragmentToJunction: bad convergence junction rest frame                | 
+ |      1   Warning in TauDecays::decay: unknown correlated tau production, assuming from unpolarized photon       | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Error and Warning Messages Statistics  ------------------------------------------------------* 
+Cross Section (nb) = 1.262e+09
