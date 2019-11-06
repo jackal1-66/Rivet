@@ -1,0 +1,42 @@
+# BEGIN PLOT
+LegendOnly=/ALICE_2017_I1511870/d14-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e6new.yoda/ALICE_2017_I1511870/d14-x01-y01
+DrawOnly=/ALICE_2017_I1511870/d14-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e6new.yoda/ALICE_2017_I1511870/d14-x01-y01
+YMax=10
+Title=Mean $p_T$ of prompt $D^0$. 
+RatioPlotReference=/ALICE_2017_I1511870/d14-x01-y01
+ConnectBins=0
+RatioPlot=1
+LogY=1
+LegendXPos=0.55
+XLabel=$E$ = 7 TeV
+YLabel=$\langle p_T \rangle$ [GeV/c]
+LegendYPos=0.95
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D /ALICE_2017_I1511870/d14-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.06, up: 0.06}, sys: {dn: -0.04, up: 0.04}}}
+IsRef=1
+Path=/ALICE_2017_I1511870/d14-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+6.999500e+03	7.000500e+03	2.190000e+00	7.211103e-02	7.211103e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e6new.yoda/ALICE_2017_I1511870/d14-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e6new.yoda/ALICE_2017_I1511870/d14-x01-y01
+ScaledBy=1.31677705647656779e-05
+Title=Pythia1e6new
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+6.999500e+03	7.000500e+03	2.394345e+00	2.979413e-02	2.979413e-02
+# END HISTO1D
+

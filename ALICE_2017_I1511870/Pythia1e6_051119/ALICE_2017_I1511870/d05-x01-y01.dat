@@ -1,0 +1,60 @@
+# BEGIN PLOT
+LegendOnly=/ALICE_2017_I1511870/d05-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e6new.yoda/ALICE_2017_I1511870/d05-x01-y01
+DrawOnly=/ALICE_2017_I1511870/d05-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e6new.yoda/ALICE_2017_I1511870/d05-x01-y01
+Title=Ratio of $D^+$ to $D^0$ meson yield. 
+RatioPlotReference=/ALICE_2017_I1511870/d05-x01-y01
+ConnectBins=0
+RatioPlot=1
+LogY=1
+LegendXPos=0.55
+XLabel=$p_T$ [GeV/c]
+YLabel=$\sigma(D^+)/\sigma(D^0)$
+LegendYPos=0.95
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D /ALICE_2017_I1511870/d05-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.092, up: 0.092}, sys: {dn: -0.068, up: 0.069}, "sys,uncertainty on branching ratio": {dn: -0.013014, up: 0.013014}}, 1: {stat: {dn: -0.038, up: 0.038}, sys: {dn: -0.054, up: 0.054}, "sys,uncertainty on branching ratio": {dn: -0.011043, up: 0.011043}}, 2: {stat: {dn: -0.033, up: 0.033}, sys: {dn: -0.039, up: 0.04}, "sys,uncertainty on branching ratio": {dn: -0.012339000000000001, up: 0.012339000000000001}}, 3: {stat: {dn: -0.032, up: 0.032}, sys: {dn: -0.038, up: 0.039}, "sys,uncertainty on branching ratio": {dn: -0.012069000000000002, up: 0.012069000000000002}}, 4: {stat: {dn: -0.029, up: 0.029}, sys: {dn: -0.031, up: 0.032}, "sys,uncertainty on branching ratio": {dn: -0.009828, up: 0.009828}}, 5: {stat: {dn: -0.036, up: 0.036}, sys: {dn: -0.034, up: 0.034}, "sys,uncertainty on branching ratio": {dn: -0.010503000000000002, up: 0.010503000000000002}}, 6: {stat: {dn: -0.061, up: 0.061}, sys: {dn: -0.046, up: 0.048}, "sys,uncertainty on branching ratio": {dn: -0.013851, up: 0.013851}}, 7: {stat: {dn: -0.047, up: 0.047}, sys: {dn: -0.041, up: 0.042}, "sys,uncertainty on branching ratio": {dn: -0.012582000000000001, up: 0.012582000000000001}}, 8: {stat: {dn: -0.062, up: 0.062}, sys: {dn: -0.035, up: 0.035}, "sys,uncertainty on branching ratio": {dn: -0.010665000000000003, up: 0.010665000000000003}}, 9: {stat: {dn: -0.077, up: 0.077}, sys: {dn: -0.044, up: 0.045}, "sys,uncertainty on branching ratio": {dn: -0.011529, up: 0.011529}}, 10: {stat: {dn: -0.182, up: 0.182}, sys: {dn: -0.069, up: 0.07}, "sys,uncertainty on branching ratio": {dn: -0.017064000000000003, up: 0.017064000000000003}}}
+IsRef=1
+Path=/ALICE_2017_I1511870/d05-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	4.820000e-01	1.151406e-01	1.157340e-01
+2.000000e+00	3.000000e+00	4.090000e-01	6.694735e-02	6.694735e-02
+3.000000e+00	4.000000e+00	4.570000e-01	5.255712e-02	5.330339e-02
+4.000000e+00	5.000000e+00	4.470000e-01	5.112397e-02	5.187158e-02
+5.000000e+00	6.000000e+00	3.640000e-01	4.357281e-02	4.428984e-02
+6.000000e+00	7.000000e+00	3.890000e-01	5.061929e-02	5.061929e-02
+7.000000e+00	8.000000e+00	5.130000e-01	7.764567e-02	7.884701e-02
+8.000000e+00	1.000000e+01	4.660000e-01	6.362631e-02	6.427524e-02
+1.000000e+01	1.200000e+01	3.950000e-01	7.199126e-02	7.199126e-02
+1.200000e+01	1.600000e+01	4.270000e-01	8.943108e-02	8.992729e-02
+1.600000e+01	2.400000e+01	6.320000e-01	1.953873e-01	1.957426e-01
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e6new.yoda/ALICE_2017_I1511870/d05-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Pythia1e6new.yoda/ALICE_2017_I1511870/d05-x01-y01
+Title=Pythia1e6new
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	5.149276e-01	1.518511e-02	1.518511e-02
+2.000000e+00	3.000000e+00	5.330062e-01	1.909063e-02	1.909063e-02
+3.000000e+00	4.000000e+00	5.304549e-01	2.501869e-02	2.501869e-02
+4.000000e+00	5.000000e+00	5.033921e-01	3.204466e-02	3.204466e-02
+5.000000e+00	6.000000e+00	4.678663e-01	4.201742e-02	4.201742e-02
+6.000000e+00	7.000000e+00	5.589744e-01	6.684949e-02	6.684949e-02
+7.000000e+00	8.000000e+00	4.077670e-01	7.465395e-02	7.465395e-02
+8.000000e+00	1.000000e+01	5.384615e-01	8.924913e-02	8.924913e-02
+1.000000e+01	1.200000e+01	6.400000e-01	1.448862e-01	1.448862e-01
+1.200000e+01	1.600000e+01	5.454545e-01	1.957474e-01	1.957474e-01
+1.600000e+01	2.400000e+01	4.166667e-01	2.217878e-01	2.217878e-01
+# END HISTO1D
+
