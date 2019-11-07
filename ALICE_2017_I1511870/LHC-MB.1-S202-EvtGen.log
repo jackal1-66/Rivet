@@ -1329,3 +1329,20 @@ EvtGen:prob > probmax:(8.547>8.546)(SLN) D- -> tau- anti-nu_tau
 EvtGen:prob > probmax:(18.131>18.112)(SLN) D_s- -> tau- anti-nu_tau 
 
  Pythia::next(): 91000 events have been generated 
+EvtGen:prob > probmax:(8.547>8.546)(SLN) D- -> tau- anti-nu_tau 
+EvtGen:prob > probmax:(8.547>8.546)(SLN) D+ -> tau+ nu_tau 
+EvtGen:Tried accept/reject: 10000 times, and rejected all the times!
+EvtGen:
+Dimension:1
+(1.000,0.000) 
+
+EvtGen:Is therefore accepting the last event!
+EvtGen:Decay of particle:D0(channel:11) with mass 1.865
+EvtGen:Daughter 0:K_2*- with mass 1.759
+EvtGen:Daughter 1:mu+ with mass 0.106
+EvtGen:Daughter 2:nu_mu with mass 0.000
+EvtGen:prob > probmax:(18.131>18.112)(SLN) D_s+ -> tau+ nu_tau 
+EvtGen:prob > probmax:(8.547>8.546)(SLN) D- -> tau- anti-nu_tau 
+EvtGen:prob > probmax:(18.131>18.112)(SLN) D_s- -> tau- anti-nu_tau 
+EvtGen:prob > probmax:(8.547>8.546)(SLN) D- -> tau- anti-nu_tau 
+EvtGen:prob > probmax:(18.131>18.112)(SLN) D_s+ -> tau+ nu_tau 
