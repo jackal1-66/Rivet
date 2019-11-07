@@ -23,26 +23,26 @@ namespace Rivet {
       declare(UnstableParticles(), "UFS");
 
       // Book histograms
-      _h_D0 = bookHisto1D(1, 1, 1);                                       //production cross section of D0 meson
-      _h_Dplus = bookHisto1D(2, 1, 1);                                    //production cross section of Dplus meson
-      _h_Dstar = bookHisto1D(3, 1, 1);                                    //production cross section of Dstar meson
-      _h_Ds = bookHisto1D(4, 1, 1);                                       //production cross section of Ds meson
-      _h_DplusonD0 = bookScatter2D(5, 1, 1);                              //ratio of production cross section between Dplus and D0
-      _h_DstaronD0 = bookScatter2D(6, 1, 1);                              //ratio of production cross section between Dstar and D0
-      _h_DsonD0 = bookScatter2D(7, 1, 1);                                 //ratio of production cross section between Ds and D0
-      _h_DsonDplus = bookScatter2D(8, 1, 1);                              //ratio of production cross section between Ds and Dplus
-      _h_D0int = bookHisto1D(9,1,1);                                      //pt-integrated production cross section of D0 meson
-      _h_Dplusint = bookHisto1D(10,1,1);                                  //pt-integrated production cross section of Dplus meson
-      _h_Dstarint = bookHisto1D(11,1,1);                                  //pt-integrated production cross section of Dstar meson
-      _h_Dsint = bookHisto1D(12,1,1);                                     //pt-integrated production cross section of Ds meson
-      _h_cc = bookHisto1D(13,1,1);                                        //integrated cross section of ccbar
-      _h_ptd0 = bookHisto1D(14,1,1);                                      //mean pt of prompt D0
-      _h_D0full = bookHisto1D(15,1,1);                                    //integrated cross section for D0 in full rapidity
-      _h_ccfull = bookHisto1D(16,1,1);                                    //integrated cross section for ccbar in full rapidity
-      _h_wei = bookHisto1D("_h_wei",1,6999.5,7000.5, "Weight dummy");     //histograms used to calculate D0 mean pt
-      _h_D0dummy = bookHisto1D("TMP/_h_D0dummy", refData(5,1,1));         //used to make DplusonD0
-      _h_D0dummy1 = bookHisto1D("TMP/_h_D0dummy1", refData(7,1,1));       //used to make DsonD0
-      _h_Dplusdummy = bookHisto1D("TMP/_h_Dplusdummy", refData(8,1,1));   //used to make DsonDplus
+      _h_D0         = bookHisto1D(1, 1, 1);                                   //production cross section of D0 meson
+      _h_Dplus      = bookHisto1D(2, 1, 1);                                   //production cross section of Dplus meson
+      _h_Dstar      = bookHisto1D(3, 1, 1);                                   //production cross section of Dstar meson
+      _h_Ds         = bookHisto1D(4, 1, 1);                                   //production cross section of Ds meson
+      _h_DplusonD0  = bookScatter2D(5, 1, 1);                                 //ratio of production cross section between Dplus and D0
+      _h_DstaronD0  = bookScatter2D(6, 1, 1);                                 //ratio of production cross section between Dstar and D0
+      _h_DsonD0     = bookScatter2D(7, 1, 1);                                 //ratio of production cross section between Ds and D0
+      _h_DsonDplus  = bookScatter2D(8, 1, 1);                                 //ratio of production cross section between Ds and Dplus
+      _h_D0int      = bookHisto1D(9,1,1);                                     //pt-integrated production cross section of D0 meson
+      _h_Dplusint   = bookHisto1D(10,1,1);                                    //pt-integrated production cross section of Dplus meson
+      _h_Dstarint   = bookHisto1D(11,1,1);                                    //pt-integrated production cross section of Dstar meson
+      _h_Dsint      = bookHisto1D(12,1,1);                                    //pt-integrated production cross section of Ds meson
+      _h_cc         = bookHisto1D(13,1,1);                                    //integrated cross section of ccbar
+      _h_ptd0       = bookHisto1D(14,1,1);                                    //mean pt of prompt D0
+      _h_D0full     = bookHisto1D(15,1,1);                                    //integrated cross section for D0 in full rapidity
+      _h_ccfull     = bookHisto1D(16,1,1);                                    //integrated cross section for ccbar in full rapidity
+      _h_wei        = bookHisto1D("_h_wei",1,6999.5,7000.5, "Weight dummy");  //histograms used to calculate D0 mean pt
+      _h_D0dummy    = bookHisto1D("TMP/_h_D0dummy", refData(5,1,1));          //used to make DplusonD0
+      _h_D0dummy1   = bookHisto1D("TMP/_h_D0dummy1", refData(7,1,1));         //used to make DsonD0
+      _h_Dplusdummy = bookHisto1D("TMP/_h_Dplusdummy", refData(8,1,1));       //used to make DsonDplus
     }
 
 
