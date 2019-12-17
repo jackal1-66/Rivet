@@ -1,0 +1,56 @@
+# BEGIN PLOT
+LegendOnly=/ALICE_2017_I1511870/d14-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/pythia8pp1e7new.yoda/ALICE_2017_I1511870/d14-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7new.yoda/ALICE_2017_I1511870/d14-x01-y01
+DrawOnly=/ALICE_2017_I1511870/d14-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/pythia8pp1e7new.yoda/ALICE_2017_I1511870/d14-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7new.yoda/ALICE_2017_I1511870/d14-x01-y01
+YMax=10
+Title=Mean $p_T$ of prompt $D^0$ ($|y|<0.5$). 
+RatioPlotReference=/ALICE_2017_I1511870/d14-x01-y01
+ConnectBins=0
+RatioPlot=1
+LogY=1
+LegendXPos=0.45
+XLabel=$E$ = 7 TeV
+YLabel=$\langle p_T \rangle$ [GeV/c]
+LegendYPos=0.95
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D /ALICE_2017_I1511870/d14-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.06, up: 0.06}, sys: {dn: -0.04, up: 0.04}}}
+IsRef=1
+Path=/ALICE_2017_I1511870/d14-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+6.999500e+03	7.000500e+03	2.190000e+00	7.211103e-02	7.211103e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/pythia8pp1e7new.yoda/ALICE_2017_I1511870/d14-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/pythia8pp1e7new.yoda/ALICE_2017_I1511870/d14-x01-y01
+ScaledBy=9.36724275209592134e-06
+Title=Pythia 8.243 (Monash 2013)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+6.999500e+03	7.000500e+03	2.400808e+00	9.568766e-03	9.568766e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7new.yoda/ALICE_2017_I1511870/d14-x01-y01
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/ALICE_2017_I1511870/Herwig1e7new.yoda/ALICE_2017_I1511870/d14-x01-y01
+ScaledBy=8.02665427137203083e-06
+Title=Herwig 7.1.5 (LHC-MB.in)
+XLabel=~
+YLabel=~
+# xlow	 xhigh	 val	 errminus	 errplus
+6.999500e+03	7.000500e+03	2.912260e+00	1.022729e-02	1.022729e-02
+# END HISTO1D
+

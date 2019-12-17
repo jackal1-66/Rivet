@@ -3,7 +3,7 @@ Title=Differential cross section for prompt $D^0$ production ($|y|<0.5$).
 XLabel=$p_T$ [GeV/c]
 #PlotSize=10,8
 #LegendYPos=0.96
-#LegendXPos=0.55
+LegendXPos=0.45
 YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
 ConnectBins=0
 RatioPlotYMax=1.5
@@ -17,7 +17,7 @@ YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
 ConnectBins=0
 #PlotSize=10,8
 #LegendYPos=0.96
-#LegendXPos=0.55
+LegendXPos=0.45
 RatioPlotYMax=1.5
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
@@ -29,7 +29,7 @@ YLabel=$\frac{\text{d}\sigma}{\text{d}p_T}$ [$\mu$b/GeV]
 ConnectBins=0
 #PlotSize=10,8
 #LegendYPos=0.96
-#LegendXPos=0.55
+LegendXPos=0.45
 RatioPlotYMax=1.5
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
@@ -42,7 +42,7 @@ ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8
 LegendYPos=0.95
-LegendXPos=0.55
+LegendXPos=0.45
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -54,7 +54,7 @@ ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8
 LegendYPos=0.95
-LegendXPos=0.55
+LegendXPos=0.45
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -66,7 +66,7 @@ ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8
 LegendYPos=0.95
-LegendXPos=0.55
+LegendXPos=0.45
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -78,7 +78,7 @@ ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8
 LegendYPos=0.95
-LegendXPos=0.55
+LegendXPos=0.45
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -90,7 +90,7 @@ ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8
 LegendYPos=0.95
-LegendXPos=0.55
+LegendXPos=0.45
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -103,7 +103,7 @@ ConnectBins=0
 #PlotSize=10,8
 YMax = 2000
 LegendYPos=0.95
-LegendXPos=0.55
+LegendXPos=0.45
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -116,7 +116,7 @@ ConnectBins=0
 #PlotSize=10,8
 YMax = 2000
 LegendYPos=0.95
-LegendXPos=0.55
+LegendXPos=0.45
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -129,7 +129,7 @@ ConnectBins=0
 #PlotSize=10,8
 YMax = 2000
 LegendYPos=0.95
-LegendXPos=0.55
+LegendXPos=0.45
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -141,7 +141,7 @@ ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8
 LegendYPos=0.95
-LegendXPos=0.55
+LegendXPos=0.45
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -153,7 +153,7 @@ ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8
 LegendYPos=0.95
-LegendXPos=0.55
+LegendXPos=0.45
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -166,7 +166,7 @@ ConnectBins=0
 #PlotSize=10,8
 YMax=10
 LegendYPos=0.95
-LegendXPos=0.55
+LegendXPos=0.45
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -179,7 +179,7 @@ ConnectBins=0
 #PlotSize=10,8
 YMax = 20
 LegendYPos=0.95
-LegendXPos=0.55
+LegendXPos=0.45
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -191,6 +191,6 @@ ConnectBins=0
 #RatioPlotYMin=0.1
 #PlotSize=10,8
 LegendYPos=0.95
-LegendXPos=0.55
+LegendXPos=0.45
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
