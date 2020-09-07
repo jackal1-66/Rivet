@@ -38,15 +38,14 @@ namespace Rivet {
     /// Perform the per-event analysis
     void analyze(const Event& event) {
 
-      const double weight = event.weight();
       const UnstableParticles& ups = apply<UnstableFinalState>(event, "ups");
 
-      foreach (const Particle& p, ups.particles()) {
+      for (const Particle& p : ups.particles()) {
         if(p.abspid()==443){
-          _h_JPsi_int->Fill(0, weight);
-          _h_JPsi_diff->Fill(p.pT()/GeV, weight);
-          _h_JPsi_pt2->Fill(5.02, weigth*TMath::Power(p.pT(),2));
-          _h_JPsi_ptmean->Fill(5.02, weigth*p.pT());
+          _h_JPsi_int->fill(0);
+          _h_JPsi_diff->fill(p.pT()/GeV);
+          _h_JPsi_pt2->fill(5.02,p.pT()*p.pT());
+          _h_JPsi_ptmean->fill(5.02,p.pT());
         }
       }
       
@@ -58,8 +57,8 @@ namespace Rivet {
 
       scale(_h_JPsi_int,      crossSection()/(microbarn*2*sumW())); // norm to generated cross-section in pb (after cuts)
       scale(_h_JPsi_diff,     crossSection()/(microbarn*2*sumW()));
-      scale(_h_JPsi_pt2,      1/(2*sumW());
-      scale(_h_JPsi_ptmean,   1/(2*sumW()));
+      scale(_h_JPsi_pt2,      1/(2*_h_JPsi_pt2->numEntries()));
+      scale(_h_JPsi_ptmean,   1/(2*_h_JPsi_ptmean->numEntries()));
 
     }
 
