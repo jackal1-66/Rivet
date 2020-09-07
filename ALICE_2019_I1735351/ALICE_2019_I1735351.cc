@@ -39,7 +39,7 @@ namespace Rivet {
     /// Perform the per-event analysis
     void analyze(const Event& event) {
 
-      const FinalState& fs = apply<UnstableFinalState>(event, "fs");
+      const FinalState& fs = apply<FinalState>(event, "fs");
 
       for (const Particle& p : fs.particles()) {
         if(p.abspid()==443){
@@ -58,8 +58,8 @@ namespace Rivet {
 
       scale(_h_JPsi_int,      crossSection()/(microbarn*2*sumW())); // norm to generated cross-section in pb (after cuts)
       scale(_h_JPsi_diff,     crossSection()/(microbarn*2*sumW()));
-      scale(_h_JPsi_pt2,      1/(2*_h_JPsi_pt2->numEntries()));
-      scale(_h_JPsi_ptmean,   1/(2*_h_JPsi_ptmean->numEntries()));
+      scale(_h_JPsi_pt2,      1/(2*sumW()));
+      scale(_h_JPsi_ptmean,   1/(2*sumW()));
 
     }
 
