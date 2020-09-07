@@ -1,6 +1,6 @@
 // -*- C++ -*-
 #include "Rivet/Analysis.hh"
-#include "Rivet/Projections/UnstableParticles.hh"
+#include "Rivet/Projections/FinalState.hh"
 
 
 namespace Rivet {
@@ -25,7 +25,8 @@ namespace Rivet {
       // The basic final-state projection:
       // all final-state particles within
       // the given eta acceptance
-      declare(UnstableParticles(Cuts::absrap < 0.9), "ups");
+      const FinalState fs(Cuts::abseta < 0.9);
+      declare(fs, "fs");  
 
       book(_h_JPsi_int,1,1,1);
       book(_h_JPsi_diff,2,1,1);
@@ -38,9 +39,9 @@ namespace Rivet {
     /// Perform the per-event analysis
     void analyze(const Event& event) {
 
-      const UnstableParticles& ups = apply<UnstableFinalState>(event, "ups");
+      const FinalState& fs = apply<UnstableFinalState>(event, "fs");
 
-      for (const Particle& p : ups.particles()) {
+      for (const Particle& p : fs.particles()) {
         if(p.abspid()==443){
           _h_JPsi_int->fill(0);
           _h_JPsi_diff->fill(p.pT()/GeV);
