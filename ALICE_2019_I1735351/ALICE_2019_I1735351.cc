@@ -61,8 +61,8 @@ namespace Rivet {
 
       scale(_h_JPsi_int,      crossSection()/(microbarn*2*sumW())); // norm to generated cross-section in pb (after cuts)
       scale(_h_JPsi_diff,     crossSection()/(microbarn*2*sumW()));
-      scale(_h_JPsi_pt2,      1/(2*_h_JPsi_pt2->numEntries()));
-      scale(_h_JPsi_ptmean,   1/(2*_h_JPsi_ptmean->numEntries()));
+      scale(_h_JPsi_pt2,      1/(2*sumW());
+      scale(_h_JPsi_ptmean,   1/(2*sumW()));
 
     }
 
