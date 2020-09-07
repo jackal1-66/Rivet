@@ -27,10 +27,10 @@ namespace Rivet {
       // the given eta acceptance
       declare(UnstableFinalState(Cuts::absrap < 0.9), "ups");
 
-      _h_JPsi_int     = bookHisto1D(1,1,1);
-      _h_JPsi_diff    = bookHisto1D(2,1,1);
-      _h_JPsi_pt2     = bookHisto1D(3,1,1);
-      _h_JPsi_ptmean  = bookHisto1D(4,1,1);
+      book(_h_JPsi_int,1,1,1);
+      book(_h_JPsi_diff,2,1,1);
+      book(_h_JPsi_pt2,3,1,1);
+      book(_h_JPsi_ptmean,4,1,1);
 
     }
 
