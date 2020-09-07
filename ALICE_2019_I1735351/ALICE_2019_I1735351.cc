@@ -25,7 +25,7 @@ namespace Rivet {
       // The basic final-state projection:
       // all final-state particles within
       // the given eta acceptance
-      declare(UnstableFinalState(Cuts::absrap < 0.9), "ups");
+      declare(UnstableParticles(Cuts::absrap < 0.9), "ups");
 
       book(_h_JPsi_int,1,1,1);
       book(_h_JPsi_diff,2,1,1);
@@ -39,7 +39,7 @@ namespace Rivet {
     void analyze(const Event& event) {
 
       const double weight = event.weight();
-      const UnstableFinalState& ufs = apply<UnstableFinalState>(event, "ufs");
+      const UnstableParticles& ups = apply<UnstableFinalState>(event, "ups");
 
       foreach (const Particle& p, ups.particles()) {
         if(p.abspid()==443){
