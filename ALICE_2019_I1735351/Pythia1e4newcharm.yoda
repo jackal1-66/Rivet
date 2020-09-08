@@ -4,12 +4,12 @@ ScaledBy: 2.56397531977017520e-02
 Title: 
 Type: Histo1D
 ---
-# Mean: 0.000000e+00
+# Mean: 3.000000e+00
 # Area: 7.820125e+00
 # ID	 ID	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
-Total   	Total   	7.820125e+00	2.005061e-01	0.000000e+00	0.000000e+00	3.050000e+02
+Total   	Total   	7.820125e+00	2.005061e-01	2.346037e+01	7.038112e+01	3.050000e+02
 Underflow	Underflow	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
-Overflow	Overflow	7.820125e+00	2.005061e-01	0.000000e+00	0.000000e+00	3.050000e+02
+Overflow	Overflow	7.820125e+00	2.005061e-01	2.346037e+01	7.038112e+01	3.050000e+02
 # xlow	 xhigh	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
 0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 END YODA_HISTO1D_V2
@@ -44,12 +44,12 @@ ScaledBy: 5.00000000000000024e-05
 Title: 
 Type: Histo1D
 ---
-# Mean: 5.020000e+00
+# Mean: 8.020000e+00
 # Area: 1.704769e-01
 # ID	 ID	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
-Total   	Total   	1.704769e-01	3.295428e-04	8.557941e-01	4.296087e+00	3.050000e+02
+Total   	Total   	1.704769e-01	3.295428e-04	1.367225e+00	1.096514e+01	3.050000e+02
 Underflow	Underflow	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
-Overflow	Overflow	1.704769e-01	3.295428e-04	8.557941e-01	4.296087e+00	3.050000e+02
+Overflow	Overflow	1.704769e-01	3.295428e-04	1.367225e+00	1.096514e+01	3.050000e+02
 # xlow	 xhigh	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
 5.020000e+00	5.020000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 END YODA_HISTO1D_V2
@@ -61,12 +61,12 @@ ScaledBy: 5.00000000000000024e-05
 Title: 
 Type: Histo1D
 ---
-# Mean: 5.020000e+00
+# Mean: 8.020000e+00
 # Area: 4.450804e-02
 # ID	 ID	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
-Total   	Total   	4.450804e-02	8.523846e-06	2.234304e-01	1.121620e+00	3.050000e+02
+Total   	Total   	4.450804e-02	8.523846e-06	3.569545e-01	2.862775e+00	3.050000e+02
 Underflow	Underflow	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
-Overflow	Overflow	4.450804e-02	8.523846e-06	2.234304e-01	1.121620e+00	3.050000e+02
+Overflow	Overflow	4.450804e-02	8.523846e-06	3.569545e-01	2.862775e+00	3.050000e+02
 # xlow	 xhigh	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
 5.020000e+00	5.020000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 END YODA_HISTO1D_V2
@@ -97,12 +97,12 @@ Path: /RAW/ALICE_2019_I1735351/d01-x01-y01
 Title: 
 Type: Histo1D
 ---
-# Mean: 0.000000e+00
+# Mean: 3.000000e+00
 # Area: 3.050000e+02
 # ID	 ID	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
-Total   	Total   	3.050000e+02	3.050000e+02	0.000000e+00	0.000000e+00	3.050000e+02
+Total   	Total   	3.050000e+02	3.050000e+02	9.150000e+02	2.745000e+03	3.050000e+02
 Underflow	Underflow	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
-Overflow	Overflow	3.050000e+02	3.050000e+02	0.000000e+00	0.000000e+00	3.050000e+02
+Overflow	Overflow	3.050000e+02	3.050000e+02	9.150000e+02	2.745000e+03	3.050000e+02
 # xlow	 xhigh	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
 0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 END YODA_HISTO1D_V2
@@ -135,12 +135,12 @@ Path: /RAW/ALICE_2019_I1735351/d03-x01-y01
 Title: 
 Type: Histo1D
 ---
-# Mean: 5.020000e+00
+# Mean: 8.020000e+00
 # Area: 3.409538e+03
 # ID	 ID	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
-Total   	Total   	3.409538e+03	1.318171e+05	1.711588e+04	8.592173e+04	3.050000e+02
+Total   	Total   	3.409538e+03	1.318171e+05	2.734450e+04	2.193029e+05	3.050000e+02
 Underflow	Underflow	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
-Overflow	Overflow	3.409538e+03	1.318171e+05	1.711588e+04	8.592173e+04	3.050000e+02
+Overflow	Overflow	3.409538e+03	1.318171e+05	2.734450e+04	2.193029e+05	3.050000e+02
 # xlow	 xhigh	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
 5.020000e+00	5.020000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 END YODA_HISTO1D_V2
@@ -151,12 +151,12 @@ Path: /RAW/ALICE_2019_I1735351/d04-x01-y01
 Title: 
 Type: Histo1D
 ---
-# Mean: 5.020000e+00
+# Mean: 8.020000e+00
 # Area: 8.901609e+02
 # ID	 ID	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
-Total   	Total   	8.901609e+02	3.409538e+03	4.468608e+03	2.243241e+04	3.050000e+02
+Total   	Total   	8.901609e+02	3.409538e+03	7.139090e+03	5.725550e+04	3.050000e+02
 Underflow	Underflow	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
-Overflow	Overflow	8.901609e+02	3.409538e+03	4.468608e+03	2.243241e+04	3.050000e+02
+Overflow	Overflow	8.901609e+02	3.409538e+03	7.139090e+03	5.725550e+04	3.050000e+02
 # xlow	 xhigh	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
 5.020000e+00	5.020000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 END YODA_HISTO1D_V2
