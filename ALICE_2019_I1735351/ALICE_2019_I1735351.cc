@@ -40,9 +40,11 @@ namespace Rivet {
     void analyze(const Event& event) {
 
       const UnstableParticles& fs = apply<UnstableParticles>(event, "fs");
-
+      
       for (const Particle& p : fs.particles()) {
         if(p.abspid()==443){
+          j+=1;
+	  std::cout << "Here's a J/Psi, total counted are " << j << endl;
           _h_JPsi_int->fill(0);
           _h_JPsi_diff->fill(p.pT()/GeV);
           _h_JPsi_pt2->fill(5.02,p.pT()*p.pT());
@@ -69,6 +71,7 @@ namespace Rivet {
     /// @name Histograms
     ///@{
     Histo1DPtr _h_JPsi_int, _h_JPsi_diff, _h_JPsi_pt2, _h_JPsi_ptmean;
+    int j = 0;
     ///@}
 
 
