@@ -47,8 +47,8 @@ namespace Rivet {
 	  std::cout << "Here's a J/Psi, total counted are " << j << endl;
           _h_JPsi_int->fill(0);
           _h_JPsi_diff->fill(p.pT()/GeV);
-          _h_JPsi_pt2->fill(5.02,p.pT()*p.pT());
-          _h_JPsi_ptmean->fill(5.02,p.pT());
+          _h_JPsi_pt2->fill(5.02,p.pT()/GeV*p.pT()/GeV);
+          _h_JPsi_ptmean->fill(5.02,p.pT()/GeV);
         }
       }
       
@@ -58,10 +58,10 @@ namespace Rivet {
     /// Normalise histograms etc., after the run
     void finalize() {
 
-      scale(_h_JPsi_int,      crossSection()/(microbarn*2*sumW())); // norm to generated cross-section in pb (after cuts)
-      scale(_h_JPsi_diff,     crossSection()/(microbarn*2*sumW()));
-      scale(_h_JPsi_pt2,      1/(2*sumW()));
-      scale(_h_JPsi_ptmean,   1/(2*sumW()));
+      scale(_h_JPsi_int,      crossSection()/(microbarn*2*sumOfWeights())); // norm to generated cross-section in pb (after cuts)
+      scale(_h_JPsi_diff,     crossSection()/(microbarn*2*sumOfWeights()));
+      scale(_h_JPsi_pt2,      1/(2*sumOfWeights()));
+      scale(_h_JPsi_ptmean,   1/(2*sumOfWeights()));
 
     }
 
