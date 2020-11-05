@@ -44,16 +44,17 @@ namespace Rivet {
       
       for (const Particle& p : up.particles()) {
         if(p.abspid()==4222 || p.abspid()==4212 || p.abspid()==4112){
-          _h_Sc->fill(p.pT()/GeV);
           cout << "Found a Sc, opplà\n";
+          _h_Sc->fill(p.pT()/GeV);
         }
         else if(p.abspid()==4122){
-          _h_Lc->fill(p.pT()/GeV);
           cout << "Found a Lc, Banana\n";
+          _h_Lc->fill(p.pT()/GeV);
           if(p.hasAncestor(4222) || p.hasAncestor(4212) || p.hasAncestor(4112) || p.hasAncestor(-4222) || p.hasAncestor(-4212) || p.hasAncestor(-4112))
             _h_LcfromSc->fill(p.pT()/GeV);
         }
         else if(p.abspid()==421)
+        cout << "Found a D0, Bubu\n";
           _h_D0->fill(p.pT()/GeV);
       }
       
