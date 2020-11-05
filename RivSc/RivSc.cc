@@ -76,7 +76,8 @@ namespace Rivet {
 
     /// @name Histograms
     ///@{
-    Histo1DPtr _h_ScD0, _h_LcfromScLc, _h_Sc, _h_D0, _h_LcfromSc, _h_Lc;
+    Histo1DPtr _h_Sc, _h_D0, _h_LcfromSc, _h_Lc;
+    Scatter2DPtr _h_ScD0, _h_LcfromScLc;
     ///@}
 
 
