@@ -31,8 +31,9 @@ namespace Rivet {
       book(_h_ScD0,1,1,1);
       book(_h_LcfromScLc,2,1,1);
       book(_h_Sc,"TMP/Sc",refData(1,1,1));
-      book(_h_LcfromSc,"TMP/LcfromSc",refData(2,1,1));
       book(_h_D0,"TMP/D0",refData(1,1,1));
+      book(_h_LcfromSc,"TMP/LcfromSc",refData(2,1,1));
+      book(_h_Lc,"TMP/Lc",refData(2,1,1));
 
     }
 
