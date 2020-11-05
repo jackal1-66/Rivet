@@ -25,7 +25,7 @@ namespace Rivet {
       // The basic final-state projection:
       // all final-state particles within
       // the given eta acceptance
-      const UnstableParticles up(Cuts::abseta < 0.9);
+      const UnstableParticles up(Cuts::absrap < 0.5);
       declare(up, "up");  
 
       book(_h_ScD0,1,1,1);
