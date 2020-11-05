@@ -51,8 +51,10 @@ namespace Rivet {
         else if(p.abspid()==4122){
           cout << "Found a Lc, Banana\n";
           _h_Lc->fill(p.pT()/GeV);
-          if(p.hasAncestor(4222) || p.hasAncestor(4212) || p.hasAncestor(4112) || p.hasAncestor(-4222) || p.hasAncestor(-4212) || p.hasAncestor(-4112))
+          if(p.hasAncestor(4222) || p.hasAncestor(4212) || p.hasAncestor(4112) || p.hasAncestor(-4222) || p.hasAncestor(-4212) || p.hasAncestor(-4112)){
             _h_LcfromSc->fill(p.pT()/GeV);
+            cout << "The Lc is from a Sc, WOW \n";
+          }
         }
         else if(p.abspid()==421)
         cout << "Found a D0, Bubu\n";
