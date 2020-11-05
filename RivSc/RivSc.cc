@@ -25,13 +25,14 @@ namespace Rivet {
       // The basic final-state projection:
       // all final-state particles within
       // the given eta acceptance
-      const UnstableParticles fs(Cuts::abseta < 0.9);
-      declare(fs, "fs");  
+      const UnstableParticles up(Cuts::abseta < 0.9);
+      declare(up, "up");  
 
-      book(_h_JPsi_int,1,1,1);
-      book(_h_JPsi_diff,2,1,1);
-      book(_h_JPsi_pt2,3,1,1);
-      book(_h_JPsi_ptmean,4,1,1);
+      book(_h_ScD0,1,1,1);
+      book(_h_LcfromScLc,2,1,1);
+      book(_h_Sc,"TMP/Sc",refData(1,1,1));
+      book(_h_LcfromSc,"TMP/LcfromSc",refData(2,1,1));
+      book(_h_D0,"TMP/D0",refData(1,1,1));
 
     }
 
@@ -39,18 +40,21 @@ namespace Rivet {
     /// Perform the per-event analysis
     void analyze(const Event& event) {
 
-      const UnstableParticles& fs = apply<UnstableParticles>(event, "fs");
+      const UnstableParticles& up = apply<UnstableParticles>(event, "up");
       
-      for (const Particle& p : fs.particles()) {
-        if(p.abspid()==443){
-          j+=1;
-	  std::cout << "Here's a J/Psi, total counted are " << j << endl;
-          std::cout << "Pt is " << p.pT()/GeV << endl;
-          _h_JPsi_int->fill(0);
-          _h_JPsi_diff->fill(p.pT()/GeV);
-          _h_JPsi_pt2->fill(5.02,p.pT()/GeV*p.pT()/GeV);
-          _h_JPsi_ptmean->fill(5.02,p.pT()/GeV);
+      for (const Particle& p : up.particles()) {
+        if(p.abspid()==4222 || p.abspid()==4212 || p.abspid()==4112){
+          _h_Sc->fill(p.pT()/GeV);
+          cout << "Found a Sc, opplà\n";
         }
+        else if(p.abspid()==4122){
+          _h_Lc->fill(p.pT()/GeV);
+          cout << "Found a Lc, Banana\n";
+          if(p.hasAncestor(4222) || p.hasAncestor(4212) || p.hasAncestor(4112) || p.hasAncestor(-4222) || p.hasAncestor(-4212) || p.hasAncestor(-4112))
+            _h_LcfromSc->fill(p.pT()/GeV);
+        }
+        else if(p.abspid()==421)
+          _h_D0->fill(p.pT()/GeV);
       }
       
     }
@@ -59,10 +63,11 @@ namespace Rivet {
     /// Normalise histograms etc., after the run
     void finalize() {
 
-      scale(_h_JPsi_int,      crossSection()/(microbarn*2*sumOfWeights())); // norm to generated cross-section in pb (after cuts)
-      scale(_h_JPsi_diff,     crossSection()/(microbarn*2*sumOfWeights()));
-      scale(_h_JPsi_pt2,      1/(2*sumOfWeights()));
-      scale(_h_JPsi_ptmean,   1/(2*sumOfWeights()));
+      scale(_h_Sc,           crossSection()/(microbarn*2*sumOfWeights())); // norm to generated cross-section in pb (after cuts)
+      scale(_h_LcfromSc,     crossSection()/(microbarn*2*sumOfWeights()));
+      scale(_h_D0,           crossSection()/(microbarn*2*sumOfWeights()));
+      divide(_h_Sc, _h_D0, _h_ScD0);
+      divide(_h_LcfromSc, _h_Lc, _h_LcfromScLc);
 
     }
 
@@ -71,8 +76,7 @@ namespace Rivet {
 
     /// @name Histograms
     ///@{
-    Histo1DPtr _h_JPsi_int, _h_JPsi_diff, _h_JPsi_pt2, _h_JPsi_ptmean;
-    int j = 0;
+    Histo1DPtr _h_ScD0, _h_LcfromScLc, _h_Sc, _h_D0, _h_LcfromSc, _h_Lc;
     ///@}
 
 
