@@ -1,11 +1,11 @@
 # BEGIN PLOT
 LegendOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d01-x01-y01
+XLabel=$p_\mathrm{T}$ (GeV/$c$)
+YLabel=$\Sigma_c^{0,+,++}$/D0
 DrawOnly=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d01-x01-y01
-Title=[Insert title for histogram d01-x01-y01 here]
-LogY=1
-XLabel=[Insert $x$-axis label for histogram d01-x01-y01 here]
-YLabel=[Insert $y$-axis label for histogram d01-x01-y01 here]
+Title=Ratio $\Sigma_c^{0,+,++}/D0 production cross sections vs $p_\mathrm{T}$
 Legend=1
+LogY=0
 # END PLOT
 
 # BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d01-x01-y01
