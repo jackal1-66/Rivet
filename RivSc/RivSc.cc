@@ -62,8 +62,9 @@ namespace Rivet {
     void finalize() {
 
       scale(_h_Sc,           crossSection()/(microbarn*2*sumOfWeights())); // norm to generated cross-section in pb (after cuts)
-      scale(_h_LcfromSc,     crossSection()/(microbarn*2*sumOfWeights()));
       scale(_h_D0,           crossSection()/(microbarn*2*sumOfWeights()));
+      scale(_h_Lc,           crossSection()/(microbarn*2*sumOfWeights()));
+      scale(_h_LcfromSc,     crossSection()/(microbarn*2*sumOfWeights()));
       divide(_h_Sc, _h_D0, _h_ScD0);
       divide(_h_LcfromSc, _h_Lc, _h_LcfromScLc);
 
