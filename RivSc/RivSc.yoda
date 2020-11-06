@@ -1,7 +1,7 @@
-BEGIN YODA_SCATTER2D_V2 /RivSc/d01-x01-y01
+BEGIN YODA_SCATTER2D_V2 /REF/RivSc/d01-x01-y01
 ErrorBreakdown: {0: {full syst.: {dn: -0.0353249, up: 0.03507654}}, 1: {full syst.: {dn: -0.03214844, up: 0.03087775}}, 2: {full syst.: {dn: -0.02443958, up: 0.02385475}}, 3: {full syst.: {dn: -0.01565564, up: 0.01502821}}}
 IsRef: 1
-Path: /RivSc/d01-x01-y01
+Path: /REF/RivSc/d01-x01-y01
 Title: Table 1
 Type: Scatter2D
 ---
@@ -13,10 +13,10 @@ Type: Scatter2D
 END YODA_SCATTER2D_V2
 
 
-BEGIN YODA_SCATTER2D_V2 /RivSc/d02-x01-y01
+BEGIN YODA_SCATTER2D_V2 /REF/RivSc/d02-x01-y01
 ErrorBreakdown: {0: {full syst.: {dn: -0.05561966, up: 0.05606772}}, 1: {full syst.: {dn: -0.0399996, up: 0.04039735}}, 2: {full syst.: {dn: -0.02827909, up: 0.02913103}}, 3: {full syst.: {dn: -0.02141673, up: 0.02354593}}}
 IsRef: 1
-Path: /RivSc/d02-x01-y01
+Path: /REF/RivSc/d02-x01-y01
 Title: Table 2
 Type: Scatter2D
 ---
