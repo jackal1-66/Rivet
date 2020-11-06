@@ -1,7 +1,7 @@
 BEGIN PLOT /RivSc/d01-x01-y01
-Title=Ratio $\Sigma_c^{0,+,++}$/D0 production cross sections vs $p_T$
+Title=Ratio $\Sigma_c^{0,+,++}$/$D0$ production cross sections vs $p_T$
 XLabel=$p_T$ [GeV/$c$]
-YLabel=$\Sigma_c^{0,+,++}$/D0
+YLabel=$\Sigma_c^{0,+,++}$/$D0$
 LogY=0
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
