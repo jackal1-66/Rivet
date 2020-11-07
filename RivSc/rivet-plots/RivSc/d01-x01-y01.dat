@@ -1,9 +1,9 @@
 # BEGIN PLOT
-LegendOnly=/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode0.yoda/RivSc/d01-x01-y01
+LegendOnly=/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode0.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode2.yoda/RivSc/d01-x01-y01
 XLabel=$p_T$ [GeV/$c$]
 RatioPlotReference=/RivSc/d01-x01-y01
 YLabel=$\Sigma_c^{0,+,++}$/$D0$
-DrawOnly=/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode0.yoda/RivSc/d01-x01-y01
+DrawOnly=/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode0.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode2.yoda/RivSc/d01-x01-y01
 RatioPlot=1
 Title=Ratio $\Sigma_c^{0,+,++}$/$D0$ production cross sections vs $p_T$
 Legend=1
@@ -50,5 +50,19 @@ Title=Pythia 8.243 (CR mode0)
 4.500000e+00	5.500000e+00	1.728395e-01	1.768696e-02	1.768696e-02
 6.500000e+00	7.500000e+00	7.964602e-02	1.950601e-02	1.950601e-02
 9.000000e+00	1.100000e+01	1.007752e-01	2.932455e-02	2.932455e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode2.yoda/RivSc/d01-x01-y01
+ErrorBars=1
+LineColor=green
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode2.yoda/RivSc/d01-x01-y01
+Title=Pythia 8.243 (CR mode2)
+# xlow	 xhigh	 val	 errminus	 errplus
+2.500000e+00	3.500000e+00	3.516373e-01	1.547381e-02	1.547381e-02
+4.500000e+00	5.500000e+00	2.345679e-01	2.113997e-02	2.113997e-02
+6.500000e+00	7.500000e+00	1.531100e-01	2.906458e-02	2.906458e-02
+9.000000e+00	1.100000e+01	7.874016e-02	2.586156e-02	2.586156e-02
 # END HISTO1D
 

@@ -1,9 +1,9 @@
 # BEGIN PLOT
-LegendOnly=/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode0.yoda/RivSc/d02-x01-y01
+LegendOnly=/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode0.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode2.yoda/RivSc/d02-x01-y01
 XLabel=$p_T$ [GeV/$c$]
 RatioPlotReference=/RivSc/d02-x01-y01
 YLabel=$\Lambda_c^+$($\leftarrow \Sigma_c^{0,+,++}$)/$\Lambda_c^+$
-DrawOnly=/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode0.yoda/RivSc/d02-x01-y01
+DrawOnly=/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode0.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode2.yoda/RivSc/d02-x01-y01
 RatioPlot=1
 Title=Average ratio of $\Lambda_c^+$ from $\Sigma_c^{0,+,++}$ and $\Lambda_c^+$
 Legend=1
@@ -50,5 +50,19 @@ Title=Pythia 8.243 (CR mode0)
 4.750000e+00	5.250000e+00	4.038462e-01	7.383309e-02	7.383309e-02
 6.750000e+00	7.250000e+00	4.210526e-01	1.774584e-01	1.774584e-01
 9.500000e+00	1.050000e+01	4.166667e-01	2.217878e-01	2.217878e-01
+# END HISTO1D
+
+
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode2.yoda/RivSc/d02-x01-y01
+ErrorBars=1
+LineColor=green
+LineStyle=solid
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode2.yoda/RivSc/d02-x01-y01
+Title=Pythia 8.243 (CR mode2)
+# xlow	 xhigh	 val	 errminus	 errplus
+2.750000e+00	3.250000e+00	6.204082e-01	4.529528e-02	4.529528e-02
+4.750000e+00	5.250000e+00	5.819672e-01	8.686965e-02	8.686965e-02
+6.750000e+00	7.250000e+00	4.444444e-01	1.541975e-01	1.541975e-01
+9.500000e+00	1.050000e+01	1.111111e-01	1.171214e-01	1.171214e-01
 # END HISTO1D
 
