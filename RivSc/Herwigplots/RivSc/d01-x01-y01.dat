@@ -1,13 +1,18 @@
 # BEGIN PLOT
 LegendOnly=/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVdefault.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRplain_0.1.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRbaryonic_0.5.yoda/RivSc/d01-x01-y01
-XLabel=$p_T$ [GeV/$c$]
-RatioPlotReference=/RivSc/d01-x01-y01
-YLabel=$\Sigma_c^{0,+,++}$/$D0$
 DrawOnly=/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVdefault.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRplain_0.1.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRbaryonic_0.5.yoda/RivSc/d01-x01-y01
-RatioPlot=1
+YMax=0.52 
 Title=Ratio $\Sigma_c^{0,+,++}$/$D0$ production cross sections vs $p_T$
-Legend=1
+RatioPlotReference=/RivSc/d01-x01-y01
+RatioPlot=1
 LogY=0
+RatioPlotYMax=1.9
+LegendXPos=0.45
+XLabel=$p_T$ [GeV/$c$]
+YLabel=$\Sigma_c^{0,+,++}$/$D0$
+YMin=0.
+Legend=1
+RatioPlotYMin=0.01
 # END PLOT
 
 # BEGIN HISTO1D /RivSc/d01-x01-y01
@@ -44,7 +49,7 @@ ErrorBars=1
 LineColor=blue
 LineStyle=solid
 Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRplain_0.1.yoda/RivSc/d01-x01-y01
-Title=Herwig 7.1.5 (PCR 0.1)
+Title=Herwig 7.1.5 (PCR $0.1$)
 # xlow	 xhigh	 val	 errminus	 errplus
 2.500000e+00	3.500000e+00	6.080910e-02	5.810913e-03	5.810913e-03
 4.500000e+00	5.500000e+00	7.410791e-02	1.036050e-02	1.036050e-02
@@ -58,7 +63,7 @@ ErrorBars=1
 LineColor=green
 LineStyle=solid
 Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRbaryonic_0.5.yoda/RivSc/d01-x01-y01
-Title=Herwig 7.1.5 (BCR 0.5)
+Title=Herwig 7.1.5 (BCR $0.5$)
 # xlow	 xhigh	 val	 errminus	 errplus
 2.500000e+00	3.500000e+00	5.249729e-02	5.084253e-03	5.084253e-03
 4.500000e+00	5.500000e+00	7.574864e-02	1.008889e-02	1.008889e-02

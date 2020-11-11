@@ -5,9 +5,9 @@ YLabel=$\Sigma_c^{0,+,++}$/$D0$
 LogY=0
 YMax=0.52 
 YMin=0.
-LegendXPos=0.7
+LegendXPos=0.45
 RatioPlotYMin=0.01
-RatioPlotYMax=1.8
+RatioPlotYMax=1.9
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
 
@@ -18,9 +18,9 @@ YLabel=$\Lambda_c^+$($\leftarrow \Sigma_c^{0,+,++}$)/$\Lambda_c^+$
 LogY=0
 YMax=1.2
 YMin=0.
-LegendXPos=0.7
+LegendXPos=0.45
 RatioPlotYMin=0.01
-RatioPlotYMax=1.8
+RatioPlotYMax=1.9
 
 # + any additional plot settings you might like, see make-plots documentation
 END PLOT
