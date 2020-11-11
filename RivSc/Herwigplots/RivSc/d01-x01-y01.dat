@@ -1,9 +1,9 @@
 # BEGIN PLOT
-LegendOnly=/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVdefault.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRplain_0.5.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRbaryonic_0.5.yoda/RivSc/d01-x01-y01
+LegendOnly=/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVdefault.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRplain_0.1.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRbaryonic_0.5.yoda/RivSc/d01-x01-y01
 XLabel=$p_T$ [GeV/$c$]
 RatioPlotReference=/RivSc/d01-x01-y01
 YLabel=$\Sigma_c^{0,+,++}$/$D0$
-DrawOnly=/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVdefault.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRplain_0.5.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRbaryonic_0.5.yoda/RivSc/d01-x01-y01
+DrawOnly=/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVdefault.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRplain_0.1.yoda/RivSc/d01-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRbaryonic_0.5.yoda/RivSc/d01-x01-y01
 RatioPlot=1
 Title=Ratio $\Sigma_c^{0,+,++}$/$D0$ production cross sections vs $p_T$
 Legend=1
@@ -39,17 +39,17 @@ Title=Herwig 7.1.5 (default)
 # END HISTO1D
 
 
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRplain_0.5.yoda/RivSc/d01-x01-y01
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRplain_0.1.yoda/RivSc/d01-x01-y01
 ErrorBars=1
 LineColor=blue
 LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRplain_0.5.yoda/RivSc/d01-x01-y01
-Title=Herwig 7.1.5 (Plain CR)
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRplain_0.1.yoda/RivSc/d01-x01-y01
+Title=Herwig 7.1.5 (PCR 0.1)
 # xlow	 xhigh	 val	 errminus	 errplus
-2.500000e+00	3.500000e+00	5.139997e-02	5.186288e-03	5.186288e-03
-4.500000e+00	5.500000e+00	3.729649e-02	6.197290e-03	6.197290e-03
-6.500000e+00	7.500000e+00	6.448894e-02	1.290769e-02	1.290769e-02
-9.000000e+00	1.100000e+01	6.087232e-02	2.377324e-02	2.377324e-02
+2.500000e+00	3.500000e+00	6.080910e-02	5.810913e-03	5.810913e-03
+4.500000e+00	5.500000e+00	7.410791e-02	1.036050e-02	1.036050e-02
+6.500000e+00	7.500000e+00	5.743440e-02	1.428634e-02	1.428634e-02
+9.000000e+00	1.100000e+01	7.721771e-02	2.560610e-02	2.560610e-02
 # END HISTO1D
 
 
@@ -58,7 +58,7 @@ ErrorBars=1
 LineColor=green
 LineStyle=solid
 Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRbaryonic_0.5.yoda/RivSc/d01-x01-y01
-Title=Herwig 7.1.5 (Baryonic CR)
+Title=Herwig 7.1.5 (BCR 0.5)
 # xlow	 xhigh	 val	 errminus	 errplus
 2.500000e+00	3.500000e+00	5.249729e-02	5.084253e-03	5.084253e-03
 4.500000e+00	5.500000e+00	7.574864e-02	1.008889e-02	1.008889e-02

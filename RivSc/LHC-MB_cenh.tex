@@ -14,12 +14,12 @@ This run was generated using Herwig~\cite{Bahr:2008pv} and the following models:
 \item Spin-1/2 baryons with one heavy quark were decayed using the form factors in \cite{Singleton:1990ye}.
 \item The K pi weak current has the form of \cite{Finkemeier:1996dh}.
 \item The KaonThreeMesonCurrent class implements the model of \cite{Finkemeier:1995sr} for the weak current with three mesons, at least one of which is a kaon.
-\item The decay $\tau^\pm \to \omega \to \pi^\pm \pi^0 \gamma$ is modelled after \cite{Jadach:1993hs}.
 \item The decay of tau to three pions is modelled using the currents from \cite{Asner:1999kj}.
 \item The decay of the tau to four pions uses currents based on \cite{Bondar:2002mw}.
 \item The form factors from \cite{Ivanov:1996fj} were used.
 \item The form factors of \cite{Kiselev:2002vz} for the decay of the $B_c$ meson were used.
 \item The hadronization used the selection algorithm described in \cite{Kupco:1998fx}.
+\item The model of \cite{Kuhn:2006nw} was used for the hadronic five pion current.
 \item The quark model calculation of \cite{Schlumpf:1994fb} was usedfor the weak decay of the light baryons
 \item The underlying event was simulated with an eikonal model for multiple partonic interactions.Details can be found in Ref.~\cite{Bahr:2008dy,Bahr:2009ek}.
 \item The weak decay current to two scalar mesons is implemented using the models of either Kuhn and Santamaria \cite{Kuhn:1990ad} or Gounaris and Sakurai \cite{Gounaris:1968mw}. The mixing parameters are taken from \cite{Asner:1999kj}, although the PDG values for the masses and widths are used, for the decay pi+/- pi0. The decay K pi is assumed to  be dominated by the lowest lying K* resonance.
@@ -29,6 +29,7 @@ This run was generated using Herwig~\cite{Bahr:2008pv} and the following models:
 \item The MAMBO algorithm of \cite{Kleiss:1991rn} was used for high multiplicity decays
 \item The decay of I=0 vector mesons to three pions via a current taking into account the rho and a possible direct term is taken from \cite{Aloisio:2003ur}.
 \item The decay of eta to two pions follows \cite{Beisert:2003zs,Gormley:1970qz,Tippens:2001fm}.
+\item The decay of the $\Omega^-$ to $\Xi^{*0}\pi^-$ was simulated using the model of \cite{Duplancic:2004dy}.
 \item The decays of $\eta,\eta'\to\pi^+\pi^-\gamma$ were simulated using the matrix elements from \cite{Venugopal:1998fq,Holstein:2001bt}
 \item The decays of $\eta,\eta'\to\pi^0\gamma\gamma$ were simulated using the matrix elements of \cite{Holstein:2001bt}
 \item The decays of onium resonances to lighter states and pion pairs were modelled using the matrix element of \cite{Brown:1975dz}. The results of \cite{Bai:1999mj} are used for $\psi'\to\psi$ and \cite{Cronin-Hennessy:2007sj} for $\Upsilon(3S)$ and $\Upsilon(2S)$ decays. The remaining parameters are choosen to approximately reproduce the distributions from \cite{Aubert:2006bm} and \cite{Adam:2005mr}.
@@ -123,13 +124,6 @@ M.~Finkemeier and E.~Mirkes,
 Z.\ Phys.\  C {\bf 69} (1996) 243 [arXiv:hep-ph/9503474].
  %%CITATION = ZEPYA,C69,243;%%
 
-  %\cite{Jadach:1993hs}
-\bibitem{Jadach:1993hs}
-  S.~Jadach, Z.~Was, R.~Decker and J.~H.~Kuhn,
-  %``The Tau Decay Library Tauola: Version 2.4,''
-  Comput.\ Phys.\ Commun.\  {\bf 76}, 361 (1993).
-  %%CITATION = CPHCB,76,361;%%
-
   %\cite{Asner:1999kj}
 \bibitem{Asner:1999kj}
   D.~M.~Asner {\it et al.}  [CLEO Collaboration],
@@ -165,6 +159,7 @@ Z.\ Phys.\  C {\bf 69} (1996) 243 [arXiv:hep-ph/9503474].
   arXiv:hep-ph/9906412.
   %%CITATION = HEP-PH/9906412;%%
 
+\bibitem{Kuhn:2006nw} J.~H.~Kuhn and Z.~Was, hep-ph/0602162, (2006).
 \bibitem{Schlumpf:1994fb}
 F.~Schlumpf,
 Phys.\ Rev.\  D {\bf 51} (1995) 2262 [arXiv:hep-ph/9409272].
@@ -269,6 +264,11 @@ Nucl.\ Phys.\  B {\bf 385} (1992) 413.
   %``Determination of the quadratic slope parameter in eta $\to$ 3pi0 decay,''
   Phys.\ Rev.\ Lett.\  {\bf 87}, 192001 (2001).
   %%CITATION = PRLTA,87,192001;%%
+
+\bibitem{Duplancic:2004dy}
+G.~Duplancic, H.~Pasagic and J.~Trampetic,
+Phys.\ Rev.\  D {\bf 70} (2004) 077506 [arXiv:hep-ph/0405162].
+%%CITATION = PHRVA,D70,077506;%%
 
 \bibitem{Venugopal:1998fq} E.~P.~Venugopal and B.~R.~Holstein,
 Phys.\ Rev.\  D {\bf 57} (1998) 4397 [arXiv:hep-ph/9710382].
