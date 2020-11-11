@@ -41,6 +41,10 @@ read snippets/SoftTune.in
 # Analyses
 ##################################################
 
+#Enable Colour Reconnection
+#set /Herwig/Hadronization/ColourReconnector:ReconnectionProbability 0.5 #Plain Reconnection
+set /Herwig/Hadronization/ColourReconnector:Algorithm BaryonicReco #Sets Baryonic algorithm (default is plain in HERWIG 7.1.5)
+set /Herwig/Hadronization/ColourReconnector:ReconnectionProbabilityBaryonic 0.5 #Baryonic reconnection
 
 # cd /Herwig/Analysis
 # create ThePEG::RivetAnalysis RivetAnalysis RivetAnalysis.so
@@ -74,5 +78,5 @@ set /Herwig/Analysis/HepMCFile:Filename Herwig7.fifo
 # Save run for later usage with 'Herwig run'
 ##################################################
 cd /Herwig/Generators
-saverun LHC-MB EventGenerator
+saverun LHC-MB_cenh EventGenerator
  
