@@ -1,12 +1,12 @@
 Name: RivSc
 Year: 2019
-Summary: <A one-line informative RivSc headline>
+Summary: $\Sigma_c^{0,+,++}$ and $\Lambda_c$ from $\Sigma_c^{0,+,++}$ analysis
 Experiment: ALICE
 Collider: LHC
-InspireID: 1735351
+InspireID: To be declared
 Status: UNVALIDATED NOTREENTRY NOHEPDATA SINGLEWEIGHT UNPHYSICAL
 Authors:
- - Your Name <your@email.address>
+ - Marco Giacalone <mgiacalo@bo.infn.it>
 References:
  - 'Example: Eur.Phys.J. C76 (2016) no.7, 392'
  - 'Example: DOI:10.1140/epjc/s10052-016-4184-8'
@@ -16,15 +16,14 @@ References:
 #Energies: [[6500,6500]]
 #Luminosity_fb: 139.0
 Description:
-  'A brief description of what is measured and what it is useful for.
-   Use LaTeX for maths, e.g. $\pT > 50\;\GeV$.'
+  $\Sigma_c^{0,+,++}$ and $\Lambda_c$ from $\Sigma_c^{0,+,++}$ analysis
 ValidationInfo:
   'A description of the process used to validate the Rivet code against
   the original experimental analysis. Cut-flow tables and similar information
   are welcome'
 #ReleaseTests:
 # - $A my-hepmc-prefix :MODE=some_rivet_flag
-Keywords: []
+Keywords: [pp collisions, 13 TeV, charm production]
 BibKey: 
 BibTeX: ''
 ToDo:
