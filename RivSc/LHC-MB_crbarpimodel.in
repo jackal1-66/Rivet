@@ -52,7 +52,7 @@ set /Herwig/Hadronization/PartonSplitter:Split uds
 #weight for g->ssbar
 set /Herwig/Hadronization/PartonSplitter:SplitPwtSquark 0.824 
 #weight for cluster fission to q-s sbarq-bar
-#set /Herwig/Hadronization/PartonSplitter:PwtSquark 0.291 #does not work in Herwig 7.1.5 
+set /Herwig/Hadronization/HadronSelector:PwtSquark 0.291 
 #Values tuned of the mpi model for 7 TeV pp
 set /Herwig/UnderlyingEvent/MPIHander:pTmin0 3.053
 set /Herwig/UnderlyingEvent/MPIHander:InvRadius 1.282
