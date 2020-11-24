@@ -46,7 +46,7 @@ namespace Rivet {
           j+=1;
 	  std::cout << "Here's a J/Psi, total counted are " << j << endl;
           std::cout << "Pt is " << p.pT()/GeV << endl;
-          _h_JPsi_int->fill(0);
+          _h_JPsi_int->fill(0.);
           _h_JPsi_diff->fill(p.pT()/GeV);
           _h_JPsi_pt2->fill(5.02,p.pT()/GeV*p.pT()/GeV);
           _h_JPsi_ptmean->fill(5.02,p.pT()/GeV);
