@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode0.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode2.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia61e6evdef.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia61e6evPerugia11.yoda/RivSc/d02-x01-y01
-DrawOnly=/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode0.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode2.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia61e6evdef.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia61e6evPerugia11.yoda/RivSc/d02-x01-y01
+LegendOnly=/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode0.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode2.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia61e6evdef.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia61e7evPerugia11.yoda/RivSc/d02-x01-y01
+DrawOnly=/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode0.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode2.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia61e6evdef.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia61e7evPerugia11.yoda/RivSc/d02-x01-y01
 YMax=1.2
 Title=Average ratio of $\Lambda_c^+$ from $\Sigma_c^{0,+,++}$ and $\Lambda_c^+$
 RatioPlotReference=/RivSc/d02-x01-y01
@@ -86,16 +86,16 @@ Title=Pythia 6.428 (default)
 # END HISTO1D
 
 
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia61e6evPerugia11.yoda/RivSc/d02-x01-y01
+# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia61e7evPerugia11.yoda/RivSc/d02-x01-y01
 ErrorBars=1
 LineColor=lilac
 LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia61e6evPerugia11.yoda/RivSc/d02-x01-y01
-Title=Pythia 6.428 (Perugia11)
+Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia61e7evPerugia11.yoda/RivSc/d02-x01-y01
+Title=Pythia 6.428 (1e7Perugia11)
 # xlow	 xhigh	 val	 errminus	 errplus
-2.750000e+00	3.250000e+00	1.600000e-01	2.389722e-02	2.389722e-02
-4.750000e+00	5.250000e+00	1.632653e-01	4.402236e-02	4.402236e-02
-6.750000e+00	7.250000e+00	2.000000e-01	8.280787e-02	8.280787e-02
-9.500000e+00	1.050000e+01	0.000000e+00	0.000000e+00	0.000000e+00
+2.750000e+00	3.250000e+00	1.534714e-01	7.342019e-03	7.342019e-03
+4.750000e+00	5.250000e+00	1.265823e-01	1.226489e-02	1.226489e-02
+6.750000e+00	7.250000e+00	1.309524e-01	2.099468e-02	2.099468e-02
+9.500000e+00	1.050000e+01	9.756098e-02	2.555233e-02	2.555233e-02
 # END HISTO1D
 
