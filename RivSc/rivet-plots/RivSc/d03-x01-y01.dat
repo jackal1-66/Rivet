@@ -1,0 +1,21 @@
+# BEGIN PLOT
+Legend=1
+LogY=1
+DrawOnly=//data/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d03-x01-y01
+LegendOnly=//data/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d03-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D //data/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d03-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//data/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d03-x01-y01
+ScaledBy=5.01520768715552734e-01
+Title=Monash1e6Pythia8
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	1.253802e+00	5.607172e-01	5.607172e-01
+4.000000e+00	6.000000e+00	2.507604e-01	2.507604e-01	2.507604e-01
+6.000000e+00	8.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+8.000000e+00	1.200000e+01	0.000000e+00	0.000000e+00	0.000000e+00
+# END HISTO1D
+

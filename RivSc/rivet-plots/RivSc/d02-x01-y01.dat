@@ -1,115 +1,29 @@
 # BEGIN PLOT
-LegendOnly=/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode0.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode2.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVdefault.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRplain_0.1.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRbaryonic_0.5.yoda/RivSc/d02-x01-y01
-DrawOnly=/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode0.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode2.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVdefault.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRplain_0.1.yoda/RivSc/d02-x01-y01 //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRbaryonic_0.5.yoda/RivSc/d02-x01-y01
-YMax=1.2
-Title=Average ratio of $\Lambda_c^+$ from $\Sigma_c^{0,+,++}$ and $\Lambda_c^+$
-RatioPlotReference=/RivSc/d02-x01-y01
-RatioPlot=1
+Legend=1
 LogY=0
-RatioPlotYMax=1.9
-LegendXPos=0.45
+Title=Average ratio of $\Lambda_c^+$ from $\Sigma_c^{0,+,++}$ and $\Lambda_c^+$
 XLabel=$p_T$ [GeV/$c$]
 YLabel=$\Lambda_c^+$($\leftarrow \Sigma_c^{0,+,++}$)/$\Lambda_c^+$
+YMax=1.2
 YMin=0.
-Legend=1
+LegendXPos=0.45
 RatioPlotYMin=0.01
+RatioPlotYMax=1.9
+DrawOnly=//data/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d02-x01-y01
+LegendOnly=//data/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d02-x01-y01
 # END PLOT
 
-# BEGIN HISTO1D /RivSc/d02-x01-y01
-ConnectBins=0
-ErrorBars=1
-IsRef=1
-Path=/RivSc/d02-x01-y01
-PolyMarker=*
-Title=Data
-# xlow	 xhigh	 val	 errminus	 errplus
-2.750000e+00	3.250000e+00	3.675501e-01	5.561966e-02	5.606772e-02
-4.750000e+00	5.250000e+00	3.703598e-01	3.999960e-02	4.039735e-02
-6.750000e+00	7.250000e+00	3.233838e-01	2.827909e-02	2.913103e-02
-9.500000e+00	1.050000e+01	2.736271e-01	2.141673e-02	2.354593e-02
-# END HISTO1D
-
-
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d02-x01-y01
+# BEGIN HISTO1D //data/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d02-x01-y01
 ErrorBars=1
 LineColor=red
 LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVMonash.yoda/RivSc/d02-x01-y01
-Title=Pythia 8.243 (Monash)
+Path=//data/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d02-x01-y01
+ScaledBy=5.01520768715552734e-01
+Title=Monash1e6Pythia8
 # xlow	 xhigh	 val	 errminus	 errplus
-2.750000e+00	3.250000e+00	1.235955e-01	3.950129e-02	3.950129e-02
-4.750000e+00	5.250000e+00	1.250000e-01	6.629126e-02	6.629126e-02
-6.750000e+00	7.250000e+00	1.428571e-01	1.079898e-01	1.079898e-01
-9.500000e+00	1.050000e+01	2.500000e-01	1.976424e-01	1.976424e-01
-# END HISTO1D
-
-
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode0.yoda/RivSc/d02-x01-y01
-ErrorBars=1
-LineColor=blue
-LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode0.yoda/RivSc/d02-x01-y01
-Title=Pythia 8.243 (CR mode $0$)
-# xlow	 xhigh	 val	 errminus	 errplus
-2.750000e+00	3.250000e+00	5.610766e-01	4.258431e-02	4.258431e-02
-4.750000e+00	5.250000e+00	4.038462e-01	7.383309e-02	7.383309e-02
-6.750000e+00	7.250000e+00	4.210526e-01	1.774584e-01	1.774584e-01
-9.500000e+00	1.050000e+01	4.166667e-01	2.217878e-01	2.217878e-01
-# END HISTO1D
-
-
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode2.yoda/RivSc/d02-x01-y01
-ErrorBars=1
-LineColor=green
-LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Pythia1e613TeVmode2.yoda/RivSc/d02-x01-y01
-Title=Pythia 8.243 (CR mode $2$)
-# xlow	 xhigh	 val	 errminus	 errplus
-2.750000e+00	3.250000e+00	6.204082e-01	4.529528e-02	4.529528e-02
-4.750000e+00	5.250000e+00	5.819672e-01	8.686965e-02	8.686965e-02
-6.750000e+00	7.250000e+00	4.444444e-01	1.541975e-01	1.541975e-01
-9.500000e+00	1.050000e+01	1.111111e-01	1.171214e-01	1.171214e-01
-# END HISTO1D
-
-
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVdefault.yoda/RivSc/d02-x01-y01
-ErrorBars=1
-LineColor=orange
-LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVdefault.yoda/RivSc/d02-x01-y01
-Title=Herwig 7.1.5 (default)
-# xlow	 xhigh	 val	 errminus	 errplus
-2.750000e+00	3.250000e+00	4.139692e-01	6.478997e-02	6.478997e-02
-4.750000e+00	5.250000e+00	2.329965e-01	6.718789e-02	6.718789e-02
-6.750000e+00	7.250000e+00	3.717433e-01	1.482280e-01	1.482280e-01
-9.500000e+00	1.050000e+01	3.090043e-01	1.734245e-01	1.734245e-01
-# END HISTO1D
-
-
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRplain_0.1.yoda/RivSc/d02-x01-y01
-ErrorBars=1
-LineColor=lilac
-LineStyle=solid
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRplain_0.1.yoda/RivSc/d02-x01-y01
-Title=Herwig 7.1.5 (PCR $0.1$)
-# xlow	 xhigh	 val	 errminus	 errplus
-2.750000e+00	3.250000e+00	3.772596e-01	5.719197e-02	5.719197e-02
-4.750000e+00	5.250000e+00	4.706102e-01	1.183034e-01	1.183034e-01
-6.750000e+00	7.250000e+00	2.061002e-01	9.777103e-02	9.777103e-02
-9.500000e+00	1.050000e+01	2.151922e-01	1.578998e-01	1.578998e-01
-# END HISTO1D
-
-
-# BEGIN HISTO1D //alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRbaryonic_0.5.yoda/RivSc/d02-x01-y01
-ErrorBars=1
-LineColor=red
-LineStyle=dashed
-Path=//alistorage/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Herwig1e613TeVCRbaryonic_0.5.yoda/RivSc/d02-x01-y01
-Title=Herwig 7.1.5 (BCR $0.5$)
-# xlow	 xhigh	 val	 errminus	 errplus
-2.750000e+00	3.250000e+00	3.455019e-01	5.157917e-02	5.157917e-02
-4.750000e+00	5.250000e+00	3.992312e-01	8.926023e-02	8.926023e-02
-6.750000e+00	7.250000e+00	3.978597e-01	1.537028e-01	1.537028e-01
-9.500000e+00	1.050000e+01	2.722769e-01	1.701842e-01	1.701842e-01
+2.000000e+00	4.000000e+00	1.253802e+00	5.607172e-01	5.607172e-01
+4.000000e+00	6.000000e+00	2.507604e-01	2.507604e-01	2.507604e-01
+6.000000e+00	8.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+8.000000e+00	1.200000e+01	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 
