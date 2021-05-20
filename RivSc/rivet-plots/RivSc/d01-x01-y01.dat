@@ -1,35 +1,74 @@
 # BEGIN PLOT
 Legend=1
-LogY=0
-Title=Ratio $\Sigma_c^{0,+,++}$/$D0$ production cross sections vs $p_T$
+LogY=1
+Title=Differential $\Lambda_c$ production cross section vs $p_T$
 XLabel=$p_T$ [GeV/$c$]
-YLabel=$\Sigma_c^{0,+,++}$/$D0$
-YMax=0.52 
-YMin=0.
-LegendXPos=0.45
-RatioPlotYMin=0.01
-RatioPlotYMax=1.9
-DrawOnly=//data/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d01-x01-y01
-LegendOnly=//data/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d01-x01-y01
+YLabel=$\Lambda_c^+$ $\sigma$
+DrawOnly=/RivSc/d01-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d01-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/CRMode0_1e6Pythia8.yoda/RivSc/d01-x01-y01
+LegendOnly=/RivSc/d01-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d01-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/CRMode0_1e6Pythia8.yoda/RivSc/d01-x01-y01
+RatioPlot=1
+RatioPlotReference=/RivSc/d01-x01-y01
 # END PLOT
 
-# BEGIN HISTO1D //data/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d01-x01-y01
+# BEGIN HISTO1D /RivSc/d01-x01-y01
+ConnectBins=0
+ErrorBars=1
+IsRef=1
+Path=/RivSc/d01-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	1.154300e+02	1.827847e+01	1.814333e+01
+2.000000e+00	3.000000e+00	7.101500e+01	8.832596e+00	8.719174e+00
+3.000000e+00	4.000000e+00	3.450000e+01	4.143271e+00	4.084902e+00
+4.000000e+00	5.000000e+00	1.471700e+01	1.700133e+00	1.661477e+00
+5.000000e+00	6.000000e+00	7.741500e+00	9.083753e-01	8.859808e-01
+6.000000e+00	7.000000e+00	3.392400e+00	4.510693e-01	4.349689e-01
+7.000000e+00	8.000000e+00	1.936300e+00	2.719817e-01	2.630619e-01
+8.000000e+00	1.000000e+01	7.993000e-01	1.195650e-01	1.144364e-01
+1.000000e+01	1.200000e+01	3.074100e-01	5.613475e-02	5.424488e-02
+1.200000e+01	2.400000e+01	3.478300e-02	7.714379e-03	7.410890e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d01-x01-y01
 ErrorBars=1
 LineColor=red
 LineStyle=solid
-Path=//data/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d01-x01-y01
-ScaledBy=5.01520768715552734e-01
-Title=Monash1e6Pythia8
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d01-x01-y01
+ScaledBy=5.01520768713262580e-02
+Title=Pythia8 Monash
 # xlow	 xhigh	 val	 errminus	 errplus
-1.000000e+00	2.000000e+00	1.855627e+01	3.050632e+00	3.050632e+00
-2.000000e+00	3.000000e+00	1.103346e+01	2.352341e+00	2.352341e+00
-3.000000e+00	4.000000e+00	6.519770e+00	1.808259e+00	1.808259e+00
-4.000000e+00	5.000000e+00	3.510645e+00	1.326899e+00	1.326899e+00
-5.000000e+00	6.000000e+00	3.009125e+00	1.228470e+00	1.228470e+00
-6.000000e+00	7.000000e+00	5.015208e-01	5.015208e-01	5.015208e-01
-7.000000e+00	8.000000e+00	1.504562e+00	8.686594e-01	8.686594e-01
-8.000000e+00	1.000000e+01	0.000000e+00	0.000000e+00	0.000000e+00
-1.000000e+01	1.200000e+01	0.000000e+00	0.000000e+00	0.000000e+00
-1.200000e+01	2.400000e+01	0.000000e+00	0.000000e+00	0.000000e+00
+1.000000e+00	2.000000e+00	1.474471e+01	8.599290e-01	8.599290e-01
+2.000000e+00	3.000000e+00	1.093315e+01	7.404865e-01	7.404865e-01
+3.000000e+00	4.000000e+00	7.773572e+00	6.243883e-01	6.243883e-01
+4.000000e+00	5.000000e+00	4.563839e+00	4.784203e-01	4.784203e-01
+5.000000e+00	6.000000e+00	3.059277e+00	3.917003e-01	3.917003e-01
+6.000000e+00	7.000000e+00	1.554714e+00	2.792350e-01	2.792350e-01
+7.000000e+00	8.000000e+00	1.103346e+00	2.352341e-01	2.352341e-01
+8.000000e+00	1.000000e+01	6.770530e-01	1.302989e-01	1.302989e-01
+1.000000e+01	1.200000e+01	1.755323e-01	6.634497e-02	6.634497e-02
+1.200000e+01	2.400000e+01	1.253802e-02	7.238829e-03	7.238829e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/CRMode0_1e6Pythia8.yoda/RivSc/d01-x01-y01
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/CRMode0_1e6Pythia8.yoda/RivSc/d01-x01-y01
+ScaledBy=5.01520768713263065e-02
+Title=Pythia8 ECR Mode$0$
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	1.047677e+02	2.292230e+00	2.292230e+00
+2.000000e+00	3.000000e+00	6.309131e+01	1.778809e+00	1.778809e+00
+3.000000e+00	4.000000e+00	3.294991e+01	1.285499e+00	1.285499e+00
+4.000000e+00	5.000000e+00	1.489517e+01	8.643053e-01	8.643053e-01
+5.000000e+00	6.000000e+00	7.623116e+00	6.183163e-01	6.183163e-01
+6.000000e+00	7.000000e+00	3.861710e+00	4.400827e-01	4.400827e-01
+7.000000e+00	8.000000e+00	2.006083e+00	3.171895e-01	3.171895e-01
+8.000000e+00	1.000000e+01	1.053193e+00	1.625113e-01	1.625113e-01
+1.000000e+01	1.200000e+01	4.262926e-01	1.033912e-01	1.033912e-01
+1.200000e+01	2.400000e+01	6.269010e-02	1.618651e-02	1.618651e-02
 # END HISTO1D
 

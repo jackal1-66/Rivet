@@ -1,26 +1,72 @@
 # BEGIN PLOT
 Legend=1
 LogY=1
-DrawOnly=//data/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d04-x01-y01
-LegendOnly=//data/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d04-x01-y01
+Title=Average ratio of $\Lambda_c^+$ and $D^0$
+XLabel=$p_T$ [GeV/$c$]
+YLabel=$\Lambda_c^+$/$D0$
+DrawOnly=/RivSc/d04-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d04-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/CRMode0_1e6Pythia8.yoda/RivSc/d04-x01-y01
+LegendOnly=/RivSc/d04-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d04-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/CRMode0_1e6Pythia8.yoda/RivSc/d04-x01-y01
+RatioPlot=1
+RatioPlotReference=/RivSc/d04-x01-y01
 # END PLOT
 
-# BEGIN HISTO1D //data/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d04-x01-y01
+# BEGIN HISTO1D /RivSc/d04-x01-y01
+ConnectBins=0
+ErrorBars=1
+IsRef=1
+Path=/RivSc/d04-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	5.006200e-01	9.121245e-02	9.013041e-02
+2.000000e+00	3.000000e+00	4.515200e-01	5.365223e-02	5.347843e-02
+3.000000e+00	4.000000e+00	4.278400e-01	4.702195e-02	4.724151e-02
+4.000000e+00	5.000000e+00	3.808700e-01	3.828005e-02	3.859445e-02
+5.000000e+00	6.000000e+00	4.093500e-01	4.194809e-02	4.263336e-02
+6.000000e+00	7.000000e+00	3.178100e-01	3.615816e-02	3.625251e-02
+7.000000e+00	8.000000e+00	3.159600e-01	3.882389e-02	3.891158e-02
+8.000000e+00	1.000000e+01	2.636900e-01	3.363909e-02	3.362529e-02
+1.000000e+01	1.200000e+01	2.408100e-01	3.972923e-02	3.963409e-02
+1.200000e+01	2.400000e+01	1.383600e-01	2.854401e-02	2.804449e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d04-x01-y01
 ErrorBars=1
 LineColor=red
 LineStyle=solid
-Path=//data/mgiacalo/Rivet/rivet-ws/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d04-x01-y01
-Title=Monash1e6Pythia8
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Monash1e6Pythia8.yoda/RivSc/d04-x01-y01
+Title=Pythia8 Monash
 # xlow	 xhigh	 val	 errminus	 errplus
-1.000000e+00	2.000000e+00	9.002433e-02	1.545173e-02	1.545173e-02
-2.000000e+00	3.000000e+00	6.586826e-02	1.449829e-02	1.449829e-02
-3.000000e+00	4.000000e+00	5.963303e-02	1.702523e-02	1.702523e-02
-4.000000e+00	5.000000e+00	7.526882e-02	2.950018e-02	2.950018e-02
-5.000000e+00	6.000000e+00	9.677419e-02	4.137543e-02	4.137543e-02
-6.000000e+00	7.000000e+00	3.030303e-02	3.075874e-02	3.075874e-02
-7.000000e+00	8.000000e+00	1.153846e-01	7.035575e-02	7.035575e-02
-8.000000e+00	1.000000e+01	0.000000e+00	0.000000e+00	0.000000e+00
-1.000000e+01	1.200000e+01	0.000000e+00	0.000000e+00	0.000000e+00
-1.200000e+01	2.400000e+01	0.000000e+00	0.000000e+00	0.000000e+00
+1.000000e+00	2.000000e+00	6.336207e-02	3.810625e-03	3.810625e-03
+2.000000e+00	3.000000e+00	6.490027e-02	4.535997e-03	4.535997e-03
+3.000000e+00	4.000000e+00	7.620452e-02	6.349833e-03	6.349833e-03
+4.000000e+00	5.000000e+00	8.154122e-02	8.889514e-03	8.889514e-03
+5.000000e+00	6.000000e+00	9.312977e-02	1.246693e-02	1.246693e-02
+6.000000e+00	7.000000e+00	8.539945e-02	1.597971e-02	1.597971e-02
+7.000000e+00	8.000000e+00	9.865471e-02	2.204637e-02	2.204637e-02
+8.000000e+00	1.000000e+01	1.200000e-01	2.444040e-02	2.444040e-02
+1.000000e+01	1.200000e+01	8.333333e-02	3.278316e-02	3.278316e-02
+1.200000e+01	2.400000e+01	2.857143e-02	1.672972e-02	1.672972e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/CRMode0_1e6Pythia8.yoda/RivSc/d04-x01-y01
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/CRMode0_1e6Pythia8.yoda/RivSc/d04-x01-y01
+Title=Pythia8 ECR Mode$0$
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	5.283257e-01	1.429027e-02	1.429027e-02
+2.000000e+00	3.000000e+00	4.772382e-01	1.635386e-02	1.635386e-02
+3.000000e+00	4.000000e+00	4.322368e-01	2.018118e-02	2.018118e-02
+4.000000e+00	5.000000e+00	3.453488e-01	2.324327e-02	2.324327e-02
+5.000000e+00	6.000000e+00	3.134021e-01	2.913258e-02	2.913258e-02
+6.000000e+00	7.000000e+00	2.830882e-01	3.654304e-02	3.654304e-02
+7.000000e+00	8.000000e+00	2.285714e-01	4.005827e-02	4.005827e-02
+8.000000e+00	1.000000e+01	2.058824e-01	3.488566e-02	3.488566e-02
+1.000000e+01	1.200000e+01	2.361111e-01	6.366793e-02	6.366793e-02
+1.200000e+01	2.400000e+01	1.456311e-01	4.024675e-02	4.024675e-02
 # END HISTO1D
 
