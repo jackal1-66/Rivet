@@ -36,6 +36,7 @@ namespace Rivet {
       book(_h_LcfromScLc,6,1,1);
       book(_h_D04Lc,"TMP/D04Lc",refData(1,1,1));
       book(_h_D04Sc,"TMP/D04Sc",refData(2,1,1));
+      book(_h_Lc4Ratio, "TMP/Lc4Ratio", refData(3,1,1))
 
     }
 
@@ -50,6 +51,7 @@ namespace Rivet {
           _h_Sc->fill(p.pT()/GeV);
         else if(p.abspid()==4122){
           _h_Lc->fill(p.pT()/GeV);
+          _h_Lc4Ratio->fill(p.pT()/GeV);
           if(p.hasAncestor(4222) || p.hasAncestor(4212) || p.hasAncestor(4112) || p.hasAncestor(-4222) || p.hasAncestor(-4212) || p.hasAncestor(-4112))
             _h_LcfromSc->fill(p.pT()/GeV);
         }
@@ -67,12 +69,13 @@ namespace Rivet {
 
       scale(_h_Lc,              crossSection()/(microbarn*2*sumOfWeights()));
       scale(_h_LcfromSc,        crossSection()/(microbarn*2*sumOfWeights()));
+      scale(_h_Lc4Ratio,        crossSection()/(microbarn*2*sumOfWeights()));
       scale(_h_Sc,              crossSection()/(microbarn*2*sumOfWeights())); 
       scale(_h_D04Lc,           crossSection()/(microbarn*2*sumOfWeights()));
       scale(_h_D04Sc,           crossSection()/(microbarn*2*sumOfWeights())); // norm to generated cross-section in pb (after cuts)
       divide(_h_Sc, _h_D04Sc, _h_ScD0);
       divide(_h_Lc, _h_D04Lc, _h_LcD0);
-      divide(_h_LcfromSc, _h_Lc, _h_LcfromScLc);
+      divide(_h_LcfromSc, _h_Lc4Ratio, _h_LcfromScLc);
 
     }
 
@@ -81,7 +84,7 @@ namespace Rivet {
 
     /// @name Histograms
     ///@{
-    Histo1DPtr _h_Sc, _h_D04Lc, _h_D04Sc, _h_LcfromSc, _h_Lc;
+    Histo1DPtr _h_Sc, _h_D04Lc, _h_D04Sc, _h_LcfromSc, _h_Lc , _h_Lc4Ratio;
     Scatter2DPtr _h_LcD0, _h_ScD0, _h_LcfromScLc;
     ///@}
 
