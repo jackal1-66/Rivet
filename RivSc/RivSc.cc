@@ -36,7 +36,7 @@ namespace Rivet {
       book(_h_LcfromScLc,6,1,1);
       book(_h_D04Lc,"TMP/D04Lc",refData(1,1,1));
       book(_h_D04Sc,"TMP/D04Sc",refData(2,1,1));
-      book(_h_Lc4Ratio, "TMP/Lc4Ratio", refData(3,1,1))
+      book(_h_Lc4Ratio, "TMP/Lc4Ratio", refData(3,1,1));
 
     }
 
