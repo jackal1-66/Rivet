@@ -1,0 +1,102 @@
+BEGIN YODA_SCATTER2D_V2 /REF/RIVET_ANALYSIS_NAME/d01-x01-y01
+ErrorBreakdown: {0: {BR errors: {dn: -5.396, up: 5.396}, Statistical errors: {dn: -10.449, up: 10.449}, Systematic errors: {dn: -13.993, up: 13.816}}, 1: {BR errors: {dn: -3.1718, up: 3.1718}, Statistical errors: {dn: -4.3863, up: 4.3863}, Systematic errors: {dn: -6.9796, up: 6.8355}}, 2: {BR errors: {dn: -1.5444, up: 1.5444}, Statistical errors: {dn: -1.8812, up: 1.8812}, Systematic errors: {dn: -3.353, up: 3.2806}}, 3: {BR errors: {dn: -0.65405, up: 0.65405}, Statistical errors: {dn: -0.8377, up: 0.8377}, Systematic errors: {dn: -1.327, up: 1.2771}}, 4: {BR errors: {dn: -0.34919, up: 0.34919}, Statistical errors: {dn: -0.4324, up: 0.4324}, Systematic errors: {dn: -0.7185, up: 0.68997}}, 5: {BR errors: {dn: -0.15138, up: 0.15138}, Statistical errors: {dn: -0.24206, up: 0.24206}, Systematic errors: {dn: -0.34922, up: 0.32816}}, 6: {BR errors: {dn: -0.086077, up: 0.086077}, Statistical errors: {dn: -0.15225, up: 0.15225}, Systematic errors: {dn: -0.20829, up: 0.1965}}, 7: {BR errors: {dn: -0.03601, up: 0.03601}, Statistical errors: {dn: -0.060662, up: 0.060662}, Systematic errors: {dn: -0.096536, up: 0.090106}}, 8: {BR errors: {dn: -0.013714, up: 0.013714}, Statistical errors: {dn: -0.039191, up: 0.039191}, Systematic errors: {dn: -0.037777, up: 0.034907}}, 9: {BR errors: {dn: -0.0015462, up: 0.0015462}, Statistical errors: {dn: -0.0057348, up: 0.0057348}, Systematic errors: {dn: -0.0049227, up: 0.004432}}}
+IsRef: 1
+Path: /REF/RIVET_ANALYSIS_NAME/d01-x01-y01
+Title: Figure 1 Right Lc
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+1.500000e+00	5.000000e-01	5.000000e-01	1.154300e+02	1.827847e+01	1.814333e+01
+2.500000e+00	5.000000e-01	5.000000e-01	7.101500e+01	8.832596e+00	8.719174e+00
+3.500000e+00	5.000000e-01	5.000000e-01	3.450000e+01	4.143271e+00	4.084902e+00
+4.500000e+00	5.000000e-01	5.000000e-01	1.471700e+01	1.700133e+00	1.661477e+00
+5.500000e+00	5.000000e-01	5.000000e-01	7.741500e+00	9.083753e-01	8.859808e-01
+6.500000e+00	5.000000e-01	5.000000e-01	3.392400e+00	4.510693e-01	4.349689e-01
+7.500000e+00	5.000000e-01	5.000000e-01	1.936300e+00	2.719817e-01	2.630619e-01
+9.000000e+00	1.000000e+00	1.000000e+00	7.993000e-01	1.195650e-01	1.144364e-01
+1.100000e+01	1.000000e+00	1.000000e+00	3.074100e-01	5.613475e-02	5.424488e-02
+1.800000e+01	6.000000e+00	6.000000e+00	3.478300e-02	7.714379e-03	7.410890e-03
+END YODA_SCATTER2D_V2
+
+
+BEGIN YODA_SCATTER2D_V2 /REF/RIVET_ANALYSIS_NAME/d02-x01-y01
+ErrorBreakdown: {0: {BR errors: {dn: -0.63686, up: 0.63686}, Statistical errors: {dn: -2.9446, up: 2.9446}, Systematic errors: {dn: -2.8734, up: 2.8713}}, 1: {BR errors: {dn: -0.15924, up: 0.15924}, Statistical errors: {dn: -0.42502, up: 0.42502}, Systematic errors: {dn: -0.53222, up: 0.53126}}, 2: {BR errors: {dn: -0.033027, up: 0.033027}, Statistical errors: {dn: -0.093769, up: 0.093769}, Systematic errors: {dn: -0.10072, up: 0.10037}}, 3: {BR errors: {dn: -0.005931, up: 0.005931}, Statistical errors: {dn: -0.019793, up: 0.019793}, Systematic errors: {dn: -0.018715, up: 0.018542}}}
+IsRef: 1
+Path: /REF/RIVET_ANALYSIS_NAME/d02-x01-y01
+Title: Figure 1 Right Sc
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+3.000000e+00	1.000000e+00	1.000000e+00	1.431600e+01	4.163254e+00	4.161805e+00
+5.000000e+00	1.000000e+00	1.000000e+00	3.534300e+00	6.994694e-01	6.987393e-01
+7.000000e+00	1.000000e+00	1.000000e+00	7.204700e-01	1.415201e-01	1.412712e-01
+1.000000e+01	2.000000e+00	2.000000e+00	1.332200e-01	2.787814e-02	2.776230e-02
+END YODA_SCATTER2D_V2
+
+
+BEGIN YODA_SCATTER2D_V2 /REF/RIVET_ANALYSIS_NAME/d03-x01-y01
+ErrorBreakdown: {0: {BR errors: {dn: -0.91699, up: 0.91699}, Statistical errors: {dn: -3.625, up: 3.625}, Systematic errors: {dn: -4.1451, up: 4.1413}}, 1: {BR errors: {dn: -0.19552, up: 0.19552}, Statistical errors: {dn: -0.50808, up: 0.50808}, Systematic errors: {dn: -0.64469, up: 0.64327}}, 2: {BR errors: {dn: -0.033219, up: 0.033219}, Statistical errors: {dn: -0.10595, up: 0.10595}, Systematic errors: {dn: -0.099992, up: 0.098986}}, 3: {BR errors: {dn: -0.0065317, up: 0.0065317}, Statistical errors: {dn: -0.025822, up: 0.025822}, Systematic errors: {dn: -0.020101, up: 0.019826}}}
+IsRef: 1
+Path: /REF/RIVET_ANALYSIS_NAME/d03-x01-y01
+Title: Figure 1 Right Lc from Sc
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+3.000000e+00	1.000000e+00	1.000000e+00	2.058400e+01	5.582414e+00	5.579593e+00
+5.000000e+00	1.000000e+00	1.000000e+00	4.328100e+00	8.438001e-01	8.427156e-01
+7.000000e+00	1.000000e+00	1.000000e+00	7.441500e-01	1.494232e-01	1.487519e-01
+1.000000e+01	2.000000e+00	2.000000e+00	1.465700e-01	3.336898e-02	3.320405e-02
+END YODA_SCATTER2D_V2
+
+
+BEGIN YODA_SCATTER2D_V2 /REF/RIVET_ANALYSIS_NAME/d04-x01-y01
+ErrorBreakdown: {0: {BR errors: {dn: -0.023729, up: 0.023729}, Statistical errors: {dn: -0.051662, up: 0.051662}, Systematic errors: {dn: -0.071328, up: 0.069939}}, 1: {BR errors: {dn: -0.020476, up: 0.020476}, Statistical errors: {dn: -0.029447, up: 0.029447}, Systematic errors: {dn: -0.039902, up: 0.039668}}, 2: {BR errors: {dn: -0.019444, up: 0.019444}, Statistical errors: {dn: -0.024585, up: 0.024585}, Systematic errors: {dn: -0.035051, up: 0.035345}}, 3: {BR errors: {dn: -0.017189, up: 0.017189}, Statistical errors: {dn: -0.02276, up: 0.02276}, Systematic errors: {dn: -0.025532, up: 0.026001}}, 4: {BR errors: {dn: -0.018742, up: 0.018742}, Statistical errors: {dn: -0.024335, up: 0.024335}, Systematic errors: {dn: -0.028569, up: 0.029566}}, 5: {BR errors: {dn: -0.0144, up: 0.0144}, Statistical errors: {dn: -0.023889, up: 0.023889}, Systematic errors: {dn: -0.023008, up: 0.023156}}, 6: {BR errors: {dn: -0.014263, up: 0.014263}, Statistical errors: {dn: -0.026405, up: 0.026405}, Systematic errors: {dn: -0.02463, up: 0.024768}}, 7: {BR errors: {dn: -0.012059, up: 0.012059}, Statistical errors: {dn: -0.021138, up: 0.021138}, Systematic errors: {dn: -0.023224, up: 0.023204}}, 8: {BR errors: {dn: -0.010907, up: 0.010907}, Statistical errors: {dn: -0.031946, up: 0.031946}, Systematic errors: {dn: -0.02095, up: 0.020769}}, 9: {BR errors: {dn: -0.0062458, up: 0.0062458}, Statistical errors: {dn: -0.023269, up: 0.023269}, Systematic errors: {dn: -0.015307, up: 0.014354}}}
+IsRef: 1
+Path: /REF/RIVET_ANALYSIS_NAME/d04-x01-y01
+Title: Figure 2 Left
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+1.500000e+00	5.000000e-01	5.000000e-01	5.006200e-01	9.121245e-02	9.013041e-02
+2.500000e+00	5.000000e-01	5.000000e-01	4.515200e-01	5.365223e-02	5.347843e-02
+3.500000e+00	5.000000e-01	5.000000e-01	4.278400e-01	4.702195e-02	4.724151e-02
+4.500000e+00	5.000000e-01	5.000000e-01	3.808700e-01	3.828005e-02	3.859445e-02
+5.500000e+00	5.000000e-01	5.000000e-01	4.093500e-01	4.194809e-02	4.263336e-02
+6.500000e+00	5.000000e-01	5.000000e-01	3.178100e-01	3.615816e-02	3.625251e-02
+7.500000e+00	5.000000e-01	5.000000e-01	3.159600e-01	3.882389e-02	3.891158e-02
+9.000000e+00	1.000000e+00	1.000000e+00	2.636900e-01	3.363909e-02	3.362529e-02
+1.100000e+01	1.000000e+00	1.000000e+00	2.408100e-01	3.972923e-02	3.963409e-02
+1.800000e+01	6.000000e+00	6.000000e+00	1.383600e-01	2.854401e-02	2.804449e-02
+END YODA_SCATTER2D_V2
+
+
+BEGIN YODA_SCATTER2D_V2 /REF/RIVET_ANALYSIS_NAME/d05-x01-y01
+ErrorBreakdown: {0: {BR errors: {dn: -0.0081545, up: 0.0081545}, Statistical errors: {dn: -0.03723, up: 0.03723}, Systematic errors: {dn: -0.035991, up: 0.036349}}, 1: {BR errors: {dn: -0.0084254, up: 0.0084254}, Statistical errors: {dn: -0.022303, up: 0.022303}, Systematic errors: {dn: -0.026169, up: 0.027127}}, 2: {BR errors: {dn: -0.0059825, up: 0.0059825}, Statistical errors: {dn: -0.016905, up: 0.016905}, Systematic errors: {dn: -0.01637, up: 0.017251}}, 3: {BR errors: {dn: -0.0041941, up: 0.0041941}, Statistical errors: {dn: -0.013923, up: 0.013923}, Systematic errors: {dn: -0.01168, up: 0.012068}}}
+IsRef: 1
+Path: /REF/RIVET_ANALYSIS_NAME/d05-x01-y01
+Title: Figure 2 Middle
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+3.000000e+00	1.000000e+00	1.000000e+00	1.805100e-01	5.242061e-02	5.266705e-02
+5.000000e+00	1.000000e+00	1.000000e+00	1.842300e-01	3.540096e-02	3.611489e-02
+7.000000e+00	1.000000e+00	1.000000e+00	1.286300e-01	2.428057e-02	2.488305e-02
+1.000000e+01	2.000000e+00	2.000000e+00	9.277500e-02	1.865108e-02	1.889648e-02
+END YODA_SCATTER2D_V2
+
+
+BEGIN YODA_SCATTER2D_V2 /REF/RIVET_ANALYSIS_NAME/d06-x01-y01
+ErrorBreakdown: {0: {Statistical errors: {dn: -0.070441, up: 0.070441}, Systematic errors: {dn: -0.066903, up: 0.066495}}, 1: {Statistical errors: {dn: -0.048503, up: 0.048503}, Systematic errors: {dn: -0.048334, up: 0.048281}}, 2: {Statistical errors: {dn: -0.04256, up: 0.04256}, Systematic errors: {dn: -0.028689, up: 0.02794}}, 3: {Statistical errors: {dn: -0.050509, up: 0.050509}, Systematic errors: {dn: -0.03157, up: 0.030248}}}
+IsRef: 1
+Path: /REF/RIVET_ANALYSIS_NAME/d06-x01-y01
+Title: Figure 2 Right
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+3.000000e+00	1.000000e+00	1.000000e+00	3.843700e-01	9.714909e-02	9.686857e-02
+5.000000e+00	1.000000e+00	1.000000e+00	3.886600e-01	6.847420e-02	6.843680e-02
+7.000000e+00	1.000000e+00	1.000000e+00	2.801400e-01	5.132653e-02	5.091166e-02
+1.000000e+01	2.000000e+00	2.000000e+00	2.670900e-01	5.956361e-02	5.887360e-02
+END YODA_SCATTER2D_V2
+
+
