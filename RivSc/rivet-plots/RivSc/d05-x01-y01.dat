@@ -1,9 +1,9 @@
 # BEGIN PLOT
 Legend=1
 LogY=1
-Title=Average ratio of $\Sigma_c^{0,+,++}$ and $D^0$
+Title=Average ratio of $\Lambda_c^+$ and $D^0$
 XLabel=$p_T$ [GeV/$c$]
-YLabel=$\Sigma_c^{0,+,++}$/$D0$
+YLabel=$\Lambda_c^+$/$D0$
 DrawOnly=//afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e5Monash.yoda/RivSc/d05-x01-y01
 LegendOnly=//afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e5Monash.yoda/RivSc/d05-x01-y01
 # END PLOT

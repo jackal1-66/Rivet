@@ -1,9 +1,9 @@
 # BEGIN PLOT
 Legend=1
 LogY=1
-Title=Differential $\Lambda_c$ from $\Sigma_c^{0,+,++}$ production cross section vs $p_T$
+Title=Differential $\Sigma_c$ production cross section vs $p_T$
 XLabel=$p_T$ [GeV/$c$]
-YLabel=$\Lambda_c^+$($\leftarrow \Sigma_c^{0,+,++}$) $\sigma$
+YLabel=$\Sigma_c^{0,+,++}$ $\sigma$
 DrawOnly=//afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e5Monash.yoda/RivSc/d03-x01-y01
 LegendOnly=//afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e5Monash.yoda/RivSc/d03-x01-y01
 # END PLOT
