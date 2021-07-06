@@ -28,15 +28,15 @@ namespace Rivet {
       const UnstableParticles up(Cuts::absrap < 0.5);
       declare(up, "up");  
 
-      book(_h_Lc,1,1,1);
-      book(_h_Sc,2,1,1);
-      book(_h_LcfromSc,3,1,1);
-      book(_h_LcD0,4,1,1);
-      book(_h_ScD0,5,1,1);
-      book(_h_LcfromScLc,6,1,1);
-      book(_h_D04Lc,"TMP/D04Lc",refData(1,1,1));
-      book(_h_D04Sc,"TMP/D04Sc",refData(2,1,1));
-      book(_h_Lc4Ratio, "TMP/Lc4Ratio", refData(3,1,1));
+      book(_h_D0,1,1,1);
+      book(_h_Lc,2,1,1);
+      book(_h_Sc,3,1,1);
+      book(_h_LcfromSc,4,1,1);
+      book(_h_LcD0,5,1,1);
+      book(_h_ScD0,6,1,1);
+      book(_h_LcfromScLc,7,1,1);
+      book(_h_D04Sc,"TMP/D04Sc",refData(3,1,1));
+      book(_h_Lc4Ratio, "TMP/Lc4Ratio", refData(4,1,1));
 
     }
 
@@ -56,7 +56,7 @@ namespace Rivet {
             _h_LcfromSc->fill(p.pT()/GeV);
         }
         else if(p.abspid()==421){
-          _h_D04Lc->fill(p.pT()/GeV);
+          _h_D0->fill(p.pT()/GeV);
           _h_D04Sc->fill(p.pT()/GeV);
         }  
       }
@@ -66,15 +66,15 @@ namespace Rivet {
 
     /// Normalise histograms etc., after the run
     void finalize() {
-
+      
+      scale(_h_D0,              crossSection()/(microbarn*2*sumOfWeights()));
       scale(_h_Lc,              crossSection()/(microbarn*2*sumOfWeights()));
       scale(_h_LcfromSc,        crossSection()/(microbarn*2*sumOfWeights()));
       scale(_h_Lc4Ratio,        crossSection()/(microbarn*2*sumOfWeights()));
       scale(_h_Sc,              crossSection()/(microbarn*2*sumOfWeights())); 
-      scale(_h_D04Lc,           crossSection()/(microbarn*2*sumOfWeights()));
       scale(_h_D04Sc,           crossSection()/(microbarn*2*sumOfWeights())); // norm to generated cross-section in pb (after cuts)
       divide(_h_Sc, _h_D04Sc, _h_ScD0);
-      divide(_h_Lc, _h_D04Lc, _h_LcD0);
+      divide(_h_Lc, _h_D0, _h_LcD0);
       divide(_h_LcfromSc, _h_Lc4Ratio, _h_LcfromScLc);
 
     }
@@ -84,7 +84,7 @@ namespace Rivet {
 
     /// @name Histograms
     ///@{
-    Histo1DPtr _h_Sc, _h_D04Lc, _h_D04Sc, _h_LcfromSc, _h_Lc , _h_Lc4Ratio;
+    Histo1DPtr _h_Sc, _h_D0, _h_D04Sc, _h_LcfromSc, _h_Lc , _h_Lc4Ratio;
     Scatter2DPtr _h_LcD0, _h_ScD0, _h_LcfromScLc;
     ///@}
 
