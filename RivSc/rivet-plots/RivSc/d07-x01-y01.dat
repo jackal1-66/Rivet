@@ -4,19 +4,65 @@ LogY=1
 Title=Average ratio of $\Lambda_c^+$ from $\Sigma_c^{0,+,++}$ and $\Lambda_c^+$
 XLabel=$p_T$ [GeV/$c$]
 YLabel=$\Lambda_c^+$($\leftarrow \Sigma_c^{0,+,++}$)/$\Lambda_c^+$
-DrawOnly=//afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e5Monash.yoda/RivSc/d07-x01-y01
-LegendOnly=//afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e5Monash.yoda/RivSc/d07-x01-y01
+DrawOnly=/RivSc/d07-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e6evdef.yoda/RivSc/d07-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e6evCRmode0.yoda/RivSc/d07-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e6evCRmode2.yoda/RivSc/d07-x01-y01
+LegendOnly=/RivSc/d07-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e6evdef.yoda/RivSc/d07-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e6evCRmode0.yoda/RivSc/d07-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e6evCRmode2.yoda/RivSc/d07-x01-y01
+RatioPlot=1
+RatioPlotReference=/RivSc/d07-x01-y01
 # END PLOT
 
-# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e5Monash.yoda/RivSc/d07-x01-y01
+# BEGIN HISTO1D /RivSc/d07-x01-y01
+ConnectBins=0
+ErrorBars=1
+IsRef=1
+Path=/RivSc/d07-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	3.800000e-01	9.899495e-02	9.899495e-02
+4.000000e+00	6.000000e+00	3.900000e-01	7.071068e-02	7.071068e-02
+6.000000e+00	8.000000e+00	2.800000e-01	5.000000e-02	5.000000e-02
+8.000000e+00	1.200000e+01	2.700000e-01	5.830952e-02	5.830952e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e6evdef.yoda/RivSc/d07-x01-y01
+ErrorBars=1
 LineColor=red
 LineStyle=solid
-Path=//afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e5Monash.yoda/RivSc/d07-x01-y01
-Title=Pythia61e5Monash
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e6evdef.yoda/RivSc/d07-x01-y01
+Title=Pythia 6 Monash 2013
 # xlow	 xhigh	 val	 errminus	 errplus
-2.000000e+00	4.000000e+00	8.333333e-02	4.336804e-02	4.336804e-02
-4.000000e+00	6.000000e+00	1.111111e-01	6.762007e-02	6.762007e-02
-6.000000e+00	8.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
-8.000000e+00	1.200000e+01	0.000000e+00	0.000000e+00	0.000000e+00
+2.000000e+00	4.000000e+00	1.336898e-01	2.013078e-02	2.013078e-02
+4.000000e+00	6.000000e+00	1.309524e-01	2.969096e-02	2.969096e-02
+6.000000e+00	8.000000e+00	1.315789e-01	6.259560e-02	6.259560e-02
+8.000000e+00	1.200000e+01	7.407407e-02	5.428356e-02	5.428356e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e6evCRmode0.yoda/RivSc/d07-x01-y01
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e6evCRmode0.yoda/RivSc/d07-x01-y01
+Title=Pythia 6 CR mode 0
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	5.780347e-01	2.189353e-02	2.189353e-02
+4.000000e+00	6.000000e+00	4.958678e-01	3.914775e-02	3.914775e-02
+6.000000e+00	8.000000e+00	4.311927e-01	7.524393e-02	7.524393e-02
+8.000000e+00	1.200000e+01	2.156863e-01	7.170293e-02	7.170293e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e6evCRmode2.yoda/RivSc/d07-x01-y01
+ErrorBars=1
+LineColor=green
+LineStyle=solid
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/RivSc/Pythia61e6evCRmode2.yoda/RivSc/d07-x01-y01
+Title=Pythia 6 CR mode 2
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	6.139471e-01	2.125161e-02	2.125161e-02
+4.000000e+00	6.000000e+00	5.047801e-01	3.810981e-02	3.810981e-02
+6.000000e+00	8.000000e+00	4.551282e-01	6.515612e-02	6.515612e-02
+8.000000e+00	1.200000e+01	3.157895e-01	8.537970e-02	8.537970e-02
 # END HISTO1D
 
