@@ -78,3 +78,9 @@ Histo1DPtr   \_h\_0000, \_h\_0001; // for a histogram
 
 This will lead to the histo _h_0001 being set (binning, etc) as the experimental histogram d01-x01-y01.
 
+# Edit Legend to rivet plots
+
+In order to do so you can edit the titles in this way
+
+$rivet-mkhtml --pwd --errs rivet.yoda:'Title=This is my custom Title' rivet2.yoda:'Title=This is my other custom title'
+
