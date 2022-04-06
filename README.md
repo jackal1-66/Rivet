@@ -29,6 +29,20 @@ $ run-pythia —help
 # Run for 1000 events with a output file name (.hepmc)
 $time run-pythia -e 7000 -o pythia8.pbpb2760.hepmc -c "SoftQCD:all on" -n 1000
 
+#Pythia Tunes definition with Sacrifice (1e6 events with fifo)
+
+$mkfifo test.fifo
+**Monash**
+$run-pythia -n 1000000 -o test.fifo -e 13000 -c "SoftQCD:all on" >Pythiapp1e6.log &
+**Mode0**
+$run-pythia -n 1000000 -o test.fifo -e 13000 -c "SoftQCD:all on" -i mode0.par >Pythiapp1e6mode0.log &
+**Mode2**
+$run-pythia -n 1000000 -o test.fifo -e 13000 -c "SoftQCD:all on" -i mode2.par >Pythiapp1e6mode2.log &
+
+$rivet --ignore-beams --pwd -a ALICE_2017_I1511870 test.fifo -o pythia8pp1e6new.yoda -n 1000000 >RivetPythia8pp1e6new.log &
+(mode0.par and mode2.par are inside the main folder of the repo)
+You can also add a seed to the sacrifice application by adding the parameter -r
+
 In troubles with running Pythia
 •	go to Sacrifice
 •	$ cd src
@@ -37,7 +51,7 @@ In troubles with running Pythia
 •	$ make install
 •	then run pythia again to generate event data
 
-# Run HERWIG on the server
+# Run HERWIG on the server (OBSOLETE)
 The installation on the server was not so easy and it is a little "crooked", so in order to run HERWIG using fifos and rivet there are precise steps to follow:
 
 1) Type "scldev" which will enable the correct versions of g++ compiler and python
