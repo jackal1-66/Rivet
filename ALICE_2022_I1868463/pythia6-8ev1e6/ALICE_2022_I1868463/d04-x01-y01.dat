@@ -1,0 +1,101 @@
+# BEGIN PLOT
+Legend=1
+LogY=1
+Title=Differential $\Lambda_c$ from $\Sigma_c^{0,+,++}$ production cross section vs $p_T$
+XLabel=$p_T$ [GeV/$c$]
+YLabel=$\Lambda_c^+$($\leftarrow \Sigma_c^{0,+,++}$) $\sigma$
+DrawOnly=/ALICE_2022_I1868463/d04-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp1e6.yoda/ALICE_2022_I1868463/d04-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp1e6mode0.yoda/ALICE_2022_I1868463/d04-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp1e6mode2.yoda/ALICE_2022_I1868463/d04-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia6pp1e6.yoda/ALICE_2022_I1868463/d04-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia6pp1e6Per11.yoda/ALICE_2022_I1868463/d04-x01-y01
+LegendOnly=/ALICE_2022_I1868463/d04-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp1e6.yoda/ALICE_2022_I1868463/d04-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp1e6mode0.yoda/ALICE_2022_I1868463/d04-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp1e6mode2.yoda/ALICE_2022_I1868463/d04-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia6pp1e6.yoda/ALICE_2022_I1868463/d04-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia6pp1e6Per11.yoda/ALICE_2022_I1868463/d04-x01-y01
+RatioPlot=1
+RatioPlotReference=/ALICE_2022_I1868463/d04-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /ALICE_2022_I1868463/d04-x01-y01
+ConnectBins=0
+ErrorBars=1
+IsRef=1
+Path=/ALICE_2022_I1868463/d04-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	2.063800e+01	5.596932e+00	5.594111e+00
+4.000000e+00	6.000000e+00	4.339400e+00	8.459906e-01	8.449062e-01
+6.000000e+00	8.000000e+00	7.461100e-01	1.498140e-01	1.491447e-01
+8.000000e+00	1.200000e+01	1.469600e-01	3.345554e-02	3.329061e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp1e6.yoda/ALICE_2022_I1868463/d04-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp1e6.yoda/ALICE_2022_I1868463/d04-x01-y01
+ScaledBy=5.01520768713262025e-02
+Title=Pythia8 (Monash)
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	1.203650e+00	1.737319e-01	1.737319e-01
+4.000000e+00	6.000000e+00	5.767490e-01	1.202605e-01	1.202605e-01
+6.000000e+00	8.000000e+00	7.522810e-02	4.343297e-02	4.343297e-02
+8.000000e+00	1.200000e+01	3.761405e-02	2.171649e-02	2.171649e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp1e6mode0.yoda/ALICE_2022_I1868463/d04-x01-y01
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp1e6mode0.yoda/ALICE_2022_I1868463/d04-x01-y01
+ScaledBy=5.01520768713262302e-02
+Title=Pythia8 ECR Mode0
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	3.059276e+01	8.758684e-01	8.758684e-01
+4.000000e+00	6.000000e+00	5.842715e+00	3.827691e-01	3.827691e-01
+6.000000e+00	8.000000e+00	1.128421e+00	1.682152e-01	1.682152e-01
+8.000000e+00	1.200000e+01	2.256844e-01	5.319431e-02	5.319431e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp1e6mode2.yoda/ALICE_2022_I1868463/d04-x01-y01
+ErrorBars=1
+LineColor=green
+LineStyle=solid
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp1e6mode2.yoda/ALICE_2022_I1868463/d04-x01-y01
+ScaledBy=5.01520768713264661e-02
+Title=Pythia8 ECR Mode2
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	3.510645e+01	9.382594e-01	9.382594e-01
+4.000000e+00	6.000000e+00	7.623115e+00	4.372157e-01	4.372157e-01
+6.000000e+00	8.000000e+00	1.655018e+00	2.037187e-01	2.037187e-01
+8.000000e+00	1.200000e+01	2.758365e-01	5.880852e-02	5.880852e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia6pp1e6.yoda/ALICE_2022_I1868463/d04-x01-y01
+ErrorBars=1
+LineColor=orange
+LineStyle=solid
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia6pp1e6.yoda/ALICE_2022_I1868463/d04-x01-y01
+ScaledBy=2.70008406774999987e-02
+Title=Pythia6 (default)
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	6.615205e-01	9.450294e-02	9.450294e-02
+4.000000e+00	6.000000e+00	3.375105e-01	6.750209e-02	6.750209e-02
+6.000000e+00	8.000000e+00	2.160067e-01	5.400169e-02	5.400169e-02
+8.000000e+00	1.200000e+01	8.100253e-02	2.338341e-02	2.338341e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia6pp1e6Per11.yoda/ALICE_2022_I1868463/d04-x01-y01
+ErrorBars=1
+LineColor=lilac
+LineStyle=solid
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia6pp1e6Per11.yoda/ALICE_2022_I1868463/d04-x01-y01
+ScaledBy=2.70008406780000015e-02
+Title=Pythia6 (Perugia 2011)
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	2.646082e+00	1.890059e-01	1.890059e-01
+4.000000e+00	6.000000e+00	8.505265e-01	1.071563e-01	1.071563e-01
+6.000000e+00	8.000000e+00	2.430075e-01	5.727744e-02	5.727744e-02
+8.000000e+00	1.200000e+01	4.050125e-02	1.653457e-02	1.653457e-02
+# END HISTO1D
+
