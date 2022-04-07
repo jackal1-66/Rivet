@@ -84,3 +84,9 @@ In order to do so you can edit the titles in this way
 
 $rivet-mkhtml --pwd --errs rivet.yoda:'Title=This is my custom Title' rivet2.yoda:'Title=This is my other custom title'
 
+#Run HERWIG with AliGenerators
+
+Unfortunately the installation of AliGenerators doesn't work that good, so in order to make it work you should copy your configuration .in files
+into the folder $HERWIG_ROOT/share/Herwig/, cd into the folder and then finally use Herwig read as usual. 
+For some reasons that I don't understand the file SoftTune.in was removed from the snippets folder, so you can create it beforehand by copying the one 
+you can find in the main folder of this repository.
