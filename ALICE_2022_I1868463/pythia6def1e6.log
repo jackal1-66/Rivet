@@ -1,0 +1,143 @@
+Generating 1000000 events
+Generator is Pythia6:HEAD
+Setting initial state: 2212 @ 6500.0 GeV -> <- 2212 @ 6500.0 GeV
+Setting random seed = 31415926
+1                                                                              
+ ******************************************************************************
+ ******************************************************************************
+ **                                                                          **
+ **                                                                          **
+ **              *......*                  Welcome to the Lund Monte Carlo!  **
+ **         *:::!!:::::::::::*                                               **
+ **      *::::::!!::::::::::::::*          PPP  Y   Y TTTTT H   H III   A    **
+ **    *::::::::!!::::::::::::::::*        P  P  Y Y    T   H   H  I   A A   **
+ **   *:::::::::!!:::::::::::::::::*       PPP    Y     T   HHHHH  I  AAAAA  **
+ **   *:::::::::!!:::::::::::::::::*       P      Y     T   H   H  I  A   A  **
+ **    *::::::::!!::::::::::::::::*!       P      Y     T   H   H III A   A  **
+ **      *::::::!!::::::::::::::* !!                                         **
+ **      !! *:::!!:::::::::::*    !!       This is PYTHIA version 6.428      **
+ **      !!     !* -><- *         !!       Last date of change:  5 Sep 2013  **
+ **      !!     !!                !!                                         **
+ **      !!     !!                !!       Now is  0 Jan 2000 at  0:00:00    **
+ **      !!                       !!                                         **
+ **      !!        lh             !!       Disclaimer: this program comes    **
+ **      !!                       !!       without any guarantees. Beware    **
+ **      !!                 hh    !!       of errors and use common sense    **
+ **      !!    ll                 !!       when interpreting results.        **
+ **      !!                       !!                                         **
+ **      !!                                Copyright T. Sjostrand (2011)     **
+ **                                                                          **
+ ** An archive of program versions and documentation is found on the web:    **
+ ** http://www.thep.lu.se/~torbjorn/Pythia.html                              **
+ **                                                                          **
+ ** When you cite this program, the official reference is to the 6.4 manual: **
+ ** T. Sjostrand, S. Mrenna and P. Skands, JHEP05 (2006) 026                 **
+ ** (LU TP 06-13, FERMILAB-PUB-06-052-CD-T) [hep-ph/0603175].                **
+ **                                                                          **
+ ** Also remember that the program, to a large extent, represents original   **
+ ** physics research. Other publications of special relevance to your        **
+ ** studies may therefore deserve separate mention.                          **
+ **                                                                          **
+ ** Main author: Torbjorn Sjostrand; Department of Theoretical Physics,      **
+ **   Lund University, Solvegatan 14A, S-223 62 Lund, Sweden;                **
+ **   phone: + 46 - 46 - 222 48 16; e-mail: torbjorn@thep.lu.se              **
+ ** Author: Stephen Mrenna; Computing Division, GDS Group,                   **
+ **   Fermi National Accelerator Laboratory, MS 234, Batavia, IL 60510, USA; **
+ **   phone: + 1 - 630 - 840 - 2556; e-mail: mrenna@fnal.gov                 **
+ ** Author: Peter Skands; CERN/PH-TH, CH-1211 Geneva, Switzerland            **
+ **   phone: + 41 - 22 - 767 24 47; e-mail: peter.skands@cern.ch             **
+ **                                                                          **
+ **                                                                          **
+ ******************************************************************************
+ ******************************************************************************
+     MSTP(125)      changed from              1 to              2
+     MSTP(128)      changed from              0 to              2
+     MRPY(1)        changed from       19780503 to       31415926
+     MSTP(5)        changed from              0 to              0
+1****************** PYINIT: initialization of PYTHIA routines *****************
+
+ ==============================================================================
+ I                                                                            I
+ I             PYTHIA will be initialized for a p+ on p+ collider             I
+ I                  at  13000.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   95   Low-pT scattering             I    5.4002D+01   I
+           I   96   Semihard QCD 2 -> 2           I    1.2350D+04   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 3.28 GeV gives sigma(parton-parton) = 5.71D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 4 ******
+        pT0 = 3.28 GeV gives sigma(parton-parton) = 2.42D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Advisory warning type 3 given after    32762 PYEXEC calls:
+     (PYROBO:) boost vector too large
+
+     Advisory warning type 3 given after    98185 PYEXEC calls:
+     (PYROBO:) boost vector too large
+
+     Advisory warning type 3 given after   207025 PYEXEC calls:
+     (PYROBO:) boost vector too large
+
+     Advisory warning type 3 given after   207025 PYEXEC calls:
+     (PYROBO:) boost vector too large
+
+     Advisory warning type 3 given after   213704 PYEXEC calls:
+     (PYROBO:) boost vector too large
+
+     Advisory warning type 3 given after   213704 PYEXEC calls:
+     (PYROBO:) boost vector too large
+
+     Advisory warning type 3 given after   356976 PYEXEC calls:
+     (PYROBO:) boost vector too large
+
+     Advisory warning type 3 given after   356976 PYEXEC calls:
+     (PYROBO:) boost vector too large
+
+     Advisory warning type 3 given after   356976 PYEXEC calls:
+     (PYROBO:) boost vector too large
+
+     Advisory warning type 3 given after   373201 PYEXEC calls:
+     (PYROBO:) boost vector too large
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I      1000000      50710080 I  5.400D+01 I
+ I  11 f + f' -> f + f' (QCD)       I       263756             0 I  1.424D+01 I
+ I  12 f + fbar -> f' + fbar'       I          107             0 I  5.778D-03 I
+ I  13 f + fbar -> g + g            I          126             0 I  6.804D-03 I
+ I  28 f + g -> f + g               I       193725             0 I  1.046D+01 I
+ I  53 g + g -> f + fbar            I        12831             0 I  6.929D-01 I
+ I  68 g + g -> g + g               I       529455             0 I  2.859D+01 I
+ I  95 Low-pT scattering            I            0       1002603 I  0.000D+00 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =        0 *************
+ ********* Total number of warnings =                          29 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00260 *********
+

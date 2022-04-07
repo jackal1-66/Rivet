@@ -1,0 +1,998 @@
+Generating 1000000 events
+Generator is Pythia6:HEAD
+Setting initial state: 2212 @ 6500.0 GeV -> <- 2212 @ 6500.0 GeV
+Setting random seed = 31415926
+Setting parameter PYTUNE = 350
+AGILe.PYTHIA: INFO  MSTP(5) param or PYTUNE meta-param has been set: calling PYTUNE *now*
+1                                                                              
+ ******************************************************************************
+ ******************************************************************************
+ **                                                                          **
+ **                                                                          **
+ **              *......*                  Welcome to the Lund Monte Carlo!  **
+ **         *:::!!:::::::::::*                                               **
+ **      *::::::!!::::::::::::::*          PPP  Y   Y TTTTT H   H III   A    **
+ **    *::::::::!!::::::::::::::::*        P  P  Y Y    T   H   H  I   A A   **
+ **   *:::::::::!!:::::::::::::::::*       PPP    Y     T   HHHHH  I  AAAAA  **
+ **   *:::::::::!!:::::::::::::::::*       P      Y     T   H   H  I  A   A  **
+ **    *::::::::!!::::::::::::::::*!       P      Y     T   H   H III A   A  **
+ **      *::::::!!::::::::::::::* !!                                         **
+ **      !! *:::!!:::::::::::*    !!       This is PYTHIA version 6.428      **
+ **      !!     !* -><- *         !!       Last date of change:  5 Sep 2013  **
+ **      !!     !!                !!                                         **
+ **      !!     !!                !!       Now is  0 Jan 2000 at  0:00:00    **
+ **      !!                       !!                                         **
+ **      !!        lh             !!       Disclaimer: this program comes    **
+ **      !!                       !!       without any guarantees. Beware    **
+ **      !!                 hh    !!       of errors and use common sense    **
+ **      !!    ll                 !!       when interpreting results.        **
+ **      !!                       !!                                         **
+ **      !!                                Copyright T. Sjostrand (2011)     **
+ **                                                                          **
+ ** An archive of program versions and documentation is found on the web:    **
+ ** http://www.thep.lu.se/~torbjorn/Pythia.html                              **
+ **                                                                          **
+ ** When you cite this program, the official reference is to the 6.4 manual: **
+ ** T. Sjostrand, S. Mrenna and P. Skands, JHEP05 (2006) 026                 **
+ ** (LU TP 06-13, FERMILAB-PUB-06-052-CD-T) [hep-ph/0603175].                **
+ **                                                                          **
+ ** Also remember that the program, to a large extent, represents original   **
+ ** physics research. Other publications of special relevance to your        **
+ ** studies may therefore deserve separate mention.                          **
+ **                                                                          **
+ ** Main author: Torbjorn Sjostrand; Department of Theoretical Physics,      **
+ **   Lund University, Solvegatan 14A, S-223 62 Lund, Sweden;                **
+ **   phone: + 46 - 46 - 222 48 16; e-mail: torbjorn@thep.lu.se              **
+ ** Author: Stephen Mrenna; Computing Division, GDS Group,                   **
+ **   Fermi National Accelerator Laboratory, MS 234, Batavia, IL 60510, USA; **
+ **   phone: + 1 - 630 - 840 - 2556; e-mail: mrenna@fnal.gov                 **
+ ** Author: Peter Skands; CERN/PH-TH, CH-1211 Geneva, Switzerland            **
+ **   phone: + 41 - 22 - 767 24 47; e-mail: peter.skands@cern.ch             **
+ **                                                                          **
+ **                                                                          **
+ ******************************************************************************
+ ******************************************************************************
+     MSTP(125)      changed from              1 to              2
+     MSTP(128)      changed from              0 to              2
+     MRPY(1)        changed from       19780503 to       31415926
+ ******************************************************************************
+ *                                                                            *
+ *   PYTUNE : Presets for underlying-event (and min-bias)                     *
+ *            Last Change : Aug 2013 - P. Skands                              *
+ *                                                                            *
+ *    350 Perugia 2011                                                        *
+ *             Tuned by P. Skands, hep-ph/1005.3457                           *
+ *             Physics Model: T. Sjostrand & P. Skands, hep-ph/0408302        *
+ *             CR by P. Skands & D. Wicke, hep-ph/0703081                     *
+ *                                                                            *
+ *     MSTP(51) =            7   PDF set                                      *
+ *     MSTP(52) =            1   PDF set internal (=1) or pdflib (=2)         *
+ *     MSTP( 3) =            1   INT switch for choice of LambdaQCD           *
+ *     MSTU(112)=            5   INT n(flavors) for LambdaQCD                 *
+ *     PARU(112)=       0.1600   INT LambdaQCD                                *
+ *     PARP( 1) =       0.1600   ME/UE LambdaQCD                              *
+ *     PARJ(81) =       0.2600   FSR LambdaQCD (inside resonance decays)      *
+ *     PARP(72) =       0.2600   IFSR LambdaQCD (outside resonance decays     *
+ *     PARP(61) =       0.2600   ISR LambdaQCD                                *
+ *     MSTP(64) =            2   ISR alphaS type                              *
+ *     PARP(64) =       1.0000   ISR renormalization scale prefactor          *
+ *     MSTP(67) =            2   ISR coherence option for 1st emission        *
+ *     MSTP(68) =            3   ISR phase space choice & ME corrections      *
+ *             (Note: MSTP(68) is not explicitly (re-)set by PYTUNE)          *
+ *     PARP(67) =       1.0000   ISR Q2max factor                             *
+ *     MSTP(72) =            2   IFSR scheme for non-decay FSR                *
+ *     PARP(71) =       1.0000   IFSR Q2max factor in non-s-channel procs     *
+ *     MSTP(70) =            0   ISR IR regularization scheme                 *
+ *     PARP(62) =       1.5000   ISR IR cutoff                                *
+ *     PARJ(82) =       1.0000   FSR IR cutoff                                *
+ *     MSTP(33) =            0   "K" switch for K-factor on/off & type        *
+ *     MSTP(81) =           21   UE model                                     *
+ *     PARP(82) =       2.9300   UE IR cutoff at reference ecm                *
+ *     PARP(89) =    7000.0000   UE IR cutoff reference ecm                   *
+ *     PARP(90) =       0.2650   UE IR cutoff ecm scaling power               *
+ *     MSTP(82) =            3   UE hadron transverse mass distribution       *
+ *     PARP(87) =       0.7000   UE qq enhancement at low pT                  *
+ *     PARP(88) =       0.5000   UE qq enh scale / pT0                        *
+ *     MSTP(88) =            0   BR composite scheme                          *
+ *     MSTP(89) =            0   BR color scheme                              *
+ *     PARP(79) =       2.0000   BR composite x enhancement                   *
+ *     PARP(80) =       0.0150   BR breakup suppression                       *
+ *     MSTP(91) =            1   BR primordial kT distribution                *
+ *     PARP(91) =       1.0000   BR primordial kT width <|kT|>                *
+ *     PARP(93) =      10.0000   BR primordial kT UV cutoff                   *
+ *     MSTP(95) =            8   FSI color (re-)connection model              *
+ *     PARP(78) =       0.0360   FSI color reconnection strength              *
+ *     PARP(77) =       1.0000   FSI color reco high-pT damping strength      *
+ *   ----------------------------------------------------------------------   *
+ *     MSTJ(11) =            5   HAD choice of fragmentation function(s)      *
+ *     PARJ( 1) =       0.0870   HAD diquark suppression                      *
+ *     PARJ( 2) =       0.1900   HAD strangeness suppression                  *
+ *     PARJ( 3) =       0.9500   HAD strange diquark suppression              *
+ *     PARJ( 4) =       0.0430   HAD vector diquark suppression               *
+ *     PARJ( 5) =       0.5000   HAD P(popcorn)                               *
+ *     PARJ( 6) =       1.0000   HAD extra popcorn B(s)-M-B(s) supp           *
+ *     PARJ( 7) =       1.0000   HAD extra popcorn B-M(s)-B supp              *
+ *     PARJ(11) =       0.3500   HAD P(vector meson), u and d only            *
+ *     PARJ(12) =       0.4000   HAD P(vector meson), contains s              *
+ *     PARJ(13) =       0.5400   HAD P(vector meson), heavy quarks            *
+ *     PARJ(14) =       0.0000   HAD P(L=1;S=0,J=1)                           *
+ *     PARJ(15) =       0.0000   HAD P(L=1;S=1,J=0)                           *
+ *     PARJ(16) =       0.0000   HAD P(L=1;S=1,J=1)                           *
+ *     PARJ(17) =       0.0000   HAD P(L=1;S=1,J=2)                           *
+ *     PARJ(18) =       1.0000   HAD extra spin-3/2 baryon supp               *
+ *     PARJ(19) =       1.0000   HAD extra leading-baryon supp                *
+ *     PARJ(21) =       0.3300   HAD fragmentation pT                         *
+ *     PARJ(25) =       0.6300   HAD eta0 suppression                         *
+ *     PARJ(26) =       0.1200   HAD eta0' suppression                        *
+ *     PARJ(41) =       0.3500   HAD string parameter a(Meson)                *
+ *     PARJ(42) =       0.8000   HAD string parameter b                       *
+ *     PARJ(45) =       0.5500   HAD string a(Baryon)-a(Meson)                *
+ *     PARJ(46) =       1.0000   HAD Lund(=0)-Bowler(=1) rQ (rc)              *
+ *     PARJ(47) =       1.0000   HAD Lund(=0)-Bowler(=1) rb                   *
+ *                                                                            *
+ ******************************** END OF PYTUNE *******************************
+     MSTP(5)        changed from              0 to              0
+1****************** PYINIT: initialization of PYTHIA routines *****************
+
+ ==============================================================================
+ I                                                                            I
+ I             PYTHIA will be initialized for a p+ on p+ collider             I
+ I                  at  13000.000 GeV center-of-mass energy                   I
+ I                                                                            I
+ ==============================================================================
+
+ ******** PYMAXI: summary of differential cross-section maximum search ********
+
+           ==========================================================
+           I                                      I                 I
+           I  ISUB  Subprocess name               I  Maximum value  I
+           I                                      I                 I
+           ==========================================================
+           I                                      I                 I
+           I   95   Low-pT scattering             I    5.4002D+01   I
+           I   96   Semihard QCD 2 -> 2           I    1.1676D+04   I
+           I                                      I                 I
+           ==========================================================
+
+ ****** PYMULT: initialization of multiple interactions for MSTP(82) = 3 ******
+        pT0 = 3.45 GeV gives sigma(parton-parton) = 5.30D+02 mb: accepted
+
+ ****** PYMIGN: initialization of multiple interactions for MSTP(82) = 3 ******
+        pT0 = 3.45 GeV gives sigma(parton-parton) = 2.25D+02 mb: accepted
+
+ ********************** PYINIT: initialization completed **********************
+
+     Error type 4 has occured after     1782 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after     4163 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after     5197 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after     7059 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after     9370 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after    13764 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after    13866 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after    14149 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 9 has occured after    14238 PYEXEC calls:
+     (PYPTIS:) Weight   2.7040E+00 above unity
+
+     Error type 4 has occured after    18672 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after    19067 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after    22380 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after    23594 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after    25625 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after    37419 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Advisory warning type 9 given after    38491 PYEXEC calls:
+     (PYPTIS:) no phase space left for massive quark creation. Gave up trying.
+
+     Error type 4 has occured after    43451 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Advisory warning type 9 given after    46332 PYEXEC calls:
+     (PYPTIS:) no phase space left for massive quark creation. Gave up trying.
+
+     Error type 4 has occured after    48152 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 9 has occured after    48972 PYEXEC calls:
+     (PYPTIS:) Weight   6.6331E+00 above unity
+
+     Error type 4 has occured after    52702 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Advisory warning type 1 given after    64375 PYEXEC calls:
+     (PYSTRF:) failed to converge on JRF
+
+     Advisory warning type 9 given after    65183 PYEXEC calls:
+     (PYPTIS:) no phase space left for massive quark creation. Gave up trying.
+
+     Error type 4 has occured after    66204 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Advisory warning type 9 given after    66388 PYEXEC calls:
+     (PYPTIS:) no phase space left for massive quark creation. Gave up trying.
+
+     Advisory warning type 9 given after    67745 PYEXEC calls:
+     (PYPTIS:) no phase space left for massive quark creation. Gave up trying.
+
+     Error type 4 has occured after    74751 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after    75465 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Advisory warning type 9 given after    75699 PYEXEC calls:
+     (PYPTIS:) no phase space left for massive quark creation. Gave up trying.
+
+     Advisory warning type 9 given after    78615 PYEXEC calls:
+     (PYPTIS:) no phase space left for massive quark creation. Gave up trying.
+
+     Error type 4 has occured after    80305 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after    81133 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Advisory warning type 9 given after    82705 PYEXEC calls:
+     (PYPTIS:) Weight   2.4972E+00 above unity
+
+     Error type 4 has occured after    85488 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Advisory warning type 9 given after    88769 PYEXEC calls:
+     (PYPTIS:) no phase space left for massive quark creation. Gave up trying.
+
+     Error type 4 has occured after    89896 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 9 has occured after    96494 PYEXEC calls:
+     (PYPTIS:) Weight   1.3017E+00 above unity
+
+     Error type 4 has occured after   100343 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   100622 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   105085 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   105290 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   110863 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   112132 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   116767 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   128052 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   132131 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   144893 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   146617 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   150133 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   152123 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   153815 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   157463 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   160018 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   171704 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   176979 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   177756 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   184230 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   184300 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   192760 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   192789 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   195254 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   197873 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   200920 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   203056 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   205088 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   207750 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   218978 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   226142 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   236859 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   238957 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   239212 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   243721 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   247548 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   252691 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   254019 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   257663 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   261842 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   263499 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   263858 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   264625 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   265882 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   277723 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   279712 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   281616 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 9 has occured after   281785 PYEXEC calls:
+     (PYPTIS:) Weight   1.1451E+00 above unity
+
+     Error type 4 has occured after   282968 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   284020 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   294456 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   296680 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   313238 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   316352 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   319906 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   320521 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   321922 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   329168 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   338790 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   338958 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   341586 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   341833 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   345780 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   359996 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   374135 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   375656 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   379517 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   391610 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   391989 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   396882 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   399139 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   399664 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   411067 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   414586 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   431269 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   431608 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   436143 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   441612 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   441993 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   445117 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   446611 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   455099 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   465877 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   470394 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   471395 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   471531 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   475918 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   475994 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   477203 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   482820 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   487251 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   488552 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   497949 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   498280 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   502554 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   504588 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   505382 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   510333 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   513170 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   513205 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   523682 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   531504 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   536088 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   551480 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   564987 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   570087 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   571032 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   572883 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   574789 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   575118 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   575456 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   579984 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   582126 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   583516 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   584511 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   586455 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   597800 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   600277 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   602550 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   604724 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   606315 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   612713 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   620013 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   620957 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   623141 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   624033 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   624714 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   627100 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 9 has occured after   643147 PYEXEC calls:
+     (PYPTIS:) Weight   1.0621E+00 above unity
+
+     Error type 4 has occured after   643921 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   646974 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   647072 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   647228 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   648344 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   649150 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   652716 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   659527 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   660070 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   662185 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   668708 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   682105 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   685467 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   689463 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   691459 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   692545 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   692785 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   693769 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   703529 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   705322 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   706207 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   706964 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   709202 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   712842 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   719888 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   721403 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   725243 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   725287 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   730593 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   731883 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   733355 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   741590 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   743421 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   753706 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   754178 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   757031 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   766261 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   766418 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   767392 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   769217 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   769683 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 9 has occured after   770049 PYEXEC calls:
+     (PYPTIS:) Weight   4.0502E+01 above unity
+
+     Error type 4 has occured after   774779 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   774879 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   775489 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   782263 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   786462 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   788301 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   790660 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   791295 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   792428 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   793580 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   801894 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   807277 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   811642 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   822976 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   824946 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   825755 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   830615 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   830626 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   832134 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   835187 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   837324 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   840240 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   844319 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   848738 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   848908 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   853042 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   855571 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   859046 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   862637 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   869344 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   877690 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   881160 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   886269 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   886386 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   888258 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   893606 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   902678 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   906091 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   908046 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   911609 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   929515 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   930213 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   930856 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   932688 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   932732 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   933572 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   934667 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   938131 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   944618 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   951492 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   955135 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   955324 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   960453 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   978182 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   987498 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   988091 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   992979 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   995268 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   995809 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   995828 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+
+     Error type 4 has occured after   996385 PYEXEC calls:
+     (PYSTRF:) caught in infinite loop
+1********* PYSTAT:  Statistics on Number of Events and Cross-sections *********
+
+ ==============================================================================
+ I                                  I                            I            I
+ I            Subprocess            I      Number of points      I    Sigma   I
+ I                                  I                            I            I
+ I----------------------------------I----------------------------I    (mb)    I
+ I                                  I                            I            I
+ I N:o Type                         I    Generated         Tried I            I
+ I                                  I                            I            I
+ ==============================================================================
+ I                                  I                            I            I
+ I   0 All included subprocesses    I      1000000      69042261 I  5.400D+01 I
+ I  11 f + f' -> f + f' (QCD)       I       199325             0 I  1.076D+01 I
+ I  12 f + fbar -> f' + fbar'       I          143             0 I  7.722D-03 I
+ I  13 f + fbar -> g + g            I          165             0 I  8.910D-03 I
+ I  28 f + g -> f + g               I       215187             0 I  1.162D+01 I
+ I  53 g + g -> f + fbar            I        14524             0 I  7.843D-01 I
+ I  68 g + g -> g + g               I       570656             0 I  3.082D+01 I
+ I  95 Low-pT scattering            I            0       1000290 I  0.000D+00 I
+ I                                  I                            I            I
+ ==============================================================================
+
+ ********* Total number of errors, excluding junctions =        0 *************
+ ********* Total number of errors, including junctions =      259 *************
+ ********* Total number of warnings =                         109 *************
+ ********* Fraction of events that fail fragmentation cuts =  0.00029 *********
+
