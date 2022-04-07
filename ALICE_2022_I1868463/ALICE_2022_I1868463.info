@@ -4,13 +4,13 @@ Summary: $\Sigma_c^{0,+,++}$ and $\Lambda_c$ from $\Sigma_c^{0,+,++}$ analysis
 Experiment: ALICE
 Collider: LHC
 InspireID: 1868463
-Status: UNVALIDATED NOTREENTRY NOHEPDATA SINGLEWEIGHT UNPHYSICAL
+Status: UNVALIDATED
 Authors:
  - Marco Giacalone <mgiacalo@bo.infn.it>
 References:
- - 'Example: Eur.Phys.J. C76 (2016) no.7, 392'
- - 'Example: DOI:10.1140/epjc/s10052-016-4184-8'
- - 'Example: arXiv:1605.03814'
+ - 'Phys.Rev.Lett. 128 (2022) 012001, 2022'
+ - 'DOI:10.1103/PhysRevLett.128.012001'
+ - 'arXiv:2106.08278'
 #RunInfo: <Describe event types, cuts, and other general generator config tips.>
 Beams: [p+, p+]
 Energies: [[6500,6500]]
@@ -27,5 +27,5 @@ Keywords: [pp collisions, 13 TeV, charm production]
 BibKey: 
 BibTeX: ''
 ToDo:
- - Implement the analysis, test it, remove this ToDo, and mark as VALIDATED :-)
+ - test it and mark as VALIDATED :-)
 
