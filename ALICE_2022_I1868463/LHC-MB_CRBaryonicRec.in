@@ -44,7 +44,7 @@ read snippets/SoftTune.in
 #Enable Colour Reconnection
 #set /Herwig/Hadronization/ColourReconnector:Algorithm Plain
 #set /Herwig/Hadronization/ColourReconnector:ReconnectionProbability 0.5 #Plain Reconnection
-set /Herwig/Hadronization/ColourReconnector:Algorithm BaryonicReco #Sets Baryonic algorithm (default is plain in HERWIG 7.1.5)
+set /Herwig/Hadronization/ColourReconnector:Algorithm Baryonic #Sets Baryonic algorithm (default is plain in HERWIG 7.1.5)
 set /Herwig/Hadronization/ColourReconnector:ReconnectionProbabilityBaryonic 0.5 #Baryonic reconnection
 
 #Settings for MPI model by Patrick Kirchgaesser
@@ -54,8 +54,8 @@ set /Herwig/Hadronization/PartonSplitter:SplitPwtSquark 0.824
 #weight for cluster fission to q-s sbarq-bar
 set /Herwig/Hadronization/HadronSelector:PwtSquark 0.291 
 #Values tuned of the mpi model for 7 TeV pp
-set /Herwig/UnderlyingEvent/MPIHander:pTmin0 3.053
-set /Herwig/UnderlyingEvent/MPIHander:InvRadius 1.282
+set /Herwig/UnderlyingEvent/MPIHandler:pTmin0 3.053
+set /Herwig/UnderlyingEvent/MPIHandler:InvRadius 1.282
 
 
 
