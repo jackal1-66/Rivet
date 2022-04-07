@@ -92,5 +92,5 @@ set /Herwig/Analysis/HepMCFile:Filename /tmp/Herwig7Bar.fifo
 # Save run for later usage with 'Herwig run'
 ##################################################
 cd /Herwig/Generators
-saverun LHC-MB_cenh EventGenerator
+saverun LHC-MB_CRBaryonicRec EventGenerator
  
