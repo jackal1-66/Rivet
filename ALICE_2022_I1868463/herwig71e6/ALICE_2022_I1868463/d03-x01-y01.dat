@@ -1,0 +1,71 @@
+# BEGIN PLOT
+Legend=1
+LogY=1
+Title=Differential $\Sigma_c$ production cross section vs $p_T$
+XLabel=$p_T$ [GeV/$c$]
+YLabel=$\Sigma_c^{0,+,++}$ $\sigma$
+DrawOnly=/ALICE_2022_I1868463/d03-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/herwig7pp1e6.yoda/ALICE_2022_I1868463/d03-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/herwig7pp1e6bar.yoda/ALICE_2022_I1868463/d03-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/herwig7pp1e6plain.yoda/ALICE_2022_I1868463/d03-x01-y01
+LegendOnly=/ALICE_2022_I1868463/d03-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/herwig7pp1e6.yoda/ALICE_2022_I1868463/d03-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/herwig7pp1e6bar.yoda/ALICE_2022_I1868463/d03-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/herwig7pp1e6plain.yoda/ALICE_2022_I1868463/d03-x01-y01
+RatioPlot=1
+RatioPlotReference=/ALICE_2022_I1868463/d03-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /ALICE_2022_I1868463/d03-x01-y01
+ConnectBins=0
+ErrorBars=1
+IsRef=1
+Path=/ALICE_2022_I1868463/d03-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	1.435300e+01	4.174060e+00	4.172611e+00
+4.000000e+00	6.000000e+00	3.543500e+00	7.012888e-01	7.005586e-01
+6.000000e+00	8.000000e+00	7.223600e-01	1.418862e-01	1.416444e-01
+8.000000e+00	1.200000e+01	1.335700e-01	2.795059e-02	2.783474e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/herwig7pp1e6.yoda/ALICE_2022_I1868463/d03-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/herwig7pp1e6.yoda/ALICE_2022_I1868463/d03-x01-y01
+ScaledBy=2.94336467714724007e-02
+Title=Herwig7 (default)
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	1.913187e+00	1.677976e-01	1.677976e-01
+4.000000e+00	6.000000e+00	1.030177e+00	1.231298e-01	1.231298e-01
+6.000000e+00	8.000000e+00	5.739560e-01	9.190653e-02	9.190653e-02
+8.000000e+00	1.200000e+01	1.398098e-01	3.207457e-02	3.207457e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/herwig7pp1e6bar.yoda/ALICE_2022_I1868463/d03-x01-y01
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/herwig7pp1e6bar.yoda/ALICE_2022_I1868463/d03-x01-y01
+ScaledBy=2.93492142498373923e-02
+Title=Herwig7 (Baryonic Rec 0.5)
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	2.744152e+00	2.006722e-01	2.006722e-01
+4.000000e+00	6.000000e+00	1.482136e+00	1.474780e-01	1.474780e-01
+6.000000e+00	8.000000e+00	6.750320e-01	9.952802e-02	9.952802e-02
+8.000000e+00	1.200000e+01	1.467461e-01	3.281342e-02	3.281342e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/herwig7pp1e6plain.yoda/ALICE_2022_I1868463/d03-x01-y01
+ErrorBars=1
+LineColor=green
+LineStyle=solid
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/herwig7pp1e6plain.yoda/ALICE_2022_I1868463/d03-x01-y01
+ScaledBy=2.94336374651199030e-02
+Title=Herwig7 (Plain Rec 0.5)
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+00	4.000000e+00	1.913186e+00	1.677976e-01	1.677976e-01
+4.000000e+00	6.000000e+00	1.000744e+00	1.213580e-01	1.213580e-01
+6.000000e+00	8.000000e+00	4.267878e-01	7.925249e-02	7.925249e-02
+8.000000e+00	1.200000e+01	1.766018e-01	3.604870e-02	3.604870e-02
+# END HISTO1D
+
