@@ -23,40 +23,39 @@ namespace Rivet {
       declare(UnstableParticles(), "UFS");
 
       // Book histograms
-      _h_D0         = bookHisto1D(1, 1, 1);                                   // production cross section of D0 meson
-      _h_Dplus      = bookHisto1D(2, 1, 1);                                   // production cross section of Dplus meson
-      _h_Dstar      = bookHisto1D(3, 1, 1);                                   // production cross section of Dstar meson
-      _h_Ds         = bookHisto1D(4, 1, 1);                                   // production cross section of Ds meson
-      _h_DplusonD0  = bookScatter2D(5, 1, 1);                                 // ratio of production cross section between Dplus and D0
-      _h_DstaronD0  = bookScatter2D(6, 1, 1);                                 // ratio of production cross section between Dstar and D0
-      _h_DsonD0     = bookScatter2D(7, 1, 1);                                 // ratio of production cross section between Ds and D0
-      _h_DsonDplus  = bookScatter2D(8, 1, 1);                                 // ratio of production cross section between Ds and Dplus
-      _h_D0int      = bookHisto1D(9,1,1);                                     // pt-integrated production cross section of D0 meson
-      _h_Dplusint   = bookHisto1D(10,1,1);                                    // pt-integrated production cross section of Dplus meson
-      _h_Dstarint   = bookHisto1D(11,1,1);                                    // pt-integrated production cross section of Dstar meson
-      _h_Dsint      = bookHisto1D(12,1,1);                                    // pt-integrated production cross section of Ds meson
-      _h_cc         = bookHisto1D(13,1,1);                                    // integrated cross section of ccbar
-      _h_ptd0       = bookHisto1D(14,1,1);                                    // mean pt of prompt D0
-      _h_D0full     = bookHisto1D(15,1,1);                                    // integrated cross section for D0 in full rapidity
-      _h_ccfull     = bookHisto1D(16,1,1);                                    // integrated cross section for ccbar in full rapidity
-      _h_wei        = bookHisto1D("_h_wei",1,6999.5,7000.5, "Weight dummy");  // histogram used to calculate D0 mean pt (necessary to store an integer number for event normalisation, i.e. to still be able to compute <pT> from multiple parallel MC jobs)
-      _h_D0dummy    = bookHisto1D("TMP/_h_D0dummy",     refData(5,1,1));      // used to make DplusonD0
-      _h_D0dummy1   = bookHisto1D("TMP/_h_D0dummy1",    refData(7,1,1));      // used to make DsonD0
-      _h_Dplusdummy = bookHisto1D("TMP/_h_Dplusdummy",  refData(8,1,1));      // used to make DsonDplus
+      book(_h_D0,1, 1, 1);                                      // production cross section of D0 meson
+      book(_h_Dplus,2, 1, 1);                                   // production cross section of Dplus meson
+      book(_h_Dstar,3, 1, 1);                                   // production cross section of Dstar meson
+      book(_h_Ds,4, 1, 1);                                      // production cross section of Ds meson
+      book(_h_DplusonD0,5, 1, 1);                               // ratio of production cross section between Dplus and D0
+      book(_h_DstaronD0,6, 1, 1);                               // ratio of production cross section between Dstar and D0
+      book(_h_DsonD0,7, 1, 1);                                  // ratio of production cross section between Ds and D0
+      book(_h_DsonDplus,8, 1, 1);                               // ratio of production cross section between Ds and Dplus
+      book(_h_D0int,9,1,1);                                     // pt-integrated production cross section of D0 meson
+      book(_h_Dplusint,10,1,1);                                 // pt-integrated production cross section of Dplus meson
+      book(_h_Dstarint,11,1,1);                                 // pt-integrated production cross section of Dstar meson
+      book(_h_Dsint,12,1,1);                                    // pt-integrated production cross section of Ds meson
+      book(_h_cc,13,1,1);                                       // integrated cross section of ccbar
+      book(_h_ptd0,14,1,1);                                     // mean pt of prompt D0
+      book(_h_D0full,15,1,1);                                   // integrated cross section for D0 in full rapidity
+      book(_h_ccfull,16,1,1);                                   // integrated cross section for ccbar in full rapidity
+      book(_h_wei,"_h_wei",1,6999.5,7000.5, "Weight dummy");    // histogram used to calculate D0 mean pt (necessary to store an integer number for event normalisation, i.e. to still be able to compute <pT> from multiple parallel MC jobs)
+      book(_h_D0dummy,"TMP/_h_D0dummy",refData(5,1,1));         // used to make DplusonD0
+      book(_h_D0dummy1,"TMP/_h_D0dummy1",refData(7,1,1));       // used to make DsonD0
+      book(_h_Dplusdummy,"TMP/_h_Dplusdummy",refData(8,1,1));   // used to make DsonDplus
     }
 
 
     /// Perform the per-event analysis
     /*PDG code IDs used inside the foreach cycle: 421 = D0, 411 = D+, 413 = D*+, 431 = Ds+ */
     void analyze(const Event& event) {
-        const double weight = event.weight();
         const UnstableParticles& ufs = apply<UnstableParticles>(event, "UFS");
         
         foreach (const Particle& p, ufs.particles()) {
           if(p.abspid() == 421){
               if(not p.fromBottom()){
-                  _h_D0full         ->fill(7.000000e+03/GeV,weight);    
-                  _h_ccfull         ->fill(7.000000e+03/GeV,weight);}
+                  _h_D0full         ->fill(7.000000e+03/GeV);    
+                  _h_ccfull         ->fill(7.000000e+03/GeV);}
           }
           if(p.absrap() < 0.5){
             if(p.fromBottom())
@@ -64,26 +63,26 @@ namespace Rivet {
             else
                 {    
                 if(p.abspid() == 421){
-                    _h_D0           ->fill(p.pT()/GeV, weight); 
-                    _h_D0dummy      ->fill(p.pT()/GeV, weight);
-                    _h_D0dummy1     ->fill(p.pT()/GeV, weight);
-                    _h_D0int        ->fill(7.000000e+03/GeV, weight);
-                    _h_cc           ->fill(7.000000e+03/GeV, weight);
-                    _h_ptd0         ->fill(7.000000e+03/GeV,p.pT()/GeV,weight);
-                    _h_wei          ->fill(7.000000e+03/GeV,weight);
+                    _h_D0           ->fill(p.pT()/GeV); 
+                    _h_D0dummy      ->fill(p.pT()/GeV);
+                    _h_D0dummy1     ->fill(p.pT()/GeV);
+                    _h_D0int        ->fill(7.000000e+03/GeV);
+                    _h_cc           ->fill(7.000000e+03/GeV);
+                    _h_ptd0         ->fill(7.000000e+03/GeV,p.pT()/GeV);
+                    _h_wei          ->fill(7.000000e+03/GeV);
                     }
                 else if(p.abspid() == 411){
-                    _h_Dplus        ->fill(p.pT()/GeV, weight);
-                    _h_Dplusdummy   ->fill(p.pT()/GeV, weight);
-                    _h_Dplusint     ->fill(7.000000e+03/GeV, weight); 
+                    _h_Dplus        ->fill(p.pT()/GeV);
+                    _h_Dplusdummy   ->fill(p.pT()/GeV);
+                    _h_Dplusint     ->fill(7.000000e+03/GeV); 
                     }
                 else if(p.abspid() == 413){
-                    _h_Dstar        ->fill(p.pT()/GeV, weight); 
-                    _h_Dstarint     ->fill(7.000000e+03/GeV, weight);    
+                    _h_Dstar        ->fill(p.pT()/GeV); 
+                    _h_Dstarint     ->fill(7.000000e+03/GeV);    
                     }
                 else if(p.abspid() == 431){
-                    _h_Ds           ->fill(p.pT()/GeV, weight);
-                    _h_Dsint        ->fill(7.000000e+03/GeV, weight); 
+                    _h_Ds           ->fill(p.pT()/GeV);
+                    _h_Dsint        ->fill(7.000000e+03/GeV); 
                 }    
                 }
         }
