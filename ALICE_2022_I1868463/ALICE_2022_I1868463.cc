@@ -47,20 +47,23 @@ namespace Rivet {
       const UnstableParticles& up = apply<UnstableParticles>(event, "up");
       
       for (const Particle& p : up.particles()) {
-        if(p.abspid()==4222 || p.abspid()==4212 || p.abspid()==4112)
-          _h_Sc->fill(p.pT()/GeV);
-        else if(p.abspid()==4122){
-          _h_Lc->fill(p.pT()/GeV);
-          _h_Lc4Ratio->fill(p.pT()/GeV);
-          if(p.hasAncestor(4222) || p.hasAncestor(4212) || p.hasAncestor(4112) || p.hasAncestor(-4222) || p.hasAncestor(-4212) || p.hasAncestor(-4112))
-            _h_LcfromSc->fill(p.pT()/GeV);
-        }
-        else if(p.abspid()==421){
-          _h_D0->fill(p.pT()/GeV);
-          _h_D04Sc->fill(p.pT()/GeV);
-        }  
-      }
-      
+        if(p.fromBottom())
+          continue;
+        else{
+          if(p.abspid()==4222 || p.abspid()==4212 || p.abspid()==4112)
+            _h_Sc->fill(p.pT()/GeV);
+          else if(p.abspid()==4122){
+            _h_Lc->fill(p.pT()/GeV);
+            _h_Lc4Ratio->fill(p.pT()/GeV);
+            if(p.hasAncestor(4222) || p.hasAncestor(4212) || p.hasAncestor(4112) || p.hasAncestor(-4222) || p.hasAncestor(-4212) || p.hasAncestor(-4112))
+              _h_LcfromSc->fill(p.pT()/GeV);
+          }
+          else if(p.abspid()==421){
+            _h_D0->fill(p.pT()/GeV);
+            _h_D04Sc->fill(p.pT()/GeV);
+          }
+        }    
+      }      
     }
 
 
