@@ -39,7 +39,7 @@ namespace Rivet {
       book(_h_ptd0,14,1,1);                                     // mean pt of prompt D0
       book(_h_D0full,15,1,1);                                   // integrated cross section for D0 in full rapidity
       book(_h_ccfull,16,1,1);                                   // integrated cross section for ccbar in full rapidity
-      book(_h_wei,"_h_wei",1,6999.5,7000.5, "Weight dummy");    // histogram used to calculate D0 mean pt (necessary to store an integer number for event normalisation, i.e. to still be able to compute <pT> from multiple parallel MC jobs)
+      book(_h_wei,"_h_wei");    				// Counter used to calculate D0 mean pt (necessary to store an integer number for event normalisation, i.e. to still be able to compute <pT> from multiple parallel MC jobs)
       book(_h_D0dummy,"TMP/_h_D0dummy",refData(5,1,1));         // used to make DplusonD0
       book(_h_D0dummy1,"TMP/_h_D0dummy1",refData(7,1,1));       // used to make DsonD0
       book(_h_Dplusdummy,"TMP/_h_Dplusdummy",refData(8,1,1));   // used to make DsonDplus
@@ -51,7 +51,7 @@ namespace Rivet {
     void analyze(const Event& event) {
         const UnstableParticles& ufs = apply<UnstableParticles>(event, "UFS");
         
-        foreach (const Particle& p, ufs.particles()) {
+        for(const Particle& p : ufs.particles()) {
           if(p.abspid() == 421){
               if(not p.fromBottom()){
                   _h_D0full         ->fill(7.000000e+03/GeV);    
@@ -69,7 +69,7 @@ namespace Rivet {
                     _h_D0int        ->fill(7.000000e+03/GeV);
                     _h_cc           ->fill(7.000000e+03/GeV);
                     _h_ptd0         ->fill(7.000000e+03/GeV,p.pT()/GeV);
-                    _h_wei          ->fill(7.000000e+03/GeV);
+                    _h_wei          ->fill();
                     }
                 else if(p.abspid() == 411){
                     _h_Dplus        ->fill(p.pT()/GeV);
@@ -116,7 +116,7 @@ namespace Rivet {
             // 0.542 accounts for the fraction of charm quarks hadronizing into D0 mesons, the ALICE uncertainty on such a factor (0.542 ± 0.024) is not propagated here.
             // 1.034 is used to include the correction of the different shapes of the rapidity distributions of D0 and ccbar, the ALICE uncertainty on such a factor (1.034 ± 0.015, i.e. 1.5 percentage point of uncertainty) is not propagated here.
       
-      scale(_h_ptd0,        1/_h_wei->bin(0).area()); //bin(0).area() returns the number of events used to calculate the mean pT
+      if( _h_wei->effNumEntries()!=0.) scale(_h_ptd0,        1/ *_h_wei); //scaled for the number of events used to calculate the mean pT
       
       scale(_h_D0full,      crossSection()/(millibarn*2*sumOfWeights())); 
             // NOTE : for the ALICE data, the y extrapolation from |y|<0.5 to full-y phase space is done with an FONLL-based factor (8.56 +2.51 -0.42). Here in MC we simply use direct MC outcome over full y.
@@ -131,7 +131,8 @@ namespace Rivet {
 
     /// @name Histograms
     //@{
-    Histo1DPtr _h_D0, _h_Dplus, _h_Dstar, _h_Ds, _h_D0int, _h_Dplusint, _h_wei, _h_Dstarint, _h_Dsint, _h_cc, _h_D0full, _h_D0dummy, _h_D0dummy1, _h_Dplusdummy , _h_ccfull, _h_ptd0;
+    CounterPtr _h_wei;
+    Histo1DPtr _h_D0, _h_Dplus, _h_Dstar, _h_Ds, _h_D0int, _h_Dplusint, _h_Dstarint, _h_Dsint, _h_cc, _h_D0full, _h_D0dummy, _h_D0dummy1, _h_Dplusdummy , _h_ccfull, _h_ptd0;
     Scatter2DPtr _h_DplusonD0, _h_DstaronD0, _h_DsonD0, _h_DsonDplus;
     //@}
 
