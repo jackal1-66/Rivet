@@ -1,0 +1,16 @@
+#Parameters for enhanced CR by Christiansen and Skands
+StringPT:sigma = 0.335
+StringZ:aLund = 0.36
+StringZ:bLund = 0.56
+StringFlav:probQQtoQ = 0.078
+StringFlav:ProbStoUD = 0.2
+StringFlav:probQQ1toQQ0join = 0.0275,0.0275,0.0275,0.0275
+MultiPartonInteractions:pT0Ref = 2.12
+BeamRemnants:remnantMode = 1
+BeamRemnants:saturation = 5
+ColourReconnection:mode = 1
+ColourReconnection:allowDoubleJunRem = off
+ColourReconnection:m0 = 2.9
+ColourReconnection:allowJunctions = on
+ColourReconnection:junctionCorrection = 1.43
+ColourReconnection:timeDilationMode = 0
