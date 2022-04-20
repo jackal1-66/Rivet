@@ -1,13 +1,11 @@
 #Example of use 
 Jobtag = {"comment: ALICE_2022_I1868463 Rivet analysis: Pythia8 Monash 2013  @ 13000 GeV"};
 
-#InputDataType = "NONE";
+InputDataType = "NONE";
 
 OutputDir = "/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/Simulations/P8Monash/#alien_counter_03i#";
 
-#Use this version of AliGenerators for Rivet 3.1.1, otherwise the GRID run might not work. For Rivet standalone 
-#the version Rivet:3.1.1-alice1 can be used
-Packages = {"VO_ALICE@AliGenerators::v20200713-1"};
+Packages = {"VO_ALICE@AliGenerators::v20220412-1","VO_ALICE@GMP::v6.2.1-9"};
   
 InputFile = {
             "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/ALICE_2022_I1868463.cc",
@@ -22,13 +20,13 @@ Arguments = "-a ALICE_2022_I1868463 -g Pythia8 -t 14 -s 13000";
 Split = "production:1-250";
 SplitArguments = "-n 100000";
 
-TTL = "72000";
+TTL = "25000";
 
-#SplitMaxInputFileNumber = "10";
+SplitMaxInputFileNumber = "10";
 
-#InputDataListFormat = "xml-single";
+InputDataListFormat = "xml-single";
 
-#InputDataList = "wn.xml";
+InputDataList = "wn.xml";
 
 Output = {"log_archive.zip:std*@disk=2","Rivet.yoda@disk=2"};
 
@@ -38,5 +36,5 @@ JDLVariables = {"Packages","OutputDir"};
 
 Workdirectorysize = {"10000MB"};
 
-#MasterResubmitThreshold="99%";
+MasterResubmitThreshold="99%";
 
