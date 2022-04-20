@@ -1,0 +1,63 @@
+# BEGIN PLOT
+Legend=1
+LogY=1
+Title=Mean $p_T$ of prompt $D^0$ ($|y|<0.5$). 
+XLabel=$E$ = 7 TeV
+YLabel=$\langle p_T \rangle$ [GeV/c]
+ConnectBins=0
+YMax=10
+LegendYPos=0.95
+LegendXPos=0.45
+DrawOnly=/ALICE_2017_I1511870/d14-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2017_I1511870/pythia8pp1e6R3.yoda/ALICE_2017_I1511870/d14-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2017_I1511870/pythia8pp1e6mode0R3.yoda/ALICE_2017_I1511870/d14-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2017_I1511870/pythia8pp1e6mode2R3.yoda/ALICE_2017_I1511870/d14-x01-y01
+LegendOnly=/ALICE_2017_I1511870/d14-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2017_I1511870/pythia8pp1e6R3.yoda/ALICE_2017_I1511870/d14-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2017_I1511870/pythia8pp1e6mode0R3.yoda/ALICE_2017_I1511870/d14-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2017_I1511870/pythia8pp1e6mode2R3.yoda/ALICE_2017_I1511870/d14-x01-y01
+RatioPlot=1
+RatioPlotReference=/ALICE_2017_I1511870/d14-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /ALICE_2017_I1511870/d14-x01-y01
+ConnectBins=0
+ErrorBars=1
+IsRef=1
+Path=/ALICE_2017_I1511870/d14-x01-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+6.999500e+03	7.000500e+03	2.190000e+00	7.211103e-02	7.211103e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2017_I1511870/pythia8pp1e6R3.yoda/ALICE_2017_I1511870/d14-x01-y01
+ErrorBars=1
+LineColor=red
+LineStyle=solid
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2017_I1511870/pythia8pp1e6R3.yoda/ALICE_2017_I1511870/d14-x01-y01
+ScaledBy=6.66933440042683694e-05
+Title=Pythia 8 Monash
+# xlow	 xhigh	 val	 errminus	 errplus
+6.999500e+03	7.000500e+03	2.595746e+00	2.764842e-02	2.764842e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2017_I1511870/pythia8pp1e6mode0R3.yoda/ALICE_2017_I1511870/d14-x01-y01
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2017_I1511870/pythia8pp1e6mode0R3.yoda/ALICE_2017_I1511870/d14-x01-y01
+ScaledBy=7.90576330144675434e-05
+Title=Pythia 8 ECR Mode0
+# xlow	 xhigh	 val	 errminus	 errplus
+6.999500e+03	7.000500e+03	2.457046e+00	2.909533e-02	2.909533e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2017_I1511870/pythia8pp1e6mode2R3.yoda/ALICE_2017_I1511870/d14-x01-y01
+ErrorBars=1
+LineColor=green
+LineStyle=solid
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2017_I1511870/pythia8pp1e6mode2R3.yoda/ALICE_2017_I1511870/d14-x01-y01
+ScaledBy=8.48032564450474833e-05
+Title=Pythia 8 ECR Mode2
+# xlow	 xhigh	 val	 errminus	 errplus
+6.999500e+03	7.000500e+03	2.493790e+00	3.136314e-02	3.136314e-02
+# END HISTO1D
+
