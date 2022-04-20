@@ -3,7 +3,7 @@ Jobtag = {"comment: ALICE_2022_I1868463 Rivet analysis: Pythia8 Monash 2013 ECR 
 
 #InputDataType = "NONE";
 
-OutputDir = "/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/Simulations/P8Mode0/#alien_counter_03i#";
+OutputDir = "/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/Simulations/P8$1/#alien_counter_03i#";
 
 #Use this version of AliGenerators for Rivet 3.1.1, otherwise the GRID run might not work. For Rivet standalone 
 #the version Rivet:3.1.1-alice1 can be used
@@ -14,10 +14,12 @@ InputFile = {
             "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/ALICE_2022_I1868463.info",
             "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/ALICE_2022_I1868463.plot",
             "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/ALICE_2022_I1868463.yoda",
+	    "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/mode0.par",
+	    "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/mode2.par",
             };
 
-Executable = "/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/Bash_RunRivet_common.sh";
-Arguments = "-a ALICE_2022_I1868463 -g Pythia8 -t 14 -s 13000";
+Executable = "/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/Bash_RunRivet_commonPar.sh";
+Arguments = "-a ALICE_2022_I1868463 -g Pythia8 -t 14 -s 13000 -p $1.par";
 
 Split = "production:1-250";
 SplitArguments = "-n 100000";
