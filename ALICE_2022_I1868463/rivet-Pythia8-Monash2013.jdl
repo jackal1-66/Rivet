@@ -30,7 +30,7 @@ TTL = "72000";
 
 #InputDataList = "wn.xml";
 
-Output = {"log_archive.zip:std*@disk=2","Rivet.yoda@disk=2"};
+Output = {"log_archive.zip:std*@disk=1","Rivet.yoda@disk=1"};
 
 Validationcommand = "/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/Bash_RivetValidation.sh";
 
