@@ -515,7 +515,7 @@ Pythia6)
 Pythia8)
 	echo "Run-Rivet [3.a] - Running Pythia 8 simulation tune $GENTUNE with sqrts = $SQRTS GeV, $NEV events"
     if [ "$PAR" = "mode0.par" ] || [ "$PAR" = "mode2.par" ]; then
-        run-pythia -i $PAR -e $SQRTS -n $NEV -o ${FIFOPATH} &
+        run-pythia -c "SoftQCD:all on" -i $PAR -e $SQRTS -n $NEV -o ${FIFOPATH} &
     else
         echo "Running with default Monash 2013 tune"    
 	    run-pythia -i param_Pythia8.txt -e $SQRTS -n $NEV -o ${FIFOPATH} &
