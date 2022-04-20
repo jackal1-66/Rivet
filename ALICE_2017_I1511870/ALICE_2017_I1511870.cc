@@ -116,7 +116,7 @@ namespace Rivet {
             // 0.542 accounts for the fraction of charm quarks hadronizing into D0 mesons, the ALICE uncertainty on such a factor (0.542 ± 0.024) is not propagated here.
             // 1.034 is used to include the correction of the different shapes of the rapidity distributions of D0 and ccbar, the ALICE uncertainty on such a factor (1.034 ± 0.015, i.e. 1.5 percentage point of uncertainty) is not propagated here.
       
-      if( _h_wei->effNumEntries()!=0.) scale(_h_ptd0,        1/ _h_wei->val()); //scaled for the number of events used to calculate the mean pT
+      if( _h_wei->effNumEntries()!=0.) scale(_h_ptd0,        1/ *_h_wei); //scaled for the number of events used to calculate the mean pT
       
       scale(_h_D0full,      crossSection()/(millibarn*2*sumOfWeights())); 
             // NOTE : for the ALICE data, the y extrapolation from |y|<0.5 to full-y phase space is done with an FONLL-based factor (8.56 +2.51 -0.42). Here in MC we simply use direct MC outcome over full y.
