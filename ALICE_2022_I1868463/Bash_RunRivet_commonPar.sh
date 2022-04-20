@@ -5,7 +5,7 @@ set -o errexit
 # Usage info
 show_help() {
 cat << EOF
-Usage: ${0##*/} -n \# -a AnalysisID [-a AnalysisID +] -g Generator -t Tune -s energy
+Usage: ${0##*/} -n \# -a AnalysisID [-a AnalysisID +] -g Generator -t Tune -s energy -p ModePar
 EOF
 }
 
@@ -52,7 +52,7 @@ declare -a analyses
 AIND=1
 OPTIND=1
 
-while getopts "n:a:g:t:s:" opt; do
+while getopts "n:a:g:t:s:p:" opt; do
     case "$opt" in
             n)
                     NEV=$OPTARG

@@ -1,4 +1,5 @@
 #Example of use 
+#submit rivet-Pythia8-Mode.jdl mode0
 Jobtag = {"comment: ALICE_2022_I1868463 Rivet analysis: Pythia8 Monash 2013 ECR Mode0  @ 13000 GeV"};
 
 #InputDataType = "NONE";
