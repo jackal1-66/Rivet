@@ -79,7 +79,7 @@ RIVETARG=""
 for ii in `seq 1 $((AIND-1))`
 do
     if [ -e "${analyses[ii]}.cc" ]; then
-        rivet-build Rivet_${analyses[ii]}.so AlicePrimary.cc ${analyses[ii]}.cc
+        rivet-build Rivet_${analyses[ii]}.so ${analyses[ii]}.cc
         echo "Run-Rivet [0.${ii}] - code plugin compiled, ok! (= ${analyses[ii]}.cc)"
     fi
     RIVETARG+=" -a ${analyses[ii]}"
