@@ -1,6 +1,6 @@
 #!/bin/bash
 
-alienv enter VO_ALICE@AliPhysics::vAN-20210223_ROOT6-1
+#Execute inside AliPhysics environment
 
 AN="ALICE_2022_I1868463"
 MCGen="P8Monash"
@@ -30,14 +30,8 @@ do
   let count++
 done < "Collection.xml"
 
-exit
-
-alienv enter VO_ALICE@AliGenerators::v20220226-1
-
 export RIVET_ANALYSIS_PATH=$PWD/../
 export RIVET_DATA_PATH=$PWD/../
 
 rivet-merge -e Yodas/Rivet* -o Rivet.yoda
-
-exit
 
