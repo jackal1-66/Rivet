@@ -66,7 +66,8 @@ The installation on the server was not so easy and it is a little "crooked", so 
 # Merging more analysis
 
 Before merging, the RIVET_ANALYSIS_PATH and RIVET_DATA_PATH must be set accordingly so that they contain the path of the analysis you're working on. 
-In order to do that you should use the function rivet-merge (Rivet 2.7.2). This allowed me to merge multiple yoda files including weights just by doing "rivet-merge file1.yoda file2.yoda file3.yoda -o filemerged.yoda", without -e option which complicate things related to weights (this was instead used in order to merge multiple jobs of the same analysis).
+In order to do that you should use the function rivet-merge (from Rivet 2.7.2). This allowed me to merge multiple yoda files including weights just by doing "rivet-merge file1.yoda file2.yoda file3.yoda -o filemerged.yoda", without -e option which complicate things related to weights (this was instead used in order to merge multiple jobs of the same analysis).
+The normal rivet-merge is useful for example to merge different simulations like pp and pPb.
 
 # Use Dummy Histos on Rivet
 
