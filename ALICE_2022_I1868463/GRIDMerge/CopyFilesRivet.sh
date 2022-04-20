@@ -29,9 +29,3 @@ do
   alien_cp "$line" file:Yodas/Rivet_$count.yoda
   let count++
 done < "Collection.xml"
-
-export RIVET_ANALYSIS_PATH=$PWD/../
-export RIVET_DATA_PATH=$PWD/../
-
-rivet-merge -e Yodas/Rivet* -o Rivet.yoda
-
