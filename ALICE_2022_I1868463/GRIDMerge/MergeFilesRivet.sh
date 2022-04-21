@@ -5,6 +5,6 @@
 export RIVET_ANALYSIS_PATH=$PWD/../
 export RIVET_DATA_PATH=$PWD/../
 
-rivet-merge -e Yodas/Rivet* -o Rivet.yoda
+rivet-merge -e Yodas/Rivet* -o RivetMode0.yoda
 
 

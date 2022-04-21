@@ -3,7 +3,7 @@
 #Execute inside AliPhysics environment
 
 AN="ALICE_2022_I1868463"
-MCGen="P8Monash"
+MCGen="P8mode0"
 
 alien_find /alice/cern.ch/user/m/mgiacalo/Rivet/$AN/Simulations/$MCGen/ Rivet.yoda >Collection.xml
 
