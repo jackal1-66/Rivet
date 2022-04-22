@@ -4,6 +4,7 @@ LogY=1
 Title=Differential D$^0$ production cross section vs $p_T$
 XLabel=$p_T$ [GeV/$c$]
 YLabel=D$^0$ $\sigma$
+LegendXPos=0.49
 DrawOnly=/ALICE_2022_I1868463/d01-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7.yoda/ALICE_2022_I1868463/d01-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode0.yoda/ALICE_2022_I1868463/d01-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode2.yoda/ALICE_2022_I1868463/d01-x01-y01
 LegendOnly=/ALICE_2022_I1868463/d01-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7.yoda/ALICE_2022_I1868463/d01-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode0.yoda/ALICE_2022_I1868463/d01-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode2.yoda/ALICE_2022_I1868463/d01-x01-y01
 RatioPlot=1
@@ -37,7 +38,7 @@ LineColor=red
 LineStyle=solid
 Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7.yoda/ALICE_2022_I1868463/d01-x01-y01
 ScaledBy=7.80485000000000033e-04
-Title=Pythia.243$ Monash e7
+Title=Pythia8.243 Monash 5e7
 # xlow	 xhigh	 val	 errminus	 errplus
 1.000000e+00	2.000000e+00	2.110392e+02	4.058485e-01	4.058485e-01
 2.000000e+00	3.000000e+00	1.545899e+02	3.473544e-01	3.473544e-01
@@ -58,7 +59,7 @@ LineColor=blue
 LineStyle=solid
 Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode0.yoda/ALICE_2022_I1868463/d01-x01-y01
 ScaledBy=1.00304200000000000e-03
-Title=Pythia8.243 Modebash$ e7
+Title=Pythia8.243 Mode0 5e7
 # xlow	 xhigh	 val	 errminus	 errplus
 1.000000e+00	2.000000e+00	1.870403e+02	4.331388e-01	4.331388e-01
 2.000000e+00	3.000000e+00	1.189748e+02	3.454514e-01	3.454514e-01
@@ -79,7 +80,7 @@ LineColor=green
 LineStyle=solid
 Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode2.yoda/ALICE_2022_I1868463/d01-x01-y01
 ScaledBy=1.00304200000000000e-03
-Title=Pythia.243$ Mode$ e7
+Title=Pythia8.243 Mode2 5e7
 # xlow	 xhigh	 val	 errminus	 errplus
 1.000000e+00	2.000000e+00	1.694740e+02	4.122978e-01	4.122978e-01
 2.000000e+00	3.000000e+00	1.169146e+02	3.424474e-01	3.424474e-01

@@ -4,6 +4,7 @@ LogY=1
 Title=Differential $\Lambda_c$ production cross section vs $p_T$
 XLabel=$p_T$ [GeV/$c$]
 YLabel=$\Lambda_c^+$ $\sigma$
+LegendXPos=0.49
 DrawOnly=/ALICE_2022_I1868463/d02-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7.yoda/ALICE_2022_I1868463/d02-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode0.yoda/ALICE_2022_I1868463/d02-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode2.yoda/ALICE_2022_I1868463/d02-x01-y01
 LegendOnly=/ALICE_2022_I1868463/d02-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7.yoda/ALICE_2022_I1868463/d02-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode0.yoda/ALICE_2022_I1868463/d02-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode2.yoda/ALICE_2022_I1868463/d02-x01-y01
 RatioPlot=1
@@ -37,7 +38,7 @@ LineColor=red
 LineStyle=solid
 Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7.yoda/ALICE_2022_I1868463/d02-x01-y01
 ScaledBy=7.80485000000000033e-04
-Title=Pythia.243$ Monash e7
+Title=Pythia8.243 Monash 5e7
 # xlow	 xhigh	 val	 errminus	 errplus
 1.000000e+00	2.000000e+00	1.254005e+01	9.893090e-02	9.893090e-02
 2.000000e+00	3.000000e+00	1.012211e+01	8.888282e-02	8.888282e-02
@@ -58,7 +59,7 @@ LineColor=blue
 LineStyle=solid
 Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode0.yoda/ALICE_2022_I1868463/d02-x01-y01
 ScaledBy=1.00304200000000000e-03
-Title=Pythia8.243 Modebash$ e7
+Title=Pythia8.243 Mode0 5e7
 # xlow	 xhigh	 val	 errminus	 errplus
 1.000000e+00	2.000000e+00	9.810553e+01	3.136941e-01	3.136941e-01
 2.000000e+00	3.000000e+00	5.434682e+01	2.334784e-01	2.334784e-01
@@ -79,7 +80,7 @@ LineColor=green
 LineStyle=solid
 Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode2.yoda/ALICE_2022_I1868463/d02-x01-y01
 ScaledBy=1.00304200000000000e-03
-Title=Pythia.243$ Mode$ e7
+Title=Pythia8.243 Mode2 5e7
 # xlow	 xhigh	 val	 errminus	 errplus
 1.000000e+00	2.000000e+00	1.090858e+02	3.307835e-01	3.307835e-01
 2.000000e+00	3.000000e+00	6.569925e+01	2.567082e-01	2.567082e-01

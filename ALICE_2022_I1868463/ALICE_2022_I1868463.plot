@@ -5,7 +5,7 @@ YLabel=D$^0$ $\sigma$
 #LogY=0
 #YMax=0.52 
 #YMin=0.
-#LegendXPos=0.45
+LegendXPos=0.49
 #RatioPlotYMin=0.01
 #RatioPlotYMax=1.9
 # + any additional plot settings you might like, see make-plots documentation
@@ -18,7 +18,7 @@ YLabel=$\Lambda_c^+$ $\sigma$
 #LogY=0
 #YMax=0.52 
 #YMin=0.
-#LegendXPos=0.45
+LegendXPos=0.49
 #RatioPlotYMin=0.01
 #RatioPlotYMax=1.9
 # + any additional plot settings you might like, see make-plots documentation
@@ -31,7 +31,7 @@ YLabel=$\Sigma_c^{0,+,++}$ $\sigma$
 #LogY=0
 #YMax=1.2
 #YMin=0.
-#LegendXPos=0.45
+LegendXPos=0.49
 #RatioPlotYMin=0.01
 #RatioPlotYMax=1.9
 
@@ -45,7 +45,7 @@ YLabel=$\Lambda_c^+$($\leftarrow \Sigma_c^{0,+,++}$) $\sigma$
 #LogY=0
 #YMax=1.2
 #YMin=0.
-#LegendXPos=0.45
+LegendXPos=0.49
 #RatioPlotYMin=0.01
 #RatioPlotYMax=1.9
 
@@ -59,7 +59,7 @@ YLabel=$\Lambda_c^+$/$D0$
 #LogY=0
 #YMax=1.2
 #YMin=0.
-#LegendXPos=0.45
+LegendXPos=0.49
 #RatioPlotYMin=0.01
 #RatioPlotYMax=1.9
 
@@ -71,9 +71,9 @@ Title=Average ratio of $\Sigma_c^{0,+,++}$ and $D^0$
 XLabel=$p_T$ [GeV/$c$]
 YLabel=$\Sigma_c^{0,+,++}$/$D0$
 #LogY=0
-YMax=1
+YMax=1.5
 #YMin=0.
-#LegendXPos=0.45
+LegendXPos=0.49
 #RatioPlotYMin=0.01
 #RatioPlotYMax=1.9
 
@@ -87,7 +87,7 @@ YLabel=$\Lambda_c^+$($\leftarrow \Sigma_c^{0,+,++}$)/$\Lambda_c^+$
 #LogY=0
 YMax=2
 #YMin=0.
-#LegendXPos=0.45
+LegendXPos=0.49
 #RatioPlotYMin=0.01
 #RatioPlotYMax=1.9
 
