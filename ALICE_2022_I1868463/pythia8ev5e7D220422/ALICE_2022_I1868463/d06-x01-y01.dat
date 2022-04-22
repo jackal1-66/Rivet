@@ -4,6 +4,7 @@ LogY=1
 Title=Average ratio of $\Sigma_c^{0,+,++}$ and $D^0$
 XLabel=$p_T$ [GeV/$c$]
 YLabel=$\Sigma_c^{0,+,++}$/$D0$
+YMax=1
 DrawOnly=/ALICE_2022_I1868463/d06-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7.yoda/ALICE_2022_I1868463/d06-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode0.yoda/ALICE_2022_I1868463/d06-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode2.yoda/ALICE_2022_I1868463/d06-x01-y01
 LegendOnly=/ALICE_2022_I1868463/d06-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7.yoda/ALICE_2022_I1868463/d06-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode0.yoda/ALICE_2022_I1868463/d06-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode2.yoda/ALICE_2022_I1868463/d06-x01-y01
 RatioPlot=1
@@ -30,7 +31,7 @@ ErrorBars=1
 LineColor=red
 LineStyle=solid
 Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7.yoda/ALICE_2022_I1868463/d06-x01-y01
-Title=Pythia8 (Monash)
+Title=Pythia.243$ Monash e7
 # xlow	 xhigh	 val	 errminus	 errplus
 2.000000e+00	4.000000e+00	9.375873e-03	1.723825e-04	1.723825e-04
 4.000000e+00	6.000000e+00	1.026238e-02	3.118576e-04	3.118576e-04
@@ -44,7 +45,7 @@ ErrorBars=1
 LineColor=blue
 LineStyle=solid
 Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode0.yoda/ALICE_2022_I1868463/d06-x01-y01
-Title=Pythia8 ECR Mode0
+Title=Pythia8.243 Modebash$ e7
 # xlow	 xhigh	 val	 errminus	 errplus
 2.000000e+00	4.000000e+00	3.050069e-01	1.457855e-03	1.457855e-03
 4.000000e+00	6.000000e+00	2.461655e-01	2.267660e-03	2.267660e-03
@@ -58,7 +59,7 @@ ErrorBars=1
 LineColor=green
 LineStyle=solid
 Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode2.yoda/ALICE_2022_I1868463/d06-x01-y01
-Title=Pythia8 ECR Mode2
+Title=Pythia.243$ Mode$ e7
 # xlow	 xhigh	 val	 errminus	 errplus
 2.000000e+00	4.000000e+00	3.813761e-01	1.695310e-03	1.695310e-03
 4.000000e+00	6.000000e+00	2.734681e-01	2.394434e-03	2.394434e-03

@@ -36,7 +36,7 @@ ErrorBars=1
 LineColor=red
 LineStyle=solid
 Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7.yoda/ALICE_2022_I1868463/d05-x01-y01
-Title=Pythia8 (Monash)
+Title=Pythia.243$ Monash e7
 # xlow	 xhigh	 val	 errminus	 errplus
 1.000000e+00	2.000000e+00	5.942048e-02	4.825062e-04	4.825062e-04
 2.000000e+00	3.000000e+00	6.547718e-02	5.934837e-04	5.934837e-04
@@ -56,7 +56,7 @@ ErrorBars=1
 LineColor=blue
 LineStyle=solid
 Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode0.yoda/ALICE_2022_I1868463/d05-x01-y01
-Title=Pythia8 ECR Mode0
+Title=Pythia8.243 Modebash$ e7
 # xlow	 xhigh	 val	 errminus	 errplus
 1.000000e+00	2.000000e+00	5.245156e-01	2.070795e-03	2.070795e-03
 2.000000e+00	3.000000e+00	4.567926e-01	2.368593e-03	2.368593e-03
@@ -76,7 +76,7 @@ ErrorBars=1
 LineColor=green
 LineStyle=solid
 Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode2.yoda/ALICE_2022_I1868463/d05-x01-y01
-Title=Pythia8 ECR Mode2
+Title=Pythia.243$ Mode$ e7
 # xlow	 xhigh	 val	 errminus	 errplus
 1.000000e+00	2.000000e+00	6.436731e-01	2.502352e-03	2.502352e-03
 2.000000e+00	3.000000e+00	5.619423e-01	2.744123e-03	2.744123e-03
