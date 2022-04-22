@@ -8,8 +8,8 @@ ConnectBins=0
 YMax=20
 LegendYPos=0.95
 LegendXPos=0.45
-DrawOnly=/ALICE_2017_I1511870/d15-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2017_I1511870/pythia8pp5e7.yoda/ALICE_2017_I1511870/d15-x01-y01
-LegendOnly=/ALICE_2017_I1511870/d15-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2017_I1511870/pythia8pp5e7.yoda/ALICE_2017_I1511870/d15-x01-y01
+DrawOnly=/ALICE_2017_I1511870/d15-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2017_I1511870/pythia8pp5e7.yoda/ALICE_2017_I1511870/d15-x01-y01
+LegendOnly=/ALICE_2017_I1511870/d15-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2017_I1511870/pythia8pp5e7.yoda/ALICE_2017_I1511870/d15-x01-y01
 RatioPlot=1
 RatioPlotReference=/ALICE_2017_I1511870/d15-x01-y01
 # END PLOT
@@ -26,11 +26,11 @@ Title=Data
 # END HISTO1D
 
 
-# BEGIN HISTO1D //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2017_I1511870/pythia8pp5e7.yoda/ALICE_2017_I1511870/d15-x01-y01
+# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2017_I1511870/pythia8pp5e7.yoda/ALICE_2017_I1511870/d15-x01-y01
 ErrorBars=1
 LineColor=red
 LineStyle=solid
-Path=//mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2017_I1511870/pythia8pp5e7.yoda/ALICE_2017_I1511870/d15-x01-y01
+Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2017_I1511870/pythia8pp5e7.yoda/ALICE_2017_I1511870/d15-x01-y01
 ScaledBy=7.10648300000000002e-07
 Title=Pythia8.243 Monash 5e7
 # xlow	 xhigh	 val	 errminus	 errplus
