@@ -39,7 +39,7 @@ namespace Rivet {
       book(_h_ptd0,14,1,1);                                     // mean pt of prompt D0
       book(_h_D0full,15,1,1);                                   // integrated cross section for D0 in full rapidity
       book(_h_ccfull,16,1,1);                                   // integrated cross section for ccbar in full rapidity
-      book(_h_wei,"_h_wei");    				// Counter used to calculate D0 mean pt (necessary to store an integer number for event normalisation, i.e. to still be able to compute <pT> from multiple parallel MC jobs)
+      book(_h_wei,"_h_wei");    				                        // Counter used to calculate D0 mean pt (necessary to store an integer number for event normalisation, i.e. to still be able to compute <pT> from multiple parallel MC jobs)
       book(_h_D0dummy,"TMP/_h_D0dummy",refData(5,1,1));         // used to make DplusonD0
       book(_h_D0dummy1,"TMP/_h_D0dummy1",refData(7,1,1));       // used to make DsonD0
       book(_h_Dplusdummy,"TMP/_h_Dplusdummy",refData(8,1,1));   // used to make DsonDplus
