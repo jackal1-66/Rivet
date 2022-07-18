@@ -4,28 +4,32 @@ Summary: $\Sigma_c^{0,+,++}$ and $\Lambda_c$ from $\Sigma_c^{0,+,++}$ analysis
 Experiment: ALICE
 Collider: LHC
 InspireID: 1868463
-Status: UNVALIDATED
+Status: VALIDATED
 Authors:
  - Marco Giacalone <mgiacalo@bo.infn.it>
 References:
  - 'Phys.Rev.Lett. 128 (2022) 012001, 2022'
  - 'DOI:10.1103/PhysRevLett.128.012001'
  - 'arXiv:2106.08278'
-#RunInfo: <Describe event types, cuts, and other general generator config tips.>
+RunInfo: Minimum bias events
 Beams: [p+, p+]
 Energies: [[6500,6500]]
-#Luminosity_fb: 139.0
 Description:
   The $p_\mathrm{T}$-differential production cross sections of prompt ${\rm D^{0}}$, ${\rm \Lambda_{c}^{+}}$, and ${\rm \Sigma_{c}^{0,++}}(2455)$ charmed hadrons are measured at midrapidity ($|y|<0.5$) in pp collisions at $\sqrt{s}=13$~TeV. This is the first measurement of ${\rm \Sigma_{c}^{0,++}}$ production in hadronic collisions. Assuming the same production yield for the three $\rm \Sigma_{c}^{0,+,++}$ isospin states, the baryon-to-meson cross section ratios $\rm \Sigma_{c}^{0,+,++}/\rm D^{0}$ and $\rm \Lambda_{c}^{+}/\rm D^{0}$ are calculated in the transverse momentum ($p_{\rm T}$) intervals $2<p_{\rm T}<12$~GeV/$c$ and $1<p_{\rm T}<24$ ~GeV/$c$. Values significantly larger than in $\rm e^{+}e^{-}$ collisions are observed, indicating for the first time that baryon enhancement in hadronic collisions also extends to the $\mathrm{\Sigma_{c}}$. The feed-down contribution to $\rm \Lambda_{c}^{+}$ production from $\rm \Sigma_{c}^{0,+,++}$ is also reported and is found to be larger than in $\rm e^{+}e^{-}$ collisions. The data are compared with predictions from event generators and other phenomenological models, providing a sensitive test of the different charm-hadronisation mechanisms implemented in the models.
-ValidationInfo:
-  'A description of the process used to validate the Rivet code against
-  the original experimental analysis. Cut-flow tables and similar information
-  are welcome'
-#ReleaseTests:
-# - $A my-hepmc-prefix :MODE=some_rivet_flag
 Keywords: [pp collisions, 13 TeV, charm production]
-BibKey: 
-BibTeX: ''
-ToDo:
- - test it and mark as VALIDATED :-)
-
+BibKey: ALICE:2021rzj 
+BibTeX: '@article{ALICE:2021rzj,
+    author = "Acharya, Shreyasi and others",
+    collaboration = "ALICE",
+    title = "{Measurement of Prompt D$^{0}$, $\Lambda_{c}^{+}$, and $\Sigma_{c}^{0,++}$(2455) Production in Proton\textendash{}Proton Collisions at $\sqrt s$ = 13\,\,TeV}",
+    eprint = "2106.08278",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    reportNumber = "CERN-EP-2021-103",
+    doi = "10.1103/PhysRevLett.128.012001",
+    journal = "Phys. Rev. Lett.",
+    volume = "128",
+    number = "1",
+    pages = "012001",
+    year = "2022"
+}'
