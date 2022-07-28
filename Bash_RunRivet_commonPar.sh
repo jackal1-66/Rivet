@@ -577,7 +577,8 @@ export RIVET_ANALYSIS_PATH=$PWD
 #Asymmetric SPD acceptance
 #rivet --pwd $RIVETARG:spdetamin=-0.6:spdetamax=0.8:spdminpt=30. -H ${OUTPUTFILE} ${FIFOPATH}
 
-rivet --pwd -p calibration.yoda $RIVETARG:cent=GEN -H ${OUTPUTFILE} ${FIFOPATH} #run secondly for analysis vs multiplicity
+#rivet --pwd -p calibration.yoda $RIVETARG:cent=GEN -H ${OUTPUTFILE} ${FIFOPATH} #run secondly for analysis vs multiplicity
+rivet --pwd $RIVETARG -H ${OUTPUTFILE} ${FIFOPATH} #run this instead for analysis without calibration needed (DEFAULT option)
     echo "Run-Rivet [3.c] - Rivet now launched"
 
 

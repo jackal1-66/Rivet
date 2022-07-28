@@ -109,21 +109,21 @@ $openssl pkcs12 -in myCert.p12 -nocerts -out $HOME/.globus/userkey.pem
 
 3) Set the mode on both of them in order that only the owner can read/write them: 
 
-$chmod 600 $HOME/.globus/userkey.pem
+$chmod 600 $HOME/.globus/userkey.pem  
 $chmod 600 $HOME/.globus/usercert.pem
 
 Done. Now you should be able to access ALIen, which is the interface for the GRID system on ALICE. 
 To do so load the AliPhysics environment: 
 $alienv enter AliPhysics
-and try $alien.py, if things are setup correctly, you should be asked the password and will be able to enter the ALICE systems. 
-Inserting files inside the GRID is unfortunately painful, so try to keep them as a bare minimum. 
+and try $alien.py. If things are setup correctly, you should be asked the password and will be able to enter the ALICE systems.   
+Inserting files inside the GRID is unfortunately painful, so try to keep them as a bare minimum.  
 To run RIVET on the GRID you need all the ALICE_YEAR_I\<InspireID\>.* files, the .jdl and .sh files you find in the main folder 
-of the repo and also the parameter files mode0 and mode2. To put them on the GRID first enter with alien.py, 
-cd into the folder you want to use and copy the path. Then copy your files inside alien from your pc by doing: 
-$alien_cp file:filenametocopy *PATH_IN_ALIEN*/filenametocopy
-for each file. 
+of the repo and also the parameter files mode0 and mode2. To put them on the GRID first enter with alien.py,   
+cd into the folder you want to use and copy the path. Then copy your files inside alien from your pc by doing:  
+$alien_cp file:filenametocopy *PATH_IN_ALIEN*/filenametocopy  
+for each file.  
 After you've done this you can finally submit your rivetization on the GRID, but remember to edit the JDL file by inserting your 
-analysis name and the files you need to upload (generally all the ALICE*.* and the mode*.par files). 
+analysis name and the files you need to upload (generally all the ALICE*.* and the mode*.par files). It might be needed to edit also the Bash_RunRivet_commonPar.sh file if you want to run an analysis with calibration (default is without).    
 In the end try to run the analysis by doing a submit of the JDL inside the GRID, following the example for Monash you see in the jdl file. 
-You can check the status of your jobs going to the alimonitor.cern.ch interface (MonALISA). 
+You can check the status of your jobs going to the alimonitor.cern.ch interface (MonALISA).  
 When all the jobs are completed you can move to copy and merge in this order the results inside your PC using the macros you have in the GRIDMerge folder by changing accordingly both of them with respect to your analysis. 
