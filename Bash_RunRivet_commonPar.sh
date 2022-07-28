@@ -571,7 +571,7 @@ esac
 
 
 
-export RIVET_ANALYSIS_PATH=$PWD
+#export RIVET_ANALYSIS_PATH=$PWD  #This might be needed with analysis containing calibration files
 #rivet --pwd $RIVETARG:spdabseta=0.6:spdminpt=30. -H ${OUTPUTFILE} ${FIFOPATH} #run first for calibration, this is symmetric SPD acceptance
 
 #Asymmetric SPD acceptance
