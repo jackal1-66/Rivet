@@ -126,4 +126,10 @@ After you've done this you can finally submit your rivetization on the GRID, but
 analysis name and the files you need to upload (generally all the ALICE*.* and the mode*.par files). It might be needed to edit also the Bash_RunRivet_commonPar.sh file if you want to run an analysis with calibration (default is without).    
 In the end try to run the analysis by doing a submit of the JDL inside the GRID, following the example for Monash you see in the jdl file. 
 You can check the status of your jobs going to the alimonitor.cern.ch interface (MonALISA).  
-When all the jobs are completed you can move to copy and merge in this order the results inside your PC using the macros you have in the GRIDMerge folder by changing accordingly both of them with respect to your analysis. 
+When all the jobs are completed you can move to copy and merge (in this specific order) the results inside your PC using the macros you have in the GRIDMerge folder by changing accordingly both of them with respect to your analysis.  
+So Copy the GRIDMerge folder inside your ALICE_YEAR_I<ID> folder. Now cd into it and in order to execute the files you will most likely to allow them to be executed in the bash, so digit:  
+$chmod u+x filename.sh  
+for both the scripts you find inside that folder. Inside the Copy script edit accordingly the analysis name, the MCGen used and the path in which the subjobs outputs are. Then execute the script, simply:  
+$./CopyFilesRivet.sh  
+which will copy all the Rivet.yoda files obtained in the analysis in a locally stored Yodas folder.  
+At last perform the merge using the MergeFilesRivet.sh script, remembering to change inside it the name of your output merged Yoda accordingly to your used generator. 
