@@ -129,7 +129,7 @@ You can check the status of your jobs going to the alimonitor.cern.ch interface 
 When all the jobs are completed you can move to copy and merge (in this specific order) the results inside your PC using the macros you have in the GRIDMerge folder by changing accordingly both of them with respect to your analysis.  
 So Copy the GRIDMerge folder inside your ALICE_YEAR_I<ID> folder. Now cd into it and in order to execute the files you will most likely to allow them to be executed in the bash, so digit:  
 $chmod u+x filename.sh  
-for both the scripts you find inside that folder. Inside the Copy script edit accordingly the analysis name, the MCGen used and the path in which the subjobs outputs are. Then execute the script, simply:  
+for both the scripts you find inside that folder. Inside the Copy script edit accordingly the analysis name, the MCGen used and the path in which the subjobs outputs are. Then (WHILE ON ALIPHYSICS) execute the script, simply with:  
 $./CopyFilesRivet.sh  
 which will copy all the Rivet.yoda files obtained in the analysis in a locally stored Yodas folder.  
-At last perform the merge using the MergeFilesRivet.sh script, remembering to change inside it the name of your output merged Yoda accordingly to your used generator. 
+At last, move to AliGenerators, and perform the merge using the MergeFilesRivet.sh script, remembering to change inside it the name of your output merged Yoda accordingly to your used generator. 
