@@ -132,4 +132,13 @@ $chmod u+x filename.sh
 for both the scripts you find inside that folder. Inside the Copy script edit accordingly the analysis name, the MCGen used and the path in which the subjobs outputs are. Then (WHILE ON ALIPHYSICS) execute the script, simply with:  
 $./CopyFilesRivet.sh  
 which will copy all the Rivet.yoda files obtained in the analysis in a locally stored Yodas folder.  
-At last, move to AliGenerators, and perform the merge using the MergeFilesRivet.sh script, remembering to change inside it the name of your output merged Yoda accordingly to your used generator. 
+At last, move to AliGenerators, and perform the merge using the MergeFilesRivet.sh script, remembering to change inside it the name of your output merged Yoda accordingly to your used generator.  
+
+# Yoda to ROOT conversion
+
+The conversion with the yoda python script yoda2root (as of 09/08/2022) doesn't work properly (missing yoda.root module), so as a work around 
+the golang scripts can be used. In particular a series of executables were compiled for different operating systems and they can be found inside the yoda2root folder. Before running them, your computer needs to have GO installed, for this follow the tutorial you can find here https://go.dev/doc/install .  
+After you've completed the procedure, you need to enable the execution of the program (for your specific OS), so run:
+$chmod u+x filename.exe
+and then you can convert your yoda file to root using the syntax:
+./filename.exe yodafile.yoda rootfile.root 
