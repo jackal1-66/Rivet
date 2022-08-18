@@ -47,12 +47,13 @@ GENTUNE=14              # 354
 SQRTS=7000
 SQRTS2=3500
 PAR=""
+CENCAL=0
 
 declare -a analyses
 AIND=1
 OPTIND=1
 
-while getopts "n:a:g:t:s:p:" opt; do
+while getopts "n:a:g:t:s:p:c:" opt; do
     case "$opt" in
             n)
                     NEV=$OPTARG
@@ -73,6 +74,9 @@ while getopts "n:a:g:t:s:p:" opt; do
             p)      
                     PAR=$OPTARG
                     ;;
+            c)      
+                    CENCAL=$OPTARG
+                    ;;        
             \?)
                     echo "Invalid option -$OPTARG"
                     ;;
@@ -514,7 +518,7 @@ Pythia6)
 	;;
 Pythia8)
 	echo "Run-Rivet [3.a] - Running Pythia 8 simulation tune $GENTUNE with sqrts = $SQRTS GeV, $NEV events"
-    if [ "$PAR" = "mode0.par" ] || [ "$PAR" = "mode2.par" ]; then
+    if [ "$PAR" = "mode0.par" ] || [ "$PAR" = "mode2.par" ] || [ "$PAR" = "leadlead.par" ]; then
         run-pythia -c "SoftQCD:all on" -i $PAR -e $SQRTS -n $NEV -o ${FIFOPATH} &
     else
         echo "Running with default Monash 2013 tune"    
@@ -570,7 +574,20 @@ esac
 
 
 
-
+if [ $CENCAL -eq 0 ]
+then
+    rivet --pwd $RIVETARG -H ${OUTPUTFILE} ${FIFOPATH}
+    echo "Run-Rivet [3.c] - Rivet now launched"
+elif [[ $CENCAL -eq 1 ]]
+    rivet --pwd ALICE_2015_PBPBCentrality -H ${OUTPUTFILE} ${FIFOPATH}  
+    echo "Run-Rivet [3.c] - Rivet now launched"   
+elif [[ $CENCAL -eq 2 ]]
+    rivet --pwd -p calibration.yoda $RIVETARG:cent=GEN -H ${OUTPUTFILE} ${FIFOPATH}
+    echo "Run-Rivet [3.c] - Rivet now launched"
+else   
+    echo "Wrong calibration parameter provided...Exiting"
+    exit 4
+fi    
 #export RIVET_ANALYSIS_PATH=$PWD  #This might be needed with analysis containing calibration files
 #rivet --pwd $RIVETARG:spdabseta=0.6:spdminpt=30. -H ${OUTPUTFILE} ${FIFOPATH} #run first for calibration, this is symmetric SPD acceptance
 
@@ -578,8 +595,8 @@ esac
 #rivet --pwd $RIVETARG:spdetamin=-0.6:spdetamax=0.8:spdminpt=30. -H ${OUTPUTFILE} ${FIFOPATH}
 
 #rivet --pwd -p calibration.yoda $RIVETARG:cent=GEN -H ${OUTPUTFILE} ${FIFOPATH} #run secondly for analysis vs multiplicity
-rivet --pwd $RIVETARG -H ${OUTPUTFILE} ${FIFOPATH} #run this instead for analysis without calibration needed (DEFAULT option)
-    echo "Run-Rivet [3.c] - Rivet now launched"
+#rivet --pwd $RIVETARG -H ${OUTPUTFILE} ${FIFOPATH} #run this instead for analysis without calibration needed (DEFAULT option)
+#    echo "Run-Rivet [3.c] - Rivet now launched"
 
 
 

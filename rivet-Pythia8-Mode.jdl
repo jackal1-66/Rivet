@@ -1,6 +1,9 @@
 #Example of use 
 #submit rivet-Pythia8-Mode.jdl mode0 numEvSingle Jobs
 #submit rivet-Pythia8-Mode.jdl Monash 200000 250
+#submit rivet-Pythia8-Mode.jdl leadlead 200000 250
+#submit rivet-Pythia8-Mode.jdl leadlead 200000 250 1  ###This to Run calibration
+#submit rivet-Pythia8-Mode.jdl leadlead 200000 250 2  ###This to preload calibration files 
 Jobtag = {"comment: ALICE Rivet analysis: Pythia8 Monash 2013 ECR Mode @ 13000 GeV"};
 
 #InputDataType = "NONE";
@@ -13,8 +16,7 @@ OutputDir = "/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/Simulations/
 Packages = {"VO_ALICE@AliGenerators::v20200831-1"};
   
 InputFile = {
-            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/ALICE_2015_PPCentrality.cc",
-            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/ALICE_2015_PPCentrality.info",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/ALICE_2015_PBPBCentrality.cc",
             "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/ALICE_2021_1818157.cc",
             "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/ALICE_2021_1818157.info",
             "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/ALICE_2021_1818157.plot",
@@ -22,13 +24,17 @@ InputFile = {
             "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/AliceCommon.hh",
             "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/mode0.par",
             "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/mode2.par",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/leadlead.par",
 	        "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/calibration.yoda"
             };
+            #"LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/ALICE_2015_PPCentrality.cc",
+            #"LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/ALICE_2015_PPCentrality.info",
             #"LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/calibration.yoda", #to be included after obtaining calibration file
 
 Executable = "/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/Bash_RunRivet_commonPar.sh";
-#Arguments = "-a ALICE_2015_PPCentrality -g Pythia8 -t 14 -s 13000 -p $1.par"; #This is run for first calibration 
-Arguments = "-a ALICE_2021_1818157 -g Pythia8 -t 14 -s 13000 -p $1.par"; #Secondly run this for analysis
+#Arguments = "-a ALICE_2015_PBPBCentrality -g Pythia8 -t 14 -s 13000 -p $1.par -c $3"; #This is run for first calibration 
+Arguments = "-a ALICE_2021_1818157 -g Pythia8 -t 14 -s 13000 -p $1.par -c $3"; 
+#If calibration is needed: run leadlead first with 1, Merge the output when jobs are done in a single calibration.yoda file and then preload it with 2 as third parameter (uploading it to alien)
 
 Split = "production:1-$3";
 SplitArguments = "-n $2";
