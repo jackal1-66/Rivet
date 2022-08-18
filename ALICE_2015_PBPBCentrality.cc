@@ -10,11 +10,11 @@
 namespace Rivet {
 
   /// @brief ALICE PbPb at 2.76 TeV multiplicity at mid-rapidity
-  class ALICE_2010_I880049 : public Analysis {    
+  class ALICE_2015_PBPBCentrality : public Analysis {    
   public:
 
     /// Constructor
-    DEFAULT_RIVET_ANALYSIS_CTOR(ALICE_2010_I880049);
+    DEFAULT_RIVET_ANALYSIS_CTOR(ALICE_2015_PBPBCentrality);
 
     /// @name Analysis methods
     //@{
@@ -103,6 +103,6 @@ namespace Rivet {
 
 
   // The hook for the plugin system
-  DECLARE_RIVET_PLUGIN(ALICE_2010_I880049);
+  DECLARE_RIVET_PLUGIN(ALICE_2015_PBPBCentrality);
 
 }
