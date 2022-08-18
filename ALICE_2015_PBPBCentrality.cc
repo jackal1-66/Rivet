@@ -4,7 +4,7 @@
 #include "Rivet/Tools/Cuts.hh"
 #include "Rivet/Projections/SingleValueProjection.hh"
 #include "Rivet/Tools/AliceCommon.hh"
-#include "Rivet/Projections/AliceCommon.hh"
+#include "AliceCommon.hh"
 #include "Rivet/Projections/HepMCHeavyIon.hh"
 
 namespace Rivet {
