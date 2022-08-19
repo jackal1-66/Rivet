@@ -573,9 +573,8 @@ HERWIG)
 esac
 
     echo "Run-Rivet [3.b] - MC generator now launched"
-
-
-export RIVET_ANALYSIS_PATH=$PWD
+    
+sleep 1m
 
 if [ $CENCAL -eq 0 ]
 then
@@ -587,6 +586,7 @@ then
     echo "Run-Rivet [3.c] - Calibration with Rivet now launched "   
 elif [ $CENCAL -eq 2 ]
 then
+    export RIVET_ANALYSIS_PATH=$PWD
     rivet --pwd -p calibration.yoda $RIVETARG:cent=GEN -H ${OUTPUTFILE} ${FIFOPATH}
     echo "Run-Rivet [3.c] - Rivet now launched with calibration preload"
 else   
