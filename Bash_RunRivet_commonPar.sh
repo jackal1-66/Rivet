@@ -574,7 +574,7 @@ esac
 
     echo "Run-Rivet [3.b] - MC generator now launched"
     
-sleep 1m
+sleep 5m
 
 if [ $CENCAL -eq 0 ]
 then
