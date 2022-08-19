@@ -32,8 +32,7 @@ InputFile = {
             #"LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/calibration.yoda", #to be included after obtaining calibration file
 
 Executable = "/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/Bash_RunRivet_commonPar.sh";
-#Arguments = "-a ALICE_2015_PBPBCentrality -g Pythia8 -t 14 -s 13000 -p $1.par -c $3"; #This is run for first calibration 
-Arguments = "-a ALICE_2021_1818157 -g Pythia8 -t 14 -s 13000 -p $1.par -c $3"; 
+Arguments = "-a ALICE_2021_1818157 -g Pythia8 -t 14 -s 13000 -p $1.par -c $4"; 
 #If calibration is needed: run leadlead first with 1, Merge the output when jobs are done in a single calibration.yoda file and then preload it with 2 as third parameter (uploading it to alien)
 
 Split = "production:1-$3";
