@@ -579,11 +579,13 @@ then
     rivet --pwd $RIVETARG -H ${OUTPUTFILE} ${FIFOPATH}
     echo "Run-Rivet [3.c] - Rivet now launched"
 elif [[ $CENCAL -eq 1 ]]
+then
     rivet --pwd ALICE_2015_PBPBCentrality -H ${OUTPUTFILE} ${FIFOPATH}  
-    echo "Run-Rivet [3.c] - Rivet now launched"   
+    echo "Run-Rivet [3.c] - Calibration with Rivet now launched "   
 elif [[ $CENCAL -eq 2 ]]
+then
     rivet --pwd -p calibration.yoda $RIVETARG:cent=GEN -H ${OUTPUTFILE} ${FIFOPATH}
-    echo "Run-Rivet [3.c] - Rivet now launched"
+    echo "Run-Rivet [3.c] - Rivet now launched with calibration preload"
 else   
     echo "Wrong calibration parameter provided...Exiting"
     exit 4
