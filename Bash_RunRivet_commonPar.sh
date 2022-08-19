@@ -575,16 +575,17 @@ esac
     echo "Run-Rivet [3.b] - MC generator now launched"
 
 
+export RIVET_ANALYSIS_PATH=$PWD
 
 if [ $CENCAL -eq 0 ]
 then
     rivet --pwd $RIVETARG -H ${OUTPUTFILE} ${FIFOPATH}
     echo "Run-Rivet [3.c] - Rivet now launched"
-elif [[ $CENCAL -eq 1 ]]
+elif [ $CENCAL -eq 1 ]
 then
-    rivet --pwd ALICE_2015_PBPBCentrality -H ${OUTPUTFILE} ${FIFOPATH}  
+    rivet --pwd ALICE_2015_PBPBCentrality -H ${OUTPUTFILE} ${FIFOPATH}
     echo "Run-Rivet [3.c] - Calibration with Rivet now launched "   
-elif [[ $CENCAL -eq 2 ]]
+elif [ $CENCAL -eq 2 ]
 then
     rivet --pwd -p calibration.yoda $RIVETARG:cent=GEN -H ${OUTPUTFILE} ${FIFOPATH}
     echo "Run-Rivet [3.c] - Rivet now launched with calibration preload"
