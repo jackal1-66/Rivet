@@ -518,8 +518,10 @@ Pythia6)
 	;;
 Pythia8)
 	echo "Run-Rivet [3.a] - Running Pythia 8 simulation tune $GENTUNE with sqrts = $SQRTS GeV, $NEV events"
-    if [ "$PAR" = "mode0.par" ] || [ "$PAR" = "mode2.par" ] || [ "$PAR" = "leadlead.par" ]; then
+    if [ "$PAR" = "mode0.par" ] || [ "$PAR" = "mode2.par" ]; then
         run-pythia -c "SoftQCD:all on" -i $PAR -e $SQRTS -n $NEV -o ${FIFOPATH} &
+    elif [ "$PAR" = "leadlead.par" ]; then
+        run-pythia -c "HeavyIon:mode 1" -c "Beams:idA 1000822080" -c "Beams:idB 1000822080" -e $SQRTS -n $NEV -o ${FIFOPATH} &
     else
         echo "Running with default Monash 2013 tune"    
 	    run-pythia -i param_Pythia8.txt -e $SQRTS -n $NEV -o ${FIFOPATH} &
