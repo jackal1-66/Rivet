@@ -138,7 +138,15 @@ At last, move to AliGenerators, and perform the merge using the MergeFilesRivet.
 
 The conversion with the yoda python script yoda2root (as of 09/08/2022) doesn't work properly (missing yoda.root module), so as a work around 
 the golang scripts can be used. In particular a series of executables were compiled for different operating systems and they can be found inside the yoda2root folder. Before running them, your computer needs to have GO installed, for this follow the tutorial you can find here https://go.dev/doc/install .  
-After you've completed the procedure, you need to enable the execution of the program (for your specific OS), so run:
+After you've completed the procedure, you need to enable the execution of the program (for your specific OS), so run:  
 $chmod u+x filename.exe
 and then you can convert your yoda file to root using the syntax:
 ./filename.exe yodafile.yoda rootfile.root 
+
+# Known bug
+
+When editing a script on Windows sometimes it can happen that weird characters are inserted making it not run on Linux.  
+Before adding a script on the GRID, try to run it on your local machine with a Linux system, if the error is similar to this "/bin/bash^M: bad interpreter: No such file or directory"
+run the command:  
+$sed -i -e 's/\r$//' script.sh  
+this will remove the weird character. Try running if again, if it works upload it on the GRID. 
