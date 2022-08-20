@@ -5,7 +5,7 @@ set -o errexit
 # Usage info
 show_help() {
 cat << EOF
-Usage: ${0##*/} -n \# -a AnalysisID [-a AnalysisID +] -g Generator -t Tune -s energy -p ModePar -c CalibrationOption
+Usage: ${0##*/} -n \# -a AnalysisID [-a AnalysisID +] -g Generator -t Tune -s energy -p ModePar
 EOF
 }
 
@@ -373,7 +373,7 @@ cat << EOF > param_Sherpa2.txt
   Process 93 93 -> 93 93
   Order_EW 0
   # parton parton -> parton parton  
-  # Fixing the order of electroweak couplings to ‘0’, 
+  # Fixing the order of electroweak couplings to ?0?, 
   # matrix elements of all partonic subprocesses for Drell-Yan production without any 
   # and with up to 0 extra QCD parton emissions will be generated.
   End process
@@ -456,7 +456,7 @@ read snippets/SoftTune.in
 read snippets/Diffraction.in
 
 # Read in snippet in order to use baryonic reconnection model with modified gluon splitting (uds)
-# For more details see [S. Gieseke, P. KirchgaeÃŸer, S. PlÃ¤tzer. arXiv:1710.10906]]
+# For more details see [S. Gieseke, P. KirchgaeÃ?er, S. PlÃ¤tzer. arXiv:1710.10906]]
 ##############################################################################################
 
 read snippets/BaryonicReconnection.in
@@ -573,10 +573,8 @@ HERWIG)
 esac
 
     echo "Run-Rivet [3.b] - MC generator now launched"
-
-if [ "$PAR" = "leadlead.par" ]; then
-    sleep 8m
-fi
+    
+sleep 8m
 
 if [ $CENCAL -eq 0 ]
 then
@@ -678,7 +676,7 @@ if [ -s ${OUTPUTFILE} ]; then
                 rm YodaCounter-Block-$iCounter.log
             fi
         done
-    fi # NbYodaCounters ≠ 0
+    fi # NbYodaCounters ? 0
 fi # yoda output file exists
 
 
