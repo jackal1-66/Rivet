@@ -574,17 +574,13 @@ esac
 
     echo "Run-Rivet [3.b] - MC generator now launched"
 
-if [ "$PAR" = "leadlead.par" ]; then
-    sleep 8m
-fi
-
 if [ $CENCAL -eq 0 ]
 then
     rivet --pwd $RIVETARG -H ${OUTPUTFILE} ${FIFOPATH}
     echo "Run-Rivet [3.c] - Rivet now launched"
 elif [ $CENCAL -eq 1 ]
 then
-    rivet --pwd ALICE_2015_PBPBCentrality -H ${OUTPUTFILE} ${FIFOPATH}
+    rivet --pwd -a ALICE_2015_PBPBCentrality -H ${OUTPUTFILE} ${FIFOPATH}
     echo "Run-Rivet [3.c] - Calibration with Rivet now launched "   
 elif [ $CENCAL -eq 2 ]
 then
