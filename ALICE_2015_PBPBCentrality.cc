@@ -1,103 +1,60 @@
-// -*- C++ -*-
-#include "Rivet/Analysis.hh"
-#include "Rivet/Projections/ChargedFinalState.hh"
-#include "Rivet/Tools/Cuts.hh"
-#include "Rivet/Projections/SingleValueProjection.hh"
-#include "Rivet/Tools/AliceCommon.hh"
-#include "AliceCommon.hh"
-#include "Rivet/Projections/HepMCHeavyIon.hh"
+#include <Rivet/Analysis.hh>
+#include <Rivet/Projections/AliceCommon.hh>
+#include <Rivet/Projections/HepMCHeavyIon.hh>
 
 namespace Rivet {
 
-  /// @brief ALICE PbPb at 2.76 TeV multiplicity at mid-rapidity
-  class ALICE_2015_PBPBCentrality : public Analysis {    
+  /// Dummy analysis for centrality calibration in Pb-Pb at 5.02TeV
+  ///
+  /// @author Christian Holm Christensen <cholm@nbi.dk>
+  class ALICE_2015_PBPBCentrality : public Analysis {
   public:
 
-    /// Constructor
-    DEFAULT_RIVET_ANALYSIS_CTOR(ALICE_2015_PBPBCentrality);
+    /// Constructor 
+    ALICE_2015_PBPBCentrality()
+      : Analysis("ALICE_2015_PBPBCentrality")
+    {    }
 
-    /// @name Analysis methods
-    //@{
-
-    /// Book histograms and initialise projections before the run
+    /// Initialize this analysis. 
     void init() {
+      ALICE::V0AndTrigger v0and;
+      declare<ALICE::V0AndTrigger>(v0and,"V0-AND");
 
-      // Declare centrality projection
-      declareCentrality(ALICE::V0MMultiplicity(),
-        "ALICE_2015_PBPBCentrality", "V0M", "V0M");
+      ALICE::V0MMultiplicity v0m;
+      declare<ALICE::V0MMultiplicity>(v0m,"V0M");
 
-      // Trigger projections
-      declare(ChargedFinalState((Cuts::eta > 2.8 && Cuts::eta < 5.1) &&
-        Cuts::pT > 0.1*GeV), "VZERO1");
-      declare(ChargedFinalState((Cuts::eta > -3.7 && Cuts::eta < -1.7) &&
-        Cuts::pT > 0.1*GeV), "VZERO2");
-      declare(ChargedFinalState(Cuts::abseta < 1. && Cuts::pT > 0.15*GeV),
-        "SPD");
-
-      // Charged, primary particles with |eta| < 0.5 and pT > 50 MeV
-      declare(ALICE::PrimaryParticles(Cuts::abseta < 0.5 &&
-        Cuts::pT > 50*MeV && Cuts::abscharge > 0), "APRIM");
-
-      // Access the HepMC heavy ion info
+       // Access the HepMC heavy ion info
       declare(HepMCHeavyIon(), "HepMC");
 
-      // Histograms and variables initialization
-      book(_histNchVsCentr, 1, 1, 1);
-      book(_histNpartVsCentr, 1, 1, 2);
-
+      book(_v0m, "V0M", 20000, 0, 20000);
+      book(_imp, "V0M_IMP",100,0,20);
     }
 
 
-    /// Perform the per-event analysis
+    /// Analyse a single event.
     void analyze(const Event& event) {
+      // Get and fill in the impact parameter value if the information is valid.
+      _imp->fill(apply<HepMCHeavyIon>(event, "HepMC").impact_parameter());
 
-      // Charged, primary particles with at least pT = 50 MeV
-      // in eta range of |eta| < 0.5
-      Particles chargedParticles =
-        applyProjection<ALICE::PrimaryParticles>(event,"APRIM").particles();
+      // Check if we have any hit in either V0-A or -C.  If not, the
+      // event is not selected and we get out.
+      if (!apply<ALICE::V0AndTrigger>(event,"V0-AND")()) return;
 
-      // Trigger projections
-      const ChargedFinalState& vz1 =
-        applyProjection<ChargedFinalState>(event,"VZERO1");
-      const ChargedFinalState& vz2 =
-        applyProjection<ChargedFinalState>(event,"VZERO2");
-      const ChargedFinalState& spd =
-        applyProjection<ChargedFinalState>(event,"SPD");
-      int fwdTrig = (vz1.particles().size() > 0 ? 1 : 0);
-      int bwdTrig = (vz2.particles().size() > 0 ? 1 : 0);
-      int cTrig = (spd.particles().size() > 0 ? 1 : 0);
-
-      if (fwdTrig + bwdTrig + cTrig < 2) vetoEvent;
-
-      const CentralityProjection& centrProj =
-        apply<CentralityProjection>(event, "V0M");
-      double centr = centrProj();
-      if (centr > 80) vetoEvent;
-      // Calculate number of charged particles and fill histogram
-      double nch = chargedParticles.size();
-      _histNchVsCentr->fill(centr, nch);
-
-      // Attempt to extract Npart form GenEvent.
-      if (event.genEvent()->heavy_ion()) {
-        const HepMCHeavyIon & hi = apply<HepMCHeavyIon>(event, "HepMC");
-        _histNpartVsCentr->fill(centr, hi.Npart_proj() + hi.Npart_targ());
-      }
+      // Fill in the V0 multiplicity for this event
+      _v0m->fill(apply<ALICE::V0MMultiplicity>(event,"V0M")());
     }
 
 
-    /// Normalise histograms etc., after the run
-    //void finalize() {   }
+    /// Finalize this analysis
+    void finalize() {
+      _v0m->normalize();
+      _imp->normalize();
+    }
 
-    //@}
-
-
-  private:
-
-    /// @name Histograms
-    //@{
-    Profile1DPtr _histNchVsCentr;
-    Profile1DPtr _histNpartVsCentr;
-    //@}
+    /// The distribution of V0M multiplicity
+    Histo1DPtr _v0m;
+    /// The distribution of impact parameters
+    Histo1DPtr _imp;
 
   };
 

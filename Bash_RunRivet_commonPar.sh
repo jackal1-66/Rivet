@@ -580,7 +580,7 @@ then
     echo "Run-Rivet [3.c] - Rivet now launched"
 elif [ $CENCAL -eq 1 ]
 then
-    rivet --pwd -a ALICE_2015_PBPBCentrality -H ${OUTPUTFILE} ${FIFOPATH}
+    rivet --pwd --ignore-beams -a ALICE_2015_PBPBCentrality -H ${OUTPUTFILE} ${FIFOPATH}
     echo "Run-Rivet [3.c] - Calibration with Rivet now launched "   
 elif [ $CENCAL -eq 2 ]
 then
