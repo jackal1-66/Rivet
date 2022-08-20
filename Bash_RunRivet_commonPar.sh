@@ -573,8 +573,10 @@ HERWIG)
 esac
 
     echo "Run-Rivet [3.b] - MC generator now launched"
-    
-sleep 5m
+
+if [ "$PAR" = "leadlead.par" ]; then
+    sleep 8m
+fi
 
 if [ $CENCAL -eq 0 ]
 then
