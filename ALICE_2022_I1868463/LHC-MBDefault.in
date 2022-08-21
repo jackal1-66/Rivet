@@ -24,9 +24,6 @@ set EventGenerator:EventHandler:LuminosityFunction:Energy 13000.0
 # Minimum Bias
 read snippets/MB.in
 
-# Read in parameters of the soft model recommended for MB/UE simulations
-read snippets/SoftTune.in
-
 # Diffraction model
 #read snippets/Diffraction.in
 

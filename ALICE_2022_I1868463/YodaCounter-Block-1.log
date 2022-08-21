@@ -1,0 +1,9 @@
+BEGIN YODA_COUNTER_V2 /_EVTCOUNT
+Path: /_EVTCOUNT
+Title: 
+Type: Counter
+---
+# sumW	 sumW2	 numEntries
+1.001000e+03	1.001000e+03	1.001000e+03
+END YODA_COUNTER_V2 
+ --- Block 1

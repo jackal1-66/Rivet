@@ -419,7 +419,7 @@ EOF
 # FIXME cTau to be set to 10 m !!!
 #
 cat << EOF > param_Herwig-LHC-MB-WithBaryonReconnection.in
-# -*- ThePEG-repository -*- taken from src/LHC-MB.in, with BaryonicReconnection.in activated, Patrick Kirchgaesser
+# -*- ThePEG-repository -*- taken from src/LHC-MB.in Patrick Kirchgaesser
 
 ################################################################################
 # This file contains our best tune to UE data from ATLAS at 7 TeV. More recent
@@ -445,9 +445,6 @@ set EventGenerator:EventHandler:LuminosityFunction:Energy ${SQRTS}.0
 # Minimum Bias
 read snippets/MB.in
 
-# Read in parameters of the soft model recommended for MB/UE simulations
-read snippets/SoftTune.in
-
 # Diffraction model
 read snippets/Diffraction.in
 
@@ -455,7 +452,7 @@ read snippets/Diffraction.in
 # For more details see [S. Gieseke, P. KirchgaeÃŸer, S. PlÃ¤tzer. arXiv:1710.10906]]
 ##############################################################################################
 
-read snippets/BaryonicReconnection.in
+#read snippets/BaryonicReconnection.in
 
 
 ##################################################
@@ -559,9 +556,9 @@ HERWIG)
         # NOTE : no need of runThePEG ?
         
         # All analysis details are set up in 'param_Herwig-LHC-MB-WithBaryonReconnection.in' to be initialised...
-        Herwig --repo=${HERWIG_ROOT}/share/Herwig read param_Herwig-LHC-MB-WithBaryonReconnection.in
+        Herwig --repo=${HERWIG_ROOT}/share/Herwig/HerwigDefaults.rpo read param_Herwig-LHC-MB-WithBaryonReconnection.in
         # ... then events can be generated
-        Herwig --repo=${HERWIG_ROOT}/share/Herwig run param_Herwig-LHC-MB-WithBaryonReconnection.run --numevents=$NEV --seed=$RANDOM &
+        Herwig --repo=${HERWIG_ROOT}/share/Herwig/HerwigDefaults.rpo run param_Herwig-LHC-MB-WithBaryonReconnection.run --numevents=$NEV --seed=$RANDOM &
         ;;        
 
 esac
