@@ -95,8 +95,15 @@ you can find in the main folder of this repository.
 Update 22-08-2022:  
 
 HERWIG can be run from anywhere by using the option --repo, so in order to make it work, after entering the AliGenerators environment, one should do:   
-$Herwig --repo=${HERWIG_ROOT}/share/Herwig/HerwigDefaults.rpo read/run ...  
+$ Herwig --repo=${HERWIG_ROOT}/share/Herwig/HerwigDefaults.rpo read/run ...  
 this way the correct repository will be loaded.  
+
+# Run HERWIG on the GRID  
+
+The rivet-Herwig JDL file must be uploaded on alien, then the procedure is similar to the Pythia one (next section). 
+A specific HERWIG.in file with Baryonic Reconnection ON will be used for the HERWIG simulation. 
+Since HERWIG changed a lot of things while upgrading, it's important to also provide the files 
+SoftTune.in and BaryonicReconnection.in in order to make the simulation work properly. 
 
 # Running on the GRID
 
@@ -139,6 +146,14 @@ for both the scripts you find inside that folder. Inside the Copy script edit ac
 $./CopyFilesRivet.sh  
 which will copy all the Rivet.yoda files obtained in the analysis in a locally stored Yodas folder.  
 At last, move to AliGenerators, and perform the merge using the MergeFilesRivet.sh script, remembering to change inside it the name of your output merged Yoda accordingly to your used generator.  
+
+Update 22-08-2022  
+
+The Calibration possibility has been introduced inside the running script via parameter. 
+The common submitting command for the JDL is:
+$ submit rivet-JDL.jdl ParameterFile.par Nevents Njobs CalibrationOption  
+where ParameterFile.par is useful only for Pythia for now and three options are available => Monash, mode0, mode2, with the default being Monash; CalibrationOption has three options as well => 0 -> no Calibration; 1 -> Calibration; 2 -> Rivet simulation using a preloaded calibration file. 
+This was tested using the ALICE_2015_PBPBCentrality plugin in Pb-Pb collisions (which will be loaded by default with the CalValue = 1), so different options may be required for your analyses. 
 
 # Yoda to ROOT conversion
 
