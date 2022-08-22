@@ -92,6 +92,12 @@ into the folder $HERWIG_ROOT/share/Herwig/, cd into the folder and then finally 
 For some reasons that I don't understand the file SoftTune.in was removed from the snippets folder, so you can create it beforehand by copying the one 
 you can find in the main folder of this repository.
 
+Update 22-08-2022:  
+
+HERWIG can be run from anywhere by using the option --repo, so in order to make it work, after entering the AliGenerators environment, one should do:   
+$Herwig --repo=${HERWIG_ROOT}/share/Herwig/HerwigDefaults.rpo read/run ...  
+this way the correct repository will be loaded.  
+
 # Running on the GRID
 
 Running multiple events on a server it's extremely time consuming, but doing it on the GRID can reduce that time drastically. 
