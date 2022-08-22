@@ -459,7 +459,7 @@ read snippets/Diffraction.in
 # For more details see [S. Gieseke, P. KirchgaeÃŸer, S. PlÃ¤tzer. arXiv:1710.10906]]
 ##############################################################################################
 
-read snippets/BaryonicReconnection.in  #Needs to be uploaded as input file
+read BaryonicReconnection.in  #Needs to be uploaded as input file
 
 
 ##################################################
