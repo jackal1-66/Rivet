@@ -150,7 +150,7 @@ At last, move to AliGenerators, and perform the merge using the MergeFilesRivet.
 Update 22-08-2022  
 
 The Calibration possibility has been introduced inside the running script via parameter. 
-The common submitting command for the JDL is:
+The common submitting command for the JDL is:  
 $ submit rivet-JDL.jdl ParameterFile.par Nevents Njobs CalibrationOption  
 where ParameterFile.par is useful only for Pythia for now and three options are available => Monash, mode0, mode2, with the default being Monash; CalibrationOption has three options as well => 0 -> no Calibration; 1 -> Calibration; 2 -> Rivet simulation using a preloaded calibration file. 
 This was tested using the ALICE_2015_PBPBCentrality plugin in Pb-Pb collisions (which will be loaded by default with the CalValue = 1), so different options may be required for your analyses. 
