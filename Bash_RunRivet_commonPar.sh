@@ -450,7 +450,7 @@ set EventGenerator:EventHandler:LuminosityFunction:Energy ${SQRTS}.0
 read snippets/MB.in
 
 # Read in parameters of the soft model recommended for MB/UE simulations
-# read snippets/SoftTune.in #Only up to Herwig 7.1
+read SoftTune.in #Needs to be uploaded as input file
 
 # Diffraction model
 read snippets/Diffraction.in
@@ -459,7 +459,7 @@ read snippets/Diffraction.in
 # For more details see [S. Gieseke, P. KirchgaeÃŸer, S. PlÃ¤tzer. arXiv:1710.10906]]
 ##############################################################################################
 
-# read snippets/BaryonicReconnection.in  #not included in Herwig7.2
+read snippets/BaryonicReconnection.in  #Needs to be uploaded as input file
 
 
 ##################################################
