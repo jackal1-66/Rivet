@@ -95,8 +95,9 @@ you can find in the main folder of this repository.
 Update 22-08-2022:  
 
 HERWIG can be run from anywhere by using the option --repo, so in order to make it work, after entering the AliGenerators environment, one should do:   
-$ Herwig --repo=${HERWIG_ROOT}/share/Herwig/HerwigDefaults.rpo read/run ...  
-this way the correct repository will be loaded.  
+$ Herwig --repo=${HERWIG_ROOT}/share/Herwig/HerwigDefaults.rpo read filename.in  
+$ Herwig --repo=${HERWIG_ROOT}/share/Herwig/HerwigDefaults.rpo run filename.run -N Nevents --seed <RandomNumber> &    
+this way the correct repository will be loaded with the options declared on the input files with a number of events Nevents and using the RandomNumber seed.  
 
 # Run HERWIG on the GRID  
 
