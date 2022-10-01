@@ -170,5 +170,5 @@ and then you can convert your yoda file to root using the syntax:
 When editing a script on Windows sometimes it can happen that weird characters are inserted making it not run on Linux.  
 Before adding a script on the GRID, try to run it on your local machine with a Linux system, if the error is similar to this "/bin/bash^M: bad interpreter: No such file or directory"
 run the command:  
-$sed -i -e 's/\r$//' script.sh  
+$sed -i -e \'s/\r$//\' script.sh  
 this will remove the weird character. Try running if again, if it works upload it on the GRID. 
