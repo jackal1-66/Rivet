@@ -1,0 +1,89 @@
+# -*- ThePEG-repository -*- taken from src/LHC-MB.in
+
+################################################################################
+# This file contains our best tune to UE data from ATLAS at 7 TeV. More recent
+# tunes and tunes for other centre-of-mass energies as well as more usage
+# instructions can be obtained from this Herwig wiki page:
+# http://projects.hepforge.org/herwig/trac/wiki/MB_UE_tunes
+# The model for soft interactions and diffractions is explained in
+# [S. Gieseke, P. Kirchgaesser, F. Loshaj, arXiv:1612.04701]
+################################################################################
+
+read snippets/PPCollider.in
+
+##################################################
+# Technical parameters for this run
+##################################################
+cd /Herwig/Generators
+##################################################
+# LHC physics parameters (override defaults here) 
+##################################################
+set EventGenerator:EventHandler:LuminosityFunction:Energy ${SQRTS}.0
+
+
+# Minimum Bias
+read snippets/MB.in
+
+# Read in parameters of the soft model recommended for MB/UE simulations
+read SoftTune.in #Needs to be uploaded as input file
+
+# Diffraction model
+# read snippets/Diffraction.in
+
+# Read in snippet in order to use baryonic reconnection model with modified gluon splitting (uds)
+# For more details see [S. Gieseke, P. Kirchgaeßer, S. Plätzer. arXiv:1710.10906]]
+##############################################################################################
+
+# read snippets/BaryonicReconnection.in
+
+
+##################################################
+# Analyses
+##################################################
+
+#Enable Colour Reconnection
+#set /Herwig/Hadronization/ColourReconnector:Algorithm Plain
+#set /Herwig/Hadronization/ColourReconnector:ReconnectionProbability 0.5 #Plain Reconnection
+set /Herwig/Hadronization/ColourReconnector:Algorithm Baryonic #Sets Baryonic algorithm (default is plain in HERWIG 7.1.5)
+set /Herwig/Hadronization/ColourReconnector:ReconnectionProbabilityBaryonic 0.5 #Baryonic reconnection
+
+#Settings for MPI model by Patrick Kirchgaesser
+set /Herwig/Hadronization/PartonSplitter:Split uds
+#weight for g->ssbar
+set /Herwig/Hadronization/PartonSplitter:SplitPwtSquark 0.824 
+#weight for cluster fission to q-s sbarq-bar
+set /Herwig/Hadronization/HadronSelector:PwtSquark 0.291 
+#Values tuned of the mpi model for 7 TeV pp
+set /Herwig/UnderlyingEvent/MPIHandler:pTmin0 3.053
+set /Herwig/UnderlyingEvent/MPIHandler:InvRadius 1.282
+
+
+
+
+# cd /Herwig/Analysis
+# create ThePEG::RivetAnalysis RivetAnalysis RivetAnalysis.so
+
+# cd /Herwig/Generators
+# insert EventGenerator:AnalysisHandlers 0 /Herwig/Analysis/RivetAnalysis
+
+# insert /Herwig/Analysis/RivetAnalysis:Analyses 0 ATLAS_20XX_XXXXXXX
+
+
+#set /Herwig/Analysis/Plot:EventNumber 54
+#cd /Herwig/Generators
+#insert EventGenerator:AnalysisHandlers 0 /Herwig/Analysis/Plot
+
+# read /Herwig/snippets/HepMC.in
+create ThePEG::HepMCFile /Herwig/Analysis/HepMC HepMCAnalysis.so
+set /Herwig/Analysis/HepMC:PrintEvent $NEV
+set /Herwig/Analysis/HepMC:Format GenEvent
+set /Herwig/Analysis/HepMC:Units GeV_mm
+set /Herwig/Analysis/HepMC:Filename ${FIFOPATH}
+insert /Herwig/Generators/EventGenerator:AnalysisHandlers 0 /Herwig/Analysis/HepMC
+
+
+##################################################
+# Save run for later usage with 'Herwig run'
+##################################################
+cd /Herwig/Generators
+saverun param_Herwig-LHC-MB-WithBaryonReconnection EventGenerator

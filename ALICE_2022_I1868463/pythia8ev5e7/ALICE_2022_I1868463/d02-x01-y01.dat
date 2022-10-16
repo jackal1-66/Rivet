@@ -4,8 +4,12 @@ LogY=1
 Title=Differential $\Lambda_c$ production cross section vs $p_T$
 XLabel=$p_T$ [GeV/$c$]
 YLabel=$\Lambda_c^+$ $\sigma$
-DrawOnly=/ALICE_2022_I1868463/d02-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/rivet5e7Pythia8Monash.yoda/ALICE_2022_I1868463/d02-x01-y01
-LegendOnly=/ALICE_2022_I1868463/d02-x01-y01 //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/rivet5e7Pythia8Monash.yoda/ALICE_2022_I1868463/d02-x01-y01
+LegendXPos=0.49
+RatioPlotYMin=0.02
+RatioPlotYMax=2.5
+YLabelSep=5
+DrawOnly=/ALICE_2022_I1868463/d02-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/pythia8pp5e7.yoda/ALICE_2022_I1868463/d02-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode0.yoda/ALICE_2022_I1868463/d02-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode2.yoda/ALICE_2022_I1868463/d02-x01-y01
+LegendOnly=/ALICE_2022_I1868463/d02-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/pythia8pp5e7.yoda/ALICE_2022_I1868463/d02-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode0.yoda/ALICE_2022_I1868463/d02-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode2.yoda/ALICE_2022_I1868463/d02-x01-y01
 RatioPlot=1
 RatioPlotReference=/ALICE_2022_I1868463/d02-x01-y01
 # END PLOT
@@ -31,13 +35,13 @@ Title=Data
 # END HISTO1D
 
 
-# BEGIN HISTO1D //afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/rivet5e7Pythia8Monash.yoda/ALICE_2022_I1868463/d02-x01-y01
+# BEGIN HISTO1D //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/pythia8pp5e7.yoda/ALICE_2022_I1868463/d02-x01-y01
 ErrorBars=1
 LineColor=red
 LineStyle=solid
-Path=//afs/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/rivet5e7Pythia8Monash.yoda/ALICE_2022_I1868463/d02-x01-y01
+Path=//mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/pythia8pp5e7.yoda/ALICE_2022_I1868463/d02-x01-y01
 ScaledBy=7.80485000000000033e-04
-Title=Pythia 8 Monash 5e7
+Title=Pythia8.243 Monash
 # xlow	 xhigh	 val	 errminus	 errplus
 1.000000e+00	2.000000e+00	1.254005e+01	9.893090e-02	9.893090e-02
 2.000000e+00	3.000000e+00	1.012211e+01	8.888282e-02	8.888282e-02
@@ -49,5 +53,47 @@ Title=Pythia 8 Monash 5e7
 8.000000e+00	1.000000e+01	3.964864e-01	1.243888e-02	1.243888e-02
 1.000000e+01	1.200000e+01	1.596092e-01	7.892165e-03	7.892165e-03
 1.200000e+01	2.400000e+01	2.926819e-02	1.379716e-03	1.379716e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode0.yoda/ALICE_2022_I1868463/d02-x01-y01
+ErrorBars=1
+LineColor=blue
+LineStyle=solid
+Path=//mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode0.yoda/ALICE_2022_I1868463/d02-x01-y01
+ScaledBy=1.00304200000000000e-03
+Title=Pythia8.243 Mode 0
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	9.810553e+01	3.136941e-01	3.136941e-01
+2.000000e+00	3.000000e+00	5.434682e+01	2.334784e-01	2.334784e-01
+3.000000e+00	4.000000e+00	3.008123e+01	1.737030e-01	1.737030e-01
+4.000000e+00	5.000000e+00	1.400548e+01	1.185246e-01	1.185246e-01
+5.000000e+00	6.000000e+00	7.564943e+00	8.710887e-02	8.710887e-02
+6.000000e+00	7.000000e+00	3.707243e+00	6.097968e-02	6.097968e-02
+7.000000e+00	8.000000e+00	1.556721e+00	3.951528e-02	3.951528e-02
+8.000000e+00	1.000000e+01	7.156705e-01	1.894528e-02	1.894528e-02
+1.000000e+01	1.200000e+01	6.936035e-01	1.865092e-02	1.865092e-02
+1.200000e+01	2.400000e+01	3.234811e-02	1.644347e-03	1.644347e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode2.yoda/ALICE_2022_I1868463/d02-x01-y01
+ErrorBars=1
+LineColor=green
+LineStyle=solid
+Path=//mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/pythia8pp5e7mode2.yoda/ALICE_2022_I1868463/d02-x01-y01
+ScaledBy=1.00304200000000000e-03
+Title=Pythia8.243 Mode 2
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	1.090858e+02	3.307835e-01	3.307835e-01
+2.000000e+00	3.000000e+00	6.569925e+01	2.567082e-01	2.567082e-01
+3.000000e+00	4.000000e+00	3.394394e+01	1.845188e-01	1.845188e-01
+4.000000e+00	5.000000e+00	1.670767e+01	1.294546e-01	1.294546e-01
+5.000000e+00	6.000000e+00	8.731481e+00	9.358441e-02	9.358441e-02
+6.000000e+00	7.000000e+00	3.441437e+00	5.875292e-02	5.875292e-02
+7.000000e+00	8.000000e+00	2.308000e+00	4.811467e-02	4.811467e-02
+8.000000e+00	1.000000e+01	9.182850e-01	2.146018e-02	2.146018e-02
+1.000000e+01	1.200000e+01	2.101373e-01	1.026588e-02	1.026588e-02
+1.200000e+01	2.400000e+01	4.329798e-02	1.902404e-03	1.902404e-03
 # END HISTO1D
 
