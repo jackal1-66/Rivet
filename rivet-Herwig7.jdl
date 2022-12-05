@@ -1,14 +1,11 @@
 #Example of use 
-#submit rivet-Pythia8-Mode.jdl mode0 numEvSingle Jobs
-#submit rivet-Pythia8-Mode.jdl Monash 200000 250
-#submit rivet-Pythia8-Mode.jdl leadlead 200000 250
-#submit rivet-Pythia8-Mode.jdl leadlead 200000 250 1  ###This to Run calibration
-#submit rivet-Pythia8-Mode.jdl leadlead 200000 250 2  ###This to preload calibration files 
+#submit rivet-Pythia8-Mode.jdl mode0 numEvSingle Jobs CalibrationOption
 Jobtag = {"comment: ALICE_2017_I1511870 Rivet analysis: Pythia8 Monash 2013 ECR Mode @ 7000 GeV"};
+#Add baryreco or plainreco as $1 to run with baryonic or plain reco Herwig, otherwise LHC-MB simple will be run
 
 #InputDataType = "NONE";
 
-OutputDir = "/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/Simulations/Herwig7/#alien_counter_03i#";
+OutputDir = "/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/Simulations/Herwig7PlainReco/#alien_counter_03i#";
 
 #Use this version of AliGenerators for Rivet 3.1.1, otherwise the GRID run might not work. For Rivet standalone 
 #the version Rivet:3.1.1-alice1 can be used
@@ -21,6 +18,7 @@ InputFile = {
             "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/ALICE_2022_I1868463.yoda",
             "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/SoftTune.in",
             "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/BaryonicReconnection.in",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/PlainReconnection.in"
             };
 
 Executable = "/alice/cern.ch/user/m/mgiacalo/Rivet/ALICE_2022_I1868463/Bash_RunRivet_commonPar.sh";

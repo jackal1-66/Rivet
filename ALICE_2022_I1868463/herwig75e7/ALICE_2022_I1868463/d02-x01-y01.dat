@@ -5,8 +5,11 @@ Title=Differential $\Lambda_c$ production cross section vs $p_T$
 XLabel=$p_T$ [GeV/$c$]
 YLabel=$\Lambda_c^+$ $\sigma$
 LegendXPos=0.49
-DrawOnly=/ALICE_2022_I1868463/d02-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/HerwigLHCMB5e7.yoda/ALICE_2022_I1868463/d02-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/HerwigBarReco5e7.yoda/ALICE_2022_I1868463/d02-x01-y01
-LegendOnly=/ALICE_2022_I1868463/d02-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/HerwigLHCMB5e7.yoda/ALICE_2022_I1868463/d02-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/HerwigBarReco5e7.yoda/ALICE_2022_I1868463/d02-x01-y01
+RatioPlotYMin=0.02
+RatioPlotYMax=2.5
+YLabelSep=5
+DrawOnly=/ALICE_2022_I1868463/d02-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/HerwigLHCMB5e7.yoda/ALICE_2022_I1868463/d02-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/HerwigBarReco5e7.yoda/ALICE_2022_I1868463/d02-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/HerwigPlainReco5e7.yoda/ALICE_2022_I1868463/d02-x01-y01
+LegendOnly=/ALICE_2022_I1868463/d02-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/HerwigLHCMB5e7.yoda/ALICE_2022_I1868463/d02-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/HerwigBarReco5e7.yoda/ALICE_2022_I1868463/d02-x01-y01 //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/HerwigPlainReco5e7.yoda/ALICE_2022_I1868463/d02-x01-y01
 RatioPlot=1
 RatioPlotReference=/ALICE_2022_I1868463/d02-x01-y01
 # END PLOT
@@ -71,5 +74,26 @@ Title=Herwig7 BaryReco
 8.000000e+00	1.000000e+01	3.577813e-01	1.202669e-02	1.202669e-02
 1.000000e+01	1.200000e+01	1.544322e-01	7.901438e-03	7.901438e-03
 1.200000e+01	2.400000e+01	2.028102e-02	1.168978e-03	1.168978e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D //mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/HerwigPlainReco5e7.yoda/ALICE_2022_I1868463/d02-x01-y01
+ErrorBars=1
+LineColor=green
+LineStyle=solid
+Path=//mnt/c/Users/marco/Documents/GitHub/Rivet/ALICE_2022_I1868463/HerwigPlainReco5e7.yoda/ALICE_2022_I1868463/d02-x01-y01
+ScaledBy=7.95397537015004393e-04
+Title=Herwig7 PlainReco
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	2.000000e+00	5.337913e+00	6.515952e-02	6.515952e-02
+2.000000e+00	3.000000e+00	4.906012e+00	6.246783e-02	6.246783e-02
+3.000000e+00	4.000000e+00	4.451045e+00	5.950084e-02	5.950084e-02
+4.000000e+00	5.000000e+00	2.744917e+00	4.672580e-02	4.672580e-02
+5.000000e+00	6.000000e+00	1.563752e+00	3.526761e-02	3.526761e-02
+6.000000e+00	7.000000e+00	9.083440e-01	2.687926e-02	2.687926e-02
+7.000000e+00	8.000000e+00	5.408703e-01	2.074143e-02	2.074143e-02
+8.000000e+00	1.000000e+01	2.712306e-01	1.038595e-02	1.038595e-02
+1.000000e+01	1.200000e+01	1.236843e-01	7.013494e-03	7.013494e-03
+1.200000e+01	2.400000e+01	2.147573e-02	1.193096e-03	1.193096e-03
 # END HISTO1D
 

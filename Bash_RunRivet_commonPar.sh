@@ -373,7 +373,7 @@ cat << EOF > param_Sherpa2.txt
   Process 93 93 -> 93 93
   Order_EW 0
   # parton parton -> parton parton  
-  # Fixing the order of electroweak couplings to ‘0’, 
+  # Fixing the order of electroweak couplings to ?0?, 
   # matrix elements of all partonic subprocesses for Drell-Yan production without any 
   # and with up to 0 extra QCD parton emissions will be generated.
   End process
@@ -456,7 +456,7 @@ read SoftTune.in #Needs to be uploaded as input file
 read snippets/Diffraction.in
 
 # Read in snippet in order to use baryonic reconnection model with modified gluon splitting (uds)
-# For more details see [S. Gieseke, P. KirchgaeÃŸer, S. PlÃ¤tzer. arXiv:1710.10906]]
+# For more details see [S. Gieseke, P. Kirchgae??er, S. Pl?tzer. arXiv:1710.10906]]
 ##############################################################################################
 
 read BaryonicReconnection.in  #Needs to be uploaded as input file
@@ -496,18 +496,184 @@ cd /Herwig/Generators
 saverun param_Herwig-LHC-MB-WithBaryonReconnection EventGenerator
 EOF
 
+#params file for Herwig7.1.2, LHC minimum bias default, without baryonic reconnection
+# Taken from $HERWIG_ROOT/share/Herwig/LHC-MB.in
+# https://herwig.hepforge.org/tutorials/
+#
+# FIXME cTau to be set to 10 m !!!
+#
+cat << EOF > param_Herwig-LHC-MB.in
+# -*- ThePEG-repository -*- taken from src/LHC-MB.in
+
+################################################################################
+# This file contains our best tune to UE data from ATLAS at 7 TeV. More recent
+# tunes and tunes for other centre-of-mass energies as well as more usage
+# instructions can be obtained from this Herwig wiki page:
+# http://projects.hepforge.org/herwig/trac/wiki/MB_UE_tunes
+# The model for soft interactions and diffractions is explained in
+# [S. Gieseke, P. Kirchgaesser, F. Loshaj, arXiv:1612.04701]
+################################################################################
+
+read snippets/PPCollider.in
+
+##################################################
+# Technical parameters for this run
+##################################################
+cd /Herwig/Generators
+##################################################
+# LHC physics parameters (override defaults here) 
+##################################################
+set EventGenerator:EventHandler:LuminosityFunction:Energy ${SQRTS}.0
+
+
+# Minimum Bias
+read snippets/MB.in
+
+# Read in parameters of the soft model recommended for MB/UE simulations
+read SoftTune.in #Needs to be uploaded as input file
+
+# Diffraction model
+read snippets/Diffraction.in
+
+# Read in snippet in order to use baryonic reconnection model with modified gluon splitting (uds)
+# For more details see [S. Gieseke, P. Kirchgae??er, S. Pl?tzer. arXiv:1710.10906]]
+##############################################################################################
+
+#read BaryonicReconnection.in  #Needs to be uploaded as input file
+
+
+##################################################
+# Analyses
+##################################################
+
+
+# cd /Herwig/Analysis
+# create ThePEG::RivetAnalysis RivetAnalysis RivetAnalysis.so
+
+# cd /Herwig/Generators
+# insert EventGenerator:AnalysisHandlers 0 /Herwig/Analysis/RivetAnalysis
+
+# insert /Herwig/Analysis/RivetAnalysis:Analyses 0 ATLAS_20XX_XXXXXXX
+
+
+#set /Herwig/Analysis/Plot:EventNumber 54
+#cd /Herwig/Generators
+#insert EventGenerator:AnalysisHandlers 0 /Herwig/Analysis/Plot
+
+# read /Herwig/snippets/HepMC.in
+create ThePEG::HepMCFile /Herwig/Analysis/HepMC HepMCAnalysis.so
+set /Herwig/Analysis/HepMC:PrintEvent $NEV
+set /Herwig/Analysis/HepMC:Format GenEvent
+set /Herwig/Analysis/HepMC:Units GeV_mm
+set /Herwig/Analysis/HepMC:Filename ${FIFOPATH}
+insert /Herwig/Generators/EventGenerator:AnalysisHandlers 0 /Herwig/Analysis/HepMC
+
+
+##################################################
+# Save run for later usage with 'Herwig run'
+##################################################
+cd /Herwig/Generators
+saverun param_Herwig-LHC-MB EventGenerator
+EOF
+cat << EOF > param_Herwig-LHC-MB-WithPlainReconnection.in
+# -*- ThePEG-repository -*- taken from src/LHC-MB.in
+
+################################################################################
+# This file contains our best tune to UE data from ATLAS at 7 TeV. More recent
+# tunes and tunes for other centre-of-mass energies as well as more usage
+# instructions can be obtained from this Herwig wiki page:
+# http://projects.hepforge.org/herwig/trac/wiki/MB_UE_tunes
+# The model for soft interactions and diffractions is explained in
+# [S. Gieseke, P. Kirchgaesser, F. Loshaj, arXiv:1612.04701]
+################################################################################
+
+read snippets/PPCollider.in
+
+##################################################
+# Technical parameters for this run
+##################################################
+cd /Herwig/Generators
+##################################################
+# LHC physics parameters (override defaults here) 
+##################################################
+set EventGenerator:EventHandler:LuminosityFunction:Energy ${SQRTS}.0
+
+
+# Minimum Bias
+read snippets/MB.in
+
+# Read in parameters of the soft model recommended for MB/UE simulations
+read SoftTune.in #Needs to be uploaded as input file
+
+# Diffraction model
+read snippets/Diffraction.in
+
+# Read in snippet in order to use baryonic reconnection model with modified gluon splitting (uds)
+# For more details see [S. Gieseke, P. Kirchgae??er, S. Pl?tzer. arXiv:1710.10906]]
+##############################################################################################
+
+read PlainReconnection.in  #Needs to be uploaded as input file
+
+
+##################################################
+# Analyses
+##################################################
+
+
+# cd /Herwig/Analysis
+# create ThePEG::RivetAnalysis RivetAnalysis RivetAnalysis.so
+
+# cd /Herwig/Generators
+# insert EventGenerator:AnalysisHandlers 0 /Herwig/Analysis/RivetAnalysis
+
+# insert /Herwig/Analysis/RivetAnalysis:Analyses 0 ATLAS_20XX_XXXXXXX
+
+
+#set /Herwig/Analysis/Plot:EventNumber 54
+#cd /Herwig/Generators
+#insert EventGenerator:AnalysisHandlers 0 /Herwig/Analysis/Plot
+
+# read /Herwig/snippets/HepMC.in
+create ThePEG::HepMCFile /Herwig/Analysis/HepMC HepMCAnalysis.so
+set /Herwig/Analysis/HepMC:PrintEvent $NEV
+set /Herwig/Analysis/HepMC:Format GenEvent
+set /Herwig/Analysis/HepMC:Units GeV_mm
+set /Herwig/Analysis/HepMC:Filename ${FIFOPATH}
+insert /Herwig/Generators/EventGenerator:AnalysisHandlers 0 /Herwig/Analysis/HepMC
+
+
+##################################################
+# Save run for later usage with 'Herwig run'
+##################################################
+cd /Herwig/Generators
+saverun param_Herwig-LHC-MB-WithPlainReconnection EventGenerator
+EOF
 
 
 
     if ( test -s param_Herwig-LHC-MB-WithBaryonReconnection.in )
     then
-        echo "Run-Rivet [2.e] - Herwig config file, param_Herwig-LHC-MB-WithBaryonReconnection.in, set up, ok!"
+        echo "Run-Rivet [2.e.a] - Herwig config file, param_Herwig-LHC-MB-WithBaryonReconnection.in, set up, ok!"
     else    
-        echo "Run-Rivet [2.e] - Herwig config file, param_Herwig-LHC-MB-WithBaryonReconnection.in, not set up... exit !"
+        echo "Run-Rivet [2.e.a] - Herwig config file, param_Herwig-LHC-MB-WithBaryonReconnection.in, not set up... exit !"
         exit 1
     fi
-
-
+    
+    if ( test -s param_Herwig-LHC-MB.in )
+    then
+        echo "Run-Rivet [2.e.b] - Herwig config file, param_Herwig-LHC-MB.in, set up, ok!"
+    else    
+        echo "Run-Rivet [2.e.b] - Herwig config file, param_Herwig-LHC-MB.in, not set up... exit !"
+        exit 1
+    fi
+    
+    if ( test -s param_Herwig-LHC-MB-WithPlainReconnection.in )
+    then
+        echo "Run-Rivet [2.e.b] - Herwig config file, param_Herwig-LHC-MB-WithPlainReconnection.in, set up, ok!"
+    else    
+        echo "Run-Rivet [2.e.b] - Herwig config file, param_Herwig-LHC-MB-WithPlainReconnection.in, not set up... exit !"
+        exit 1
+    fi
 
 
 
@@ -564,10 +730,25 @@ HERWIG)
         echo "Running HERWIG++ simulation with sqrts = $SQRTS, $NEV events..."
         # NOTE : no need of runThePEG ?
         
-        # All analysis details are set up in 'param_Herwig-LHC-MB-WithBaryonReconnection.in' to be initialised...
-        Herwig --repo=${HERWIG_ROOT}/share/Herwig/HerwigDefaults.rpo read param_Herwig-LHC-MB-WithBaryonReconnection.in
-        # ... then events can be generated
-        Herwig --repo=${HERWIG_ROOT}/share/Herwig/HerwigDefaults.rpo run param_Herwig-LHC-MB-WithBaryonReconnection.run --numevents=$NEV --seed=$RANDOM &
+        if [ "$PAR" = "baryreco.par" ]; then
+            # All analysis details are set up in 'param_Herwig-LHC-MB-WithBaryonReconnection.in' to be initialised...
+            Herwig --repo=${HERWIG_ROOT}/share/Herwig/HerwigDefaults.rpo read param_Herwig-LHC-MB-WithBaryonReconnection.in
+            # ... then events can be generated
+            echo "Running Herwig with LHC-MB including baryonic reconnection"
+            Herwig --repo=${HERWIG_ROOT}/share/Herwig/HerwigDefaults.rpo run param_Herwig-LHC-MB-WithBaryonReconnection.run --numevents=$NEV --seed=$RANDOM &
+        elif [ "$PAR" = "plainreco.par" ]; then
+            # All analysis details are set up in 'param_Herwig-LHC-MB-WithPlainReconnection.in' to be initialised...
+            Herwig --repo=${HERWIG_ROOT}/share/Herwig/HerwigDefaults.rpo read param_Herwig-LHC-MB-WithPlainReconnection.in
+            # ... then events can be generated
+            echo "Running Herwig with LHC-MB including plain reconnection"
+            Herwig --repo=${HERWIG_ROOT}/share/Herwig/HerwigDefaults.rpo run param_Herwig-LHC-MB-WithPlainReconnection.run --numevents=$NEV --seed=$RANDOM &    
+        else    
+            # All analysis details are set up in 'param_Herwig-LHC-MB.in' to be initialised...
+            Herwig --repo=${HERWIG_ROOT}/share/Herwig/HerwigDefaults.rpo read param_Herwig-LHC-MB.in
+            # ... then events can be generated
+            echo "Running Herwig with default LHC-MB"
+            Herwig --repo=${HERWIG_ROOT}/share/Herwig/HerwigDefaults.rpo run param_Herwig-LHC-MB.run --numevents=$NEV --seed=$RANDOM &
+        fi    
         ;;        
 
 esac
@@ -616,6 +797,8 @@ rm param_Pythia8.txt
 rm crmc.param
 rm param_Sherpa2.txt
 rm param_Herwig-LHC-MB-WithBaryonReconnection.in
+rm param_Herwig-LHC-MB.in
+rm param_Herwig-LHC-MB-WithPlainReconnection.in
 
 
 
@@ -658,7 +841,7 @@ if [ -s ${OUTPUTFILE} ]; then
         for iCounter in `seq 1 $NbYodaCounters`    
         do       
             read SumOfWeights SumOfWeights2 numEntries NbEntriesEqualToNGenAsked <<< $( egrep -A2 'numEntries' YodaCounter-Block-$iCounter.log | tail -n 2 | head -n 1 | awk -v N=${NEV} '{printf "%d %d %d %d", $1,$2,$3, ($3/N < 0.999)? 0:1}' )
-            echo "   - YODA_COUNTER[${iCounter}] : numEntries = $numEntries / Sum of Weights = $SumOfWeights / Sum of (Weights)² = $SumOfWeights2 -> NbEntriesEqualToNGenAsked = $NbEntriesEqualToNGenAsked"
+            echo "   - YODA_COUNTER[${iCounter}] : numEntries = $numEntries / Sum of Weights = $SumOfWeights / Sum of (Weights)? = $SumOfWeights2 -> NbEntriesEqualToNGenAsked = $NbEntriesEqualToNGenAsked"
             
                 echo "   - YODA_COUNTER[${iCounter}] : numEntries to be compared with the Nb of evts asked initially : ${NEV}"
                 
@@ -674,7 +857,7 @@ if [ -s ${OUTPUTFILE} ]; then
                 rm YodaCounter-Block-$iCounter.log
             fi
         done
-    fi # NbYodaCounters ≠ 0
+    fi # NbYodaCounters ? 0
 fi # yoda output file exists
 
 
