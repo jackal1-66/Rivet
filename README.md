@@ -101,10 +101,20 @@ this way the correct repository will be loaded with the options declared on the 
 
 # Run HERWIG on the GRID  
 
-The rivet-Herwig JDL file must be uploaded on alien, then the procedure is similar to the Pythia one (next section). 
+The rivet-Herwig7.jdl file must be uploaded on alien, then the procedure is similar to the Pythia one (next section). 
 A specific HERWIG.in file with Baryonic Reconnection ON will be used for the HERWIG simulation. 
 Since HERWIG changed a lot of things while upgrading, it's important to also provide the files 
 SoftTune.in and BaryonicReconnection.in in order to make the simulation work properly. 
+
+05/12/2022 Update: now both baryonic and Plain reconnection are included properly in the scripts and are tested to be working. 
+In order to run the generation the command `submit rivet-Herwig7.jdl Mode numEvSingle Jobs CalibrationOption` needs to be executed. 
+Mode with Herwig can be either `baryreco` or `plainreco`, respectively for baryonic or plain reconnection. Any other command will make HERWIG
+run with the standard LHC-MB configuration.  
+Calibration option, as for PYTHIA, must be defined following the values:
+- `0`: no calibration
+- `1`: Calibration with ALICE_2015_PBPBCentrality launched (the file must be provided in the inputs)
+- `2`: preload calibration file named calibration.yoda (to be run after calibration = 1, or if you have already a calibration file)
+- Any other value: the simulation won't continue running (exit)
 
 # Running on the GRID
 
@@ -170,5 +180,7 @@ and then you can convert your yoda file to root using the syntax:
 When editing a script on Windows sometimes it can happen that weird characters are inserted making it not run on Linux.  
 Before adding a script on the GRID, try to run it on your local machine with a Linux system, if the error is similar to this "/bin/bash^M: bad interpreter: No such file or directory"
 run the command:  
-$sed -i -e 's/\r$//' script.sh  
+```
+sed -i -e 's/\r$//' script.sh  
+```
 this will remove the weird character. Try running if again, if it works upload it on the GRID. 
