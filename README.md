@@ -44,12 +44,12 @@ $rivet --ignore-beams --pwd -a ALICE_2017_I1511870 test.fifo -o pythia8pp1e6new.
 You can also add a seed to the sacrifice application by adding the parameter -r
 
 In troubles with running Pythia
-•	go to Sacrifice
-•	$ cd src
-•	$ emacs PythiaMain.cxx (comment the default options for beam energy and colliding energy) then give these parameters in .param file while running pythia
-•	$ cd ..
-•	$ make install
-•	then run pythia again to generate event data
+-	go to Sacrifice
+-	$ cd src
+-	$ emacs PythiaMain.cxx (comment the default options for beam energy and colliding energy) then give these parameters in .param file while running pythia
+-	$ cd ..
+-	$ make install
+-	then run pythia again to generate event data
 
 # Run HERWIG on the server (OBSOLETE)
 The installation on the server was not so easy and it is a little "crooked", so in order to run HERWIG using fifos and rivet there are precise steps to follow:
