@@ -158,13 +158,32 @@ $./CopyFilesRivet.sh
 which will copy all the Rivet.yoda files obtained in the analysis in a locally stored Yodas folder.  
 At last, move to AliGenerators, and perform the merge using the MergeFilesRivet.sh script, remembering to change inside it the name of your output merged Yoda accordingly to your used generator.  
 
-Update 22-08-2022  
+## Update 22-08-2022  
 
 The Calibration possibility has been introduced inside the running script via parameter. 
 The common submitting command for the JDL is:  
 $ submit rivet-JDL.jdl ParameterFile.par Nevents Njobs CalibrationOption  
 where ParameterFile.par is useful only for Pythia for now and three options are available => Monash, mode0, mode2, with the default being Monash; CalibrationOption has three options as well => 0 -> no Calibration; 1 -> Calibration; 2 -> Rivet simulation using a preloaded calibration file. 
 This was tested using the ALICE_2015_PBPBCentrality plugin in Pb-Pb collisions (which will be loaded by default with the CalValue = 1), so different options may be required for your analyses. 
+
+## Update 15-12-2022: EPOS4 Integration
+
+From the AliGenerators version of 14 of December 2022 (AliGenerators::v20221214-1), it is possible again to use the framework on the GRID.  
+The issue was related to loading the Rivet apckage (due to a commit pushed on 23/09/2020), but it is now possible to load Rivet::v3.1.6-alice1-15 contained in the latest AliGenerators package.  
+In order to run the EPOS4 generator on the GRID, you need to upload in your working folder 5 files: 
+1. Bash_RunRivet_commonPar.sh
+2. Bash_RivetValidation.sh
+3. epos
+4. epos4.optns
+5. rivet-EPOS4.jdl
+
+Then you need to replace the folders inside the JDL file with your own paths indicating the positions of your Rivet macros, and the files you just uploaded.  
+To submit the jobs use the syntax:
+```
+submit rivet-EPOS4.jdl *random_text* *number_of_events* *number_of_jobs*
+```
+where *random_text* can be anything, like EPOS4 for example. It's a string that is used to load some parameter files in other generators, but it's not used in EPOS4.  
+The main configuration for the generator is provided via the epos4.optns file (the name is hardcoded in the script). If you are interested in understanding what the different parameters mean and how to translate your configuration to the language of the generator, you can visit the tutorial website made for [EPOS4](epos4learn.docs.cern.ch). I made it as a *hobby* for a mini-workshop, so if there's something wrong or not working fully I apologise in advance.
 
 # Yoda to ROOT conversion
 
