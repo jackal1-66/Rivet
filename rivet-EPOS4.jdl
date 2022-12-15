@@ -1,0 +1,46 @@
+#Example of use 
+#submit rivet-Pythia8-Mode.jdl mode0 numEvSingle Jobs CalibrationOption
+Jobtag = {"comment: ALICE_2022_I1868463 Rivet analysis: EPOS4 Test @ 13000 GeV"};
+#Added EPOS4 generator, leave mode0 and CalibrationOption as default, such as 
+#submit rivet-EPOS4.jdl epos numEvSingle Jobs 0
+
+#InputDataType = "NONE";
+
+OutputDir = "/alice/cern.ch/user/m/mgiacalo/Rivet/eposRivetTest/Simulations/EPOS4/#alien_counter_03i#";
+
+#Trying latest version of AliGenerators
+Packages = {"VO_ALICE@AliGenerators::v20221214-1"
+            };
+  
+InputFile = {
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/eposRivetTest/ALICE_2022_I1868463.cc",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/eposRivetTest/ALICE_2022_I1868463.info",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/eposRivetTest/ALICE_2022_I1868463.plot",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/eposRivetTest/ALICE_2022_I1868463.yoda",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/eposRivetTest/epos",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/eposRivetTest/epos4.optns"
+            };
+
+Executable = "/alice/cern.ch/user/m/mgiacalo/Rivet/eposRivetTest/Bash_RunRivet_commonPar.sh";
+Arguments = "-a ALICE_2022_I1868463 -g EPOS4";
+
+Split = "production:1-$3";
+SplitArguments = "-n $2";
+
+TTL = "72000";
+
+#SplitMaxInputFileNumber = "10";
+
+#InputDataListFormat = "xml-single";
+
+#InputDataList = "wn.xml";
+
+Output = {"log_archive.zip:std*@disk=1","Rivet.yoda@disk=1"};
+
+Validationcommand = "/alice/cern.ch/user/m/mgiacalo/Rivet/eposRivetTest/Bash_RivetValidation.sh";
+
+JDLVariables = {"Packages","OutputDir"};
+
+Workdirectorysize = {"10000MB"};
+
+#MasterResubmitThreshold="99%";

@@ -96,7 +96,8 @@ done
 
 set +o errexit
 
-
+export PATH=/cvmfs/alice.cern.ch/el7-x86_64/Packages/GCC-Toolchain/v10.2.0-alice2-12/bin:$PATH
+echo $PATH
 
 mkfifo ${FIFOPATH}
 
@@ -700,7 +701,20 @@ EPOSlhc)
 	;;
 EPOSv3)
 	echo "Run-Rivet [3.a] - Running EPOSv3 simulation with sqrts = $SQRTS GeV, $NEV events... TBD"
-	;;	
+	;;
+EPOS4)
+	echo "Run-Rivet [3.a] - Running EPOS4 simulation using configuration in epos4.optns file"
+    if [ -e "epos4.optns" ] && [ -e "epos" ]; then
+        FIFONAME="${FIFOPATH%.hepmc}"
+        chmod +x epos
+        SNEV=$'\nset nfull'
+        echo "$SNEV $NEV" >> epos4.optns
+        ./epos -hepmc ${FIFONAME} epos4 & 
+    else
+        echo "EPOS4 script or epos4.optns missing"
+        exit 6
+    fi        
+	;;    	
 SHERPA)
         echo "Run-Rivet [3.a] - Running SHERPA simulation tune $GENTUNE with sqrts = $SQRTS GeV, $NEV events"
   
