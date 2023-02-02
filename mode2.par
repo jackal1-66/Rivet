@@ -15,3 +15,6 @@ ColourReconnection:allowJunctions = on
 ColourReconnection:junctionCorrection = 1.20
 ColourReconnection:timeDilationMode = 2
 ColourReconnection:timeDilationPar = 0.18
+# random seed
+Random:setSeed = on
+Random:seed = 0
