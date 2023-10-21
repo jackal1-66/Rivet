@@ -1,0 +1,4 @@
+#Parameters for enhanced Lead Lead collisions with Angantyr
+Beams:idA 2212
+Beams:idB 1000822080
+HeavyIon:mode 1
