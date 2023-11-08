@@ -816,7 +816,7 @@ rm param_Herwig-LHC-MB-WithBaryonReconnection.in
 rm param_Herwig-LHC-MB.in
 rm param_Herwig-LHC-MB-WithPlainReconnection.in
 
-
+ISCOUNTZERO=0
 
 if [ -s ${OUTPUTFILE} ]; then
 	echo -e "\n*****************************************************************"
@@ -864,15 +864,20 @@ if [ -s ${OUTPUTFILE} ]; then
                 
             if [ ${NbEntriesEqualToNGenAsked} -eq 0 ]
             then
-                echo "   - YODA_COUNTER[${iCounter}] : WARNING ! Nb of Evt counts below the 99.9% threshold, removing Yoda output... exit !"
-                rm ${OUTPUTFILE}
-                exit 2
+                echo "   - YODA_COUNTER[${iCounter}] : WARNING ! Nb of Evt counts below the 99.9% threshold."
+                ((ISCOUNTZERO++))
             else
                 echo "  -> YODA_COUNTER[${iCounter}] : Check done ! NumEvtEntries within 99.9% of the initial statistics asked for generation"
                 echo " "
-                rm YodaCounter-Block-$iCounter.log
             fi
+            rm YodaCounter-Block-$iCounter.log
         done
+        if [ ${ISCOUNTZERO} -ne 0 ] 
+        then
+            echo "  CHECK 1 Warning: ${ISCOUNTZERO} YODA_COUNTERs are < 99.9 % threshold"
+            echo "                   this is normal in multiple collision systems analyses."          
+            echo "                   If this is not the case, your output might be broken."
+        fi    
     fi # NbYodaCounters ? 0
 fi # yoda output file exists
 
