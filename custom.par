@@ -1,0 +1,67 @@
+#Beams
+Beams:idA = 2212 ! Proton
+Beams:idB = 2212
+
+# Min. bias
+SoftQCD:all = on
+
+# Min. bias alternative
+#SoftQCD:nonDiffractive = on
+#SoftQCD:singleDiffractive = on
+#SoftQCD:doubleDiffractive = on
+
+# random seed
+Random:setSeed = on
+Random:seed = 0
+
+# Set cuts
+# Use this for hard leading-jets in a certain pT window
+PhaseSpace:pTHatMin = 0   # min pT
+#PhaseSpace:pTHatMax = 13000   # max pT
+
+# Use this for hard leading-jets in a certain mHat window
+PhaseSpace:mHatMin = 0   # min mHat
+#PhaseSpace:mHatMax = 13000   # max mHat
+
+# Makes particles with c*tau0 > 10 mm stable: (default value = 10.0 in mm / Here = 10 m)
+# See http://home.thep.lu.se/~torbjorn/pythia81html/ParticleDecays.html
+# tau0 = seems to deal with particle species by species, i.e. selection based on 'cTau(PDG)'
+ParticleDecays:limitTau0 = On
+ParticleDecays:tau0Max = 10000.0
+
+# Set tune
+Tune:preferLHAPDF=0 ! OK for internal tunes
+Tune:ee=7 ! pp tune will change it if needed
+Tune:pp=14
+
+# Parton level
+# PartonLevel:ISR = off  # uncomment to disable Initial State Radiation
+# PartonLevel:FSR = off  # uncomment to disable Final State Radiation
+# PartonLevel:MPI = off  # uncomment to disable Multi-Parton Interaction
+
+# Colour reconnection
+# ColourReconnection:reconnect = off  # uncomment both lines to switch off colour reconnection
+# PartonLevel:earlyResDec = off       # uncomment both lines to switch off colour reconnection
+
+# PDF tuned for Monash2013
+# PDF:pSet = 13  # NNPDF2.3 QCD+QED LO   alpha_s(M_Z) = 0.130. (default)
+# PDF:pSet = 14  # NNPDF2.3 QCD+QED LO   alpha_s(M_Z) = 0.119.
+# PDF:pSet = 15  # NNPDF2.3 QCD+QED NLO  alpha_s(M_Z) = 0.119.
+# PDF:pSet = 16  # NNPDF2.3 QCD+QED NNLO alpha_s(M_Z) = 0.119.
+
+#Parameters for enhanced CR Mode0 by Christiansen and Skands
+StringPT:sigma = 0.335
+StringZ:aLund = 0.36
+StringZ:bLund = 0.56
+StringFlav:probQQtoQ = 0.078
+StringFlav:ProbStoUD = 0.2
+StringFlav:probQQ1toQQ0join = 0.0275,0.0275,0.0275,0.0275
+MultiPartonInteractions:pT0Ref = 2.12
+BeamRemnants:remnantMode = 1
+BeamRemnants:saturation = 5
+ColourReconnection:mode = 1
+ColourReconnection:allowDoubleJunRem = off
+ColourReconnection:m0 = 2.9
+ColourReconnection:allowJunctions = on
+ColourReconnection:junctionCorrection = 1.43
+ColourReconnection:timeDilationMode = 0

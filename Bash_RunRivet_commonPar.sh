@@ -96,9 +96,6 @@ done
 
 set +o errexit
 
-export PATH=/cvmfs/alice.cern.ch/el7-x86_64/Packages/GCC-Toolchain/v10.2.0-alice2-12/bin:$PATH
-echo $PATH
-
 mkfifo ${FIFOPATH}
 
     if ( test -p ${FIFOPATH} )
@@ -111,16 +108,16 @@ mkfifo ${FIFOPATH}
 
 #The following is taken from MCPLOTS "def" settings
 
-
-
-
-
+ERRALL=$(( ($NEV / 100) * 20 ))
 
 #params file for Pythia8
 cat << EOF > param_Pythia8.txt
+Main:numberOfEvents = $NEV          ! number of events to generate
+Main:timesAllowErrors = $ERRALL          ! abort run after this many flawed events
 #Beams
 Beams:idA = 2212 ! Proton
 Beams:idB = 2212
+Beams:eCM = $SQRTS                 ! CM energy of collision
 
 # Min. bias
 #SoftQCD:all = on
@@ -676,7 +673,11 @@ EOF
         exit 1
     fi
 
+if [ "$GENTYPE" != "NewP8" ]; then
+    export PATH=/cvmfs/alice.cern.ch/el7-x86_64/Packages/GCC-Toolchain/v10.2.0-alice2-12/bin:$PATH
+fi    
 
+echo "PATH is: $PATH"
 
 case "$GENTYPE" in
 Pythia6)
@@ -696,6 +697,39 @@ Pythia8)
 	    run-pythia -i param_Pythia8.txt -e $SQRTS -n $NEV -o ${FIFOPATH} &
     fi    
 	;;
+NewP8)
+    echo "Run-Rivet [3.a] - Running Custom Pythia 8 simulation with sqrts = $SQRTS GeV, $NEV events"
+    TGZ=`ls | grep .tgz`
+    tar xzvf $TGZ
+    FOLD=`ls -d */ | grep pythia | sed 's/.\{1\}$//'`
+    export PYTHIA8="$PWD/$FOLD"
+    export PYTHIA8DATA="${PYTHIA8}/share/Pythia8/xmldoc"
+    cd $PYTHIA8
+    ./configure --with-root-bin=$ROOTSYS/bin/ --with-root-include=$ROOTSYS/include/ --with-root-lib=$ROOTSYS/lib/ \
+                --with-hepmc2-include=$HEPMC_ROOT/include/ --with-hepmc2-lib=$HEPMC_ROOT/lib/ &> outConfig.log
+    # --with-root-bin=/usr/bin/
+    # --with-root-include=/usr/include/root
+    # --with-root-lib=/usr/lib64/root
+    echo "pythia8: $PYTHIA8"
+    echo "pythia8data: $PYTHIA8DATA"
+    echo "ROOTSYS: $ROOTSYS"
+    make
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PYTHIA8/lib
+    cd ../
+    cd $PYTHIA8/examples 
+    make main42
+    cd ../../
+    if ( test -s $PAR ); then
+        echo "Running with custom configuration tune, from $PAR file"  
+        echo "Main:numberOfEvents = $NEV          ! number of events to generate" >> $PAR
+        echo "Main:timesAllowErrors = $ERRALL          ! abort run after this many flawed events" >> $PAR
+        echo "Beams:eCM = $SQRTS                 ! CM energy of collision" >> $PAR
+        $PYTHIA8/examples/main42 $PAR ${FIFOPATH} &    
+    else
+        echo "Running with default Monash 2013 tune"    
+        $PYTHIA8/examples/main42 param_Pythia8.txt ${FIFOPATH} & 
+    fi        
+	;;    
 EPOSlhc)
 	echo "Run-Rivet [3.a] - Running EPOS-LHC simulation with sqrts = $SQRTS GeV, $NEV events"
 	# cp $CRMC_ROOT/crmc.param .

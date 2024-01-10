@@ -1,0 +1,60 @@
+#Example of use 
+#submit rivet-Pythia8-Mode.jdl mode0 numEvSingle Jobs
+#submit rivet-Pythia8-Mode.jdl Monash 200000 250
+#submit rivet-Pythia8-Mode.jdl leadlead 200000 250
+#submit rivet-Pythia8-Mode.jdl leadlead 200000 250 1  ###This to Run calibration
+#submit rivet-Pythia8-Mode.jdl leadlead 200000 250 2  ###This to preload calibration files 
+Jobtag = {"comment: ALICE Rivet analysis: Pythia8 Custom Monash 2013 ECR Mode @ 13000 GeV"};
+
+#InputDataType = "NONE";
+
+#OutputDir = "/alice/cern.ch/user/m/mgiacalo/Pythia8New/Simulations/P8$1Calibration/#alien_counter_03i#"; #This is run for first calibration 
+OutputDir = "/alice/cern.ch/user/m/mgiacalo/Pythia8New/Simulations/NewP8$1/#alien_counter_03i#";  #Secondly run this for analysis
+
+#Use this version of AliGenerators for Rivet 3.1.1, otherwise the GRID run might not work. For Rivet standalone 
+#the version Rivet:3.1.1-alice1 can be used
+Packages = {"VO_ALICE@Rivet::3.1.6-alice1-40"};
+  
+InputFile = {
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/ALICE_2021_1818157.cc",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/ALICE_2021_1818157.info",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/ALICE_2021_1818157.plot",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/ALICE_2021_1818157.yoda",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/AliceCommon.hh",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/mode0.par",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet//mode2.par",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/leadlead.par",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/calibration.yoda",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Pythia8New/pythia8310.tgz",
+            "LF:/alice/cern.ch/user/m/mgiacalo/Pythia8New/custom.par"
+            };
+            #"LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/ALICE_2015_PBPBCentrality.cc",
+            #"LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/ALICE_2015_PPCentrality.cc",
+            #"LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/ALICE_2015_PPCentrality.info",
+            #"LF:/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/calibration.yoda", #to be included after obtaining calibration file
+
+Executable = "/alice/cern.ch/user/m/mgiacalo/Pythia8New/Bash_RunRivet_commonPar.sh";
+Arguments = "-a ALICE_2021_1818157 -g NewP8 -t 14 -s 13000 -p $1.par -c $4"; 
+#If calibration is needed: run leadlead first with 1, Merge the output when jobs are done in a single calibration.yoda file and then preload it with 2 as third parameter (uploading it to alien)
+
+Split = "production:1-$3";
+SplitArguments = "-n $2";
+
+TTL = "72000";
+
+#SplitMaxInputFileNumber = "10";
+
+#InputDataListFormat = "xml-single";
+
+#InputDataList = "wn.xml";
+
+Output = {"log_archive.zip:std*@disk=1","Rivet.yoda@disk=1"};
+
+Validationcommand = "/alice/cern.ch/user/m/mgiacalo/Rivet/ALICEMultiplicity/Bash_RivetValidation.sh";
+
+JDLVariables = {"Packages","OutputDir"};
+
+Workdirectorysize = {"10000MB"};
+
+#MasterResubmitThreshold="99%";
+
