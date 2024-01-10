@@ -250,4 +250,5 @@ A simple submission would look like this:
 submit rivet-newP8.jdl custom 20000 250 2
 ```
 where `custom` is the name of the provided .par file (which is going to be skipped in case it doesn't exist), `20000` are the number of events, `250` are the submitted splitted jobs and `2` is the calibration option.   
-The center of mass energy can be changed inside the .jdl files, right after the -s flag inside the arguments.
+The center of mass energy can be changed inside the .jdl files, right after the -s flag inside the arguments.  
+**N.B.** the simulation will use the common main42 file located inside the example folder of the pythia installation directory. If something in the next upgrades happens on that file, the simulation might not work, reach me in case (last release tested is Pythia 8.3.10). 
